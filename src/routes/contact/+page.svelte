@@ -100,7 +100,7 @@ h2 {
     font-family: var(--font_primary_semibold);
     color: var(--clr_secondary);
     text-decoration: none;
-    margin-right: 1.25rem;
+    margin-right: 1rem;
     margin-bottom: .5rem;
 }
 .socials_container a:hover {

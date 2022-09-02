@@ -60,10 +60,10 @@ function toggleMobileNav() {
     </div>
     <div class={`mobile_nav_container ${isActive ? "active" : null}`}>
         <nav class="mobile_nav_drawer">
-            <a href="/web-development">Web Development</a>
-            <a href="/ui-design">UI Design</a>
-            <a href="/contact">Contact</a>
-            <a href="https://blog.masayashida.com">Blog</a>
+            <a href="/web-development" on:click={toggleMobileNav}>Web Development</a>
+            <a href="/ui-design" on:click={toggleMobileNav}>UI Design</a>
+            <a href="/contact" on:click={toggleMobileNav}>Contact</a>
+            <a href="https://blog.masayashida.com" on:click={toggleMobileNav}>Blog</a>
         </nav>
         <div class="remaining" on:click={toggleMobileNav}></div>
     </div>
