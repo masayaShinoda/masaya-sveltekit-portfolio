@@ -1,8 +1,8 @@
-@font-face {font-family: Metropolis-Regular; src: url(/fonts/Metropolis-Regular.otf)}
-@font-face {font-family: Metropolis-SemiBold; src: url(/fonts/Metropolis-SemiBold.otf)}
-@font-face {font-family: Metropolis-Bold; src: url(/fonts/Metropolis-Bold.otf)}
-@font-face {font-family: KhmerOSContent-Regular; src: url(/fonts/KhmerOSContent-Regular.ttf)}
-@font-face {font-family: KhmerOSContent-Bold; src: url(/fonts/KhmerOSContent-Bold.ttf)}
+@font-face {font-family: Metropolis-Regular; src: url(/fonts/Metropolis-Regular.otf); font-display: swap;}
+@font-face {font-family: Metropolis-SemiBold; src: url(/fonts/Metropolis-SemiBold.otf); font-display: swap;}
+@font-face {font-family: Metropolis-Bold; src: url(/fonts/Metropolis-Bold.otf); font-display: swap;}
+@font-face {font-family: KhmerOSContent-Regular; src: url(/fonts/KhmerOSContent-Regular.ttf); font-display: swap;}
+@font-face {font-family: KhmerOSContent-Bold; src: url(/fonts/KhmerOSContent-Bold.ttf); font-display: swap;}
 
 html {
     --font_primary: Metropolis-Regular;

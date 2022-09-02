@@ -4,7 +4,7 @@ const homepage_projects = [
         name: "Mobile App Design",
         category: "UI Design",
         description: "Mobile app design for Cambodia-based fractionalized real estate trading platform.",
-        link: "",
+        link: "/ui-design/#ut-swap-mobile-app",
         image: {
             url: "/images/mockups/utswap-galaxy-s-21.png"
         },

@@ -42,7 +42,7 @@ const tool_logos = [
 
 const ui_design_projects = [
     {
-        id: "ut-swap",
+        id: "ut-swap-mobile-app",
         name: "Mobile Trading App Design",
         overview: 
 `
