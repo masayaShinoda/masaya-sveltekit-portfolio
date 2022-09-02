@@ -1,0 +1,24 @@
+@font-face {font-family: Metropolis-Regular; src: url(/fonts/Metropolis-Regular.otf)}
+@font-face {font-family: Metropolis-SemiBold; src: url(/fonts/Metropolis-SemiBold.otf)}
+@font-face {font-family: Metropolis-Bold; src: url(/fonts/Metropolis-Bold.otf)}
+@font-face {font-family: KhmerOSContent-Regular; src: url(/fonts/KhmerOSContent-Regular.ttf)}
+@font-face {font-family: KhmerOSContent-Bold; src: url(/fonts/KhmerOSContent-Bold.ttf)}
+
+html {
+    --font_primary: Metropolis-Regular;
+    --font_primary_semibold: Metropolis-SemiBold; 
+    --font_primary_bold: Metropolis-Bold;
+    --font_khmer: KhmerOSContent-Regular;
+    --font_khmer: KhmerOSContent-Bold;
+
+    --clr_primary: #003153;
+    --clr_secondary: #0077CC;
+
+    --content_max_width_desktop: min(100%, 72.5rem); 
+    --padding_horizontal_desktop: 1.25rem;
+
+    --padding_horizontal_mobile: 1rem;
+
+    --filter_clr_primary: invert(12%) sepia(98%) saturate(1426%) hue-rotate(183deg) brightness(95%) contrast(101%);
+    --filter_clr_secondary: invert(28%) sepia(91%) saturate(1680%) hue-rotate(186deg) brightness(96%) contrast(101%);
+}

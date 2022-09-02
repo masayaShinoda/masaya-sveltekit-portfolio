@@ -1,0 +1,74 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
+:lang(km) 	{
+  font-family: KhmerOSContent-Regular, sans-serif !important;
+  font-size: 100% !important;
+  line-height: 1.5 !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+h1 {
+    font-family: var(--font_primary_bold), sans-serif;
+    line-height: 1.15;
+} 
+h2, h3, h4, h5 {
+    font-family: var(--font_primary_semibold), sans-serif;
+    line-height: 1.24;
+} 
+  
+div, span, p, a, ul, ol, small, q, blockquote {
+    font-family: var(--font_primary), sans-serif;
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+h2 {
+    font-size: 2.441rem;
+}
+h3 {
+    font-size: 1.953rem;
+}
+h4 {
+    font-size: 1.563rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+div, span, p, a, ul, ol, q, blockquote {
+    font-size: 1rem;
+}
+p {
+    line-height: 1.6;
+}
+small {
+    font-size: .8rem;
+}
+
+
+/* Icons */
+.icons {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    background-size: contain;
+    display: inline-block;
+}
+.icons.icon__code {
+    background-image: url("data:image/svg+xml,%3C!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In --%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='10px' viewBox='0 0 10 10' style='overflow:visible;enable-background:new 0 0 10 10;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bclip-path:url(%23SVGID_2_);%7D .st1%7Bfill:%23FFFFFF;%7D .st2%7Bclip-path:url(%23SVGID_4_);%7D%0A%3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cg%3E%3Cdefs%3E%3Crect id='SVGID_1_' width='10' height='10'/%3E%3C/defs%3E%3CclipPath id='SVGID_2_'%3E%3Cuse xlink:href='%23SVGID_1_' style='overflow:visible;'/%3E%3C/clipPath%3E%3Cg class='st0'%3E%3Cpath class='st1' d='M5.7,1.9c-0.1,0-0.2,0-0.3,0.1S5.3,2.1,5.3,2.2L3.9,7.6c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.3,0.2,0.4,0.1 c0.2,0,0.3-0.2,0.3-0.3l1.4-5.3l0,0c0-0.1,0-0.3-0.1-0.4C6,1.9,5.8,1.9,5.7,1.9L5.7,1.9z M3.1,2.5c-0.1,0-0.2,0-0.3,0.1L0.2,4.7 l0,0C0.1,4.8,0,4.9,0,5c0,0.1,0.1,0.3,0.2,0.4l2.7,2.1l0,0c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2-0.1,0.3-0.2 c0.1-0.1,0.1-0.2,0.1-0.3c0-0.1-0.1-0.2-0.2-0.3L1.2,5l2.2-1.8c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1,0-0.2-0.1-0.3 C3.3,2.5,3.2,2.5,3.1,2.5L3.1,2.5z M6.9,2.4c-0.1,0-0.2,0.1-0.3,0.1S6.4,2.8,6.4,2.9c0,0.1,0.1,0.2,0.2,0.3L8.8,5L6.6,6.8 C6.5,6.8,6.5,6.9,6.4,7.1c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.2,0.3,0.2s0.2,0,0.3-0.1l2.7-2.1l0,0C9.9,5.2,10,5.1,10,5 c0-0.1-0.1-0.3-0.2-0.4L7.1,2.5l0,0C7.1,2.5,7,2.4,6.9,2.4L6.9,2.4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.icons.icon__explorer {
+    background-image: url("data:image/svg+xml,%3C!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In --%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='10px' viewBox='0 0 10 10' style='overflow:visible;enable-background:new 0 0 10 10;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bclip-path:url(%23SVGID_2_);%7D .st1%7Bfill:%23FFFFFF;%7D .st2%7Bclip-path:url(%23SVGID_4_);%7D%0A%3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cg%3E%3Cdefs%3E%3Crect id='SVGID_1_' width='10' height='10'/%3E%3C/defs%3E%3CclipPath id='SVGID_2_'%3E%3Cuse xlink:href='%23SVGID_1_' style='overflow:visible;'/%3E%3C/clipPath%3E%3Cg class='st0'%3E%3Cpath class='st1' d='M9.4,1.3H0.6C0.3,1.3,0,1.5,0,1.9v6.3c0,0.3,0.3,0.6,0.6,0.6h8.8c0.3,0,0.6-0.3,0.6-0.6V1.9 C10,1.5,9.7,1.3,9.4,1.3z M3.1,1.9h0.6v0.6H3.1V1.9z M1.9,1.9h0.6v0.6H1.9V1.9z M0.6,1.9h0.6v0.6H0.6V1.9z M9.4,8.1H0.6v-5h8.8 V8.1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.icons.icon__pen {
+    background-image: url("data:image/svg+xml,%3C!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In --%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='10px' viewBox='0 0 10 10' style='overflow:visible;enable-background:new 0 0 10 10;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bclip-path:url(%23SVGID_2_);%7D .st1%7Bfill:%23FFFFFF;%7D .st2%7Bclip-path:url(%23SVGID_4_);%7D%0A%3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cg%3E%3Cdefs%3E%3Crect id='SVGID_1_' width='10' height='10'/%3E%3C/defs%3E%3CclipPath id='SVGID_2_'%3E%3Cuse xlink:href='%23SVGID_1_' style='overflow:visible;'/%3E%3C/clipPath%3E%3Cg class='st0'%3E%3Cpath class='st1' d='M8.1,0v0.8H1.9V0H0v1.9h0.8v6.2H0V10h1.9V8.1H1.1V1.9h0.8V1.1h6.1v0.8H10V0H8.1z'/%3E%3Cpath class='st1' d='M7.1,10L5.9,8.8l2.9-2.9L10,7.1L7.1,10z'/%3E%3Cpath class='st1' d='M8.2,6L7.4,3.7L3.4,3.1l2.2,2.2c0.3-0.1,0.6-0.1,0.8,0.1c0.3,0.3,0.3,0.7,0,1s-0.7,0.3-1,0 C5.2,6.2,5.1,5.8,5.3,5.6L3.1,3.4l0.6,4.1L6,8.2L8.2,6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
