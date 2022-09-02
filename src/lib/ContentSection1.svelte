@@ -104,7 +104,7 @@
         background-color: #ececec;
     }
     .section__left, .section__right {
-        padding: 5rem var(--padding_horizontal_mobile);
+        padding: 1.25rem var(--padding_horizontal_mobile);
         width: 100%;
         max-width: 100%;
         

@@ -97,7 +97,7 @@ h2 {
     display: flex;
     align-items: center;
     font-size: 1;
-    font-family: var(--font_primary_semibold);
+    font-family: var(--font_primary);
     color: var(--clr_secondary);
     text-decoration: none;
     margin-right: 1rem;
@@ -169,7 +169,7 @@ form input {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: .5rem .5rem;
+    padding: .75rem .5rem;
     margin-top: .5rem;
     
     outline: none; border: none;
@@ -201,10 +201,10 @@ form textarea:focus {
 
 form button {
     border: none; outline: none;
-    padding: 1rem;
+    padding: .75rem 1rem;
 
     font-size: 1rem;
-    font-family: var(--font_primary);
+    font-family: var(--font_primary_semibold);
     background-color: var(--clr_secondary);
     color: #fff;
     border-radius: 100vmax;
