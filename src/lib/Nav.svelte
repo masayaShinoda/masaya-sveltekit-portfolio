@@ -186,6 +186,11 @@ function toggleMobileNav() {
         margin: 0 auto;
         /* max-width: 10rem; */
     }
+    @media screen and (max-width: 48em) {
+        .logo_link img {
+            max-width: 10rem;
+        }
+    }
 
     .mobile_nav_container {
         margin-left: -100vw;
