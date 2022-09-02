@@ -30,7 +30,7 @@ const homepage_projects = [
 ]
 </script>
 
-<section class="homepage_projects_section_container">
+<section id="projects" class="homepage_projects_section_container">
     <h3>Projects</h3>
     <p>Some of the projects that I have worked on:</p>
     <div class="homepage_projects_content">

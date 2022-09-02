@@ -7,7 +7,7 @@
             <h2 class="title">
                 I help ideas achieve a quality online presence.
             </h2>
-            <a href="/" class="action_btn">
+            <a href="#projects" class="action_btn">
                 See my Projects →
             </a>
         </span>
