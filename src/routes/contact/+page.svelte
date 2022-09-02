@@ -91,6 +91,7 @@ h2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 .socials_container a {
     display: flex;
@@ -100,6 +101,7 @@ h2 {
     color: var(--clr_secondary);
     text-decoration: none;
     margin-right: 1.25rem;
+    margin-bottom: .5rem;
 }
 .socials_container a:hover {
     text-decoration: underline;
@@ -171,7 +173,7 @@ form input {
     margin-top: .5rem;
     
     outline: none; border: none;
-    border: 1px solid #ececec;
+    border: 1px solid rgba(0,0,0,.25);
     border-radius: .125rem;
 
     font-family: var(--font_primary);
@@ -186,7 +188,7 @@ form textarea {
     margin-top: .5rem;
 
     
-    border: 1px solid #ececec;
+    border: 1px solid rgba(0,0,0,.25);
     border-radius: .125rem;
     min-height: 7.5rem;
 

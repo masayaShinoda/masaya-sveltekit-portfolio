@@ -219,7 +219,7 @@ After receiving a document of content from the client, I designed and coded the 
 }
 @media screen and (max-width: 48em) {
     .top_section {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 .heading_container {
@@ -257,6 +257,13 @@ After receiving a document of content from the client, I designed and coded the 
     object-fit: contain;
     filter: brightness(0) opacity(0.375) var(--filter_clr_secondary);
 }
+@media screen and (max-width: 48em) {
+    .top_section > img {
+        max-width: 20%;
+        margin-bottom: 1.5rem;
+        margin-right: auto;
+    }
+}
 
 
 .portf_item_section_container {
@@ -291,7 +298,10 @@ After receiving a document of content from the client, I designed and coded the 
 
     /* outline: 1px solid green; */
 }
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 48em) {
+    .portf_item_section {
+        padding: 2.5rem var(--padding_horizontal_mobile);
+    }
     .portf_item_content {
         flex-direction: column;
         justify-content: flex-start;
@@ -312,6 +322,7 @@ After receiving a document of content from the client, I designed and coded the 
 }
 @media screen and (max-width: 48em) {
     .proj_content {
+        width: 100%;
         max-width: 100%;
     }    
 }
@@ -327,6 +338,14 @@ After receiving a document of content from the client, I designed and coded the 
     display: flex; align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 48em) {
+    .upper_half,
+    .bottom_half {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
 }
 
 .name {
@@ -355,9 +374,19 @@ After receiving a document of content from the client, I designed and coded the 
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 1rem;
-    max-width: min(45ch, 49%);
-    width: 49%;
+    max-width: min(45ch, 48.75%);
+    width: 48.75%;
 } 
+
+@media screen and (max-width: 48em) {
+    .overview, 
+    .responsibilities,
+    .tools,
+    .duration {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
 .tools img {
     object-fit: contain;
@@ -408,4 +437,13 @@ After receiving a document of content from the client, I designed and coded the 
         -webkit-backdrop-filter: blur(1rem);
     }
 }
+
+@media screen and (max-width: 48em) {
+    .proj_img_container {
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+        margin-bottom: -0.75rem;
+    }
+}
+
 </style>
