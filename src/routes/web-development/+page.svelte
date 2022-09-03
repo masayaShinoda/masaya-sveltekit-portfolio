@@ -300,7 +300,8 @@ After receiving a document of content from the client, I designed and coded the 
 }
 @media screen and (max-width: 48em) {
     .portf_item_section {
-        padding: 2.5rem var(--padding_horizontal_mobile);
+        padding: 0 var(--padding_horizontal_mobile);
+        /* outline: 1px solid red; */
     }
     .portf_item_content {
         flex-direction: column;
@@ -324,6 +325,7 @@ After receiving a document of content from the client, I designed and coded the 
     .proj_content {
         width: 100%;
         max-width: 100%;
+        padding: 2.5rem .75rem 1.5rem .75rem;
     }    
 }
 
@@ -441,6 +443,8 @@ After receiving a document of content from the client, I designed and coded the 
 @media screen and (max-width: 48em) {
     .proj_img_container {
         width: 100%;
+        max-height: 17.5rem;
+        /* max-height: 15rem; */
         border-radius: 0.5rem 0.5rem 0 0;
         margin-bottom: -0.75rem;
     }

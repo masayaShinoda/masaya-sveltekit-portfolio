@@ -96,6 +96,9 @@
 @media screen and (max-width: 48em) {
     .section__left {
         background-color: var(--clr_primary);
+        min-height: 26.25rem;
+        max-height: 50rem;
+        /* outline: 1px solid red; */
     }
     .section__left p {
         max-width: 50ch;
