@@ -412,9 +412,9 @@ After receiving a document of content from the client, I designed and coded the 
 
 
 .proj_img_container {
-    width: 24rem;
-    height: 24rem;
-    padding: 1.5rem;
+    width: 26.25rem;
+    height: 26.25rem;
+    padding: 2.5rem;
     border-radius: 1rem 0 0 1rem;
     background-color: rgba(255,255,255,.25);
     

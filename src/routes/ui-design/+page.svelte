@@ -389,9 +389,9 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
     
     
     .proj_img_container {
-        width: 24rem;
-        height: 24rem;
-        padding: 1.5rem;
+        width: 26.25rem;
+        height: 26.25rem;
+        padding: 2.5rem;
         border-radius: 1rem 0 0 1rem;
         background-color: rgba(255,255,255,.25);
         
