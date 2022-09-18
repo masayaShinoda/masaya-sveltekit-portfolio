@@ -88,8 +88,9 @@ p {
     width: 100%;
     max-width: 100%;
     padding: 5rem 0;
-    background-color: var(--clr_secondary);
-    background-image: linear-gradient(135deg, var(--clr_secondary), var(--clr_primary));
+    /* background-color: var(--clr_secondary); */
+    background-color: var(--clr_primary);
+    background-image: linear-gradient(135deg, var(--clr_primary), var(--clr_primary_shade_a));
 }
 .homepage_projects_content {
     display: flex;

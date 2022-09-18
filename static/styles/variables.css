@@ -12,6 +12,7 @@ html {
     --font_khmer: KhmerOSContent-Bold;
 
     --clr_primary: #003153;
+    --clr_primary_shade_a: #004F86;
     --clr_secondary: #0077CC;
 
     --content_max_width_desktop: min(100%, 72.5rem); 

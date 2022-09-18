@@ -246,8 +246,8 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
     
     
     .portf_item_section_container {
-        background-color: var(--clr_secondary);
-        background-image: linear-gradient(135deg, var(--clr_secondary), var(--clr_primary));
+        background-color: var(--clr_primary);
+        background-image: linear-gradient(135deg, var(--clr_primary), var(--clr_primary_shade_a));
         overflow: hidden;
     }
     .portf_item_section_container h2 {

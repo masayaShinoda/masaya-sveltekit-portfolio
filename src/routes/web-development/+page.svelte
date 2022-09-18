@@ -267,8 +267,8 @@ After receiving a document of content from the client, I designed and coded the 
 
 
 .portf_item_section_container {
-    background-color: var(--clr_secondary);
-    background-image: linear-gradient(135deg, var(--clr_secondary), var(--clr_primary));
+    background-color: var(--clr_primary);
+    background-image: linear-gradient(135deg, var(--clr_primary), var(--clr_primary_shade_a));
     overflow: hidden;
 }
 .portf_item_section_container h2 {
