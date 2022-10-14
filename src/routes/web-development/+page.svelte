@@ -85,9 +85,6 @@ After receiving a document of content from the client, I designed and coded the 
 
 </script>
 
-<svelte:head>
-    <title>Web Development | Masaya Shida</title>
-</svelte:head>
 <div class="web_dev_container">
     <div class="content">
         <section class="top_section">
@@ -219,7 +216,7 @@ After receiving a document of content from the client, I designed and coded the 
 }
 @media screen and (max-width: 48em) {
     .top_section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 .heading_container {
@@ -257,20 +254,28 @@ After receiving a document of content from the client, I designed and coded the 
     object-fit: contain;
     filter: brightness(0) opacity(0.375) var(--filter_clr_secondary);
 }
-@media screen and (max-width: 48em) {
-    .top_section > img {
-        max-width: 20%;
-        margin-bottom: 1.5rem;
-        margin-right: auto;
-    }
-}
 
 
 .portf_item_section_container {
+    /* background-color: var(--clr_secondary); */
     background-color: var(--clr_primary);
-    background-image: linear-gradient(135deg, var(--clr_primary), var(--clr_primary_shade_a));
+    background-image: linear-gradient(35deg, var(--clr_secondary), var(--clr_primary));
+
     overflow: hidden;
+
+    max-width: min(100%, calc(var(--content_max_width_desktop) * 1.125));
+    border-radius: 1rem;
+    margin: 0 auto;
+    box-shadow: inset 0 0 .5rem .5rem rgba(0,0,0,.125);
+
+    margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 48em) {
+    .portf_item_section_container {
+        border-radius: none;
+    }
+}
+
 .portf_item_section_container h2 {
     color: #fff;
     width: 100%;
@@ -282,7 +287,7 @@ After receiving a document of content from the client, I designed and coded the 
     padding: 2.5rem var(--padding_horizontal_desktop);   
     /* width: calc(100% - calc(var(--padding_horizontal_desktop) * 2)); */
     width: 100%; 
-    max-width: 100%;
+    /* max-width: 100%; */
     margin: 0 auto;
 
     margin-bottom: 2.5rem;
@@ -298,10 +303,9 @@ After receiving a document of content from the client, I designed and coded the 
 
     /* outline: 1px solid green; */
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
     .portf_item_section {
-        padding: 0 var(--padding_horizontal_mobile);
-        /* outline: 1px solid red; */
+        padding: 2.5rem 0;   
     }
     .portf_item_content {
         flex-direction: column;
@@ -323,10 +327,15 @@ After receiving a document of content from the client, I designed and coded the 
 }
 @media screen and (max-width: 48em) {
     .proj_content {
-        width: 100%;
         max-width: 100%;
-        padding: 2.5rem .75rem 1.5rem .75rem;
+        border-radius: 0 0 1rem 1rem;
     }    
+}
+@media screen and (max-width: 64em) {
+    .proj_content {
+        max-width: 80%;
+        border-radius: 0 0 1rem 1rem;
+    }
 }
 
 
@@ -340,14 +349,6 @@ After receiving a document of content from the client, I designed and coded the 
     display: flex; align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 1.5rem;
-}
-@media screen and (max-width: 48em) {
-    .upper_half,
-    .bottom_half {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
 }
 
 .name {
@@ -376,19 +377,9 @@ After receiving a document of content from the client, I designed and coded the 
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 1rem;
-    max-width: min(45ch, 48.75%);
-    width: 48.75%;
+    max-width: min(45ch, 49%);
+    width: 49%;
 } 
-
-@media screen and (max-width: 48em) {
-    .overview, 
-    .responsibilities,
-    .tools,
-    .duration {
-        width: 100%;
-        max-width: 100%;
-    }
-}
 
 .tools img {
     object-fit: contain;
@@ -412,15 +403,36 @@ After receiving a document of content from the client, I designed and coded the 
 
 
 .proj_img_container {
-    width: 26.25rem;
-    height: 26.25rem;
-    padding: 2.5rem;
-    border-radius: 1rem 0 0 1rem;
+    width: 24rem;
+    height: 24rem;
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 0 0;
     background-color: rgba(255,255,255,.25);
     
     border: 1px solid rgba(255,255,255,0.5);
     /* margin: auto 0; */
 }
+@media screen and (max-width: 48em) {
+    .proj_img_container {
+        border-radius: 1rem 1rem 0 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 64em) {
+    .proj_img_container {
+        width: 80%;
+        max-width: 80%;
+        padding: 2.5rem 1.5rem;
+        /* outline: 1px solid red; */
+    }
+}
+@media screen and (min-width: 64em) {
+    .proj_img_container {
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+
 .proj_img_container img {
     object-fit: contain;
     object-position: center;
@@ -439,15 +451,4 @@ After receiving a document of content from the client, I designed and coded the 
         -webkit-backdrop-filter: blur(1rem);
     }
 }
-
-@media screen and (max-width: 48em) {
-    .proj_img_container {
-        width: 100%;
-        max-height: 17.5rem;
-        /* max-height: 15rem; */
-        border-radius: 0.5rem 0.5rem 0 0;
-        margin-bottom: -0.75rem;
-    }
-}
-
 </style>

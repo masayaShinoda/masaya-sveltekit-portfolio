@@ -4,7 +4,7 @@ const homepage_projects = [
         name: "Mobile App Design",
         category: "UI Design",
         description: "Mobile app design for Cambodia-based fractionalized real estate trading platform.",
-        link: "/ui-design/#ut-swap-mobile-app",
+        link: "",
         image: {
             url: "/images/mockups/utswap-galaxy-s-21.png"
         },
@@ -30,7 +30,7 @@ const homepage_projects = [
 ]
 </script>
 
-<section id="projects" class="homepage_projects_section_container">
+<section class="homepage_projects_section_container">
     <h3>Projects</h3>
     <p>Some of the projects that I have worked on:</p>
     <div class="homepage_projects_content">
@@ -69,6 +69,7 @@ const homepage_projects = [
 
 <style>
 h3 {
+    /* color: var(--clr_primary); */
     color: #fff;
     margin-bottom: 1rem;
 }
@@ -86,11 +87,20 @@ p {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 100%;
+    max-width: min(100%, calc(var(--content_max_width_desktop) * 1.125));
+    margin: 0 auto;
+    border-radius: 1rem;
+
     padding: 5rem 0;
+
     /* background-color: var(--clr_secondary); */
     background-color: var(--clr_primary);
-    background-image: linear-gradient(135deg, var(--clr_primary), var(--clr_primary_shade_a));
+    background-image: linear-gradient(35deg, var(--clr_secondary), var(--clr_primary));
+}
+@media screen and (max-width: 48em) {
+    .homepage_projects_section_container {
+        border-radius: 0;
+    }
 }
 .homepage_projects_content {
     display: flex;
@@ -98,7 +108,8 @@ p {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 auto;
-    max-width: min(100%, var(--content_max_width_desktop));
+    max-width: min(100%, calc(var(--content_max_width_desktop) * 1.5));
+
     padding: 0 var(--padding_horizontal_desktop);
 }
 @media screen and (max-width: 48em) {
