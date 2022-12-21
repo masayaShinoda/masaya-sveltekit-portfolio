@@ -42,6 +42,25 @@ const tool_logos = [
 
 const web_projects = [
     {
+        id: "ut-market-website",
+        name: "Digital Product Website Development",
+        overview: 
+`
+[utmarket.io](https://utmarket.io) is the landing page and informational website for all products related to the UT Market digital platform. 
+`,
+        responsibilities:
+`
+After presenting my UI screens to the team, I got to work coding the new website using NextJS, which was ideal for its SSG abilities, pleasant dev experience, SEO, and performance (it got a [100 performance score](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Futmarket.io%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext) on Google Lighthouse!). I also manage the domain, hosting, and CMS.
+`,
+        tools: [
+            "HTML & CSS",
+            "NextJS",
+        ],
+        duration: "Twelve Days",
+        link: "https://utmarket.io",
+        image: "/images/mockups/utmarket-ui-showcase.png",
+    },
+    {
         id: "zillion-united",
         name: "Corporate Website for Zillion United",
         overview: "An interactive server-side rendered webpage with WordPress as the CMS.",
@@ -88,7 +107,7 @@ After receiving a document of content from the client, I designed and coded the 
 <div class="content_page_container">
     <div class="content">
         <section class="top_section">
-            <span class="animate__animated animate__fadeInLeft animate__fast">
+            <span>
                 <span class="heading_container">
                     <!-- <i class="icons icon__code" /> -->
                     <h3>Web Development</h3>
@@ -106,7 +125,6 @@ After receiving a document of content from the client, I designed and coded the 
             alt="decorative icon"
             width="240"
             height="180"
-            class="animate__animated animate__fadeInRight"
             loading="lazy"
             />
         </section>

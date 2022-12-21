@@ -42,6 +42,25 @@ const tool_logos = [
 
 const ui_design_projects = [
     {
+        id: "ut-market-website",
+        name: "Digital Product Website Design",
+        overview: 
+`
+[utmarket.io](https://utmarket.io) is the landing page and informational website for all products related to the UT Market digital platform. 
+`,
+        responsibilities:
+`
+After discussions with the marketing and business teams on what contents and features are needed on the website, I was responsible for designing the UI screens and some illustrations to best welcome new visitors to our site.  
+`,
+        tools: [
+            "Figma",
+            "Adobe Illustrator",
+        ],
+        duration: "Ten Days",
+        link: "https://www.figma.com/file/KlFsmM3NkcZse94OdllZ9h/utmarket.io?node-id=219%3A2",
+        image: "/images/mockups/utmarket-ui-showcase.png",
+    },
+    {
         id: "ut-market-app",
         name: "Mobile Trading App Design",
         overview: 
@@ -70,7 +89,7 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
 <div class="content_page_container">
     <div class="content">
         <section class="top_section">
-            <span class="animate__animated animate__fadeInLeft animate__fast">
+            <span>
                 <span class="heading_container">
                     <!-- <i class="icons icon__explorer" /> -->
                     <h3>User Interface Design</h3>
@@ -85,7 +104,6 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
             alt="decorative icon"
             width="240"
             height="180"
-            class="animate__animated animate__fadeInRight"
             loading="lazy"
             />
         </section>

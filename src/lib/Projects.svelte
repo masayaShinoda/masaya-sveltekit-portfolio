@@ -1,9 +1,30 @@
 <script>
+
+
 const homepage_projects = [
+    {
+        name: "Digital Product Website",
+        category: "Web Dev + UI Design",
+        description: "Informational website design and development for Cambodia-based fractionalized real estate trading platform UT Market.",
+        // link: "/ui-design/#ut-market-app",
+        links: [
+            {
+                name: "Design",
+                url: "/ui-design/#ut-market-website",
+            },
+            {
+                name: "Dev",
+                url: "/web-development/#ut-market-website",
+            }
+        ],
+        image: {
+            url: "/images/mockups/utmarket-ui-showcase.png"
+        },
+    },
     {
         name: "Mobile App Design",
         category: "UI Design",
-        description: "Mobile app design for Cambodia-based fractionalized real estate trading platform.",
+        description: "Mobile app design for Cambodia-based fractionalized real estate trading platform UT Market.",
         link: "/ui-design/#ut-market-app",
         image: {
             url: "/images/mockups/android-ios-mockups-result.png"
@@ -53,14 +74,22 @@ const homepage_projects = [
                         <i class="icons icon__explorer" />
                     {:else if project.category === "Graphic Design"}
                         <i class="icons icon__pen" />
-                    {:else}
-                        {null}
+                    {:else if project.category === "Web Dev + UI Design"}
+                        <i class="icons icon__code" />
+                        <i class="icons icon__explorer" />                    
                     {/if}
                     {project.category}
                 </p>
                 <h4 class="project_name">{project.name}</h4>
                 <p class="project_desc">{project.description}</p>
-                <a href={project.link} class="project_link">Details →</a>
+                {#if project.link}
+                    <a href={project.link} class="project_link">Details →</a>
+                {/if}
+                {#if project.links}
+                    {#each project.links as link}
+                        <a href={link.url} class="project_link">{link.name} →</a>
+                    {/each}
+                {/if}
             </span>
         </div>
     {/each}
@@ -215,6 +244,9 @@ p {
     font-family: var(--font_primary_semibold);
     padding: .125rem 0;
     text-decoration: none;
+}
+.project_details .project_link:not(:last-of-type) {
+    margin-right: .75rem;
 }
 .project_details .project_link:hover {
     text-decoration: underline;
