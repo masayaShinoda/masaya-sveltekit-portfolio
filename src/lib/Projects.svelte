@@ -252,12 +252,22 @@ p {
     text-decoration: underline;
 }
 @media screen and (max-width: 48em) {
+    .project_details .project_link:not(:last-of-type) {
+        margin-right: 0;
+    }
     .project_details .project_link {
-        display: flex;
+        display: inline-flex;
         align-items: center; 
         justify-content: center;
         /* justify-content: flex-end; */
+    }
+    .project_details .project_link:only-of-type {
         width: 100%;
+    }
+    .project_details .project_link:not(:only-of-type) {
+        width: 50%;
+        margin-bottom: 1rem;
+        justify-content: flex-start;
     }
 }
 </style>
