@@ -201,7 +201,7 @@ form textarea:focus {
 
 form button {
     border: none; outline: none;
-    padding: .75rem 1rem;
+    padding: 1rem 1rem;
 
     font-size: 1rem;
     font-family: var(--font_primary_semibold);

@@ -13,7 +13,7 @@ const homepage_projects = [
                 url: "/ui-design/#ut-market-website",
             },
             {
-                name: "Dev",
+                name: "Development",
                 url: "/web-development/#ut-market-website",
             }
         ],
@@ -51,7 +51,7 @@ const homepage_projects = [
 ]
 </script>
 
-<section class="homepage_projects_section_container">
+<section id="projects" class="homepage_projects_section_container">
     <h3>Projects</h3>
     <p>Some of the projects that I have worked on:</p>
     <div class="homepage_projects_content">
@@ -124,7 +124,7 @@ p {
 
     /* background-color: var(--clr_secondary); */
     background-color: var(--clr_primary);
-    background-image: linear-gradient(35deg, var(--clr_secondary), var(--clr_primary));
+    background-image: linear-gradient(35deg, var(--clr_primary_shade_a), var(--clr_primary));
 }
 @media screen and (max-width: 48em) {
     .homepage_projects_section_container {
@@ -158,7 +158,7 @@ p {
     background-color: rgba(255,255,255,.0375);
 
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border: 1px solid rgba(255,255,255,.175);
     /* outline: 1px solid red; */
 }
@@ -238,18 +238,33 @@ p {
     margin-bottom: 1.75rem;
 }
 .project_details .project_link {
+    /* color: var(--clr_primary); */
+    /* background-color: #ececec; */
     color: #fff;
+    background-color: var(--clr_secondary);
 
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: var(--font_primary_semibold);
-    padding: .125rem 0;
+    padding: .875rem 1.25rem;
     text-decoration: none;
+    /* border-radius: .75rem; */
+    border-radius: 100vmax;
+    text-align: center;
+    transition: 200ms ease-out filter;
+    border: 1px solid rgba(255,255,255,.25);
+    /* box-shadow: 0 .5rem .5rem rgba(0,0,0,.125); */
+}
+@media screen and (max-width: 48em) {
+    .project_details .project_link {
+        padding: 1rem 1.5rem;
+    }
 }
 .project_details .project_link:not(:last-of-type) {
     margin-right: .75rem;
 }
 .project_details .project_link:hover {
-    text-decoration: underline;
+    filter: brightness(1.1);
+    /* text-decoration: underline; */
 }
 @media screen and (max-width: 48em) {
     .project_details .project_link:not(:last-of-type) {
@@ -265,9 +280,9 @@ p {
         width: 100%;
     }
     .project_details .project_link:not(:only-of-type) {
-        width: 50%;
+        width: 100%;
         margin-bottom: 1rem;
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
 </style>
