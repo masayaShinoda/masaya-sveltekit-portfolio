@@ -53,7 +53,7 @@ const homepage_projects = [
 
 <section id="projects" class="homepage_projects_section_container">
     <h3>Projects</h3>
-    <p>Some of the projects that I have worked on:</p>
+    <p>Some of the projects that I have worked on.</p>
     <div class="homepage_projects_content">
     {#each homepage_projects as project}
         <div class="project_box">
@@ -125,6 +125,8 @@ p {
     /* background-color: var(--clr_secondary); */
     background-color: var(--clr_primary);
     background-image: linear-gradient(35deg, var(--clr_primary_shade_a), var(--clr_primary));
+
+    margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 48em) {
     .homepage_projects_section_container {

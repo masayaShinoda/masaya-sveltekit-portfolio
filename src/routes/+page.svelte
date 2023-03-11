@@ -11,5 +11,4 @@ import Projects from "$lib/Projects.svelte";
 <Hero />
 <ContentSection1 />
 <ContentSection2 />
-
 <Projects />

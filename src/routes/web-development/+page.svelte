@@ -56,28 +56,28 @@ After presenting my UI screens to the team, I got to work coding the new website
             "HTML & CSS",
             "NextJS",
         ],
-        duration: "Twelve Days",
+        duration: "Three weeks for the first live version.",
         link: "https://utmarket.io",
         image: "/images/mockups/utmarket-ui-showcase.png",
     },
-    {
-        id: "zillion-united",
-        name: "Corporate Website for Zillion United",
-        overview: "An interactive server-side rendered webpage with WordPress as the CMS.",
-        responsibilities:
-`
-I was responsible for coding and WordPress configuration.
+//     {
+//         id: "zillion-united",
+//         name: "Corporate Website for Zillion United",
+//         overview: "An interactive server-side rendered webpage with WordPress as the CMS.",
+//         responsibilities:
+// `
+// I was responsible for coding and WordPress configuration.
 
-The design of the webpage was done by [Bread Design Studio](https://www.breaddesignstudio.com).
-`,
-        tools: [
-            "HTML & CSS",
-            "NextJS",
-        ],
-        duration: "Two weeks",
-        link: "https://zillionunited.io",
-        image: "/images/mockups/z1-corporate_result.png",
-    },
+// The design of the webpage was done by [Bread Design Studio](https://www.breaddesignstudio.com).
+// `,
+//         tools: [
+//             "HTML & CSS",
+//             "NextJS",
+//         ],
+//         duration: "Two weeks",
+//         link: "https://zillionunited.io",
+//         image: "/images/mockups/z1-corporate_result.png",
+//     },
     {
         id: "good-time-hospitality-group",
         name: "Website for Hospitality Company",
@@ -110,7 +110,7 @@ After receiving a document of content from the client, I designed and coded the 
             <span>
                 <span class="heading_container">
                     <!-- <i class="icons icon__code" /> -->
-                    <h3>Web Development</h3>
+                    <h2>Web Development</h2>
                 </span>
                 <p>
                 I see the web as an important democratizing platform for people around the world—especially those from underprivileged backgrounds—to share their ideas and express their entrepreneurial spirit.
@@ -130,7 +130,7 @@ After receiving a document of content from the client, I designed and coded the 
         </section>
     </div>
     <div class="portf_item_section_container">
-        <h2>Portfolio</h2>
+        <h3>Portfolio</h3>
         {#each web_projects as project}
             <section class="portf_item_section" id={project.id}>
                 <div class="portf_item_content">

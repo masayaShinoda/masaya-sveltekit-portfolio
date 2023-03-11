@@ -54,6 +54,7 @@
 .content_section_2_container {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 1.5rem;
 }
 .content {
     display: flex;

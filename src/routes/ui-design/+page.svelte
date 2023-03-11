@@ -92,7 +92,7 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
             <span>
                 <span class="heading_container">
                     <!-- <i class="icons icon__explorer" /> -->
-                    <h3>User Interface Design</h3>
+                    <h2>User Interface Design</h2>
                 </span>
                 <p>
                 I understood that learning frontend programming wasn't enough to create good looking and user-friendly apps and websites so I taught myself UI design as well.
@@ -109,7 +109,7 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
         </section>
     </div>
     <div class="portf_item_section_container">
-        <h2>Portfolio</h2>
+        <h3>Portfolio</h3>
         {#each ui_design_projects as project}
             <section class="portf_item_section" id={project.id}>
                 <div class="portf_item_content">
