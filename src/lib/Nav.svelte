@@ -1,7 +1,13 @@
 <script>
 import { page } from '$app/stores'
-import { onMount } from 'svelte'
+// import { onMount } from 'svelte'
 import { writable } from 'svelte/store'
+
+function toggleLocale(e) {
+    e.preventDefault()
+    console.log(e)
+    // console.log(locales)
+}
 
 const mobileNavActive = writable(false)
 
@@ -33,6 +39,8 @@ function toggleMobileNav() {
             />
         </a>
         <nav>
+            <p>
+            </p>
             <a 
             href="/web-development"
             class={`${$page.url.pathname === "/web-development" ? "link__active" : null}`}
@@ -47,6 +55,7 @@ function toggleMobileNav() {
             >Contact</a>
             <a href="https://blog.masayashida.com">
             Blog</a>
+            <!-- <button on:click={toggleLocale}>Toggle Language</button> -->
         </nav>
         <button 
         class={`mobile_nav_btn ${isActive ? "close" : null}`}
@@ -88,7 +97,7 @@ function toggleMobileNav() {
     width: 100%;
     max-width: min(100%, var(--content_max_width_desktop));
 
-    padding: .5rem 0;
+    padding: .5rem var(--padding_horizontal_desktop);
     margin: 0 auto;
 }
 .mobile_nav_btn {
@@ -119,6 +128,11 @@ function toggleMobileNav() {
 .nav_content nav a.link__active {
     color: var(--clr_secondary);
     /* border-bottom: 1px solid var(--clr_secondary); */
+}
+@media screen and (max-width: 64em) {
+    .nav_content {
+        padding: .5rem 0;
+    }
 }
 @media screen and (max-width: 48em) {
     .nav_content {

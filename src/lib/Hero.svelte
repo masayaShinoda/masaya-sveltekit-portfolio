@@ -13,13 +13,12 @@
         </span>
         <!-- <img src="/images/shinjang.png" alt="Hero" width="200" height="400" style="object-fit: contain" /> -->
         <img 
-        src="/images/g14.png"
+        src="/images/g14-shadow.png"
         alt="ASUS G14 laptop, decorative."
         width="320"
         height="240"
         />
     </div>
-
 </section>
 
 
@@ -37,10 +36,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 2.5rem);
+    /* width: calc(100% - 2.5rem); */
     max-width: var(--content_max_width_desktop);
     margin: 0 auto;
     padding: 0 var(--padding_horizontal_desktop);
+}
+@media screen and (max-width: 85.375em) {
+    .hero_content {
+        max-width: calc(100% - 5.75em);
+        /* outline: 1px solid red; */
+    }
+}
+@media screen and (max-width: 64em) {
+    .hero_content {
+        max-width: 95%;
+        padding: 0;
+    }
 }
 @media screen and (max-width: 48em) {
     .hero_container {
@@ -56,7 +67,7 @@
     }
 }
 .hero_content > span {
-    max-width: min(50ch, 40%);
+    max-width: min(40ch, 45%);
 }
 .hero_content > img {
     max-width: 40%;
@@ -69,6 +80,7 @@
     }
     .hero_content > img {
         margin: 0 auto;
+        max-width: 60%;
     }
 }
 .subtitle {

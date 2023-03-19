@@ -116,7 +116,7 @@ p {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: min(100%, calc(var(--content_max_width_desktop) * 1.125));
+    max-width: min(95%, calc(var(--content_max_width_desktop) * 1.125));
     margin: 0 auto;
     border-radius: 1rem;
 
@@ -128,9 +128,15 @@ p {
 
     margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 64em) {
+    .homepage_projects_section_container {
+        max-width: calc(100% - 1rem);
+        /* outline: 1px solid red; */
+    }
+}
 @media screen and (max-width: 48em) {
     .homepage_projects_section_container {
-        border-radius: 0;
+        /* border-radius: 0; */
     }
 }
 .homepage_projects_content {

@@ -3,13 +3,14 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
 
 :lang(km) 	{
-  font-family: KhmerOSContent-Regular, sans-serif !important;
-  font-size: 100% !important;
-  line-height: 1.5 !important;
+    font-size: var(--font_khmer), sans-serif;
+    font-size: 100% !important;
+    line-height: 1.5 !important;
 }
 
 * {
     box-sizing: border-box;
+    font-family: var(--font_primary), var(--font_khmer), sans-serif;
 }
 
 body {

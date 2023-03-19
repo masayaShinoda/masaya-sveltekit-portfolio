@@ -14,10 +14,6 @@
             />
         </div>
     </div>
-    <div class="bg_decorative">
-        <div></div>
-        <div></div>
-    </div>
 </section>
 
 <style>
@@ -30,33 +26,21 @@
     min-height: 30rem;
 }
 .content {
+    width: 100%;
+    max-width: min(calc(var(--content_max_width_desktop) * 1.125), 95%);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: var(--content_max_width_desktop);
     /* padding: 5rem 0; */
     min-height: 30rem;
-    
-    padding: 0 var(--padding_horizontal_desktop) 0 var(--padding_horizontal_desktop);
+    /* outline: 1px solid red; */
 }
-.bg_decorative {
-    display: flex;
-    width: 100%;
-    height: 30rem;
-    justify-content: space-between;
-    position: absolute;
-    left: 0;
-    z-index: -25;
-}
-.bg_decorative > div {
-    width: 50%;
-}
-.bg_decorative > div:first-of-type {
-    background-color: var(--clr_primary);
-}
-.bg_decorative > div:last-of-type {
-    background-color: #ececec;
+@media screen and (max-width: 64em) {
+    .content {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 48em) {
     .content {
@@ -68,43 +52,63 @@
         /* padding: 5rem 0; */
         
     }
-    
-    .bg_decorative {
-        display: none;
-    }
-    
 }
 
 
 .section__left {
-    max-width: 40%;
+    width: 100%;
+    max-width: 50%;
+    min-height: 30rem;
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-color: var(--clr_primary);
+
+    padding: 0 5.75rem;
+    border-radius: 1rem 0 0 1rem;
 }
 .section__left p {
     margin-bottom: 1rem;
+    max-width: min(40ch, 100%);
 }
 .section__right {
-    max-width: 40%;
+    width: 100%;
+    max-width: 50%;
+    min-height: 30rem;
     display: flex; 
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #ececec;
+    
+    padding: 0 2rem;
+    border-radius: 0 1rem 1rem 0;
 }
+
+@media screen and (max-width: 85.375em) {
+    .section__left {
+        padding: 0 2.5rem;
+    }
+}
+@media screen and (max-width: 64em) {
+    .section__left, .section__right {
+        border-radius: 0;
+    }
+    .section__left {
+        padding: 0 1.5rem;
+    }
+}
+
 @media screen and (max-width: 48em) {
     .section__left {
-        background-color: var(--clr_primary);
         min-height: 26.25rem;
         max-height: 50rem;
+        padding: 0 1rem;
         /* outline: 1px solid red; */
     }
     .section__left p {
         max-width: 50ch;
-    }
-    .section__right {
-        background-color: #ececec;
     }
     .section__left, .section__right {
         padding: 1.25rem var(--padding_horizontal_mobile);
