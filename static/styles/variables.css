@@ -22,4 +22,11 @@ html {
 
     --filter_clr_primary: invert(12%) sepia(98%) saturate(1426%) hue-rotate(183deg) brightness(95%) contrast(101%);
     --filter_clr_secondary: invert(28%) sepia(91%) saturate(1680%) hue-rotate(186deg) brightness(96%) contrast(101%);
+
+    /* type scaling */
+    --type_scale_5: 3.052rem;
+    --type_scale_4: 2.441rem;
+    --type_scale_3: 1.563rem;
+    --type_scale_2: 1.25rem;
+    --type_scale_2: 1rem;
 }

@@ -30,15 +30,15 @@ const homepage_projects = [
             url: "/images/mockups/android-ios-mockups-result.png"
         },
     },
-    {
-        name: "Corporate Website",
-        category: "Web Development",
-        description: "Corporate website for Zillion United, a digital real estate platform in Cambodia.",
-        link: "/web-development/#zillion-united",
-        image: {
-            url: "/images/mockups/z1-corporate_result.png"
-        },
-    },
+    // {
+    //     name: "Corporate Website",
+    //     category: "Web Development",
+    //     description: "Corporate website for Zillion United, a digital real estate platform in Cambodia.",
+    //     link: "/web-development/#zillion-united",
+    //     image: {
+    //         url: "/images/mockups/z1-corporate_result.png"
+    //     },
+    // },
     {
         name: "Hospitality Sector Website",
         category: "Web Development",
@@ -83,11 +83,11 @@ const homepage_projects = [
                 <h4 class="project_name">{project.name}</h4>
                 <p class="project_desc">{project.description}</p>
                 {#if project.link}
-                    <a href={project.link} class="project_link">Details →</a>
+                    <a href={project.link} class="btn_main">Details →</a>
                 {/if}
                 {#if project.links}
                     {#each project.links as link}
-                        <a href={link.url} class="project_link">{link.name} →</a>
+                        <a href={link.url} class="btn_main">{link.name} →</a>
                     {/each}
                 {/if}
             </span>
@@ -245,52 +245,5 @@ p {
     color: #ececec;
     margin-bottom: 1.75rem;
 }
-.project_details .project_link {
-    /* color: var(--clr_primary); */
-    /* background-color: #ececec; */
-    color: #fff;
-    background-color: var(--clr_secondary);
 
-    font-size: 1.125rem;
-    font-family: var(--font_primary_semibold);
-    padding: .875rem 1.25rem;
-    text-decoration: none;
-    /* border-radius: .75rem; */
-    border-radius: 100vmax;
-    text-align: center;
-    transition: 200ms ease-out filter;
-    border: 1px solid rgba(255,255,255,.25);
-    /* box-shadow: 0 .5rem .5rem rgba(0,0,0,.125); */
-}
-@media screen and (max-width: 48em) {
-    .project_details .project_link {
-        padding: 1rem 1.5rem;
-    }
-}
-.project_details .project_link:not(:last-of-type) {
-    margin-right: .75rem;
-}
-.project_details .project_link:hover {
-    filter: brightness(1.1);
-    /* text-decoration: underline; */
-}
-@media screen and (max-width: 48em) {
-    .project_details .project_link:not(:last-of-type) {
-        margin-right: 0;
-    }
-    .project_details .project_link {
-        display: inline-flex;
-        align-items: center; 
-        justify-content: center;
-        /* justify-content: flex-end; */
-    }
-    .project_details .project_link:only-of-type {
-        width: 100%;
-    }
-    .project_details .project_link:not(:only-of-type) {
-        width: 100%;
-        margin-bottom: 1rem;
-        justify-content: center;
-    }
-}
 </style>

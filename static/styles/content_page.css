@@ -11,6 +11,7 @@
     margin: 0 auto;
     background-color: #fff;
     padding: 5rem var(--padding_horizontal_desktop);
+    /* outline: 1px solid red; */
 }
 @media screen and (max-width: 64em) {
     .content_page_container .content {
