@@ -8,6 +8,10 @@
     line-height: 1.5 !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     font-family: var(--font_primary), var(--font_khmer), sans-serif;

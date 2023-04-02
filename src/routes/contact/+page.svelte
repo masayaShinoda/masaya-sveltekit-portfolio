@@ -7,24 +7,24 @@
             <h2>Contact me</h2>
             <span class="socials_container">
                 <a href="https://www.linkedin.com/in/masaya-shida/">
-                    <img 
+                    <!-- <img 
                         src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Linkedin_circle.svg"
                         alt="LinkedIn logo"
-                    />
+                    /> -->
                     LinkedIn
                 </a>
                 <a href="https://github.com/masayaShinoda">
-                    <img 
+                    <!-- <img 
                         src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
                         alt="GitHub logo"
-                    />
+                    /> -->
                     GitHub
                 </a>
                 <a href="https://t.me/shinoda17">
-                    <img 
+                    <!-- <img 
                         src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" 
                         alt="Telegram logo"
-                    >
+                    > -->
                     Telegram
                 </a>        
             </span>
@@ -113,7 +113,7 @@ h2 {
     object-fit: contain;
 }
 .form_section {
-    padding: 3.75rem 0;
+    padding: 3.25rem 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
