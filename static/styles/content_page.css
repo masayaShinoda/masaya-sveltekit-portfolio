@@ -10,7 +10,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
-    padding: 5rem var(--padding_horizontal_desktop);
+    padding: 3.25rem var(--padding_horizontal_desktop);
     /* outline: 1px solid red; */
 }
 @media screen and (max-width: 64em) {

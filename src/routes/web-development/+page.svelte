@@ -1,110 +1,37 @@
 <script>
+import { onMount } from "svelte"
+import data from "./data.js"
 import SvelteMarkdown from 'svelte-markdown'
 
-const tool_logos = [
-    {
-        name: "HTML & CSS",
-        fileName: "html-css.svg",
-    },
-    {
-        name: "JavaScript",
-        fileName: "js.svg",
-    },
-    {
-        name: "NextJS",
-        fileName: "nextjs.svg",
-    },
-    {
-        name: "React",
-        fileName: "react.svg",
-    },
-    {
-        name: "Svelte",
-        fileName: "svelte.svg",
-    },
-    {
-        name: "Figma",
-        fileName: "figma.svg",
-    },
-    {
-        name: "Adobe XD",
-        fileName: "xd.svg",
-    },
-    {
-        name: "Adobe Illustrator",
-        fileName: "ai.svg",
-    },
-    {
-        name: "Adobe Photoshop",
-        fileName: "ps.svg",
-    },
-]
-
-const web_projects = [
-    {
-        id: "ut-market-website",
-        name: "Digital Product Website Development",
-        industry: "Finance",
-        overview: 
-`
-[utmarket.io](https://utmarket.io) is the landing page and informational website for all products related to the UT Market digital platform. 
-`,
-        responsibilities:
-`
-After presenting my UI screens to the team, I got to work coding the new website using NextJS, which was ideal for its SSG abilities, pleasant dev experience, SEO, and performance (it got a [100 performance score](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Futmarket.io%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext) on Google Lighthouse!). I also manage the domain, hosting, and CMS.
-`,
-        tools: [
-            "HTML & CSS",
-            "NextJS",
-        ],
-        duration: "Three weeks for the first live version.",
-        link: "https://utmarket.io",
-        image: "/images/mockups/utmarket-ui-showcase.png",
-    },
-//     {
-//         id: "zillion-united",
-//         name: "Corporate Website for Zillion United",
-//         overview: "An interactive server-side rendered webpage with WordPress as the CMS.",
-//         responsibilities:
-// `
-// I was responsible for coding and WordPress configuration.
-
-// The design of the webpage was done by [Bread Design Studio](https://www.breaddesignstudio.com).
-// `,
-//         tools: [
-//             "HTML & CSS",
-//             "NextJS",
-//         ],
-//         duration: "Two weeks",
-//         link: "https://zillionunited.io",
-//         image: "/images/mockups/z1-corporate_result.png",
-//     },
-    {
-        id: "good-time-hospitality-group",
-        name: "Website for Hospitality Company",
-        industry: "Hospitality",
-        overview: 
-`
-Utilizing NextJS, I was able to create an SEO-friendly website. The client can easily manage content via [DatoCMS](https://datocms.com).
-        
-`,
-        responsibilities:
-`
-After receiving a document of content from the client, I designed and coded the website, in addition to configuring the CMS.
-`,
-        tools: [
-            "HTML & CSS",
-            "NextJS",
-            "Adobe Photoshop",
-        ],
-        duration: "Six weeks",
-        link: "https://www.goodtimehospitality.com/",
-        image: "/images/mockups/gt-rr-mockup-laptop-phone_result.png",
-    },
-]
+let tool_logos = data.tool_logos
+let web_projects = data.web_projects
 
 
-let projects_section_active_industry = 0
+onMount(() => {
+    let industry_divs = document.querySelectorAll(".webdev_projects_section__body__industry")
+    
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(
+                entry => {
+                    const intersecting = entry.isIntersecting
+                    if(!intersecting) {
+                        document.querySelector(`a[href='#${entry.target.id}']`).classList.add("btn_main__inactive")
+                    } else {
+                        document.querySelector(`a[href='#${entry.target.id}']`).classList.remove("btn_main__inactive")
+                    }
+                }
+            )
+        },
+        {
+            threshold: .8,
+        }
+    )
+
+    industry_divs.forEach(industry => {
+        observer.observe(industry)
+    })
+})
 
 </script>
 
@@ -138,15 +65,82 @@ let projects_section_active_industry = 0
                 <div class="webdev_projects_section__top__line"></div>
                 <nav class="webdev_projects_section__top__btn_group">
                     {#each Array.from(web_projects.map(project => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}
-                        <a href={`#${encodeURI(industry)}`} on:click={() => {projects_section_active_industry = index}} class="btn_main btn_main__smaller" class:btn_main__inactive={projects_section_active_industry !== index}>
+                        <a href={`#${encodeURI(industry)}`} class="btn_main btn_main__smaller">
                             {industry}
                         </a>
                     {/each}
                 </nav>
             </header>
+            <div class="webdev_projects_section__body">   
+                <!-- each category of project has its own containing div acting as an anchor -->
+                {#each Array.from(web_projects.map(project => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}                    
+                    <div id={encodeURI(industry)} key={index} class="webdev_projects_section__body__industry">
+                        {#each web_projects as project}
+                            {#if project.industry === industry}
+                                <!-- content here -->
+                                <article
+                                id={`${project.id}`} 
+                                key={project.id}
+                                class="webdev_projects_section__body__item"
+                                >
+                                    <div class="content_half">
+                                        <p class="industry">Industry: {industry}</p>
+                                        <h3 class="name">{project.name}</h3>
+                                        <div class="content_half__content">
+                                            <span class="content_half__content__tools">
+                                                <h4>Tools</h4>
+                                                <div>
+                                                {#each Array.from(project.tools.map(tool => (
+                                                    tool_logos.filter(i => i.name === tool)))) as tool}
+                                                    <img 
+                                                    src={`/images/${tool[0].fileName}`} 
+                                                    alt={tool[0].name} 
+                                                    title={tool[0].name}
+                                                    loading="lazy"
+                                                    />
+                                                {/each}
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="content_half__content">
+                                            {#if project.overview}
+                                                 <!-- content here -->
+                                                 <h4>Overview</h4>
+                                                 <SvelteMarkdown source={project.overview} />
+                                            {/if}
+                                        </div>
+                                        <div class="content_half__content">
+                                            {#if project.responsibilities}
+                                                 <!-- content here -->
+                                                 <h4>Responsibilities</h4>
+                                                 <SvelteMarkdown source={project.responsibilities} />
+                                            {/if}
+                                        </div>
+                                        <a href={project.link} class="btn_main">See Demo →</a>
+                                    </div>
+                                    <img
+                                        alt={`Screenshot of project ${project.name}`}
+                                        width="480"
+                                        height="360"
+                                        src={project.image}
+                                        loading="lazy"
+                                        style="object-fit: contain; object-position: center;"
+                                    >
+                                </article>
+                            {/if}
+                        {/each}
+
+                    </div>
+                {:else}
+                        <!-- empty list -->
+                        <p style="margin: 3.25rem auto; text-align: center;">No items found 🧐</p>
+                {/each}
+            </div>
         </section>
     </div>
 </div>
+
+
 
 <style>
     .webdev_top_section {
@@ -251,7 +245,7 @@ let projects_section_active_industry = 0
         width: 100%;
         max-width: min(100%, var(--content_max_width_desktop));
         padding: 0 var(--padding_horizontal_desktop);
-        margin: 5rem auto;
+        margin: 3.25rem auto;
         /* outline: 1px solid green; */
     }
     @media screen and (max-width: 48em) {
@@ -266,8 +260,18 @@ let projects_section_active_industry = 0
 
         position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 2.5vh;
+        top: 0;
+
+        padding: 1.5rem 0;
+        background-color: rgba(255,255,255,.92);
+        -webkit-backdrop-filter: blur(.325rem);
+        backdrop-filter: blur(.325rem);
         /* outline: 1px solid red; */
+    }
+    @media screen and (max-width: 48em) {
+        .webdev_projects_section__top {
+            position: static;
+        }
     }
 
     .webdev_projects_section__top > h2 {
@@ -287,6 +291,106 @@ let projects_section_active_industry = 0
         }
         .webdev_projects_section__top__btn_group {
             display: none;
+        }
+    }
+
+    .webdev_projects_section__body {
+        margin: 2.5rem 0;
+    }
+
+    .webdev_projects_section__body__industry {
+        scroll-margin-top: 5rem;
+        scroll-snap-margin-top: 5rem; /* iOS 11 and older */
+        
+        width: 100%;
+        margin-bottom: 1.5rem;        
+        /* outline: 1px solid red; */
+    }
+
+    .webdev_projects_section__body__item {
+        display: flex; 
+        justify-content: space-between; 
+        /* align-items: flex-start; */
+        align-items: center;
+        width: 100%; max-width: 100%;      
+        margin-bottom: 5rem;
+        padding-bottom: 2.5rem;
+
+        scroll-margin-top: 5rem;
+        scroll-snap-margin-top: 5rem; /* iOS 11 and older */
+        /* debug */
+        /* outline: 1px solid red; */
+    }
+    @media screen and (max-width: 64em) {
+        .webdev_projects_section__body__item {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            margin-bottom: 5rem;
+            padding-bottom: 2.5rem;
+        }
+    }
+    @media screen and (max-width: 48em) {
+        .webdev_projects_section__body__item {
+            border-bottom: 2px solid #ececec;
+            margin-bottom: 1.875rem;
+        }
+        .webdev_projects_section__body__industry:last-of-type .webdev_projects_section__body__item:last-child {
+            border-bottom: none;
+        }
+    }
+    .webdev_projects_section__body__item .content_half {
+        max-width: min(45ch, 100%);
+        /* outline: 1px solid green; */
+    }
+
+    .webdev_projects_section__body__item .name {
+        font-size: var(--type_scale_4);
+        margin-bottom: .875rem;
+    }
+    @media screen and (max-width: 64em) {
+        .webdev_projects_section__body__item .name {
+            font-size: 1.875rem;
+        }
+    }
+    .webdev_projects_section__body__item .industry {
+        font-size: var(--type_scale_1);
+        color: #666;
+        margin-bottom: .5rem;
+    }
+    .webdev_projects_section__body__item .content_half__content {
+        color: #333;
+        /* outline: 1px solid red; */
+    }
+    .webdev_projects_section__body__item .content_half__content:not(:last-of-type) {
+        margin-bottom: 1.25rem;
+    }
+    .webdev_projects_section__body__item .content_half__content:last-of-type {
+        margin-bottom: 1.875rem;
+    }
+    .webdev_projects_section__body__item .content_half__content h4 {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+    .content_half__content__tools > div {
+        display: flex; justify-content: flex-start; align-items: center;
+    }
+    .content_half__content__tools img {
+        object-fit: contain;
+        max-height: 2rem;
+    }
+    .content_half__content__tools img:not(:last-of-type) {
+        margin-right: 1rem;
+    }
+    
+    .webdev_projects_section__body__item > img {
+        max-width: 45%;
+    }
+    @media screen and (max-width: 64em) {
+        .webdev_projects_section__body__item > img {
+            width: 92%;
+            max-width: 92%;
+            max-height: 18rem;
+            margin-bottom: 2.5rem;
         }
     }
 </style>
