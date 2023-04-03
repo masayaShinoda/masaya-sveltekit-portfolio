@@ -114,7 +114,9 @@
         padding: 1.25rem var(--padding_horizontal_mobile);
         width: 100%;
         max-width: 100%;
-        
+    }
+    .section__right {
+        min-height: 0;
     }
 }
 

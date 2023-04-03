@@ -35,22 +35,22 @@ div, span, p, a, ul, ol, small, q, blockquote {
 }
 
 h1 {
-    font-size: 3.052rem;
+    font-size: var(--type_scale_5);
 }
 h2 {
-    font-size: 2.441rem;
+    font-size: var(--type_scale_4);
 }
 h3 {
-    font-size: 1.953rem;
+    font-size: var(--type_scale_3);
 }
 h4 {
-    font-size: 1.563rem;
+    font-size: var(--type_scale_2);
 }
 h5 {
-    font-size: 1.25rem;
+    font-size: calc(var(--type_scale_1) * 1.125);
 }
 div, span, p, a, ul, ol, q, blockquote {
-    font-size: 1rem;
+    font-size: var(--type_scale_1);
 }
 p {
     line-height: 1.6;

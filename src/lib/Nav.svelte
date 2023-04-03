@@ -225,7 +225,7 @@ function toggleMobileNav() {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 60%;
+        width: 65%;
         height: 100vh;
 
         padding: 5rem 0;
@@ -234,7 +234,6 @@ function toggleMobileNav() {
         
         background-color: var(--clr_primary);
         padding: 5rem 0;
-
         /* outline: 1px solid red; */
     }
     
