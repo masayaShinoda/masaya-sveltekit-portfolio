@@ -35,6 +35,9 @@ onMount(() => {
 
 </script>
 
+<svelte:head>
+    <title>Masaya Shida | Web Development Portfolio</title>
+</svelte:head>
 <div class="content_page_container">
     <div class="content">
         <section class="webdev_top_section">

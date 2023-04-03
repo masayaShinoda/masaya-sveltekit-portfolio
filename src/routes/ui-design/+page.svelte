@@ -86,6 +86,9 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
 
 </script>
 
+<svelte:head>
+    <title>Masaya Shida | UI Design Portfolio</title>
+</svelte:head>
 <div class="content_page_container">
     <div class="content">
         <section class="top_section">
