@@ -1,9 +1,9 @@
 <section class="hero_container">
     <div class="hero_content">
         <span>
-            <h5 class="subtitle">
+            <h1 class="subtitle">
                 Hi, I'm Masaya!
-            </h5>
+            </h1>
             <h2 class="title">
                 I help ideas achieve a quality online presence.
             </h2>
@@ -84,6 +84,8 @@
     }
 }
 .subtitle {
+    font-size: var(--type_scale_2);
+    font-family: var(--font_primary_semibold);
     color: #333;
     margin-bottom: 1.5rem;
 }

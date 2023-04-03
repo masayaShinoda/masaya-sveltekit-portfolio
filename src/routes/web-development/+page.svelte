@@ -271,6 +271,8 @@ onMount(() => {
     @media screen and (max-width: 48em) {
         .webdev_projects_section__top {
             position: static;
+            padding: 0;
+            margin-bottom: 1rem;
         }
     }
 
@@ -296,6 +298,11 @@ onMount(() => {
 
     .webdev_projects_section__body {
         margin: 2.5rem 0;
+    }
+    @media screen and (max-width: 48em) {
+        .webdev_projects_section__body {
+            margin: .875rem 0;
+        }
     }
 
     .webdev_projects_section__body__industry {
@@ -391,6 +398,11 @@ onMount(() => {
             max-width: 92%;
             max-height: 18rem;
             margin-bottom: 2.5rem;
+        }
+    }
+    @media screen and (max-width: 64em) {
+        .webdev_projects_section__body__item > img {
+            margin-bottom: 1rem;
         }
     }
 </style>

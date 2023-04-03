@@ -69,7 +69,7 @@
 @media screen and (max-width: 48em) {
     .content {
         align-items: flex-start;
-        padding: 5rem 0;
+        padding: 4.25rem 0;
     }
 }
 
