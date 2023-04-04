@@ -22,7 +22,7 @@ onMount(() => {
             )
         },
         {
-            threshold: .75,
+            threshold: 0.5,
         }
     )
     industry_divs.forEach(industry => {
@@ -162,6 +162,7 @@ onMount(() => {
 .gfxdes_top_section > p {
     text-align: center;
     max-width: min(45ch, 100%);
+    color: #333;
 }
 .gfx_projects_section__nav {
     display: flex;
@@ -193,26 +194,26 @@ onMount(() => {
 }
 
 
-.gfx_projects_section__body__industry {
-    scroll-margin-top: 5rem;
-    scroll-snap-margin-top: 5rem; /* iOS 11 and older */
-    
-    width: 100%;
-    margin-bottom: 1.5rem;
-    padding: .25rem 0;
-}
-/* gfx_projects_section__body__item */ 
+
 
 
 .gfxdes_grid_section {
-    margin: 0 auto 10rem auto;
-    max-width: var(--content_max_width_desktop);
+    margin: 2.5rem auto;
+    max-width: min(calc(var(--content_max_width_desktop) * 0.9), 100%);
 }
 .gfxdes_grid_section > h5.industry {
     margin-left: .25rem;
     font-family: var(--font_primary);
     color: #333;
-    font-size: calc(var(--type_scale_1) * 0.9);
+    font-size: var(--type_scale_1);
+}
+.gfx_projects_section__body__industry {
+    scroll-margin-top: 5rem;
+    scroll-snap-margin-top: 5rem; /* iOS 11 and older */
+    
+    width: 100%;
+    margin-bottom: 3.25rem;
+    padding: .25rem 0;
 }
 
 .row {
@@ -222,24 +223,24 @@ onMount(() => {
     flex-wrap: wrap;
 }
 
-/* Create three equal columns that sits next to each other */
 .column {
     -ms-flex: 33.33%; /* IE10 */
     flex: 33.33%;
     max-width: 33.33%;
-    padding: 0 .25rem;
+    padding: 0 .325rem;
 }
 .column img {
-    margin-top: .5rem;
+    margin-top: .65rem;
     vertical-align: middle;
     width: 100%;
+
+    box-shadow: 0 .325rem .5rem rgba(0,0,0,.25);
 
     /* lazy load */
     opacity: 0;
     transition: opacity 200ms ease;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 64em) {
     .column {
         -ms-flex: 50%;
