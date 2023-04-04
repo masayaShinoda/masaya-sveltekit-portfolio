@@ -80,6 +80,13 @@ h2 {
     /* padding: 5rem var(--padding_horizontal_desktop); */
     padding: 5rem var(--padding_horizontal_desktop);
 }
+@media screen and (max-width: 64em) {
+    .content {
+        margin: 0 auto;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+}
 @media screen and (max-width: 48em) {
     .content {
         align-items: flex-start;

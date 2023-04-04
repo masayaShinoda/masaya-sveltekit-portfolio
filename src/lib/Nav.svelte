@@ -46,6 +46,10 @@ function toggleMobileNav() {
             class={`${$page.url.pathname === "/web-development" ? "link__active" : null}`}
             >Web Development</a>
             <a 
+            href="/graphic-design"
+            class={`${$page.url.pathname === "/graphic-design" ? "link__active" : null}`}
+            >Graphic Design</a>
+            <a 
             href="/ui-design"
             class={`${$page.url.pathname === "/ui-design" ? "link__active" : null}`}
             >UI Design</a>
@@ -70,6 +74,7 @@ function toggleMobileNav() {
     <div class={`mobile_nav_container ${isActive ? "active" : null}`}>
         <nav class="mobile_nav_drawer">
             <a href="/web-development" on:click={toggleMobileNav}>Web Development</a>
+            <a href="/graphic-design" on:click={toggleMobileNav}>Graphic Design</a>
             <a href="/ui-design" on:click={toggleMobileNav}>UI Design</a>
             <a href="/contact" on:click={toggleMobileNav}>Contact</a>
             <a href="https://blog.masayashida.com" on:click={toggleMobileNav}>Blog</a>
@@ -118,6 +123,11 @@ function toggleMobileNav() {
     margin-right: 1rem;
     color: var(--clr_primary);
     transition: color 200ms ease-out;
+}
+@media screen and (max-width: 64em) {
+    .nav_content nav a {
+        margin-right: .625rem;
+    }
 }
 .nav_content nav a:hover {
     color: var(--clr_secondary);

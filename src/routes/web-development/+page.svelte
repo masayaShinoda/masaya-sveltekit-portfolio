@@ -6,7 +6,6 @@ import SvelteMarkdown from 'svelte-markdown'
 let tool_logos = data.tool_logos
 let web_projects = data.web_projects
 
-
 onMount(() => {
     let industry_divs = document.querySelectorAll(".webdev_projects_section__body__industry")
     
@@ -32,7 +31,6 @@ onMount(() => {
         observer.observe(industry)
     })
 })
-
 </script>
 
 <svelte:head>
@@ -397,14 +395,16 @@ onMount(() => {
     }
     @media screen and (max-width: 64em) {
         .webdev_projects_section__body__item > img {
-            width: 92%;
-            max-width: 92%;
+            width: 65%;
+            max-width: 65%;
             max-height: 18rem;
             margin-bottom: 2.5rem;
         }
     }
-    @media screen and (max-width: 64em) {
+    @media screen and (max-width: 48em) {
         .webdev_projects_section__body__item > img {
+            width: 92%;
+            max-width: 92%;
             margin-bottom: 1rem;
         }
     }
