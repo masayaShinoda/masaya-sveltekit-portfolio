@@ -1,6 +1,7 @@
 <script>
 import { onMount } from "svelte"
 import data from "./data.js"
+import { lazyLoad } from "./lazy_load.js"
 
 let gfx_projects = data.gfx_projects
 
@@ -21,7 +22,7 @@ onMount(() => {
             )
         },
         {
-            threshold: .8,
+            threshold: .75,
         }
     )
     industry_divs.forEach(industry => {
@@ -67,7 +68,7 @@ onMount(() => {
                                 {#each project.items as item, n}
                                     {#if (n + 1) % 3 === 1}
                                         <img
-                                            src={`/images/graphic-design/${item.src}`}
+                                            use:lazyLoad={`/images/graphic-design/${item.src}`}
                                             alt={item.alt}
                                             loading="lazy"
                                             id={`${index} ${project.industry}`} 
@@ -81,7 +82,7 @@ onMount(() => {
                                 {#each project.items as item, n}
                                     {#if (n + 1) % 3 === 2}
                                         <img
-                                            src={`/images/graphic-design/${item.src}`}
+                                            use:lazyLoad={`/images/graphic-design/${item.src}`}
                                             alt={item.alt}
                                             loading="lazy"
                                             id={`${index} ${project.industry}`} 
@@ -95,7 +96,7 @@ onMount(() => {
                                 {#each project.items as item, n}
                                     {#if (n + 1) % 3 === 0}
                                         <img
-                                            src={`/images/graphic-design/${item.src}`}
+                                            use:lazyLoad={`/images/graphic-design/${item.src}`}
                                             alt={item.alt}
                                             loading="lazy"
                                             id={`${index} ${project.industry}`} 
@@ -128,12 +129,19 @@ onMount(() => {
     padding: 1rem 0;
     /* width: 100%; */
 }
+@media screen and (max-width: 48em) {
+    .gfxdes_top_section {
+        margin-bottom: 2.5rem;
+    }
+}
 .gfxdes_top_section > img {
     object-fit: contain;
     object-position: center;
     filter: var(--filter_clr_secondary);
     margin-bottom: 1.75rem;
 }
+
+
 .gfxdes_top_section > h1 {
     font-family: var(--font_primary_semibold);
     font-size: 2rem;
@@ -170,6 +178,11 @@ onMount(() => {
     -webkit-backdrop-filter: blur(.325rem);
     backdrop-filter: blur(.325rem);
 }
+@media screen and (max-width: 48em) {
+    .gfx_projects_section__nav {
+        display: none;
+    }
+}
 .gfx_projects_section__nav > label {
     margin-right: .5rem;
     color: #333;
@@ -179,12 +192,14 @@ onMount(() => {
     padding: 1.5rem 0;
 }
 
+
 .gfx_projects_section__body__industry {
     scroll-margin-top: 5rem;
     scroll-snap-margin-top: 5rem; /* iOS 11 and older */
     
     width: 100%;
-    margin-bottom: 1.5rem;        
+    margin-bottom: 1.5rem;
+    padding: .25rem 0;
 }
 /* gfx_projects_section__body__item */ 
 
@@ -214,24 +229,26 @@ onMount(() => {
     max-width: 33.33%;
     padding: 0 .25rem;
 }
-
 .column img {
     margin-top: .5rem;
     vertical-align: middle;
     width: 100%;
+
+    /* lazy load */
+    opacity: 0;
+    transition: opacity 200ms ease;
 }
 
-    /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 64em) {
     .column {
         -ms-flex: 50%;
         flex: 50%;
-        max-width: 50%;
+        max-width: 50%;;
     }
 }
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 40em) {
     .column {
         -ms-flex: 100%;
         flex: 100%;
