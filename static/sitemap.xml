@@ -9,22 +9,27 @@
 
 <url>
   <loc>https://masayashida.com/</loc>
-  <lastmod>2022-09-02T06:38:02+00:00</lastmod>
+  <lastmod>2023-04-04T14:33:37+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://masayashida.com/web-development</loc>
-  <lastmod>2022-09-02T06:38:02+00:00</lastmod>
+  <lastmod>2023-04-04T14:33:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masayashida.com/graphic-design</loc>
+  <lastmod>2023-04-04T14:33:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://masayashida.com/ui-design</loc>
-  <lastmod>2022-09-02T06:38:02+00:00</lastmod>
+  <lastmod>2023-04-04T14:33:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://masayashida.com/contact</loc>
-  <lastmod>2022-09-02T06:38:02+00:00</lastmod>
+  <lastmod>2023-04-04T14:33:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
