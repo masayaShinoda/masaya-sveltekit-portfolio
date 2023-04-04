@@ -71,7 +71,8 @@
     /* min-width: 21rem; */
     height: auto;
     object-fit: contain;
-    filter: brightness(0) opacity(0.375) var(--filter_clr_secondary);
+    /* filter: brightness(0) opacity(0.375) var(--filter_clr_secondary); */
+    filter: brightness(0) var(--filter_clr_secondary);
 }
 @media screen and (max-width: 48em) {
     .content_page_container .top_section > img {
