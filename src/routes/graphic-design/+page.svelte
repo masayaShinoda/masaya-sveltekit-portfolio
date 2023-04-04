@@ -115,6 +115,7 @@ onMount(() => {
                     <p style="margin: 3.25rem auto; text-align: center;">No items found 🧐</p>
             {/each}
         </div>
+        <a href="#top" aria-label="Scroll back to top." style="margin: 0 auto; text-align: center;">↑ Back to top</a>
     </div>
 </div>
 

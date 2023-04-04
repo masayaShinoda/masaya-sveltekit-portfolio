@@ -183,6 +183,5 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
                 </div>
             </section>
         {/each}
-
     </div>
 </div>

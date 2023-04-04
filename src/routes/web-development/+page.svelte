@@ -138,6 +138,7 @@ onMount(() => {
                 {/each}
             </div>
         </section>
+        <a href="#top" aria-label="Scroll back to top." style="margin: 0 auto; text-align: center;">↑ Back to top</a>
     </div>
 </div>
 

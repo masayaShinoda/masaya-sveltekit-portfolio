@@ -7,7 +7,7 @@
             <h2 class="title">
                 I help ideas achieve a quality online presence.
             </h2>
-            <a href="#projects" class="action_btn">
+            <a href="#portfolio" class="action_btn">
                 See my Projects →
             </a>
         </span>
@@ -95,12 +95,13 @@
 }
 .action_btn {
     color: var(--clr_secondary);
-    font-size: 1.25rem;
+    font-size: var(--type_scale_2);
     font-family: var(--font_primary_semibold);
     padding: .125rem 0;
     text-decoration: none;
 }
-.action_btn:hover {
+.action_btn:hover,
+.action_btn:focus {
     text-decoration: underline;
 }
 

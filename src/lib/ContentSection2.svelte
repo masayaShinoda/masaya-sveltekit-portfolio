@@ -31,7 +31,7 @@
 
 <section class="content_section_2_container">
     <div class="content">
-        <h4>Skillset</h4>
+        <h3>Skillset</h3>
         <p>I'm constantly learning different technologies and software to complete projects efficiently.</p>
 
         <div class="technology_icons_container">
@@ -73,22 +73,23 @@
     }
 }
 
-.content h4 {
+.content h3 {
     text-align: center;
     color: var(--clr_primary);
     margin-bottom: .75rem;
-}
-@media screen and (max-width: 48em) {
-    .content h4, .content p {
-        padding: 0 var(--padding_horizontal_mobile);
-    }
-    .content h4 {
-        text-align: left;
-    }
+    font-size: var(--type_scale_3);
 }
 .content p {
     color: #333;
     margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: min(65ch, 100%);
+}
+@media screen and (max-width: 48em) {
+    .content h3, .content p {
+        text-align: left;
+        padding: 0 var(--padding_horizontal_mobile);
+    }
 }
 .technology_icons_container {
     display: flex;
