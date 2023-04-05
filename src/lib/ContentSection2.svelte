@@ -33,7 +33,6 @@
     <div class="content">
         <h3>Skillset</h3>
         <p>I'm constantly learning different technologies and software to complete projects efficiently.</p>
-
         <div class="technology_icons_container">
         {#each technologies_icons as { categ, icons }}
             <div class="box">
@@ -64,12 +63,13 @@
     width: 100%;
     max-width: min(100%, var(--content_max_width_desktop));
     /* padding: 5rem var(--padding_horizontal_desktop); */
-    padding: 7.5rem 0;
+    padding: 5rem 0;
 }
 @media screen and (max-width: 48em) {
     .content {
         align-items: flex-start;
         padding: 4.25rem 0;
+        /* outline: 1px solid red; */
     }
 }
 

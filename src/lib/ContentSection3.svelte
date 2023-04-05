@@ -37,7 +37,7 @@
     width: 100%;
     max-width: min(100%, calc(var(--content_max_width_desktop) * 0.875));
     /* padding: 5rem var(--padding_horizontal_desktop); */
-    padding: 0;
+    padding: 3.25rem 0;
 }
 @media screen and (max-width: 48em) {
     .content {
@@ -69,15 +69,27 @@
 .portfolio_nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: .25rem 0;
-    max-width: 100%;
+    gap: 0 .875rem;
+    width: 80%;
+    max-width: 80%;
     align-items: start;
+    /* outline: 1px solid red; */
+}
+@media screen and (max-width: 64em) {
+    .portfolio_nav {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 var(--padding_horizontal_mobile);
+    }
 }
 @media screen and (max-width: 40em) {
     .portfolio_nav {
         display: flex;
         flex-direction: column;
-        width: calc(100% - calc(var(--padding_horizontal_mobile) * 2));
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 .portfolio_nav a {
@@ -91,28 +103,34 @@
 
     font-size: var(--type_scale_2);
     font-family: var(--font_primary_semibold);
-    padding: .875rem;
+    padding: 2.5rem .875rem;
     border-radius: 1rem;
     cursor: pointer;
 
-    color: #333;
-    margin: 0 .875rem;
-    transition: color 200ms ease-out;
+    /* color: #333; */
+    color: var(--clr_primary);
+    /* margin: 0 .875rem; */
+    transition: color 200ms ease-out, background-color 200ms ease-out;
+
+    /* outline: 1px solid green; */
 }
 .portfolio_nav .icons {
-    width: 2.75rem;
-    height: 2.75rem;
-    filter: brightness(0.2);
+    width: 3.75rem;
+    height: 3.75rem;
+    filter: brightness(0) var(--filter_clr_primary);
     /* filter: brightness(0) var(--filter_clr_secondary); */
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     transition: all 200ms ease-out;
 }
 @media screen and (max-width: 40em) {
     .portfolio_nav a {
         flex-direction: row;
         justify-content: flex-start;
-        padding: 1.5rem 0;
+        padding: 1.5rem var(--padding_horizontal_mobile);
+        margin: 0 auto;
         width: 100%;
+        max-width: 100%;
+        
         border-radius: 0;
         border-bottom: 2px solid #ececec;
     }
@@ -126,6 +144,7 @@
 .portfolio_nav a:hover,
 .portfolio_nav a:focus {
     color: var(--clr_secondary);
+    background-color: #f7f7f7;
 }
 .portfolio_nav a:hover .icons,
 .portfolio_nav a:focus .icons {

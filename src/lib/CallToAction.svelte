@@ -26,14 +26,13 @@
 }
 @media screen and (max-width: 48em) {
     .content {
-        align-items: flex-start;
         padding: 4.25rem 0;
         width: calc(100% - calc(var(--padding_horizontal_mobile) * 2));
     }
 }
 
 .content > p {
-    font-size: var(--type_scale_2);
+    font-size: var(--type_scale_1);
     margin-bottom: 1rem;
     color: #333;
 }
@@ -50,7 +49,7 @@
 }
 @media screen and (max-width: 48em) {
     .action_btn {
-        text-align: left;
+        text-align: center;
         font-size: var(--type_scale_3);
     }
 }
