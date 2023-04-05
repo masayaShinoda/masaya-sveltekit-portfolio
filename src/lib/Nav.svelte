@@ -91,7 +91,6 @@ function toggleMobileNav() {
 
     width: 100%;
     max-width: 100%;
-    padding: .5rem var(--padding_horizontal_desktop);
 
     border-bottom: 1px solid #ececec;
 }
@@ -102,7 +101,7 @@ function toggleMobileNav() {
     width: 100%;
     max-width: min(100%, var(--content_max_width_desktop));
 
-    padding: .5rem var(--padding_horizontal_desktop);
+    padding: 1rem var(--padding_horizontal_desktop);
     margin: 0 auto;
 }
 .mobile_nav_btn {
@@ -126,7 +125,7 @@ function toggleMobileNav() {
 }
 @media screen and (max-width: 64em) {
     .nav_content nav a {
-        margin-right: .625rem;
+        margin-right: .5rem;
     }
 }
 .nav_content nav a:hover {
@@ -138,11 +137,6 @@ function toggleMobileNav() {
 .nav_content nav a.link__active {
     color: var(--clr_secondary);
     /* border-bottom: 1px solid var(--clr_secondary); */
-}
-@media screen and (max-width: 64em) {
-    .nav_content {
-        padding: .5rem 0;
-    }
 }
 @media screen and (max-width: 48em) {
     .nav_content {

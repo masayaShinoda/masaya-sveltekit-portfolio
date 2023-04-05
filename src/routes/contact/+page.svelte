@@ -4,15 +4,15 @@
 <div class="contact_page_container">
     <div class="content">
         <section>
-            <h2>Contact me</h2>
+            <h2>Get in Touch</h2>
             <span class="socials_container">
-                <a href="https://www.linkedin.com/in/masaya-shida/">
-                    <!-- <img 
+                <!-- <a href="https://www.linkedin.com/in/masaya-shida/">
+                    <img 
                         src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Linkedin_circle.svg"
                         alt="LinkedIn logo"
-                    /> -->
+                    />
                     LinkedIn
-                </a>
+                </a> -->
                 <a href="https://github.com/masayaShinoda">
                     <!-- <img 
                         src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
@@ -62,6 +62,7 @@
 
 <style>
 h2 {
+    font-size: var(--type_scale_4);
     margin-bottom: 1.5rem;
     color: var(--clr_primary);
 }
@@ -75,7 +76,9 @@ h2 {
     align-items: flex-start;
     /* align-items: center; */
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
+    width: -moz-fit-content;
+    width: fit-content;
     max-width: min(100%, var(--content_max_width_desktop));
     /* padding: 5rem var(--padding_horizontal_desktop); */
     padding: 5rem var(--padding_horizontal_desktop);
@@ -89,6 +92,8 @@ h2 {
 }
 @media screen and (max-width: 48em) {
     .content {
+        width: 100%;
+        max-width: 100%;
         align-items: flex-start;
         padding: 5rem var(--padding_horizontal_mobile);
     }
@@ -113,14 +118,14 @@ h2 {
 .socials_container a:hover {
     text-decoration: underline;
 }
-.socials_container a img {
+/* .socials_container a img {
     max-width: 1.5rem;
     width: 1.5rem;
     margin-right: .375rem;
     object-fit: contain;
-}
+} */
 .form_section {
-    padding: 3.25rem 0;
+    padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

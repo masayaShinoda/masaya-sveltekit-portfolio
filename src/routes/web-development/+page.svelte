@@ -2,6 +2,7 @@
 import { onMount } from "svelte"
 import data from "./data.js"
 import SvelteMarkdown from 'svelte-markdown'
+import BackToTop from "$lib/BackToTop.svelte";
 
 let tool_logos = data.tool_logos
 let web_projects = data.web_projects
@@ -139,6 +140,7 @@ onMount(() => {
             </div>
         </section>
     </div>
+    <BackToTop />
 </div>
 
 
@@ -150,14 +152,14 @@ onMount(() => {
         align-items: center;
         width: 100%;
         max-width: min(100%, var(--content_max_width_desktop));
-        padding: 0 var(--padding_horizontal_desktop);
+        padding: 2.5rem var(--padding_horizontal_desktop);
         margin: 0 auto;
         /* outline: 1px solid green; */
     }
     @media screen and (max-width: 48em) {
         .webdev_top_section {
             align-items: flex-start;
-            padding: 0;
+            padding: 2.5rem var(--padding_horizontal_mobile);
         }
     }
     .webdev_top_section__left,
@@ -251,7 +253,7 @@ onMount(() => {
     }
     @media screen and (max-width: 48em) {
         .webdev_projects_section {
-            padding: 0;
+            padding: 0 var(--padding_horizontal_mobile);
         }
     }
     .webdev_projects_section__top {

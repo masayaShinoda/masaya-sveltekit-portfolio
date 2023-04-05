@@ -2,6 +2,7 @@
 import { onMount } from "svelte"
 import data from "./data.js"
 import { lazyLoad } from "./lazy_load.js"
+import BackToTop from "$lib/BackToTop.svelte";
 
 let gfx_projects = data.gfx_projects
 
@@ -115,6 +116,7 @@ onMount(() => {
                     <p style="margin: 3.25rem auto; text-align: center;">No items found 🧐</p>
             {/each}
         </div>
+        <BackToTop />
     </div>
 </div>
 
@@ -126,12 +128,13 @@ onMount(() => {
     align-items: center;
     
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 2.5rem 0;
     /* width: 100%; */
 }
 @media screen and (max-width: 48em) {
     .gfxdes_top_section {
-        margin-bottom: 2.5rem;
+        margin: 2.5rem auto;
+        padding: 2.5rem var(--padding_horizontal_mobile);
     }
 }
 .gfxdes_top_section > img {

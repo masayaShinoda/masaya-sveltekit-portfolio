@@ -1,13 +1,15 @@
 <section class="hero_container">
     <div class="hero_content">
         <span>
-            <h1 class="subtitle">
-                Hi, I'm Masaya!
+            <h1>
+                <span class="subtitle">
+                    Hi, I'm Masaya!
+                </span>
+                <span class="title">
+                    I help ideas achieve a quality online presence.
+                </span>
             </h1>
-            <h2 class="title">
-                I help ideas achieve a quality online presence.
-            </h2>
-            <a href="#projects" class="action_btn">
+            <a href="#portfolio" class="action_btn">
                 See my Projects →
             </a>
         </span>
@@ -41,21 +43,10 @@
     margin: 0 auto;
     padding: 0 var(--padding_horizontal_desktop);
 }
-@media screen and (max-width: 85.375em) {
-    .hero_content {
-        max-width: calc(100% - 5.75em);
-        /* outline: 1px solid red; */
-    }
-}
-@media screen and (max-width: 64em) {
-    .hero_content {
-        max-width: 95%;
-        padding: 0;
-    }
-}
 @media screen and (max-width: 48em) {
     .hero_container {
-        padding: 0 0 5rem 0;
+        padding: 3.25rem 0;
+        /* outline: 1px solid red; */
     }
     .hero_content {
         flex-direction: column-reverse;
@@ -67,7 +58,7 @@
     }
 }
 .hero_content > span {
-    max-width: min(40ch, 45%);
+    max-width: min(45ch, 45%);
 }
 .hero_content > img {
     max-width: 40%;
@@ -79,9 +70,12 @@
         padding: 0 var(--padding_horizontal_mobile);
     }
     .hero_content > img {
-        margin: 0 auto;
+        margin: 0 auto 2.5rem auto;
         max-width: 60%;
     }
+}
+.subtitle, .title {
+    display: inline-block;
 }
 .subtitle {
     font-size: var(--type_scale_2);
@@ -90,17 +84,21 @@
     margin-bottom: 1.5rem;
 }
 .title {
+    font-size: var(--type_scale_4);
+    font-family: var(--font_primary_semibold);
     color: var(--clr_primary);
+    line-height: 1.24;
     margin-bottom: 2.5rem;
 }
 .action_btn {
     color: var(--clr_secondary);
-    font-size: 1.25rem;
+    font-size: var(--type_scale_2);
     font-family: var(--font_primary_semibold);
     padding: .125rem 0;
     text-decoration: none;
 }
-.action_btn:hover {
+.action_btn:hover,
+.action_btn:focus {
     text-decoration: underline;
 }
 
