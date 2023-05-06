@@ -27,7 +27,6 @@
     margin-bottom: 5rem;
     scroll-margin-top: 5rem;
     scroll-snap-margin-top: 5rem; /* iOS 11 and older */
-
 }
 .content {
     display: flex;
