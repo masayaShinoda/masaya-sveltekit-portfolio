@@ -1,6 +1,5 @@
 @import "./reset.css";
 @import "./variables.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
 
 :lang(km) 	{
     font-size: var(--font_khmer), sans-serif;
@@ -19,6 +18,13 @@ html {
 
 body {
     overflow-y: scroll;
+    transition: color 200ms ease-out, background-color 200ms ease-out;
+}
+
+/* dark mode */
+body[data-theme="dark"] {
+    color: var(--clr_light);
+    background-color: hsl(205, 75%, 5%);
 }
 
 h1 {
@@ -57,6 +63,23 @@ p {
 }
 small {
     font-size: .8rem;
+}
+a {
+    color: var(--clr_primary);
+}
+a:hover,
+a:focus {
+    color: var(--clr_secondary);
+}
+a:visited {
+    color: var(--clr_primary_shade_a);
+}
+[data-theme="dark"] a {
+    color: var(--clr_secondary_shade_b);
+}
+[data-theme="dark"] a:hover,
+[data-theme="dark"] a:focus {
+    color: var(--clr_secondary_shade_a);
 }
 
 

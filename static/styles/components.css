@@ -1,6 +1,6 @@
 .btn_main {
     /* color: var(--clr_primary); */
-    /* background-color: #ececec; */
+    /* background-color: var(--clr_grey_shade_e); */
     color: #fff;
     background-color: var(--clr_secondary);
 
@@ -15,6 +15,12 @@
     border: 1px solid rgba(255,255,255,.25);
     cursor: pointer;
     /* box-shadow: 0 .5rem .5rem rgba(0,0,0,.125); */
+}
+a.btn_main {
+    color: #fff;
+}
+a.btn_main:hover {
+    color: unset;
 }
 @media screen and (max-width: 48em) {
     .btn_main {
@@ -60,5 +66,8 @@
 
 .btn_main__inactive {
     color: var(--clr_primary);
-    background-color: #ddd;
+    background-color: var(--clr_grey_shade_d);
+}
+[data-theme="dark"] .btn_main__inactive {
+    background-color: var(--clr_grey_shade_c);
 }

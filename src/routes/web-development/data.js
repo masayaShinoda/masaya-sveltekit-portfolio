@@ -5,7 +5,7 @@ const tool_logos = [
     },
     {
         name: "JavaScript",
-        fileName: "js.svg",
+        fileName: "javascript.svg",
     },
     {
         name: "NextJS",
@@ -25,15 +25,15 @@ const tool_logos = [
     },
     {
         name: "Adobe XD",
-        fileName: "xd.svg",
+        fileName: "adobe-xd.svg",
     },
     {
         name: "Adobe Illustrator",
-        fileName: "ai.svg",
+        fileName: "adobe-illustrator.svg",
     },
     {
         name: "Adobe Photoshop",
-        fileName: "ps.svg",
+        fileName: "adobe-photoshop.svg",
     },
 ]
 
