@@ -1,5 +1,4 @@
 <script>
-import { writable } from "svelte/store"
 import { browser } from "$app/environment"
 
 import Nav from "$lib/Nav.svelte" 
@@ -27,6 +26,7 @@ if(browser) {
     }
     
     theme = getTheme()
+    localStorage.setItem("theme", theme)
 
     document.querySelector("body").dataset.theme = theme
 }

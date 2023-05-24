@@ -2,13 +2,6 @@
 import { page } from '$app/stores'
 import { writable } from 'svelte/store'
 import { browser } from '$app/environment'
-import { onMount } from 'svelte'
-
-// function toggleLocale(e) {
-//     e.preventDefault()
-//     console.log(e)
-//     // console.log(locales)
-// }
 
 const mobileNavActive = writable(false)
 
@@ -27,13 +20,14 @@ function toggleMobileNav() {
     }
 }
 
-onMount(() => {
+if(browser) {
     if(localStorage.getItem("theme") === "dark") {
-        document.getElementById("toggle_checkbox").checked = true   
+        document.getElementById("toggle_checkbox").checked = true
     } else {
         document.getElementById("toggle_checkbox").checked = false
     }  
-})
+}
+
 
 function toggleTheme(e) {
     if(browser) {
