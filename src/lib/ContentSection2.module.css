@@ -67,7 +67,7 @@
 [data-theme="dark"] .technology_icons_container .box {
     background-color: #fff;
 }
-.technology_icons_container .box h5 {
+.technology_icons_container .box h4 {
     color: var(--clr_primary);
     margin-bottom: 1rem;
 }

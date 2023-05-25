@@ -40,8 +40,6 @@ function toggleTheme(e) {
         }
     }
 }
-
-
 </script>
 
 <section class="nav_container">

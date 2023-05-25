@@ -78,7 +78,7 @@
     /* border: 2px solid var(--clr_primary); */
 }
 [data-theme="dark"] .section__right img {
-    filter: brightness(0) var(--filter_clr_secondary_shade_a);
+    filter: brightness(0) var(--filter_clr_secondary_shade_b);
 }
 @media screen and (max-width: 64em) {
     .section__right img {

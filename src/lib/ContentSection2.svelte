@@ -1,31 +1,53 @@
 <script>
-    const technologies_icons = [
-        {
-            categ: "Web Technologies",
-            icons: [
-                "html-css.svg",
-                "javascript.svg",
-                "nextjs.svg",
-                "react.svg",
-                "svelte.svg",
-            ]
-        },
-        {
-            categ: "UI Design",
-            icons: [
-                "figma.svg",
-                "adobe-xd.svg",
-            ],
-        },
-        {
-            categ: "Graphic Design",
-            icons: [
-                "adobe-illustrator.svg",
-                "adobe-photoshop.svg", 
-            ]            
-        }
-    ]
+import { getContext, onMount } from "svelte"
 
+const technologies_icons = [
+    {
+        categ: "Web Technologies",
+        icons: [
+            "html-css.svg",
+            "javascript.svg",
+            "nextjs.svg",
+            "react.svg",
+            "svelte.svg",
+        ]
+    },
+    {
+        categ: "UI Design",
+        icons: [
+            "figma.svg",
+            "adobe-xd.svg",
+        ],
+    },
+    {
+        categ: "Graphic Design",
+        icons: [
+            "adobe-illustrator.svg",
+            "adobe-photoshop.svg", 
+        ]            
+    }
+]
+
+// onMount(() => {
+//     // react to change in <body> data attribute
+//     const body = document.body
+
+//     const observer = new MutationObserver(mutations => {
+//       mutations.forEach(record => {
+//         if(record.type === 'attributes') {
+//           const changedAttrName  = record.attributeName;    
+//           const newValue = record.target.getAttribute(changedAttrName);
+//           console.log(`Attribute changed! New value for '${changedAttrName}' : ${newValue}`);
+//         }
+//       });
+//     });
+    
+//     observer.observe(body, {
+//       attributes: true
+//     });
+// })
+
+console.log(getContext("themeContext"))
 </script>
 
 
@@ -36,7 +58,7 @@
         <div class="technology_icons_container">
         {#each technologies_icons as { categ, icons }}
             <div class="box">
-                <h5>{categ}</h5>
+                <h4>{categ}</h4>
                 <div>
                     {#each icons as icon}
                         <img 

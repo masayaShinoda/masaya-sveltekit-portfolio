@@ -6,6 +6,8 @@ import Nav from "$lib/Nav.svelte"
 import { dev } from '$app/environment'
 import { inject } from '@vercel/analytics'
  
+import { setContext } from "svelte";
+
 inject({ mode: dev ? 'development' : 'production' })
 
 // handle theme-ing
@@ -27,10 +29,10 @@ if(browser) {
     
     theme = getTheme()
     localStorage.setItem("theme", theme)
+    setContext("themeContext", theme)
 
-    document.querySelector("body").dataset.theme = theme
+    document.body.dataset.theme = theme
 }
-
 </script>
 
 <Nav />
