@@ -92,9 +92,9 @@
 .section__left h2 {
     color: var(--clr_primary);
     margin-bottom: 1.5rem;
+    font-size: var(--type_scale_3);
 }
 [data-theme="dark"] .section__left h2 {
-    font-size: var(--type_scale_3);
     color: #fff;
 }
 .section__left p {
