@@ -64,7 +64,7 @@ console.log(getContext("themeContext"))
                         <img 
                             src={`/images/${icon}`} 
                             alt={icon.slice(0, icon.length - 4).replace("-", " ")} 
-                            title={icon.slice(0, icon.length - 4).replace("-", " ")}    
+                            title={icon.slice(0, icon.length - 4).replace("-", " ")}  
                         />
                     {/each}
                 </div>
