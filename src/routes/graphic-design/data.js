@@ -1,7 +1,40 @@
 const gfx_projects = [
     {
         industry: "Finance & Technology",
-        items: []
+        items: [
+            {
+                src: "svb-infographic_4_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 1",
+            },
+            {
+                src: "svb-infographic_5_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 2",
+            },
+            {
+                src: "svb-infographic_6_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 3",
+            },
+            {
+                src: "defi-pros-cons_1_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 4",
+            },
+            {
+                src: "foreign-exchange-markets-02_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 5",
+            },
+            {
+                src: "blockchain-vs-crypto_3_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 6",
+            },
+            {
+                src: "compound-interest-01_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 7",
+            },
+            {
+                src: "compound-interest-02_result.jpg",
+                alt: "graphic design portfolio, industry: streetwear, item: 8",
+            },
+        ]
     },
     {
         industry: "Streetwear",
