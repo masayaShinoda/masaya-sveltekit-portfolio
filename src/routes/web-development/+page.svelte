@@ -52,10 +52,10 @@ onMount(() => {
             </div>
             <div class="webdev_top_section__right">
                 <p>
-                    I see the web as an important democratizing platform for people around the world to share their ideas and express their entrepreneurial spirit, where anyone with an internet connection can gain access.
+                    I see the web as an important and democratizing platform for people around the world to share their ideas and to show who they are and what they care about, where anyone with an internet connection can access.
                 </p>
                 <p>
-                    I love the web as a powerful and inclusive platform so I have self-taught myself web development to create engaging and user-friendly websites.
+                    I have self-taught myself web development to create engaging and user-friendly websites.
                 </p>
             </div>
         </section>
