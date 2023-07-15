@@ -2,7 +2,6 @@
 @import "./variables.css";
 
 :lang(km) 	{
-    font-size: var(--font_khmer), sans-serif;
     font-size: 100% !important;
     line-height: 1.5 !important;
 }
