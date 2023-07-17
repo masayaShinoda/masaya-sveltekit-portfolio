@@ -35,6 +35,10 @@ const tool_logos = [
         name: "Adobe Photoshop",
         fileName: "adobe-photoshop.svg",
     },
+    {
+        name: "Django",
+        fileName: "django.svg",
+    }
 ]
 
 const web_projects = [
@@ -98,6 +102,37 @@ After receiving a document of content from the client, I designed and coded the 
         link: "https://www.goodtimehospitality.com/",
         image: "/images/mockups/gt-rr-mockup-laptop-phone_result.png",
     },
+    {
+        id: "khmer-programming-words-dictionary",
+        name: "Khmer Programming Words Dictionary",
+        industry: "Personal",
+        overview: 
+`
+I always struggled to translate technical words, especially programming-related words into Khmer so I made a dictionary/database website for such words.
+`,
+        tools: [
+            "Svelte",
+        ],
+        duration: "Three days",
+        link: "https://khmer-programming-words.vercel.app/",
+        image: "/images/mockups/khmer-programming-words.png",
+    },
+//     {
+//         id: "khmer-markdown-notes-app",
+//         name: "Note taking app with Khmer UI",
+//         industry: "N/A",
+//         overview: 
+// `
+// I always struggled to translate technical words, especially programming-related words into Khmer. I have
+// `,
+//         tools: [
+//             "React",
+//             "Django",
+//         ],
+//         duration: "Three weeks",
+//         link: "https://khmarkdown.masayashida.com/",
+//         image: "/images/mockups/khmer-programming-words.png",
+//     },
 ]
 
 export default { tool_logos, web_projects }
