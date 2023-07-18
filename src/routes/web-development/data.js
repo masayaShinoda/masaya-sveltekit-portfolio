@@ -2,49 +2,69 @@ const tool_logos = [
     {
         name: "HTML & CSS",
         fileName: "html-css.svg",
+        width: "62",
+        height: "40",
     },
     {
         name: "JavaScript",
         fileName: "javascript.svg",
+        width: "40",
+        height: "40",
     },
     {
         name: "NextJS",
         fileName: "nextjs.svg",
+        width: "66",
+        height: "40",
     },
     {
         name: "React",
         fileName: "react.svg",
+        width: "40",
+        height: "40",
     },
     {
         name: "Svelte",
         fileName: "svelte.svg",
+        width: "128",
+        height: "32",
     },
     {
         name: "Figma",
         fileName: "figma.svg",
+        width: "40",
+        height: "40",
     },
     {
         name: "Adobe XD",
         fileName: "adobe-xd.svg",
+        width: "40",
+        height: "40",
     },
     {
         name: "Adobe Illustrator",
         fileName: "adobe-illustrator.svg",
+        width: "40",
+        height: "40",
     },
     {
         name: "Adobe Photoshop",
         fileName: "adobe-photoshop.svg",
+        width: "40",
+        height: "40",
     },
     {
         name: "Django",
         fileName: "django.svg",
+        width: "92",
+        height: "32",
     }
 ]
 
 const web_projects = [
     {
         id: "ut-market-website",
-        name: "Digital Product Website Development",
+        name: "Mobile App Marketing Website",
         industry: "Finance",
         overview: 
 `
@@ -108,7 +128,7 @@ After receiving a document of content from the client, I designed and coded the 
         industry: "Personal",
         overview: 
 `
-I always struggled to translate technical words, especially programming-related words into Khmer so I made a dictionary/database website for such words.
+This is a dictionary style website to document and explain common programming and other technical words that are almost impossible to translate into Khmer. Could be a useful resource for educators/students alike.
 `,
         tools: [
             "Svelte",
@@ -117,22 +137,22 @@ I always struggled to translate technical words, especially programming-related 
         link: "https://khmer-programming-words.vercel.app/",
         image: "/images/mockups/khmer-programming-words.png",
     },
-//     {
-//         id: "khmer-markdown-notes-app",
-//         name: "Note taking app with Khmer UI",
-//         industry: "N/A",
-//         overview: 
-// `
-// I always struggled to translate technical words, especially programming-related words into Khmer. I have
-// `,
-//         tools: [
-//             "React",
-//             "Django",
-//         ],
-//         duration: "Three weeks",
-//         link: "https://khmarkdown.masayashida.com/",
-//         image: "/images/mockups/khmer-programming-words.png",
-//     },
+    {
+        id: "khmer-markdown-notes-app",
+        name: "Note taking app with Khmer language UI",
+        industry: "Personal",
+        overview: 
+`
+I wanted to familiarize myself with Django and more specifically the Django REST Framework so I built this as a learning project, a note taking web app with user authentication.
+`,
+        tools: [
+            "Django",
+            "React",
+        ],
+        duration: "Three weeks",
+        link: "https://khmarkdown.masayashida.com/",
+        image: "/images/mockups/khmarkdown-laptop-no-notch-mockup_result.png",
+    },
 ]
 
 export default { tool_logos, web_projects }
