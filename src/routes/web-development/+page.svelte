@@ -26,7 +26,7 @@
 				});
 			},
 			{
-				threshold: 0.8
+				threshold: 0.5
 			}
 		);
 
@@ -94,7 +94,7 @@
 											<span class="content_half__content__tools">
 												<h4>Tools</h4>
 												<div>
-													{#each Array.from(project.tools.map( (tool) => tool_logos.filter((i) => i.name === tool) )) as tool}
+													{#each Array.from(project.tools.map((tool) => tool_logos.filter((i) => i.name === tool) )) as tool}
 														<img
 															src={`/images/${tool[0].fileName}`}
 															alt={tool[0].name}
