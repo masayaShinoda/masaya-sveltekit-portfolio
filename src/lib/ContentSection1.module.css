@@ -105,5 +105,5 @@
 }
 
 .font__bold {
-    font-family: var(--font_primary_bold);
+    font-weight: 700;
 }

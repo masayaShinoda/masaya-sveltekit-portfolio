@@ -12,7 +12,10 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: var(--font_primary), var(--font_khmer), sans-serif;
+    font-family: var(--font_primary), sans-serif;
+}
+*[lang="km"] {
+    font-family: var(--font_khmer), sans-serif;
 }
 
 body {
@@ -27,11 +30,11 @@ body[data-theme="dark"] {
 }
 
 h1 {
-    font-family: var(--font_primary_bold), sans-serif;
+    font-weight: 700;
     line-height: 1.15;
 } 
 h2, h3, h4, h5 {
-    font-family: var(--font_primary_semibold), sans-serif;
+    font-weight: 600;
     line-height: 1.24;
 } 
   

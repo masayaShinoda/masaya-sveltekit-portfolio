@@ -81,7 +81,7 @@
 }
 
 .webdev_top_section__left>h1 {
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     font-size: 2rem;
     color: var(--clr_primary);
     text-align: center;
@@ -276,7 +276,7 @@
 
 .webdev_projects_section__body__item .name {
     font-size: var(--type_scale_4);
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     margin-bottom: .875rem;
 }
 

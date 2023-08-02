@@ -85,7 +85,7 @@
     line-height: 1.24;
 
     font-size: var(--type_scale_2);
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     padding: 2.5rem .875rem;
     border-radius: 1rem;
     cursor: pointer;

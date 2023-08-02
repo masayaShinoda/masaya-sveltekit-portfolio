@@ -5,7 +5,7 @@
     background-color: var(--clr_secondary);
 
     font-size: 1.125rem;
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     padding: .875rem 1.25rem;
     text-decoration: none;
     /* border-radius: .75rem; */

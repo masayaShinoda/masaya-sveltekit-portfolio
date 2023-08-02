@@ -60,7 +60,7 @@
 }
 .nav_content nav a {
     font-size: 1rem;
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     text-decoration: none;
     margin-right: 1rem;
     color: var(--clr_primary);

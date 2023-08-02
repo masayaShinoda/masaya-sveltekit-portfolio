@@ -54,7 +54,7 @@
 } */
 .ui_page_container .top_section .heading_container h1 {
     font-size: 2rem;
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     color: var(--clr_primary);
 }
 [data-theme="dark"] .ui_page_container .top_section .heading_container h1 {
@@ -222,7 +222,7 @@
 .ui_page_container .name {
     /* color: #fff; */
     color: var(--clr_primary);
-    font-family: var(--font_primary_bold);
+    font-weight: 700;
     margin-bottom: 1.75rem;
 }
 .ui_page_container .categ_head {
@@ -272,7 +272,7 @@
 .ui_page_container .project_link {
     text-decoration: none;
     font-size: 1.25rem;
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     color: var(--clr_secondary);
 }
 .ui_page_container .project_link:hover {

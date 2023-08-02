@@ -34,7 +34,7 @@
 .action_btn {
     color: var(--clr_secondary);
     font-size: var(--type_scale_3);
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     padding: .125rem 0;
     text-decoration: none;
     text-align: center;

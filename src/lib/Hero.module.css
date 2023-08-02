@@ -68,7 +68,7 @@
 
 .subtitle {
     font-size: var(--type_scale_2);
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     color: var(--clr_grey_shade_a);
     margin-bottom: 1.5rem;
 }
@@ -79,7 +79,7 @@
 
 .title {
     font-size: var(--type_scale_4);
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     color: var(--clr_primary);
     line-height: 1.24;
     margin-bottom: 2.5rem;
@@ -92,7 +92,7 @@
 .action_btn {
     color: var(--clr_secondary);
     font-size: var(--type_scale_2);
-    font-family: var(--font_primary_semibold);
+    font-weight: 600;
     padding: .125rem 0;
     text-decoration: none;
 }

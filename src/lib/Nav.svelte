@@ -54,6 +54,13 @@ function toggleTheme(e) {
         <div class="nav_links">
             <nav>
                 <a 
+                href="/#"
+                lang="km"
+                >វគ្គសិក្សា</a>
+                <a 
+                href="/#portfolio"
+                >Portfolio</a>
+                <a 
                 href="/web-development"
                 class={`${$page.url.pathname === "/web-development" ? "link__active" : null}`}
                 >Web Development</a>
