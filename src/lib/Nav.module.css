@@ -34,9 +34,8 @@
     }
 }
 .nav_content nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: inline-block;
+    text-align: end;
     /* outline: 1px solid red; */
 }
 .mobile_nav_btn {
@@ -59,12 +58,14 @@
     filter: saturate(0) invert(1) brightness(5);
 }
 .nav_content nav a {
-    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: .75rem;
     color: var(--clr_primary);
     transition: color 200ms ease-out;
+}
+.nav_content nav a:lang(km) {
+    /* font-size: 1.125rem; */
 }
 [data-theme="dark"] .nav_content a {
     color: #fff;
