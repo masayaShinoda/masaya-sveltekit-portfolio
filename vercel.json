@@ -1,5 +1,5 @@
 {
-    "redirects": [
+    "rewrites": [
         {
             "source": "/",
             "has": [
@@ -8,7 +8,7 @@
                     "value": "courses.masayashida.com"
                 }
             ],
-            "destination": "masayashida.com/courses"
+            "destination": "https://masayashida.com/courses/"
         }
     ]
 }

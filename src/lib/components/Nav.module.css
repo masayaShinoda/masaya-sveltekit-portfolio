@@ -77,7 +77,7 @@
 }
 
 .nav_content nav a:lang(km) {
-    /* font-size: 1.125rem; */
+    font-size: 1.175rem;
 }
 
 [data-theme="dark"] .nav_content a {
