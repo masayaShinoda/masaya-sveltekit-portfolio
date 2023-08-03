@@ -1,0 +1,16 @@
+rewrites() {
+    return {
+        beforeFiles: [
+            {
+                source: '/:path*',
+                has: [
+                    {
+                        type: 'host',
+                        value: 'courses.masayashida.com',
+                    },
+                ],
+                destination: '/courses/:path*',
+            },
+        ]
+    }
+}
