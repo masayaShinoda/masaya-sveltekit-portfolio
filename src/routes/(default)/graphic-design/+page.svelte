@@ -2,7 +2,7 @@
 import { onMount } from "svelte"
 import data from "./data.js"
 import { lazyLoad } from "./lazy_load.js"
-import BackToTop from "$lib/BackToTop.svelte";
+import BackToTop from "$lib/components/BackToTop.svelte";
 
 let gfx_projects = data.gfx_projects
 

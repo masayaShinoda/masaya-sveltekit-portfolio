@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import data from './data.js';
 	import SvelteMarkdown from 'svelte-markdown';
-	import BackToTop from '$lib/BackToTop.svelte';
+	import BackToTop from '$lib/components/BackToTop.svelte';
 
 	let tool_logos = data.tool_logos;
 	let web_projects = data.web_projects;
