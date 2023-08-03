@@ -1,7 +1,3 @@
-<script>
-	import { goto } from '$app/navigation';
-</script>
-
 <div lang="km" class="courses_page_wrapper">
 	<p class="coming_soon">មកដល់ឆាប់ៗនេះ</p>
 	<!-- <a on:click|preventDefault={() => goto('/')} href="/">← ទៅទំព័រដើម</a> -->

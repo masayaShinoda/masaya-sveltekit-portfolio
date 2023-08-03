@@ -14,7 +14,7 @@ html {
 
 *:lang(km) {
     font-family: var(--font_khmer), sans-serif;
-    font-size: 112.5%;
+    font-size: 1.125rem;
 }
 
 body {

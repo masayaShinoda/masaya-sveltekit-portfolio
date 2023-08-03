@@ -1,10 +1,9 @@
 <script>
 	import ReusableLayout from '$lib/components/ReusableLayout.svelte';
+	import CoursesNav from '$lib/courses/CoursesNav.svelte';
 </script>
 
 <ReusableLayout language="km" custom_nav>
-	<section slot="custom_nav">
-		<span>Custom nav</span>
-	</section>
+	<CoursesNav slot="custom_nav" />
 	<slot />
 </ReusableLayout>

@@ -1,8 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { writable } from 'svelte/store';
-	import { browser } from '$app/environment';
-	import { onMount } from 'svelte';
+	import ThemeToggler from '$lib/components/ThemeToggler.svelte';
 
 	const mobileNavActive = writable(false);
 
@@ -18,25 +17,6 @@
 			document.body.style.overflowY = 'hidden';
 		} else {
 			document.body.style.overflowY = 'scroll';
-		}
-	}
-
-	onMount(() => {
-		if (localStorage.getItem('theme') === 'dark') {
-			document.getElementById('toggle_checkbox').checked = true;
-		} else {
-			document.getElementById('toggle_checkbox').checked = false;
-		}
-	});
-	function toggleTheme(e) {
-		if (browser) {
-			if (e.target.checked) {
-				localStorage.setItem('theme', 'dark');
-				document.querySelector('body').dataset.theme = 'dark';
-			} else {
-				localStorage.setItem('theme', 'light');
-				document.querySelector('body').dataset.theme = 'light';
-			}
 		}
 	}
 </script>
@@ -70,16 +50,7 @@
                 Blog</a> -->
 				<!-- <button on:click={toggleLocale}>Toggle Language</button> -->
 			</nav>
-			<div class="theme_toggle">
-				<input type="checkbox" id="toggle_checkbox" on:change={toggleTheme} />
-				<label for="toggle_checkbox" title="Toggle website theme.">
-					<div id="star">
-						<div class="star" id="star-1">★</div>
-						<div class="star" id="star-2">★</div>
-					</div>
-					<div id="moon" />
-				</label>
-			</div>
+			<ThemeToggler />
 		</div>
 		<button
 			class={`mobile_nav_btn ${isActive ? 'close' : null}`}
@@ -93,6 +64,7 @@
 	</div>
 	<div class={`mobile_nav_container ${isActive ? 'active' : null}`}>
 		<nav class="mobile_nav_drawer">
+			<a href="/courses" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
 			<a href="/web-development" on:click={toggleMobileNav}>Web Development</a>
 			<a href="/graphic-design" on:click={toggleMobileNav}>Graphic Design</a>
 			<a href="/ui-design" on:click={toggleMobileNav}>UI Design</a>
