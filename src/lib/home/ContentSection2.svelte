@@ -1,6 +1,4 @@
 <script>
-	// import { getContext, onMount } from "svelte"
-
 	const technologies_icons = [
 		{
 			categ: 'Web Technologies',
@@ -68,8 +66,6 @@
 			]
 		}
 	];
-
-	// console.log(getContext("themeContext"))
 </script>
 
 <section class="content_section_2_container">
