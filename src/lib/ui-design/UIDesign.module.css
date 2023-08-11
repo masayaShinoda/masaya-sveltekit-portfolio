@@ -123,7 +123,8 @@
 }
 
 
-.ui_portf_item_section_container h3 {
+.ui_portf_item_section_container h2 {
+    font-size: var(--type_scale_3);
     color: #fff;
     width: 100%;
     display: flex;
