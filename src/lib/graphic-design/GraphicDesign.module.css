@@ -56,7 +56,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
+    max-width: calc(100% - 2rem);
 
     position: -webkit-sticky; /* Safari */
     position: sticky;
