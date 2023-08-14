@@ -5,6 +5,7 @@
 			<span class="socials_container">
 				<a href="https://github.com/masayaShinoda">GitHub</a>
 				<a href="https://t.me/shinoda17">Telegram</a>
+				<a href="mailto:masayashida@gmail.com">Email</a>
 			</span>
 		</section>
 		<section class="form_section">
@@ -42,13 +43,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		/* align-items: center; */
 		margin: 0 auto;
-		/* width: 100%; */
 		width: -moz-fit-content;
 		width: fit-content;
 		max-width: min(100%, var(--content_max_width_desktop));
-		/* padding: 5rem var(--padding_horizontal_desktop); */
 		padding: 5rem var(--padding_horizontal_desktop);
 	}
 	@media screen and (max-width: 64em) {
@@ -60,10 +58,16 @@
 	}
 	@media screen and (max-width: 48em) {
 		.contact_page_container .content {
-			width: 100%;
-			max-width: 100%;
+			width: 80%;
+			max-width: 80%;
 			align-items: flex-start;
 			padding: 5rem var(--padding_horizontal_mobile);
+		}
+	}
+	@media screen and (max-width: 32em) {
+		.contact_page_container .content {
+			width: 100%;
+			max-width: 100%;
 		}
 	}
 
@@ -102,7 +106,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		/* outline: 1px solid red; */
 		width: 30rem;
 	}
 	@media screen and (max-width: 48em) {
@@ -157,7 +160,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
-		padding: 0.75rem 0.5rem;
+		padding: 1rem 0.5rem;
 		margin-top: 0.5rem;
 		outline: none;
 		border: none;
@@ -167,7 +170,7 @@
 	}
 	[data-theme='dark'] .form_section form input,
 	[data-theme='dark'] .form_section form textarea {
-		background-color: var(--clr_grey_shade_b);
+		background-color: var(--clr_grey_shade_a);
 		color: #fff;
 	}
 	.form_section form textarea {
