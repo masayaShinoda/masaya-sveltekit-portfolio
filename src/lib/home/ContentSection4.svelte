@@ -9,6 +9,11 @@
 			title: "Certificate from freeCodeCamp's Responsive Web Design course.",
 			url: 'https://www.freecodecamp.org/certification/masaya-shida/responsive-web-design',
 			img: '/images/certif/fcc-certif-responsive-web-design-cropped_result.jpg'
+		},
+		{
+			title: "EF SET English Certificate 82/100 (C2 Proficient)",
+			url: 'https://www.efset.org/cert/mxHsCK',
+			img: '/images/certif/EF-SET-Certificate-01_result.jpg'
 		}
 	];
 </script>

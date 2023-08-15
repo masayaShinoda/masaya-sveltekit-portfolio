@@ -13,7 +13,6 @@
     margin: 0 auto;
     width: 100%;
     max-width: min(100%, calc(var(--content_max_width_desktop) * 0.875));
-    /* padding: 5rem var(--padding_horizontal_desktop); */
     padding: 3.25rem 0;
 }
 
@@ -57,9 +56,10 @@
 .certif_grid {
     margin: 2.5rem auto;
     display: grid;
-    grid-template-columns: .5fr .5fr;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    width: 100%;
+    width: 80%;
     max-width: 80%;
 }
 
