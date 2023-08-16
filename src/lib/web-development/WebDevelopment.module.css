@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: min(100%, var(--content_max_width_desktop));
-    padding: 2.5rem var(--padding_horizontal_desktop);
+    max-width: var(--content_max_width);
+    padding: 2.5rem var(--padding_horizontal);
     margin: 0 auto;
     /* outline: 1px solid green; */
 }
@@ -12,7 +12,7 @@
 @media screen and (max-width: 48em) {
     .webdev_top_section {
         align-items: flex-start;
-        padding: 2.5rem var(--padding_horizontal_mobile);
+        padding: 2.5rem var(--padding_horizontal);
     }
 }
 
@@ -136,15 +136,15 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: min(100%, var(--content_max_width_desktop));
-    padding: 0 var(--padding_horizontal_desktop);
+    max-width: var(--content_max_width);
+    padding: 0 var(--padding_horizontal);
     margin: 3.25rem auto;
     /* outline: 1px solid green; */
 }
 
 @media screen and (max-width: 48em) {
     .webdev_projects_section {
-        padding: 0 var(--padding_horizontal_mobile);
+        padding: 0 var(--padding_horizontal);
     }
 }
 

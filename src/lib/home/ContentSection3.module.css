@@ -11,8 +11,8 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: min(100%, calc(var(--content_max_width_desktop) * 0.875));
-    /* padding: 5rem var(--padding_horizontal_desktop); */
+    max-width: min(100%, calc(var(--content_max_width) * 0.875));
+    /* padding: 5rem var(--padding_horizontal); */
     padding: 3.25rem 0;
 }
 @media screen and (max-width: 48em) {
@@ -34,7 +34,7 @@
 }
 @media screen and (max-width: 48em) {
     .content_section_3_container .content > h3, .content_section_3_container .content > p {
-        padding: 0 var(--padding_horizontal_mobile);
+        padding: 0 var(--padding_horizontal);
     }
     .content_section_3_container .content > h3 {
         text-align: left;
@@ -62,7 +62,7 @@
     .portfolio_nav {
         width: 100%;
         max-width: 100%;
-        padding: 0 var(--padding_horizontal_mobile);
+        padding: 0 var(--padding_horizontal);
     }
 }
 @media screen and (max-width: 40em) {
@@ -114,7 +114,7 @@
     .portfolio_nav a {
         flex-direction: row;
         justify-content: flex-start;
-        padding: 1.5rem var(--padding_horizontal_mobile);
+        padding: 1.5rem var(--padding_horizontal);
         margin: 0 auto;
         width: 100%;
         max-width: 100%;

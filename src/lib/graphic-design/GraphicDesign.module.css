@@ -10,7 +10,7 @@
 @media screen and (max-width: 48em) {
     .gfxdes_top_section {
         margin: 2.5rem auto;
-        padding: 2.5rem var(--padding_horizontal_mobile);
+        padding: 2.5rem var(--padding_horizontal);
     }
 }
 .gfxdes_top_section > img {
@@ -91,7 +91,7 @@
 
 .gfxdes_grid_section {
     margin: 2.5rem auto;
-    max-width: min(calc(var(--content_max_width_desktop) * 0.9), 100%);
+    max-width: min(calc(var(--content_max_width) * 0.9), 100%);
 }
 .gfxdes_grid_section > h5.industry {
     margin-left: .25rem;

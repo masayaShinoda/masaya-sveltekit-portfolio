@@ -13,9 +13,9 @@
     justify-content: space-between;
     align-items: center;
     /* width: calc(100% - 2.5rem); */
-    max-width: var(--content_max_width_desktop);
+    max-width: var(--content_max_width);
     margin: 0 auto;
-    padding: 0 var(--padding_horizontal_desktop);
+    padding: 0 var(--padding_horizontal);
 }
 
 @media screen and (max-width: 48em) {
@@ -46,7 +46,7 @@
 @media screen and (max-width: 48em) {
     .hero_content>span {
         max-width: 100%;
-        padding: 0 var(--padding_horizontal_mobile);
+        padding: 0 var(--padding_horizontal);
     }
 
     .hero_content>img {

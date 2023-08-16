@@ -12,7 +12,7 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: min(100%, calc(var(--content_max_width_desktop) * 0.875));
+    max-width: min(100%, calc(var(--content_max_width) * 0.875));
     padding: 3.25rem 0;
 }
 
@@ -39,7 +39,7 @@
 
     .content_section_4_container .content>h3,
     .content_section_4_container .content>p {
-        padding: 0 var(--padding_horizontal_mobile);
+        padding: 0 var(--padding_horizontal);
     }
 
     .content_section_4_container .content>h3 {

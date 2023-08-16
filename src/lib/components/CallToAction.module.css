@@ -9,16 +9,17 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: min(100%, var(--content_max_width_desktop));
-    /* padding: 5rem var(--padding_horizontal_desktop); */
+    max-width: var(--content_max_width);
+    /* padding: 5rem var(--padding_horizontal); */
     padding: 3.25rem 0;
 }
 @media screen and (max-width: 48em) {
     .call_to_action_container .content {
         padding: 4.25rem 0;
-        width: calc(100% - calc(var(--padding_horizontal_mobile) * 2));
+        width: calc(100% - calc(var(--padding_horizontal) * 2));
     }
 }
+
 
 .call_to_action_container .content > p {
     font-size: var(--type_scale_1);

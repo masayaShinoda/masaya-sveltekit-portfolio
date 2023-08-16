@@ -46,8 +46,8 @@
 		margin: 0 auto;
 		width: -moz-fit-content;
 		width: fit-content;
-		max-width: min(100%, var(--content_max_width_desktop));
-		padding: 5rem var(--padding_horizontal_desktop);
+		max-width: var(--content_max_width);
+		padding: 5rem var(--padding_horizontal);
 	}
 	@media screen and (max-width: 64em) {
 		.contact_page_container .content {
@@ -61,7 +61,7 @@
 			width: 80%;
 			max-width: 80%;
 			align-items: flex-start;
-			padding: 5rem var(--padding_horizontal_mobile);
+			padding: 5rem var(--padding_horizontal);
 		}
 	}
 	@media screen and (max-width: 32em) {

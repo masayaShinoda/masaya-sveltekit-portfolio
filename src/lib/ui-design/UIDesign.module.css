@@ -10,13 +10,13 @@
     width: 100%;
     margin: 0 auto;
     /* background-color: #fff; */
-    padding: 3.25rem var(--padding_horizontal_desktop);
+    padding: 3.25rem var(--padding_horizontal);
     /* outline: 1px solid red; */
 }
 @media screen and (max-width: 48em) {
     .ui_page_container .content {
         margin-top: 2.5rem;
-        padding: 3.25rem var(--padding_horizontal_mobile);
+        padding: 3.25rem var(--padding_horizontal);
     }
 }
 
@@ -25,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: min(100%, calc(var(--content_max_width_desktop) * 0.925));
+    max-width: min(100%, calc(var(--content_max_width) * 0.925));
     margin: 0 auto;
 }
 @media screen and (max-width: 64em) {
@@ -102,7 +102,7 @@
 
     overflow: hidden;
 
-    max-width: min(100%, calc(var(--content_max_width_desktop) * 1.125));
+    max-width: min(100%, calc(var(--content_max_width) * 1.125));
     border-radius: 1rem;
     margin: 0 auto;
     box-shadow: inset 0 0 .5rem .5rem rgba(0,0,0,.125);
@@ -132,8 +132,8 @@
     margin: 5rem auto .75rem auto;
 }
 .ui_portf_item_section {
-    padding: 2.5rem var(--padding_horizontal_desktop);   
-    /* width: calc(100% - calc(var(--padding_horizontal_desktop) * 2)); */
+    padding: 2.5rem var(--padding_horizontal);   
+    /* width: calc(100% - calc(var(--padding_horizontal) * 2)); */
     width: 100%; 
     /* max-width: 100%; */
     margin: 0 auto;
@@ -143,7 +143,7 @@
 .ui_portf_item_content {
     width: 100%;
     max-width: 100%;
-    /* max-width: min(100%, var(--content_max_width_desktop)); */
+    /* max-width: var(--content_max_width); */
     margin: 0 auto;
     
     display: flex;

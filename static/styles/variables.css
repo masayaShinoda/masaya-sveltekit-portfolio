@@ -54,10 +54,8 @@ html {
     --clr_grey_shade_e: #ececec;
     --clr_grey_shade_f: #f7f7f7;
 
-    --content_max_width_desktop: min(100%, 72.5rem);
-    --padding_horizontal_desktop: 2.5rem;
-
-    --padding_horizontal_mobile: 1rem;
+    --content_max_width: min(100%, 72.5rem);
+    --padding_horizontal: 2.5rem;
 
     --filter_clr_primary: invert(13%) sepia(89%) saturate(1510%) hue-rotate(181deg) brightness(92%) contrast(104%);
     --filter_clr_primary_shade_a: invert(11%) sepia(76%) saturate(5252%) hue-rotate(193deg) brightness(105%) contrast(100%);
@@ -80,5 +78,8 @@ html {
         --type_scale_3: calc(1.563rem * 0.95);
         --type_scale_2: calc(1.25rem * 0.95);
         --type_scale_1: calc(1rem * 0.95);
+
+        --content_max_width: 100%;
+        --padding_horizontal: 1rem;
     }
 }

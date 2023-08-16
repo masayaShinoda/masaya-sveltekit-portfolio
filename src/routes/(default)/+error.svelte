@@ -31,8 +31,8 @@ import { page } from '$app/stores';
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    max-width: var(--content_max_width_desktop);
-    padding: 5rem var(--padding_horizontal_desktop);
+    max-width: var(--content_max_width);
+    padding: 5rem var(--padding_horizontal);
     text-align: center;
 }
 .content h2 {
