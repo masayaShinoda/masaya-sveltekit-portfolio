@@ -22,6 +22,6 @@
 		}
 	}
 	a {
-		font-size: 1.5rem;
+		font-size: var(--type_scale_5);
 	}
 </style>

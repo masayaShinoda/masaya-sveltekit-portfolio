@@ -26,7 +26,7 @@
 
 .gfxdes_top_section > h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: calc(var(--type_scale_6) * 1.125);
     color: var(--clr_primary);
     text-align: center;
     margin-bottom: 1rem;
@@ -41,7 +41,7 @@
 }
 @media screen and (max-width: 48em) {
     .gfxdes_top_section > h1 {
-        font-size: 1.75rem;
+        font-size: var(--type_scale_6);
     }
 }
 .gfxdes_top_section > p {

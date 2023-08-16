@@ -63,20 +63,22 @@ html {
     --filter_clr_secondary_shade_a: invert(41%) sepia(51%) saturate(4565%) hue-rotate(187deg) brightness(106%) contrast(104%);
     --filter_clr_secondary_shade_b: invert(60%) sepia(24%) saturate(7489%) hue-rotate(186deg) brightness(107%) contrast(105%);
 
-    /* type scaling */
-    --type_scale_5: 3.052rem;
-    --type_scale_4: 2.441rem;
-    --type_scale_3: 1.563rem;
-    --type_scale_2: 1.25rem;
+    /* type scaling (1.125 - major second) */
+    --type_scale_6: 1.802rem;
+    --type_scale_5: 1.602rem;
+    --type_scale_4: 1.424rem;
+    --type_scale_3: 1.266rem;
+    --type_scale_2: 1.125rem;
     --type_scale_1: 1rem;
 }
 
 @media screen and (max-width: 48em) {
     html {
-        --type_scale_5: calc(3.052rem * 0.95);
-        --type_scale_4: calc(2.441rem * 0.95);
-        --type_scale_3: calc(1.563rem * 0.95);
-        --type_scale_2: calc(1.25rem * 0.95);
+        --type_scale_6: calc(1.802rem * 0.95);
+        --type_scale_5: calc(1.602rem * 0.95);
+        --type_scale_4: calc(1.424rem * 0.95);
+        --type_scale_3: calc(1.266rem * 0.95);
+        --type_scale_2: calc(1.125rem * 0.95);
         --type_scale_1: calc(1rem * 0.95);
 
         --content_max_width: 100%;

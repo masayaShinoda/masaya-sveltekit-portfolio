@@ -77,7 +77,7 @@
 }
 
 .nav_content nav a:lang(km) {
-    font-size: 1.175rem;
+    font-size: var(--type_scale_2);
 }
 
 [data-theme="dark"] .nav_content a {
@@ -235,7 +235,7 @@
     .mobile_nav_drawer a {
         padding: 1.5rem calc(var(--padding_horizontal) * 1.25);
         color: #fff;
-        font-size: 1.25rem;
+        font-size: var(--type_scale_3);
         text-decoration: none;
         width: auto;
         /* width: 80%; */

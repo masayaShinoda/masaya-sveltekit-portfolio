@@ -14,7 +14,7 @@ html {
 
 *:lang(km) {
     font-family: var(--font_khmer), sans-serif;
-    font-size: 1.125rem;
+    font-size: var(--type_scale_2);
 }
 
 body {
@@ -54,23 +54,27 @@ blockquote {
 }
 
 h1 {
-    font-size: var(--type_scale_5);
+    font-size: var(--type_scale_6);
 }
 
 h2 {
-    font-size: var(--type_scale_4);
+    font-size: var(--type_scale_5);
 }
 
 h3 {
-    font-size: var(--type_scale_3);
+    font-size: var(--type_scale_4);
 }
 
 h4 {
-    font-size: var(--type_scale_2);
+    font-size: var(--type_scale_3);
 }
 
 h5 {
-    font-size: calc(var(--type_scale_1) * 1.125);
+    font-size: var(--type_scale_2);
+}
+
+h6 {
+    font-size: var(--type_scale_1);
 }
 
 div,

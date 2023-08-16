@@ -198,7 +198,7 @@
 		outline: none;
 		padding: 1rem 1rem;
 
-		font-size: 1rem;
+		font-size: var(--type_scale_1);
 		font-weight: 600;
 		background-color: var(--clr_secondary);
 		color: #fff;

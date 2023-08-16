@@ -78,7 +78,7 @@
 }
 
 .title {
-    font-size: var(--type_scale_4);
+    font-size: calc(var(--type_scale_6) * 1.25);
     font-weight: 600;
     color: var(--clr_primary);
     line-height: 1.24;

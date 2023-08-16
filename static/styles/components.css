@@ -1,7 +1,7 @@
 .btn_main {
     color: #fff;
     background-color: var(--clr_secondary);
-    font-size: 1.125rem;
+    font-size: var(--type_scale_2);
     font-weight: 400;
     padding: .875rem 1.25rem;
     text-decoration: none;
@@ -60,7 +60,7 @@ a.btn_main {
 
 .btn_main__smaller {
     font-family: var(--font_primary);
-    font-size: 1rem;
+    font-size: var(type_scale_1);
     padding: .75rem 1rem;
 }
 

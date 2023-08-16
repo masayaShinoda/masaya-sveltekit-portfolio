@@ -82,7 +82,7 @@
 
 .webdev_top_section__left>h1 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: calc(var(--type_scale_6) * 1.125);
     color: var(--clr_primary);
     text-align: center;
 }
@@ -93,7 +93,7 @@
 
 .webdev_top_section__right p {
     color: var(--clr_grey_shade_a);
-    font-size: 1.125rem;
+    font-size: var(--type_scale_2);
     line-height: 1.5;
     max-width: min(40ch, 100%);
 }
@@ -112,7 +112,7 @@
     }
 
     .webdev_top_section__right p {
-        font-size: 1rem;
+        font-size: var(--type_scale_1);
     }
 }
 
@@ -123,11 +123,11 @@
     }
 
     .webdev_top_section__left>h1 {
-        font-size: 1.75rem;
+        font-size: var(--type_scale_6);
     }
 
     .webdev_top_section__right p {
-        font-size: 1rem;
+        font-size: var(--type_scale_1);
     }
 }
 
@@ -271,21 +271,13 @@
 
 .webdev_projects_section__body__item .content_half {
     max-width: min(45ch, 100%);
-    /* outline: 1px solid green; */
 }
 
 .webdev_projects_section__body__item .name {
-    font-size: var(--type_scale_4);
+    font-size: var(--type_scale_6);
     font-weight: 600;
     margin-bottom: .875rem;
 }
-
-@media screen and (max-width: 64em) {
-    .webdev_projects_section__body__item .name {
-        font-size: 1.875rem;
-    }
-}
-
 .webdev_projects_section__body__item .industry {
     font-size: var(--type_scale_1);
     color: var(--clr_grey_shade_b);
@@ -314,7 +306,7 @@
 }
 
 .webdev_projects_section__body__item .content_half__content h4 {
-    font-size: 1.25rem;
+    font-size: var(--type_scale_2);
     margin-bottom: .5rem;
 }
 
