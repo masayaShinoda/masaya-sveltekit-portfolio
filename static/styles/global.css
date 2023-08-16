@@ -96,13 +96,13 @@ a {
     color: var(--clr_primary);
 }
 
+a:visited {
+    color: var(--clr_primary_shade_a);
+}
+
 a:hover,
 a:focus {
     color: var(--clr_secondary);
-}
-
-a:visited {
-    color: var(--clr_primary_shade_a);
 }
 
 [data-theme="dark"] a {
