@@ -1,4 +1,6 @@
 <script>
+	import styles from '$lib/graphic-design/GraphicDesign.module.css';
+
 	import { onMount } from 'svelte';
 	import data from './data.js';
 	import { lazyLoad } from './lazy_load.js';
@@ -7,7 +9,9 @@
 	let gfx_projects = data.gfx_projects;
 
 	onMount(() => {
-		let industry_divs = document.querySelectorAll('.gfx_projects_section__body__industry');
+		let industry_divs = document.querySelectorAll(
+			`.${styles.gfx_projects_section__body__industry}`
+		);
 
 		const observer = new IntersectionObserver(
 			(entries) => {
@@ -37,9 +41,9 @@
 <svelte:head>
 	<title>Masaya Shida | Graphic Design Portfolio</title>
 </svelte:head>
-<div class="content_page_container">
-	<div class="content">
-		<div class="gfxdes_top_section">
+<div class={styles.content_page_container}>
+	<div class={styles.content}>
+		<div class={styles.gfxdes_top_section}>
 			<img
 				src="/images/icon-pen.svg"
 				alt="decorative icon"
@@ -53,9 +57,12 @@
 				ideas to an audience.
 			</p>
 		</div>
-		<div class="gfx_projects_section__nav">
+		<div class={styles.gfx_projects_section__nav}>
 			<label for="gfx_projects_section__nav__btn_group">Industries: </label>
-			<nav id="gfx_projects_section__nav__btn_group" class="gfx_projects_section__nav__btn_group">
+			<nav
+				id="gfx_projects_section__nav__btn_group"
+				class={styles.gfx_projects_section__nav__btn_group}
+			>
 				{#each Array.from(gfx_projects
 						.filter((project) => project.items.length > 0)
 						.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry}
@@ -65,16 +72,20 @@
 				{/each}
 			</nav>
 		</div>
-		<div class="gfxdes_grid_section">
+		<div class={styles.gfxdes_grid_section}>
 			<!-- Photo Grid -->
 			{#each Array.from(gfx_projects
 					.filter((project) => project.items.length > 0)
 					.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}
-				<h5 class="industry">Industry: {industry}</h5>
-				<div id={encodeURI(industry)} key={index} class="row gfx_projects_section__body__industry">
+				<h5 class={styles.industry}>Industry: {industry}</h5>
+				<div
+					id={encodeURI(industry)}
+					key={index}
+					class={`${styles.row} ${styles.gfx_projects_section__body__industry}`}
+				>
 					{#each gfx_projects as project}
 						{#if project.industry === industry}
-							<div class="column">
+							<div class={styles.column}>
 								{#each project.items as item, n}
 									{#if (n + 1) % 3 === 1}
 										<img
@@ -83,12 +94,12 @@
 											loading="lazy"
 											id={`${index} ${project.industry}`}
 											key={`${index} ${project.industry}`}
-											class="gfx_projects_section__body__item"
+											class={styles.gfx_projects_section__body__item}
 										/>
 									{/if}
 								{/each}
 							</div>
-							<div class="column">
+							<div class={styles.column}>
 								{#each project.items as item, n}
 									{#if (n + 1) % 3 === 2}
 										<img
@@ -97,12 +108,12 @@
 											loading="lazy"
 											id={`${index} ${project.industry}`}
 											key={`${index} ${project.industry}`}
-											class="gfx_projects_section__body__item"
+											class={styles.gfx_projects_section__body__item}
 										/>
 									{/if}
 								{/each}
 							</div>
-							<div class="column">
+							<div class={styles.column}>
 								{#each project.items as item, n}
 									{#if (n + 1) % 3 === 0}
 										<img
@@ -111,7 +122,7 @@
 											loading="lazy"
 											id={`${index} ${project.industry}`}
 											key={`${index} ${project.industry}`}
-											class="gfx_projects_section__body__item"
+											class={styles.gfx_projects_section__body__item}
 										/>
 									{/if}
 								{/each}
@@ -127,7 +138,3 @@
 		<BackToTop />
 	</div>
 </div>
-
-<style>
-	@import '$lib/graphic-design/GraphicDesign.module.css';
-</style>
