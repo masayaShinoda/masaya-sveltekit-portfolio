@@ -1,4 +1,5 @@
 <script>
+	import styles from '$lib/ui-design/UIDesign.module.css';
 	import SvelteMarkdown from 'svelte-markdown';
 
 	const tool_logos = [
@@ -91,11 +92,11 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 <svelte:head>
 	<title>Masaya Shida | UI Design Portfolio</title>
 </svelte:head>
-<div class="ui_page_container">
-	<div class="content">
-		<section class="top_section">
+<div class={styles.ui_page_container}>
+	<div class={styles.content}>
+		<section class={styles.top_section}>
 			<span>
-				<span class="heading_container">
+				<span class={styles.heading_container}>
 					<h1>User Interface Design</h1>
 				</span>
 				<p>
@@ -113,12 +114,12 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 			/>
 		</section>
 	</div>
-	<div class="ui_portf_item_section_container">
+	<div class={styles.ui_portf_item_section_container}>
 		<h2>Portfolio</h2>
 		{#each ui_design_projects as project}
-			<section class="ui_portf_item_section" id={project.id}>
-				<div class="ui_portf_item_content">
-					<div class="proj_img_container">
+			<section class={styles.ui_portf_item_section} id={project.id}>
+				<div class={styles.ui_portf_item_content}>
+					<div class={styles.proj_img_container}>
 						<img
 							src={project.image}
 							alt={`Screenshot of ${project.name}`}
@@ -127,28 +128,28 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 							loading="lazy"
 						/>
 					</div>
-					<div class="proj_content">
-						<h3 class="name">
+					<div class={styles.proj_content}>
+						<h3 class={styles.name}>
 							{project.name}
 						</h3>
 
-						<div class="upper_half">
-							<span class="overview">
-								<h5 class="categ_head">Overview</h5>
-								<span class="body_text">
+						<div class={styles.upper_half}>
+							<span class={styles.overview}>
+								<h5 class={styles.categ_head}>Overview</h5>
+								<span class={styles.body_text}>
 									<SvelteMarkdown source={project.overview} />
 								</span>
 							</span>
-							<span class="responsibilities">
-								<h5 class="categ_head">Responsibilities</h5>
-								<span class="body_text">
+							<span class={styles.responsibilities}>
+								<h5 class={styles.categ_head}>Responsibilities</h5>
+								<span class={styles.body_text}>
 									<SvelteMarkdown source={project.responsibilities} />
 								</span>
 							</span>
 						</div>
-						<div class="bottom_half">
-							<span class="tools">
-								<h5 class="categ_head">Tools</h5>
+						<div class={styles.bottom_half}>
+							<span class={styles.tools}>
+								<h5 class={styles.categ_head}>Tools</h5>
 								<div>
 									{#each Array.from(project.tools.map( (tool) => tool_logos.filter((i) => i.name === tool) )) as tool}
 										<img
@@ -160,19 +161,15 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 									{/each}
 								</div>
 							</span>
-							<span class="duration">
-								<h5 class="categ_head">Duration</h5>
-								<p class="body_text">{project.duration}</p>
+							<span class={styles.duration}>
+								<h5 class={styles.categ_head}>Duration</h5>
+								<p class={styles.body_text}>{project.duration}</p>
 							</span>
 						</div>
-						<a class="project_link" href={project.link}>Go to Live Demo →</a>
+						<a class={styles.project_link} href={project.link}>Go to Live Demo →</a>
 					</div>
 				</div>
 			</section>
 		{/each}
 	</div>
 </div>
-
-<style>
-	@import '$lib/ui-design/UIDesign.module.css';
-</style>
