@@ -198,6 +198,11 @@
     background-color: var(--clr_primary_shade_a);
 }
 
+.webdev_projects_section__top__btn_group>a.section_top_btn:hover,
+.webdev_projects_section__top__btn_group>a.section_top_btn:focus {
+    color: #fff;
+}
+
 @media screen and (max-width: 48em) {
     .webdev_projects_section__top__line {
         margin-right: 0;
@@ -278,6 +283,7 @@
     font-weight: 600;
     margin-bottom: .875rem;
 }
+
 .webdev_projects_section__body__item .industry {
     font-size: var(--type_scale_1);
     color: var(--clr_grey_shade_b);

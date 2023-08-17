@@ -73,7 +73,7 @@
 				<div class={styles.webdev_projects_section__top__line} />
 				<nav class={styles.webdev_projects_section__top__btn_group}>
 					{#each Array.from(web_projects.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}
-						<a href={`#${encodeURI(industry)}`} class="btn_main btn_main__smaller">
+						<a href={`#${encodeURI(industry)}`} class={`${styles.section_top_btn} btn_main btn_main__smaller`}>
 							{industry}
 						</a>
 					{/each}
