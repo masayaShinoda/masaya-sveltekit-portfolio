@@ -1,4 +1,7 @@
 <script>
+	import '$lib/styles/global.css';
+	import '$lib/styles/components.css';
+
 	import { browser } from '$app/environment';
 
 	import Nav from '$lib/components/Nav.svelte';

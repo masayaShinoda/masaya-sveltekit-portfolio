@@ -1,4 +1,6 @@
 <script>
+	import styles from './ContentSection4.module.css';
+
 	let certificates = [
 		{
 			title: "Certificate from CS50's Web Development with Python and JavaScript course.",
@@ -11,19 +13,19 @@
 			img: '/images/certif/fcc-certif-responsive-web-design-cropped_result.jpg'
 		},
 		{
-			title: "EF SET English Certificate 82/100 (C2 Proficient)",
+			title: 'EF SET English Certificate 82/100 (C2 Proficient)',
 			url: 'https://www.efset.org/cert/mxHsCK',
 			img: '/images/certif/EF-SET-Certificate-01_result.jpg'
 		}
 	];
 </script>
 
-<section id="certifications" class="content_section_4_container">
-	<div class="content">
+<section id="certifications" class={styles.content_section_4_container}>
+	<div class={styles.content}>
 		<h3>Certifications</h3>
-		<div class="certif_grid">
+		<div class={styles.certif_grid}>
 			{#each certificates as certificate}
-				<div class="certif_item">
+				<div class={styles.certif_item}>
 					<a href={certificate.url}>
 						<img
 							src={certificate.img}
@@ -39,7 +41,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	@import './ContentSection4.module.css';
-</style>

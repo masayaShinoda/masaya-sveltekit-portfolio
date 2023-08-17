@@ -1,8 +1,12 @@
-<section id="portfolio" class="content_section_3_container">
-	<div class="content">
+<script>
+	import styles from './ContentSection3.module.css';
+</script>
+
+<section id="portfolio" class={styles.content_section_3_container}>
+	<div class={styles.content}>
 		<h3>Portfolio</h3>
 		<p>Some of my previous projects to illustrate my approach to solving problems.</p>
-		<nav class="portfolio_nav">
+		<nav class={styles.portfolio_nav}>
 			<a href="/web-development">
 				<i class="icons icon__code" />
 				Web Development
@@ -18,7 +22,3 @@
 		</nav>
 	</div>
 </section>
-
-<style>
-	@import './ContentSection3.module.css';
-</style>

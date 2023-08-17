@@ -1,4 +1,6 @@
 <script>
+	import styles from './ContentSection2.module.css';
+
 	const technologies_icons = [
 		{
 			categ: 'Web Technologies',
@@ -68,15 +70,15 @@
 	];
 </script>
 
-<section class="content_section_2_container">
-	<div class="content">
+<section class={styles.content_section_2_container}>
+	<div class={styles.content}>
 		<h3>Skillset</h3>
 		<p>
 			I'm constantly learning different technologies and software to complete projects efficiently.
 		</p>
-		<div class="technology_icons_container">
+		<div class={styles.technology_icons_container}>
 			{#each technologies_icons as { categ, icons }}
-				<div class="box">
+				<div class={styles.box}>
 					<h4>{categ}</h4>
 					<div>
 						{#each icons as icon}
@@ -94,7 +96,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	@import './ContentSection2.module.css';
-</style>
