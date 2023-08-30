@@ -43,12 +43,6 @@
 					href="/ui-design"
 					class={`${$page.url.pathname === '/ui-design' ? 'link__active' : null}`}>UI Design</a
 				>
-				<!-- <a href="/contact" class={`${$page.url.pathname === '/contact' ? 'link__active' : null}`}
-					>Contact</a
-				> -->
-				<!-- <a href="https://blog.masayashida.com">
-                Blog</a> -->
-				<!-- <button on:click={toggleLocale}>Toggle Language</button> -->
 			</nav>
 			<ThemeToggler />
 		</div>
@@ -64,12 +58,11 @@
 	</div>
 	<div class={`mobile_nav_container ${isActive ? 'active' : null}`}>
 		<nav class="mobile_nav_drawer">
+			<a href="/" on:click={toggleMobileNav}>Home</a>
 			<a href="/courses" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
 			<a href="/web-development" on:click={toggleMobileNav}>Web Development</a>
 			<a href="/graphic-design" on:click={toggleMobileNav}>Graphic Design</a>
 			<a href="/ui-design" on:click={toggleMobileNav}>UI Design</a>
-			<!-- <a href="/contact" on:click={toggleMobileNav}>Contact</a> -->
-			<!-- <a href="https://blog.masayashida.com" on:click={toggleMobileNav}>Blog</a> -->
 		</nav>
 		<div class="remaining" on:click={toggleMobileNav} />
 	</div>
