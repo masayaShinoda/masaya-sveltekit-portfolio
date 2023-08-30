@@ -64,7 +64,15 @@
 			<a href="/graphic-design" on:click={toggleMobileNav}>Graphic Design</a>
 			<a href="/ui-design" on:click={toggleMobileNav}>UI Design</a>
 		</nav>
-		<div class="remaining" on:click={toggleMobileNav} />
+		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+		<!-- this is the remaining space where users can tap to close nav -->
+		<div
+			class="remaining"
+			aria-label="Close navigation panel"
+			role="navigation"
+			on:click={toggleMobileNav}
+			on:keydown={toggleMobileNav}
+		/>
 	</div>
 </section>
 

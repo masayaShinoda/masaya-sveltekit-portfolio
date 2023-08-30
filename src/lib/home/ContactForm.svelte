@@ -163,15 +163,19 @@
 		padding: 1rem 0.5rem;
 		margin-top: 0.5rem;
 		outline: none;
-		border: none;
-		border: 1px solid rgba(0, 0, 0, 0.25);
 		border-radius: 0.5rem;
 		font-family: var(--font_primary);
 	}
+	.form_section form input,
+	.form_section form textarea {
+		background-color: var(--clr_grey_shade_f);
+		border: 1px solid var(--clr_grey_shade_d);
+	}
 	[data-theme='dark'] .form_section form input,
 	[data-theme='dark'] .form_section form textarea {
-		background-color: var(--clr_grey_shade_a);
 		color: #fff;
+		background-color: var(--clr_grey_shade_a);
+		border-color: var(--clr_grey_shade_b);
 	}
 	.form_section form textarea {
 		display: flex;

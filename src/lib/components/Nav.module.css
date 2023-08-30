@@ -238,11 +238,11 @@
         font-size: var(--type_scale_3);
         text-decoration: none;
         width: auto;
-        /* width: 80%; */
         border-bottom: 1px solid rgba(255, 255, 255, .375);
     }
 
     .mobile_nav_drawer a:hover {
+        color: #fff;
         border-color: var(--clr_grey_shade_e);
     }
 
