@@ -1,1 +1,1 @@
-<a href="#top" aria-label="Scroll back to top." style="display: inline-flex; justify-content: center; align-items: center; width: 100%; text-align: center; padding: .5rem 0; margin: 2.5rem auto;">↑ Back to top</a>
+<a href="#" aria-label="Scroll back to top." style="display: inline-flex; justify-content: center; align-items: center; width: 100%; text-align: center; padding: .5rem 0; margin: 2.5rem auto;">↑ Back to top</a>

@@ -1,10 +1,9 @@
 <script>
-	import styles from '$lib/graphic-design/GraphicDesign.module.css';
-
 	import { onMount } from 'svelte';
-	import data from './data.js';
 	import { lazyLoad } from './lazy_load.js';
 	import BackToTop from '$lib/components/BackToTop.svelte';
+	import data from './data.js';
+	import styles from '$lib/graphic-design/GraphicDesign.module.css';
 
 	let gfx_projects = data.gfx_projects;
 

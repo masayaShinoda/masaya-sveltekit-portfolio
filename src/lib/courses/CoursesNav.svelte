@@ -46,7 +46,15 @@
 			<a href="#" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
 			<a href="#" on:click={toggleMobileNav}>គ្រូបង្រៀន</a>
 		</nav>
-		<div class="remaining" on:click={toggleMobileNav} />
+		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+		<!-- this is the remaining space where users can tap to close nav -->
+		<div
+			class="remaining"
+			aria-label="Close navigation panel"
+			role="navigation"
+			on:click={toggleMobileNav}
+			on:keydown={toggleMobileNav}
+		/>
 	</div>
 </section>
 

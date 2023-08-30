@@ -1,4 +1,4 @@
-<div class="contact_page_container">
+<div id="contact" class="contact_page_container">
 	<div class="content">
 		<section>
 			<h3>Get in Touch</h3>

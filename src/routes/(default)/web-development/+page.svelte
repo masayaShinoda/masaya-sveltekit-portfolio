@@ -1,10 +1,9 @@
 <script>
-	import styles from '$lib/web-development/WebDevelopment.module.css';
-
 	import { onMount } from 'svelte';
-	import data from './data.js';
 	import SvelteMarkdown from 'svelte-markdown';
 	import BackToTop from '$lib/components/BackToTop.svelte';
+	import data from './data.js';
+	import styles from '$lib/web-development/WebDevelopment.module.css';
 
 	let tool_logos = data.tool_logos;
 	let web_projects = data.web_projects;

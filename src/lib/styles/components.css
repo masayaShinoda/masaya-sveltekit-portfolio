@@ -16,6 +16,10 @@
 a.btn_main {
 	color: #fff;
 }
+a.btn_main:hover,
+a.btn_main:focus-visible {
+	color: #fff;
+}
 
 @media screen and (max-width: 48em) {
 	.btn_main {
@@ -27,29 +31,14 @@ a.btn_main {
 	margin-right: 0.75rem;
 }
 
-.btn_main:hover {
+.btn_main:hover,
+.btn_main:focus-visible {
 	filter: brightness(0.9);
 }
 
-[data-theme='dark'] .btn_main:hover {
+[data-theme='dark'] .btn_main:hover,
+[data-theme='dark'] .btn_main:focus-visible {
 	filter: brightness(1.1);
-}
-
-@media screen and (max-width: 48em) {
-	.btn_main:not(:last-of-type) {
-		margin-right: 0;
-	}
-
-	.btn_main {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		/* justify-content: flex-end; */
-	}
-
-	/* .btn_main:only-of-type {
-		width: 100%;
-	} */
 }
 
 .btn_main__smaller {
@@ -63,13 +52,21 @@ a.btn_main {
 }
 
 .btn_main__inactive,
-.btn_main:disabled
-{
-    cursor: default;
+.btn_main:disabled {
 	background-color: var(--clr_grey_shade_c);
+}
+.btn_main:disabled {
+	cursor: default;
 }
 
 [data-theme='dark'] .btn_main__inactive,
 [data-theme='dark'] .btn_main:disabled {
 	background-color: var(--clr_grey_shade_c);
+}
+
+.btn_main__inactive:hover,
+.btn_main__inactive:focus-visible,
+.btn_main:disabled:hover,
+.btn_main:disabled:focus-visible {
+	filter: none;
 }
