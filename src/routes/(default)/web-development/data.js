@@ -153,6 +153,21 @@ I wanted to familiarize myself with Django and more specifically the Django REST
         link: "https://khmarkdown.masayashida.com/",
         image: "/images/mockups/khmarkdown-laptop-no-notch-mockup_result.png",
     },
+    {
+        id: "business-model-generator",
+        name: "Business Model Generator (Khmer & English)",
+        industry: "Personal",
+        overview: 
+`
+A mini web tool for generating a [business model canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas) based on user input. I made it to practice Typescript, and learn to more about Svelte and how it handles state.
+`,
+        tools: [
+            "Svelte",
+        ],
+        duration: "One week",
+        link: "https://bmc.masayashida.com/",
+        image: "/images/mockups/kh-bmc-laptop-no-notch-mockup_result.png",
+    },
 ]
 
 export default { tool_logos, web_projects }
