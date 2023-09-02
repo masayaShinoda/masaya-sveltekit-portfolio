@@ -93,7 +93,6 @@
 
 .webdev_top_section__right p {
 	color: var(--clr_grey_shade_a);
-	font-size: var(--type_scale_2);
 	line-height: 1.5;
 	max-width: min(40ch, 100%);
 }
@@ -110,10 +109,6 @@
 	.webdev_top_section__left > h1 {
 		font-size: var(--type_scale_3);
 	}
-
-	.webdev_top_section__right p {
-		font-size: var(--type_scale_1);
-	}
 }
 
 @media screen and (max-width: 48em) {
@@ -124,10 +119,6 @@
 
 	.webdev_top_section__left > h1 {
 		font-size: var(--type_scale_6);
-	}
-
-	.webdev_top_section__right p {
-		font-size: var(--type_scale_1);
 	}
 }
 

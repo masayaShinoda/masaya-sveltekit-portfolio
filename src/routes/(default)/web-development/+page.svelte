@@ -62,7 +62,7 @@
 					internet connection can access.
 				</p>
 				<p>
-					I have self-taught myself web development to create engaging and user-friendly websites.
+					I have taught myself web development to create engaging and user-friendly websites.
 				</p>
 			</div>
 		</section>
