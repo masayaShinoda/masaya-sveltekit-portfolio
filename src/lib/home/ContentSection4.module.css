@@ -18,7 +18,6 @@
 
 @media screen and (max-width: 48em) {
 	.content_section_4_container .content {
-		align-items: flex-start;
 		padding: 1rem 0;
 		max-width: 100%;
 	}
@@ -38,10 +37,6 @@
 	.content_section_4_container .content > h2,
 	.content_section_4_container .content > p {
 		padding: 0 var(--padding_horizontal);
-	}
-
-	.content_section_4_container .content > h2 {
-		text-align: left;
 	}
 }
 
