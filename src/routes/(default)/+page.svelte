@@ -5,7 +5,6 @@
 	import ContentSection3 from '$lib/home/ContentSection3.svelte';
 	import ContentSection4 from '$lib/home/ContentSection4.svelte';
 	import CallToAction from '$lib/components/CallToAction.svelte';
-	import ContactForm from '$lib/home/ContactForm.svelte';
 	import BackToTop from '$lib/components/BackToTop.svelte';
 </script>
 
@@ -17,6 +16,5 @@
 <ContentSection2 />
 <ContentSection3 />
 <ContentSection4 />
-<ContactForm />
 <CallToAction />
 <BackToTop />

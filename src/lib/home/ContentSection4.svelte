@@ -22,7 +22,7 @@
 
 <section id="certifications" class={styles.content_section_4_container}>
 	<div class={styles.content}>
-		<h3>Certifications</h3>
+		<h2>Certifications</h2>
 		<div class={styles.certif_grid}>
 			{#each certificates as certificate}
 				<div class={styles.certif_item}>

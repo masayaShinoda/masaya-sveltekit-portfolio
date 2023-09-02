@@ -4,7 +4,7 @@
 
 <section id="portfolio" class={styles.content_section_3_container}>
 	<div class={styles.content}>
-		<h3>Portfolio</h3>
+		<h2>Portfolio</h2>
 		<p>Some of my previous projects to illustrate my approach to solving problems.</p>
 		<nav class={styles.portfolio_nav}>
 			<a href="/web-development">
