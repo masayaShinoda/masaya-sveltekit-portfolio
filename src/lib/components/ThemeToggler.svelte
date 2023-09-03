@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	import MoonLine from '$lib/components/icons/moon-line.svelte';
 	import SunLine from '$lib/components/icons/sun-line.svelte';
 	import { themeStore } from '../../stores';
 
-	let theme;
+	let theme: string;
 
 	themeStore.subscribe((value) => {
 		theme = value;

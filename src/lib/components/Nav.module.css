@@ -70,11 +70,11 @@
 }
 
 .nav_content nav a {
-	font-weight: 600;
+	font-weight: 400;
 	text-decoration: none;
 	margin-right: 0.75rem;
 	color: var(--clr_primary);
-	transition: color 200ms ease-out;
+	transition: color 100ms ease-out;
 }
 
 .nav_content nav a:lang(km) {
@@ -92,13 +92,13 @@
 }
 
 .nav_content nav a:hover,
-.nav_content nav a:focus {
-	color: var(--clr_primary_shade_a);
+.nav_content nav a:focus-visible {
+	color: var(--clr_secondary);
 }
 
 [data-theme='dark'] .nav_content nav a:hover,
-[data-theme='dark'] .nav_content nav a:focus {
-	color: var(--clr_grey_shade_d);
+[data-theme='dark'] .nav_content nav a:focus-visible {
+	color: var(--clr_secondary_shade_b);
 }
 
 .nav_content nav a:last-of-type {
@@ -142,7 +142,7 @@
 	}
 
 	.mobile_nav_btn:hover,
-	.mobile_nav_btn:focus {
+	.mobile_nav_btn:focus-visible {
 		cursor: pointer;
 		filter: brightness(1.125);
 	}

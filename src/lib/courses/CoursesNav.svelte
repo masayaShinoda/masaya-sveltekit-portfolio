@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
 	import { writable } from 'svelte/store';
 	import ThemeToggler from '$lib/components/ThemeToggler.svelte';
+	import styles from '$lib/components/Nav.module.css';
 
 	const mobileNavActive = writable(false);
 
-	let isActive;
+	let isActive: boolean;
 
 	mobileNavActive.subscribe((value) => {
 		isActive = value;
@@ -19,12 +20,12 @@
 	}
 </script>
 
-<section lang="km" class="nav_container">
-	<div class="nav_content">
-		<a href="/" class="logo_link">
+<section lang="km" class={styles.nav_container}>
+	<div class={styles.nav_content}>
+		<a href="/" class={styles.logo_link}>
 			<img src="/images/maya-logo-icon.svg" alt="Logo" width="60" height="60" />
 		</a>
-		<div class="nav_links">
+		<div class={styles.nav_links}>
 			<nav>
 				<a href="#">វគ្គសិក្សា</a>
 				<a href="#">អ្នកបង្រៀន</a>
@@ -32,7 +33,7 @@
 			<ThemeToggler />
 		</div>
 		<button
-			class={`mobile_nav_btn ${isActive ? 'close' : null}`}
+			class={`${styles.mobile_nav_btn} ${isActive ? styles.close : null}`}
 			on:click={toggleMobileNav}
 			aria-label={`${isActive ? 'Close' : 'Open'} Menu`}
 		>
@@ -41,15 +42,15 @@
 			<span aria-hidden="true" />
 		</button>
 	</div>
-	<div class={`mobile_nav_container ${isActive ? 'active' : null}`}>
-		<nav class="mobile_nav_drawer">
+	<div class={`${styles.mobile_nav_container} ${isActive ? styles.active : null}`}>
+		<nav class={styles.mobile_nav_drawer}>
 			<a href="#" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
 			<a href="#" on:click={toggleMobileNav}>គ្រូបង្រៀន</a>
 		</nav>
 		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 		<!-- this is the remaining space where users can tap to close nav -->
 		<div
-			class="remaining"
+			class={styles.remaining}
 			aria-label="Close navigation panel"
 			role="navigation"
 			on:click={toggleMobileNav}
@@ -57,7 +58,3 @@
 		/>
 	</div>
 </section>
-
-<style>
-	@import '$lib/components/Nav.module.css';
-</style>

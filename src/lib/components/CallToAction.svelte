@@ -78,11 +78,11 @@
 		padding: 0 1rem;
 	}
 	.call_to_action_container .content ul li:not(:last-of-type)::after {
-		content: "●";
+		content: '●';
 		position: relative;
 		left: 1rem;
-		font-size: .5rem;
-		bottom: .125rem;
+		font-size: 0.5rem;
+		bottom: 0.125rem;
 		opacity: 0.25;
 	}
 	[data-theme='dark'] .call_to_action_container .content ul li:not(:last-of-type) {

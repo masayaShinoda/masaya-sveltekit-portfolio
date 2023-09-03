@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import SvelteMarkdown from 'svelte-markdown';
 	import BackToTop from '$lib/components/BackToTop.svelte';
-	import data from './data.js';
+	import data from './data';
 	import styles from '$lib/web-development/WebDevelopment.module.css';
 
 	let tool_logos = data.tool_logos;
@@ -20,11 +20,11 @@
 					if (!intersecting) {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							.classList.add('btn_main__inactive');
+							?.classList.add('btn_main__inactive');
 					} else {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							.classList.remove('btn_main__inactive');
+							?.classList.remove('btn_main__inactive');
 					}
 				});
 			},
@@ -46,13 +46,7 @@
 	<div class={styles.content}>
 		<section class={styles.webdev_top_section}>
 			<div class={styles.webdev_top_section__left}>
-				<img
-					src="/images/icon-code.svg"
-					alt="decorative icon"
-					width="100"
-					height="75"
-					loading="lazy"
-				/>
+				<img src="/images/icon-code.svg" alt="decorative icon" width="100" height="75" />
 				<h1>Web Development</h1>
 			</div>
 			<div class={styles.webdev_top_section__right}>
@@ -61,9 +55,7 @@
 					share their ideas and to show who they are and what they care about, where anyone with an
 					internet connection can access.
 				</p>
-				<p>
-					I have taught myself web development to create engaging and user-friendly websites.
-				</p>
+				<p>I have taught myself web development to create engaging and user-friendly websites.</p>
 			</div>
 		</section>
 		<section class={styles.webdev_projects_section}>
@@ -72,7 +64,10 @@
 				<div class={styles.webdev_projects_section__top__line} />
 				<nav class={styles.webdev_projects_section__top__btn_group}>
 					{#each Array.from(web_projects.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}
-						<a href={`#${encodeURI(industry)}`} class={`${styles.section_top_btn} btn_main btn_main__smaller`}>
+						<a
+							href={`#${encodeURI(industry)}`}
+							class={`${styles.section_top_btn} btn_main btn_main__smaller`}
+						>
 							{industry}
 						</a>
 					{/each}

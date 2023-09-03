@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import styles from '$lib/ui-design/UIDesign.module.css';
 	import SvelteMarkdown from 'svelte-markdown';
 
@@ -105,13 +105,7 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 				</p>
 				<br />
 			</span>
-			<img
-				src="/images/icon-explorer.svg"
-				alt="decorative icon"
-				width="240"
-				height="180"
-				loading="lazy"
-			/>
+			<img src="/images/icon-explorer.svg" alt="decorative icon" width="240" height="180" />
 		</section>
 	</div>
 	<div class={styles.ui_portf_item_section_container}>

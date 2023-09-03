@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import ReusableLayout from '$lib/components/ReusableLayout.svelte';
 	import CoursesNav from '$lib/courses/CoursesNav.svelte';
 </script>

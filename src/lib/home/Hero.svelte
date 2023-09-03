@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import styles from './Hero.module.css';
 </script>
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import styles from './ContentSection2.module.css';
 
 	const technologies_icons = [

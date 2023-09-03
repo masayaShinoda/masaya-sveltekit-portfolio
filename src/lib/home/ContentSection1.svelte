@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import styles from './ContentSection1.module.css';
 </script>
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Hero from '$lib/home/Hero.svelte';
 	import ContentSection1 from '$lib/home/ContentSection1.svelte';
 	import ContentSection2 from '$lib/home/ContentSection2.svelte';
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Masaya Shida | Cambodia-Based Web Developer</title>
+	<title>Masaya Shida | Cambodia-Based Web Developer & Designer</title>
 </svelte:head>
 <Hero />
 <ContentSection1 />

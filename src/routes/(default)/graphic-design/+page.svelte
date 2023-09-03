@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
-	import { lazyLoad } from './lazy_load.js';
+	import { lazyLoad } from './lazy_load';
 	import BackToTop from '$lib/components/BackToTop.svelte';
-	import data from './data.js';
+	import data from './data';
 	import styles from '$lib/graphic-design/GraphicDesign.module.css';
 
 	let gfx_projects = data.gfx_projects;
@@ -19,11 +19,11 @@
 					if (!intersecting) {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							.classList.add('btn_main__inactive');
+							?.classList.add('btn_main__inactive');
 					} else {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							.classList.remove('btn_main__inactive');
+							?.classList.remove('btn_main__inactive');
 					}
 				});
 			},
@@ -43,13 +43,7 @@
 <div class={styles.content_page_container}>
 	<div class={styles.content}>
 		<div class={styles.gfxdes_top_section}>
-			<img
-				src="/images/icon-pen.svg"
-				alt="decorative icon"
-				width="100"
-				height="75"
-				loading="lazy"
-			/>
+			<img src="/images/icon-pen.svg" alt="decorative icon" width="100" height="75" />
 			<h1>Graphic Design Portfolio</h1>
 			<p>
 				I have always believed in using graphic design as an effective method to communicate key
@@ -79,7 +73,6 @@
 				<h5 class={styles.industry}>Industry: {industry}</h5>
 				<div
 					id={encodeURI(industry)}
-					key={index}
 					class={`${styles.row} ${styles.gfx_projects_section__body__industry}`}
 				>
 					{#each gfx_projects as project}
@@ -92,7 +85,6 @@
 											alt={item.alt}
 											loading="lazy"
 											id={`${index} ${project.industry}`}
-											key={`${index} ${project.industry}`}
 											class={styles.gfx_projects_section__body__item}
 										/>
 									{/if}
@@ -106,7 +98,6 @@
 											alt={item.alt}
 											loading="lazy"
 											id={`${index} ${project.industry}`}
-											key={`${index} ${project.industry}`}
 											class={styles.gfx_projects_section__body__item}
 										/>
 									{/if}
@@ -120,7 +111,6 @@
 											alt={item.alt}
 											loading="lazy"
 											id={`${index} ${project.industry}`}
-											key={`${index} ${project.industry}`}
 											class={styles.gfx_projects_section__body__item}
 										/>
 									{/if}

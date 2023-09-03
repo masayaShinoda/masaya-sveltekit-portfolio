@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import styles from './ContentSection4.module.css';
 
 	let certificates = [

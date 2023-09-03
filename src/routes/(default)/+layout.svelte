@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import { themeStore } from '../../stores';
 	import ReusableLayout from '$lib/components/ReusableLayout.svelte';
 
 	onMount(() => {
-		function set_theme(theme) {
+		function set_theme(theme: string) {
 			localStorage.setItem('theme', theme);
 			themeStore.set(theme);
 			document.body.dataset.theme = theme;
