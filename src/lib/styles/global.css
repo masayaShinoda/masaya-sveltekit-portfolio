@@ -13,7 +13,8 @@ html {
 }
 
 *:lang(km) {
-    font-family: var(--font_khmer), sans-serif;
+    font-family: var(--font_khmer), var(--font_primary), sans-serif;
+    font-weight: 400;
     font-size: var(--type_scale_2);
 }
 
@@ -51,6 +52,10 @@ small,
 q,
 blockquote {
     font-family: var(--font_primary), sans-serif;
+}
+
+[lang="km"] * {
+    font-family: var(--font_khmer), var(--font_primary), sans-serif;
 }
 
 h1 {

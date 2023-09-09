@@ -20,22 +20,15 @@
 }
 
 @font-face {
-    font-family: "Noto Sans Khmer";
-    src: url(/fonts/NotoSansKhmer-Regular.ttf);
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Noto Sans Khmer";
-    src: url(/fonts/NotoSansKhmer-SemiBold.ttf);
-    font-weight: 600 700;
-    font-display: swap;
+	font-family: 'Khmer';
+	src: url(./fonts/Khmer-Regular.ttf);
+	font-weight: normal;
+	font-display: swap;
 }
 
 html {
     --font_primary: "Metropolis";
-    --font_khmer: "Noto Sans Khmer";
+    --font_khmer: "Khmer";
 
     --clr_dark: #141414;
     --clr_dark_shade_a: #212121;
