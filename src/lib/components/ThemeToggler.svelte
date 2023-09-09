@@ -11,6 +11,7 @@
 
 	function toggleTheme() {
 		themeStore.update((theme) => (theme === 'light' ? 'dark' : 'light'));
+		// console.log(theme)
 	}
 </script>
 
