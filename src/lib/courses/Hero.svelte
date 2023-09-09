@@ -1,7 +1,7 @@
 <section class="hero_container">
 	<div class="hero_section">
 		<div class="hero_content">
-			<h1>វគ្គសិក្សាឌីស្សាញ<wbr />និងសរសេរកូដ</h1>
+			<h1>វគ្គសិក្សាសរសេរកូដ<wbr />និងឌីស្សាញ</h1>
 			<p>មេរៀនជាភាសាខ្មែរនិងមានការពន្យល់លម្អិត។</p>
 			<div class="hero_links">
 				<ul>
@@ -167,16 +167,18 @@
 	@media screen and (max-width: 48em) {
 		.hero_links a {
 			display: grid;
-			align-items: start;
+			align-items: center;
 			justify-items: start;
 			gap: 0 0.5rem;
-			grid-template-columns: 1fr 4fr;
+			grid-template-columns: 1fr 9fr;
 			grid-template-areas:
 				'a b b'
 				'a c c';
 			width: 100%;
 			max-width: 100%;
 			padding: 1rem 0;
+			border-radius: 0;
+			border-bottom: 1px solid;
 		}
 	}
 	.hero_links a > img {
