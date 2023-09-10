@@ -146,10 +146,12 @@
 		transition: color 100ms ease-out;
 	}
 	.hero_links a:hover,
-	.hero_links a:focus-visible,
+	.hero_links a:focus-visible {
+		color: var(--clr_secondary);
+	}
 	[data-theme='dark'] .hero_links a:hover,
 	[data-theme='dark'] .hero_links a:focus-visible {
-		color: var(--clr_secondary);
+		color: var(--clr_secondary_shade_a);
 	}
 
 	[data-theme='dark'] .hero_links a {
@@ -185,9 +187,11 @@
 		filter: var(--filter_clr_primary);
 		margin-bottom: 1.5rem;
 		object-fit: contain;
+		transition: transform 200ms ease-out;
 	}
 	.hero_links a:hover > img,
 	.hero_links a:focus-visible > img {
+		transform: scale(1.125);
 		filter: var(--filter_clr_secondary);
 	}
 
@@ -196,7 +200,7 @@
 	}
 	[data-theme='dark'] .hero_links a:hover > img,
 	[data-theme='dark'] .hero_links a:focus-visible > img {
-		filter: var(--filter_clr_secondary);
+		filter: var(--filter_clr_secondary_shade_b);
 	}
 
 	@media screen and (max-width: 48em) {
