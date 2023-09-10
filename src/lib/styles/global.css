@@ -4,18 +4,12 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--font_primary), sans-serif;
-    font-size: 100%;
-}
-
-*:lang(km) {
-    font-family: var(--font_khmer), var(--font_primary), sans-serif;
-    font-weight: 400;
-    font-size: var(--type_scale_2);
 }
 
 body {
@@ -52,10 +46,6 @@ small,
 q,
 blockquote {
     font-family: var(--font_primary), sans-serif;
-}
-
-[lang="km"] * {
-    font-family: var(--font_khmer), var(--font_primary), sans-serif;
 }
 
 h1 {
@@ -121,6 +111,13 @@ a:focus {
 [data-theme="dark"] a:hover,
 [data-theme="dark"] a:focus {
     color: var(--clr_secondary_shade_a);
+}
+
+/* language specific styles */
+[lang="km"],
+[lang="km"] * {
+    font-family: var(--font_khmer), var(--font_primary), sans-serif;
+    font-weight: 400;
 }
 
 

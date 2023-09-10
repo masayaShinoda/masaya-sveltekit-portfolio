@@ -79,7 +79,7 @@
 	.hero_content h1 {
 		text-align: center;
 		color: var(--clr_primary);
-		font-size: calc(var(--type_scale_6) * 1.75);
+		font-size: calc(var(--type_scale_6) * 1.25);
 		line-height: 1.6;
 		margin-bottom: 1rem;
 		margin-top: -1rem; /* compensate for line height */
@@ -89,7 +89,7 @@
 	}
 	@media screen and (max-width: 48em) {
 		.hero_content h1 {
-			font-size: calc(var(--type_scale_6) * 1.25);
+			font-size: var(--type_scale_6);
 			overflow-wrap: break-word;
 			max-width: 100%;
 			text-align: left;
@@ -210,8 +210,10 @@
 		}
 	}
 	.hero_links a span {
-		font-size: var(--type_scale_5);
+		text-align: center;
+		font-size: var(--type_scale_4);
 		margin-bottom: 0.75rem;
+		line-height: 1.24;
 	}
 	@media screen and (max-width: 48em) {
 		.hero_links a span {
@@ -220,7 +222,8 @@
 		}
 	}
 	.hero_links a small {
-		font-size: var(--type_scale_1);
+		text-align: center;
+		font-size: calc(var(--type_scale_1) * 0.875);
 		font-family: var(--font_primary);
 		color: var(--clr_grey_shade_b);
 	}
