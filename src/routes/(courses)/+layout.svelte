@@ -14,13 +14,13 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="វគ្គសិក្សា | Courses by masayashida.com" />
 	<meta property="og:description" content="វគ្គសិក្សាសរសេរកូដនិងឌីស្សាញជាភាសាខ្មែរ។" />
-	<meta property="og:image" content="/images/banner-masaya-courses.png" />
+	<meta property="og:image" content="/images/banner-masaya-courses-white-02.png" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:title" content="វគ្គសិក្សា | Courses by masayashida.com" />
 	<meta property="twitter:description" content="វគ្គសិក្សាសរសេរកូដនិងឌីស្សាញជាភាសាខ្មែរ។" />
-	<meta property="twitter:image" content="/images/banner-masaya-courses.png" />
+	<meta property="twitter:image" content="/images/banner-masaya-courses-white-02.png" />
 </svelte:head>
 <ReusableLayout language="km" custom_nav>
 	<CoursesNav slot="custom_nav" />
