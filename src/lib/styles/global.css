@@ -100,7 +100,7 @@ a:visited {
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
     color: var(--clr_secondary);
 }
 
@@ -109,7 +109,7 @@ a:focus {
 }
 
 [data-theme="dark"] a:hover,
-[data-theme="dark"] a:focus {
+[data-theme="dark"] a:focus-visible {
     color: var(--clr_secondary_shade_a);
 }
 

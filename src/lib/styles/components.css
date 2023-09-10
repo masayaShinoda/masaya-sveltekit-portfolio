@@ -42,7 +42,6 @@ a.btn_main:focus-visible {
 }
 
 .btn_main__smaller {
-	font-family: var(--font_primary);
 	font-size: var(--type_scale_1);
 	padding: 0.75rem 1rem;
 }

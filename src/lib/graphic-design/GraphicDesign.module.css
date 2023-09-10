@@ -114,7 +114,6 @@
 
 .gfxdes_grid_section > h5.industry {
 	margin-left: 0.25rem;
-	font-family: var(--font_primary);
 	color: var(--clr_grey_shade_a);
 	font-size: var(--type_scale_1);
 }

@@ -240,7 +240,7 @@
 	/* outline: 1px solid red; */
 }
 
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 48em) {
 	.webdev_projects_section__body__item {
 		flex-direction: column-reverse;
 		justify-content: flex-start;
