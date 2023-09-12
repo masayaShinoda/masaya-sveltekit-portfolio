@@ -80,6 +80,7 @@
 		color: #fff;
 	}
 	.card p {
+        font-size: calc(var(--type_scale_1) * 0.875);
 		color: var(--clr_grey_shade_b);
 		margin-top: auto;
 	}
