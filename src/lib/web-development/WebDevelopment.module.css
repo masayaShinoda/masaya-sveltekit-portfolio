@@ -253,6 +253,7 @@
 	.webdev_projects_section__body__item {
 		border-bottom: 2px solid var(--clr_grey_shade_e);
 		margin-bottom: 1.875rem;
+		/* outline: 1px solid red */
 	}
 
 	[data-theme='dark'] .webdev_projects_section__body__item {
@@ -331,13 +332,14 @@
 }
 
 .webdev_projects_section__body__item > img {
+	width: 45%;
 	max-width: 45%;
 }
 
 @media screen and (max-width: 64em) {
 	.webdev_projects_section__body__item > img {
-		width: 65%;
-		max-width: 65%;
+		width: 55%;
+		max-width: 55%;
 		max-height: 18rem;
 		margin-bottom: 2.5rem;
 	}
