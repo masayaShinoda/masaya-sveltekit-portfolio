@@ -1,73 +1,33 @@
 <script lang="ts">
+	import type { Technology } from '$lib/types/courses';
+	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
+	import { themeStore } from '../../stores';
 	import styles from './ContentSection2.module.css';
 
-	const technologies_icons = [
+	let tool_logos = tool_logos_arr;
+
+	type TechStack = Array<{
+		category: string;
+		tools: Array<Technology>;
+	}>;
+
+	let tech_stack: TechStack = [
 		{
-			categ: 'Web Technologies',
-			icons: [
-				{
-					fileName: 'html-css.svg',
-					width: '62',
-					height: '40'
-				},
-				{
-					fileName: 'javascript.svg',
-					width: '40',
-					height: '40'
-				},
-				{
-					fileName: 'nextjs.svg',
-					width: '66',
-					height: '40'
-				},
-				{
-					fileName: 'react.svg',
-					width: '40',
-					height: '40'
-				},
-				{
-					fileName: 'svelte.svg',
-					width: '128',
-					height: '32'
-				},
-				{
-					fileName: 'django.svg',
-					width: '92',
-					height: '32'
-				}
-			]
+			category: 'Web Development',
+			tools: ['HTML & CSS', 'JavaScript', 'NextJS', 'React', 'Svelte', 'Django']
 		},
 		{
-			categ: 'UI Design',
-			icons: [
-				{
-					fileName: 'figma.svg',
-					width: '40',
-					height: '40'
-				},
-				{
-					fileName: 'adobe-xd.svg',
-					width: '40',
-					height: '40'
-				}
-			]
+			category: 'UI Design',
+			tools: ['Figma', 'Adobe XD']
 		},
 		{
-			categ: 'Graphic Design',
-			icons: [
-				{
-					fileName: 'adobe-illustrator.svg',
-					width: '40',
-					height: '40'
-				},
-				{
-					fileName: 'adobe-photoshop.svg',
-					width: '40',
-					height: '40'
-				}
-			]
+			category: 'Graphic Design',
+			tools: ['Adobe Illustrator', 'Adobe Photoshop']
 		}
 	];
+
+	let theme: string;
+	$: theme = $themeStore;
 </script>
 
 <section class={styles.content_section_2_container}>
@@ -77,17 +37,21 @@
 			I'm constantly learning different technologies and software to complete projects efficiently.
 		</p>
 		<div class={styles.technology_icons_container}>
-			{#each technologies_icons as { categ, icons }}
+			{#each tech_stack as { category, tools }}
 				<div class={styles.box}>
-					<h4>{categ}</h4>
+					<h4>{category}</h4>
 					<div>
-						{#each icons as icon}
+						{#each tools as tool}
 							<img
-								src={`/images/${icon.fileName}`}
-								alt={icon.fileName.slice(0, icon.fileName.length - 4).replace('-', ' ')}
-								title={icon.fileName.slice(0, icon.fileName.length - 4).replace('-', ' ')}
-								width={icon.width}
-								height={icon.height}
+								src={`/images/${
+									tool_logos.filter((logo) => logo.name === tool)[0][
+										theme === 'dark' ? 'fileNameDark' : 'fileName'
+									]
+								}`}
+								alt={tool}
+								title={tool}
+								width={tool_logos.filter((logo) => logo.name === tool)[0]['width']}
+								height={tool_logos.filter((logo) => logo.name === tool)[0]['height']}
 							/>
 						{/each}
 					</div>

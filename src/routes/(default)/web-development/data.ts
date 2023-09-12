@@ -1,66 +1,3 @@
-const tool_logos = [
-	{
-		name: 'HTML & CSS',
-		fileName: 'html-css.svg',
-		width: '62',
-		height: '40'
-	},
-	{
-		name: 'JavaScript',
-		fileName: 'javascript.svg',
-		width: '40',
-		height: '40'
-	},
-	{
-		name: 'NextJS',
-		fileName: 'nextjs.svg',
-		width: '66',
-		height: '40'
-	},
-	{
-		name: 'React',
-		fileName: 'react.svg',
-		width: '40',
-		height: '40'
-	},
-	{
-		name: 'Svelte',
-		fileName: 'svelte.svg',
-		width: '128',
-		height: '32'
-	},
-	{
-		name: 'Figma',
-		fileName: 'figma.svg',
-		width: '40',
-		height: '40'
-	},
-	{
-		name: 'Adobe XD',
-		fileName: 'adobe-xd.svg',
-		width: '40',
-		height: '40'
-	},
-	{
-		name: 'Adobe Illustrator',
-		fileName: 'adobe-illustrator.svg',
-		width: '40',
-		height: '40'
-	},
-	{
-		name: 'Adobe Photoshop',
-		fileName: 'adobe-photoshop.svg',
-		width: '40',
-		height: '40'
-	},
-	{
-		name: 'Django',
-		fileName: 'django.svg',
-		width: '92',
-		height: '32'
-	}
-];
-
 const web_projects = [
 	{
 		id: 'ut-market-website',
@@ -149,4 +86,4 @@ A mini web tool for generating a [business model canvas](https://en.wikipedia.or
 	}
 ];
 
-export default { tool_logos, web_projects };
+export default { web_projects };

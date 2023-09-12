@@ -3,9 +3,10 @@
 	import SvelteMarkdown from 'svelte-markdown';
 	import BackToTop from '$lib/components/BackToTop.svelte';
 	import data from './data';
+	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
 	import styles from '$lib/web-development/WebDevelopment.module.css';
 
-	let tool_logos = data.tool_logos;
+	let tool_logos = tool_logos_arr;
 	let web_projects = data.web_projects;
 
 	onMount(() => {
@@ -76,19 +77,11 @@
 			<div class="webdev_projects_section__body">
 				<!-- each category of project has its own containing div acting as an anchor -->
 				{#each Array.from(web_projects.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}
-					<div
-						id={encodeURI(industry)}
-						key={index}
-						class={styles.webdev_projects_section__body__industry}
-					>
+					<div id={encodeURI(industry)} class={styles.webdev_projects_section__body__industry}>
 						{#each web_projects as project}
 							{#if project.industry === industry}
 								<!-- content here -->
-								<article
-									id={`${project.id}`}
-									key={project.id}
-									class={styles.webdev_projects_section__body__item}
-								>
+								<article id={`${project.id}`} class={styles.webdev_projects_section__body__item}>
 									<div class={styles.content_half}>
 										<p class={styles.industry}>Industry: {industry}</p>
 										<h3 class={styles.name}>{project.name}</h3>
