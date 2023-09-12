@@ -21,7 +21,7 @@
 
 @font-face {
 	font-family: 'Khmer';
-	src: url(./fonts/Khmer-Regular.ttf);
+	src: url(/fonts/Khmer-Regular.ttf);
 	font-weight: normal;
 	font-display: swap;
 }

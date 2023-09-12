@@ -184,7 +184,7 @@
 			border-bottom: 1px solid var(--clr_grey_shade_d);
 		}
 		[data-theme='dark'] .hero_links a {
-			border-bottom-color: var(--clr_primary);
+			border-bottom-color: var(--clr_primary_shade_a);
 		}
 		.hero_links li:last-of-type a {
 			border-bottom-color: transparent;
