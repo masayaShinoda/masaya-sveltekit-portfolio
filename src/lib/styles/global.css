@@ -9,7 +9,7 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: var(--font_primary), sans-serif;
+    font-family: var(--font_primary);
 }
 
 body {
@@ -45,7 +45,7 @@ ol,
 small,
 q,
 blockquote {
-    font-family: var(--font_primary), sans-serif;
+    font-family: var(--font_primary);
 }
 
 h1 {
@@ -117,7 +117,7 @@ a:focus-visible {
 [lang="km"],
 [lang="km"] * {
     line-height: 1.6;
-    font-family: var(--font_khmer), var(--font_primary), sans-serif;
+    font-family: var(--font_khmer), var(--font_primary);
     font-weight: 400;
 }
 
