@@ -17,4 +17,5 @@ export interface CourseMeta {
 	technology: Technology;
 	active: boolean;
 	coming_soon?: boolean;
+	url_youtube?: string,
 }

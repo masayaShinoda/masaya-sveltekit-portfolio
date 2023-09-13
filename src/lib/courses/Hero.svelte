@@ -6,21 +6,21 @@
 			<div class="hero_links">
 				<ul>
 					<li>
-						<a href="#">
+						<a href="#categories?category=programming">
 							<img src="/images/icon-code.svg" alt="programming icon" width="48" height="48" />
 							<span>សរសេរកូដ</span>
 							<small>Programming</small>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#categories?category=graphic-design">
 							<img src="/images/icon-pen.svg" alt="programming icon" width="48" height="48" />
 							<span>រចនាក្រាហ្វិក</span>
 							<small>Graphic Design</small>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#categories?category=ui-design">
 							<img src="/images/icon-explorer.svg" alt="programming icon" width="48" height="48" />
 							<span>រចនាទម្រង់កម្មវិធី</span>
 							<small>UI Design</small>
@@ -223,7 +223,7 @@
 	}
 	.hero_links a span {
 		text-align: center;
-		font-size: var(--type_scale_4);
+		font-size: var(--type_scale_3);
 		margin-bottom: 0.25rem;
 		line-height: 1.24;
 	}

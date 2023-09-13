@@ -3,6 +3,14 @@ import type { CourseMeta } from '$lib/types/courses';
 export async function load() {
 	const courses_data: Array<CourseMeta> = [
 		{
+			title: 'វគ្គសិក្សាណែនាំប្រើប្រាស់កម្មវិធី ់ Figma ',
+			category: 'ui design',
+			level: 'beginner',
+			technology: 'Figma',
+			active: true,
+			url_youtube: 'https://youtu.be/JAviopTpIBI?si=L8drWli1kHdBlf5c'
+		},
+		{
 			title: 'វគ្គសិក្សាណែនាំបង្កើតគេហទំព័រ​ជាមួយ HTML និង CSS',
 			category: 'programming',
 			level: 'beginner',
@@ -41,13 +49,6 @@ export async function load() {
 			technology: 'Adobe Illustrator',
 			active: true,
 			coming_soon: true
-		},
-		{
-			title: 'វគ្គសិក្សាណែនាំប្រើប្រាស់កម្មវិធី ់ Figma ',
-			category: 'ui design',
-			level: 'beginner',
-			technology: 'Figma',
-			active: true,
 		}
 	];
 

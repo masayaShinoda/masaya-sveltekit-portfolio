@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import type { CourseMeta } from '$lib/types/courses';
 	import CourseCard from './CourseCard.svelte';
+	import { getQueryParams } from '$lib/utils/getParamsAfterHash';
 
 	export let data: {
 		courses_data: Array<CourseMeta>;
@@ -12,6 +14,12 @@
 	categories = data.courses_data
 		.map((course) => course.category)
 		.filter((x, i, a) => a.indexOf(x) == i);
+
+	let queryParams: Record<string, string>;
+	$: queryParams = getQueryParams($page.url.href);
+
+	let activeCategory: string;
+	$: activeCategory = queryParams['category'];
 </script>
 
 <div class="courses_grid_section_wrapper">
@@ -20,10 +28,18 @@
 			<div class="top_section">
 				<h2>វគ្គសិក្សា</h2>
 				<nav>
+					<a
+						href="#categories"
+						class={`btn_main btn_main__smaller ${!activeCategory ? '' : 'btn_main__inactive'}`}
+					>
+						ទាំងអស់
+					</a>
 					{#each categories as category}
 						<a
-							href={`#categories?filter=${category.replace(' ', '-')}`}
-							class="btn_main btn_main__smaller"
+							href={`#categories?category=${category.replace(' ', '-')}`}
+							class={`btn_main btn_main__smaller ${
+								category.replace(' ', '-') === activeCategory ? '' : 'btn_main__inactive'
+							}`}
 						>
 							{category === 'programming'
 								? 'សរសេរកូដ'
@@ -39,7 +55,13 @@
 			<div class="grid_section">
 				<ul>
 					{#each courses as course}
-						<li>
+						<li
+							class={`${
+								course.category.replace(' ', '-') === activeCategory || !activeCategory
+									? ''
+									: 'hidden'
+							}`}
+						>
 							<CourseCard {course} />
 						</li>
 					{/each}
@@ -127,5 +149,11 @@
 	}
 	.grid_section ul li {
 		height: 100%;
+	}
+	/* .hidden class only works for big screens */
+	@media screen and (min-width: 48em) {
+		.grid_section ul li.hidden {
+			display: none;
+		}
 	}
 </style>
