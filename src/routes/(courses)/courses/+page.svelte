@@ -1,27 +1,14 @@
-<div lang="km" class="courses_page_wrapper">
-	<p class="coming_soon">មកដល់ឆាប់ៗនេះ</p>
-	<!-- <a on:click|preventDefault={() => goto('/')} href="/">← ទៅទំព័រដើម</a> -->
-	<a href="/">← ទៅទំព័រដើម</a>
-</div>
+<script lang="ts">
+	import Hero from '$lib/courses/Hero.svelte';
+	import CoursesGridSection from '$lib/courses/CoursesGridSection.svelte';
+	import Footer from '$lib/courses/Footer.svelte';
 
-<style>
-	.courses_page_wrapper {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 7.5rem auto;
-	}
-	.coming_soon {
-		font-size: 5rem;
-		margin: 2.5rem auto;
-	}
-	@media screen and (max-width: 48em) {
-		.coming_soon {
-			font-size: 3.5rem;
-		}
-	}
-	a {
-		font-size: var(--type_scale_5);
-	}
-</style>
+	export let data
+</script>
+
+<svelte:head>
+	<title>វគ្គសិក្សា | Courses by masayashida.com</title>
+</svelte:head>
+<Hero />
+<CoursesGridSection {data} />
+<Footer />

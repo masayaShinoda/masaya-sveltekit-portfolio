@@ -16,6 +16,7 @@
 a.btn_main {
 	color: #fff;
 }
+
 a.btn_main:hover,
 a.btn_main:focus-visible {
 	color: #fff;
@@ -42,7 +43,6 @@ a.btn_main:focus-visible {
 }
 
 .btn_main__smaller {
-	font-family: var(--font_primary);
 	font-size: var(--type_scale_1);
 	padding: 0.75rem 1rem;
 }
@@ -55,13 +55,15 @@ a.btn_main:focus-visible {
 .btn_main:disabled {
 	background-color: var(--clr_grey_shade_c);
 }
+
 .btn_main:disabled {
 	cursor: default;
 }
 
 [data-theme='dark'] .btn_main__inactive,
 [data-theme='dark'] .btn_main:disabled {
-	background-color: var(--clr_grey_shade_c);
+	background-color: var(--clr_grey_shade_a);
+	color: var(--clr_grey_shade_c);
 }
 
 .btn_main__inactive:hover,

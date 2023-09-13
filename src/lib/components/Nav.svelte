@@ -1,20 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { writable } from 'svelte/store';
 	import ThemeToggler from '$lib/components/ThemeToggler.svelte';
 	import styles from '$lib/components/Nav.module.css';
 
-	const mobileNavActive = writable(false);
-
-	let isActive: boolean;
-
-	mobileNavActive.subscribe((value) => {
-		isActive = value;
-	});
+	let mobileNavActive = false;
 
 	function toggleMobileNav() {
-		mobileNavActive.update((prevValue) => !prevValue);
-		if (isActive) {
+		mobileNavActive = !mobileNavActive
+		if (mobileNavActive) {
 			document.body.style.overflowY = 'hidden';
 		} else {
 			document.body.style.overflowY = 'scroll';
@@ -25,10 +18,10 @@
 <section class={styles.nav_container}>
 	<div class={styles.nav_content}>
 		<button
-			class={`${styles.mobile_nav_btn} ${isActive ? styles.close : null}`}
+			class={`${styles.mobile_nav_btn} ${mobileNavActive ? styles.close : null}`}
 			on:click={toggleMobileNav}
-			aria-label={`${isActive ? 'Close' : 'Open'} menu`}
-			title={`${isActive ? 'Close' : 'Open'} menu`}
+			aria-label={`${mobileNavActive ? 'Close' : 'Open'} menu`}
+			title={`${mobileNavActive ? 'Close' : 'Open'} menu`}
 		>
 			<span aria-hidden="true" />
 			<span aria-hidden="true" />
@@ -58,10 +51,10 @@
 			<ThemeToggler />
 		</div>
 	</div>
-	<div class={`${styles.mobile_nav_container} ${isActive ? styles.active : null}`}>
+	<div class={`${styles.mobile_nav_container} ${mobileNavActive ? styles.active : null}`}>
 		<nav class={styles.mobile_nav_drawer}>
 			<a href="/" on:click={toggleMobileNav}>Home</a>
-			<a href="/courses" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
+			<a href="/courses" on:click={toggleMobileNav} lang="km">វគ្គសិក្សា</a>
 			<a href="/web-development" on:click={toggleMobileNav}>Web Development</a>
 			<a href="/graphic-design" on:click={toggleMobileNav}>Graphic Design</a>
 			<a href="/ui-design" on:click={toggleMobileNav}>UI Design</a>

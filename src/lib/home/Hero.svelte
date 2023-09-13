@@ -12,6 +12,6 @@
 			<a href="#portfolio" class={styles.action_btn}> See my Projects → </a>
 		</span>
 		<!-- <img src="/images/shinjang.png" alt="Hero" width="200" height="400" style="object-fit: contain" /> -->
-		<img src="/images/g14-shadow.png" alt="ASUS G14 laptop, decorative." width="300" height="200" />
+		<img src="/images/g14-shadow_result.png" alt="ASUS G14 laptop, decorative." width="300" height="200" />
 	</div>
 </section>
