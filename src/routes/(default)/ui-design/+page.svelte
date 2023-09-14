@@ -160,7 +160,7 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 								<p class={styles.body_text}>{project.duration}</p>
 							</span>
 						</div>
-						<a class={styles.project_link} href={project.link}>Go to Live Demo →</a>
+						<a class={styles.project_link} href={project.link}>Go to design →</a>
 					</div>
 				</div>
 			</section>

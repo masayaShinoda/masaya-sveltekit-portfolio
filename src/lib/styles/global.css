@@ -91,12 +91,9 @@ small {
     font-size: .8rem;
 }
 
-a {
-    color: var(--clr_primary);
-}
-
+a,
 a:visited {
-    color: var(--clr_primary_shade_a);
+    color: var(--clr_primary);
 }
 
 a:hover,
@@ -104,7 +101,8 @@ a:focus-visible {
     color: var(--clr_secondary);
 }
 
-[data-theme="dark"] a {
+[data-theme="dark"] a,
+[data-theme="dark"] a:visited {
     color: var(--clr_secondary_shade_b);
 }
 

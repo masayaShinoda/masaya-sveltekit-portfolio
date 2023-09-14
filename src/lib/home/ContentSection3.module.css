@@ -153,7 +153,7 @@
 }
 
 .portfolio_nav a:hover,
-.portfolio_nav a:focus {
+.portfolio_nav a:focus-visible {
 	color: var(--clr_secondary);
 	background-color: var(--clr_grey_shade_f);
 }
@@ -165,7 +165,7 @@
 }
 
 [data-theme='dark'] .portfolio_nav a:hover,
-[data-theme='dark'] .portfolio_nav a:focus {
+[data-theme='dark'] .portfolio_nav a:focus-visible {
 	background-color: var(--clr_primary);
 	color: var(--clr_light);
 }
