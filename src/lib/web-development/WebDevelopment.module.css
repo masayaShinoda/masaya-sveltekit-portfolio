@@ -189,7 +189,7 @@
 }
 
 .webdev_projects_section__top__btn_group > a.section_top_btn:hover,
-.webdev_projects_section__top__btn_group > a.section_top_btn:focus {
+.webdev_projects_section__top__btn_group > a.section_top_btn:focus-visible {
 	color: #fff;
 }
 

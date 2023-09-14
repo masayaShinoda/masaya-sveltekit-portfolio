@@ -90,7 +90,6 @@
 	}
 
 	.action_btn {
-		color: var(--clr_secondary);
 		font-size: var(--type_scale_3);
 		font-weight: 600;
 		padding: 0.125rem 0;
@@ -101,11 +100,10 @@
 	@media screen and (max-width: 48em) {
 		.action_btn {
 			text-align: center;
-			font-size: var(--type_scale_3);
 		}
 	}
 	.action_btn:hover,
-	.action_btn:focus {
+	.action_btn:focus-visible {
 		text-decoration: underline;
 	}
 </style>

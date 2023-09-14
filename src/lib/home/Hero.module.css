@@ -102,6 +102,6 @@
 }
 
 .action_btn:hover,
-.action_btn:focus {
+.action_btn:focus-visible {
 	text-decoration: underline;
 }

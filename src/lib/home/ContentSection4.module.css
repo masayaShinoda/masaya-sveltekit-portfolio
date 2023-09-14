@@ -83,6 +83,6 @@
 }
 
 .certif_item img:hover,
-.certif_item img:focus {
+.certif_item img:focus-visible {
 	box-shadow: 0 0.125rem 0.75rem rgb(0, 119, 204, 0.425);
 }
