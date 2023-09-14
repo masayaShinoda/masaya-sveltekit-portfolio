@@ -1,0 +1,109 @@
+.content_section_1_container {
+    width: 100%;
+    max-width: min(var(--content_max_width), 100%);
+    margin: 0 auto;
+}
+.content_section_1_container .content {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5rem var(--padding_horizontal);
+    /* padding: 5rem 0; */
+    /* outline: 1px solid red; */
+}
+@media screen and (max-width: 64em) {
+    .content_section_1_container .content {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 48em) {
+    .content_section_1_container .content {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 3.25rem var(--padding_horizontal);
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.section__left {
+    width: 50%;
+    max-width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: var(--clr_primary); */
+}
+.section__left p {
+    margin-bottom: 1rem;
+    max-width: min(100%, 40ch);
+}
+@media screen and (max-width: 48em) {
+    .section__left p {
+        max-width: 100%;
+    }
+}
+.section__right {
+    width: 50%;
+    max-width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: var(--clr_grey_shade_e); */
+    padding: 0;
+}
+@media screen and (max-width: 48em) {
+    .section__left, .section__right {
+        width: 100%;
+        max-width: 100%;
+    }
+    .section__right {
+        align-items: center;
+        margin-bottom: 3.25rem;
+    }
+}
+
+.section__right img {
+    max-width: 65%;
+    object-fit: contain;
+    object-position: center;
+    filter: brightness(0) var(--filter_clr_primary);
+    /* border: 2px solid var(--clr_primary); */
+}
+[data-theme="dark"] .section__right img {
+    filter: brightness(0) var(--filter_clr_secondary_shade_b);
+}
+@media screen and (max-width: 64em) {
+    .section__right img {
+        width: 80%;
+        max-width: 80%;
+        max-height: 12.5rem;
+    }
+}
+
+
+.section__left h2 {
+    color: var(--clr_primary);
+    margin-bottom: 1.5rem;
+    font-size: var(--type_scale_3);
+}
+[data-theme="dark"] .section__left h2 {
+    color: #fff;
+}
+.section__left p {
+    color: var(--clr_grey_shade_a);
+}
+[data-theme="dark"] .section__left p {
+    color: var(--clr_light);
+}
+
+.font__bold {
+    font-weight: 700;
+}

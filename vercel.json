@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "courses.masayashida.com"
+                }
+            ],
+            "destination": "https://masayashida.com/courses"
+        }
+    ]
+}

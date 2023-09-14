@@ -1,0 +1,94 @@
+.content_section_2_container {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1.5rem;
+}
+.content_section_2_container .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: var(--content_max_width);
+	/* padding: 5rem var(--padding_horizontal); */
+	padding: 5rem 0;
+}
+@media screen and (max-width: 48em) {
+	.content_section_2_container .content {
+		align-items: flex-start;
+		padding: 4.25rem 0;
+		/* outline: 1px solid red; */
+	}
+}
+
+.content_section_2_container .content h2 {
+	text-align: center;
+	color: var(--clr_primary);
+	margin-bottom: 0.75rem;
+}
+[data-theme='dark'] .content_section_2_container .content h2 {
+	color: #fff;
+}
+
+.content_section_2_container .content p {
+	color: var(--clr_grey_shade_a);
+	margin-bottom: 1.5rem;
+	text-align: center;
+	max-width: min(65ch, 100%);
+}
+[data-theme='dark'] .content_section_2_container .content p {
+	color: var(--clr_light);
+}
+@media screen and (max-width: 48em) {
+	.content_section_2_container .content h2,
+	.content_section_2_container .content p {
+		text-align: left;
+		padding: 0 var(--padding_horizontal);
+	}
+}
+.technology_icons_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 calc(var(--padding_horizontal) - 0.5rem);
+}
+.technology_icons_container .box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1rem;
+	margin: 0.5rem 0.5rem;
+	border: 1px solid var(--clr_secondary);
+	border-radius: 0.5rem;
+}
+[data-theme="dark"] .technology_icons_container .box {
+	border-color: var(--clr_primary_shade_a);
+}
+.technology_icons_container .box h4 {
+	color: var(--clr_primary);
+	margin-bottom: 1rem;
+}
+[data-theme="dark"] .technology_icons_container .box h4 {
+	color: var(--clr_grey_shade_d);
+}
+.technology_icons_container .box div {
+	/* images container */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.technology_icons_container .box img {
+	margin: 0.625rem;
+}
+@media screen and (max-width: 48em) {
+	.technology_icons_container .box {
+		max-width: 100%;
+		flex-grow: 1;
+	}
+	.technology_icons_container .box div {
+		justify-content: center;
+	}
+}
