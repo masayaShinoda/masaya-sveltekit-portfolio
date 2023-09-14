@@ -22,6 +22,7 @@
 				width={tool_logos.filter((logo) => logo.name === course.technology)[0]['width']}
 				height={tool_logos.filter((logo) => logo.name === course.technology)[0]['height']}
 				alt={course.technology}
+				loading="lazy"
 			/>
 			<h3>{course.title}</h3>
 			<p>
