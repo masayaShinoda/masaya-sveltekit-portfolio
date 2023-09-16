@@ -18,7 +18,8 @@ a.btn_main {
 }
 
 a.btn_main:hover,
-a.btn_main:focus-visible {
+a.btn_main:focus-visible,
+a.btn_main:visited {
 	color: #fff;
 }
 
@@ -52,8 +53,12 @@ a.btn_main:focus-visible {
 }
 
 .btn_main__inactive,
-.btn_main:disabled {
-	background-color: var(--clr_grey_shade_c);
+.btn_main:disabled,
+a.btn_main__inactive,
+a.btn_main:disabled,
+a.btn_main__inactive:visited {
+	background-color: var(--clr_grey_shade_d);
+	color: var(--clr_grey_shade_b);
 }
 
 .btn_main:disabled {
@@ -61,7 +66,10 @@ a.btn_main:focus-visible {
 }
 
 [data-theme='dark'] .btn_main__inactive,
-[data-theme='dark'] .btn_main:disabled {
+[data-theme='dark'] .btn_main:disabled,
+[data-theme='dark'] a.btn_main__inactive,
+[data-theme='dark'] a.btn_main:disabled,
+[data-theme='dark'] a.btn_main__inactive:visited {
 	background-color: var(--clr_grey_shade_a);
 	color: var(--clr_grey_shade_c);
 }
