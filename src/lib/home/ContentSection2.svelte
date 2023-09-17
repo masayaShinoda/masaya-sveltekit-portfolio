@@ -32,7 +32,7 @@
 
 <section class={styles.content_section_2_container}>
 	<div class={styles.content}>
-		<h2>Skillset</h2>
+		<h2>Skill Set</h2>
 		<p>
 			I'm constantly learning different technologies and software to complete projects efficiently.
 		</p>
