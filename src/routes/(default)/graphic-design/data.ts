@@ -69,40 +69,48 @@ const gfx_projects = [
 		industry: 'Automotives',
 		items: [
 			{
-				src: 'klay-coming-soon-01_result.jpg',
-				alt: 'graphic design portfolio, industry: automotives, item: 1'
+				src: "speedy-spares-logo-measurements-01.jpg",
+				alt: "graphic design portfolio, industry: automotives, item: 1"
 			},
 			{
-				src: '15-1_result.jpg',
+				src: 'speedy-spares-business-card.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 2'
 			},
 			{
-				src: '2-01-mockup-brochure_result.jpg',
+				src: 'klay-coming-soon-01_result.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 3'
 			},
 			{
-				src: 'klay-7-makara-01_result.jpg',
+				src: '15-1_result.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 4'
 			},
 			{
-				src: 'anth-boyd-business-card-mockup6_result.jpg',
+				src: '2-01-mockup-brochure_result.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 5'
 			},
 			{
-				src: 'klay-lunar-new-year-promotion-new-date-01_result.jpg',
+				src: 'klay-7-makara-01_result.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 6'
 			},
 			{
-				src: 'Flyer_Stand_Mockup_1_result.jpg',
+				src: 'anth-boyd-business-card-mockup6_result.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 7'
 			},
 			{
-				src: 'HLH-cover_google-business-size_result.jpg',
+				src: 'klay-lunar-new-year-promotion-new-date-01_result.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 8'
 			},
 			{
-				src: 'musashi-water-festival-updated-2_result.jpg',
+				src: 'Flyer_Stand_Mockup_1_result.jpg',
 				alt: 'graphic design portfolio, industry: automotives, item: 9'
+			},
+			{
+				src: 'HLH-cover_google-business-size_result.jpg',
+				alt: 'graphic design portfolio, industry: automotives, item: 10'
+			},
+			{
+				src: 'musashi-water-festival-updated-2_result.jpg',
+				alt: 'graphic design portfolio, industry: automotives, item: 11'
 			}
 		]
 	},
