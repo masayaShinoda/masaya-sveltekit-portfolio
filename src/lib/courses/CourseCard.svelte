@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
-	import type { CourseMeta } from '$lib/types/courses';
+	import type { Course } from '$lib/types/courses';
 	import { themeStore } from '../../stores';
 
-	export let course: CourseMeta;
+	export let course: Course;
 	let tool_logos = tool_logos_arr;
 
 	let theme: string;
@@ -11,8 +11,8 @@
 </script>
 
 <div class="card_wrapper">
-	{#if course.url_youtube}
-		<a href={course.url_youtube} class="card">
+	{#if course.sections && course.sections.length > 0}
+		<a href={`/course/${course.slug}`} class="card">
 			<img
 				src={`/images/${
 					tool_logos.filter((logo) => logo.name === course.technology)[0][

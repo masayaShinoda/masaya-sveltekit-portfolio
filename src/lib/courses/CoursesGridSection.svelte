@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import type { CourseMeta } from '$lib/types/courses';
+	import type { Course } from '$lib/types/courses';
 	import CourseCard from './CourseCard.svelte';
 	import { getQueryParams } from '$lib/utils/getParamsAfterHash';
 
 	export let data: {
-		courses_data: Array<CourseMeta>;
+		courses_data: Array<Course>;
 	};
 
-	let courses: Array<CourseMeta> = data.courses_data;
+	let courses: Array<Course> = data.courses_data;
 
-	let categories: Array<CourseMeta['category']>;
+	let categories: Array<Course['category']>;
 	categories = data.courses_data
 		.map((course) => course.category)
 		.filter((x, i, a) => a.indexOf(x) == i);
