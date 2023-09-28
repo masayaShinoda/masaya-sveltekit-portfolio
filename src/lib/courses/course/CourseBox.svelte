@@ -98,6 +98,15 @@
 			'b b c';
 		gap: 2.5rem;
 	}
+	@media screen and (max-width: 48em) {
+		.coursebox {
+			grid-template-areas: 
+			"a"
+			"b"
+			"c"
+			;
+		}
+	}
 	.section_details {
 		grid-area: b;
 		padding-right: 1.5rem;
@@ -112,6 +121,12 @@
 	}
 	[data-theme='dark'] .coursebox .section_chapters {
 		border-left-color: var(--clr_primary_shade_a);
+	}
+	@media screen and (max-width: 48em) {
+		.section_chapters {
+			padding-left: 0;
+			border-left: none;
+		}
 	}
 	.section_chapters ul {
 		list-style-type: none;
@@ -132,6 +147,14 @@
 	}
 	[data-theme='dark'] .section_chapters ul li a.active {
 		color: var(--clr_secondary_shade_b);
+	}
+	@media screen and (max-width: 48em) {
+		.section_chapters ul li {
+			padding: .5rem 0;
+		}
+		.section_chapters ul li a {
+			width: 100%;
+		}
 	}
 	.section_chapters ul li h2 {
 		font-size: var(--type_scale_1);

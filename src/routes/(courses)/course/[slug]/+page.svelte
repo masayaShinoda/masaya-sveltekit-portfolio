@@ -47,8 +47,7 @@
 			width: 100%;
 			padding: 0 1rem;
 			align-items: flex-start;
-			margin: 0 0 1.5rem 0;
-			outline: 1px solid red;
+			margin: 1.5rem 0;
 		}
 	}
 </style>
