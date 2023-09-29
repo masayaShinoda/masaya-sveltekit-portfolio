@@ -14,7 +14,7 @@ export async function load() {
 					title: 'វគ្គសិក្សាណែនាំប្រើប្រាស់កម្មវិធី ់ Figma',
 					slug: 'intro-to-figma',
 					url_youtube: 'https://youtu.be/JAviopTpIBI?si=CvYSeYGBov_KuhBo',
-					src_thumbnail: '/images/courses/figma_intro-figma_result.jpg',
+					src_thumbnail: '/images/courses/thumbnail_intro-figma_result.jpg',
 				},
 				{
 					title: 'រៀនឌីស្សាញគេហទំព័រព័ត៌មាន',
