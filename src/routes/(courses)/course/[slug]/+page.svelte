@@ -19,6 +19,7 @@
 </svelte:head>
 <div class="course_container">
 	<div class="course_content">
+		<a href="/courses" class="link_back">← ទៅទំព័រដើម</a>
 		{#if course && course.active}
 			<CourseBox {course} />
 		{:else}
@@ -49,5 +50,10 @@
 			align-items: flex-start;
 			margin: 1.5rem 0;
 		}
+	}
+	.link_back {
+		max-width: fit-content;
+		text-decoration: none;
+		margin-bottom: 1.5rem;
 	}
 </style>

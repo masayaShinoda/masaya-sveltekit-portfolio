@@ -18,13 +18,26 @@
 		<h1>{course.title}</h1>
 		<div class="course_info">
 			<p>
-				{course.category === 'programming'
-					? 'ប្រភេទវគ្គសិក្សា៖ សរសេរកូដ'
-					: course.category === 'graphic design'
-					? 'ប្រភេទវគ្គសិក្សា៖ រចនាក្រាហ្វិច'
-					: course.category === 'ui design'
-					? 'ប្រភេទវគ្គសិក្សា៖ រចនាទម្រង់កម្មវិធី'
-					: null}
+				ប្រភេទវគ្គសិក្សា៖
+				<a
+					href={`/courses#categories?category=${
+						course.category === 'programming'
+							? 'programming'
+							: course.category === 'graphic design'
+							? 'graphic-design'
+							: course.category === 'ui design'
+							? 'ui-design'
+							: null
+					}`}
+				>
+					{course.category === 'programming'
+						? 'សរសេរកូដ'
+						: course.category === 'graphic design'
+						? 'រចនាក្រាហ្វិច'
+						: course.category === 'ui design'
+						? 'រចនាទម្រង់កម្មវិធី'
+						: null}
+				</a>
 			</p>
 			<p>
 				{course.level === 'beginner'
@@ -46,12 +59,12 @@
 					)}
 					animations={false}
 				>
-						 <img 
-							 slot="thumbnail"
-							 src={course.sections[active_section - 1].src_thumbnail}
-							 alt={`Thumbnail of a video about ${course.sections[active_section - 1].title}`}
-							 style="width: 100%; height: 100%; object-fit: contain; object-position: center; background: #003153;"
-						 >
+					<img
+						slot="thumbnail"
+						src={course.sections[active_section - 1].src_thumbnail}
+						alt={`Thumbnail of a video about ${course.sections[active_section - 1].title}`}
+						style="width: 100%; height: 100%; object-fit: contain; object-position: center; background: #003153;"
+					/>
 				</Youtube>
 				<!-- <p>
 					activeSectionParam
@@ -100,11 +113,10 @@
 	}
 	@media screen and (max-width: 48em) {
 		.coursebox {
-			grid-template-areas: 
-			"a"
-			"b"
-			"c"
-			;
+			grid-template-areas:
+				'a'
+				'b'
+				'c';
 		}
 	}
 	.section_details {
@@ -133,7 +145,7 @@
 	}
 
 	.section_chapters ul li {
-		margin: .5rem 0;
+		margin: 0.5rem 0;
 	}
 	.section_chapters ul li a {
 		text-decoration: none;
@@ -150,7 +162,8 @@
 	}
 	@media screen and (max-width: 48em) {
 		.section_chapters ul li {
-			padding: .5rem 0;
+			margin: 0;
+			padding: 0.5rem 0;
 		}
 		.section_chapters ul li a {
 			width: 100%;
@@ -177,11 +190,10 @@
 	}
 	.section_details .course_info > p {
 		color: var(--clr_grey_shade_b);
-		margin: .25rem 0;
+		margin: 0.25rem 0;
 		font-size: calc(var(--type_scale_1) * 0.95);
 	}
-	[data-theme="dark"] .section_details .course_info > p {
+	[data-theme='dark'] .section_details .course_info > p {
 		color: var(--clr_grey_shade_d);
 	}
-
 </style>

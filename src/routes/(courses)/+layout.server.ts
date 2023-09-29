@@ -14,13 +14,13 @@ export async function load() {
 					title: 'វគ្គសិក្សាណែនាំប្រើប្រាស់កម្មវិធី ់ Figma',
 					slug: 'intro-to-figma',
 					url_youtube: 'https://youtu.be/JAviopTpIBI?si=CvYSeYGBov_KuhBo',
-					src_thumbnail: '/images/courses/thumbnail_intro-figma_result.jpg',
+					src_thumbnail: '/images/courses/thumbnail_intro-figma_result.jpg'
 				},
 				{
 					title: 'រៀនឌីស្សាញគេហទំព័រព័ត៌មាន',
 					slug: 'figma-design-news-website',
 					url_youtube: 'https://youtu.be/rKJoyvxgrEE?si=oVsAM6U20zYwZldS',
-					src_thumbnail: '/images/courses/thumbnail_figma-newspaper_result.jpg',
+					src_thumbnail: '/images/courses/thumbnail_figma-newspaper_result.jpg'
 				}
 			],
 			coming_soon: false
