@@ -46,6 +46,11 @@
 					? 'កម្រិត៖ អ្នកមានបទពិសោធន៍ខ្លះស្រាប់'
 					: ''}
 			</p>
+			{#if course.sections && course.sections.length > 0}
+				{#if course.sections[active_section - 1].description}
+					<p class="course_description">{course.sections[active_section - 1].description}</p>
+				{/if}
+			{/if}
 		</div>
 	</section>
 	<section class="section_player">
@@ -90,9 +95,6 @@
 							class={`${active_section === index + 1 ? 'active' : ''}`}
 						>
 							<h2>{section.title}</h2>
-							{#if section.description}
-								<p>{section.description}</p>
-							{/if}
 						</a>
 					</li>
 				{/each}
@@ -188,12 +190,20 @@
 		align-items: flex-start;
 		margin: 1rem 0;
 	}
-	.section_details .course_info > p {
+	.section_details .course_info p {
 		color: var(--clr_grey_shade_b);
 		margin: 0.25rem 0;
 		font-size: calc(var(--type_scale_1) * 0.95);
 	}
-	[data-theme='dark'] .section_details .course_info > p {
+	[data-theme='dark'] .section_details .course_info p {
 		color: var(--clr_grey_shade_d);
+	}
+	.section_details .course_info .course_description {
+		margin: 1rem 0;
+		color: var(--clr_grey_shade_a);
+	}
+	[data-theme='dark'] .section_details .course_info .course_description {
+		margin: 1rem 0;
+		color: var(--clr_grey_shade_e);
 	}
 </style>
