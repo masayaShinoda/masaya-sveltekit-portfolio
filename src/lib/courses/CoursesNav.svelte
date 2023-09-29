@@ -30,7 +30,7 @@
 		</a>
 		<div class={styles.nav_links}>
 			<nav>
-				<a href="#">វគ្គសិក្សា</a>
+				<a href="/courses">វគ្គសិក្សា</a>
 				<a href="#">អំពីខ្ញុំ</a>
 			</nav>
 			<ThemeToggler />
@@ -39,7 +39,7 @@
 	<div class={`${styles.mobile_nav_container} ${mobileNavActive ? styles.active : null}`}>
 		<nav class={styles.mobile_nav_drawer}>
 			<a href="/" on:click={toggleMobileNav}>ទំព័រដើម</a>
-			<a href="#" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
+			<a href="/courses" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
 			<a href="#" on:click={toggleMobileNav}>អំពីខ្ញុំ</a>
 		</nav>
 		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
