@@ -77,45 +77,19 @@
 				>
 					{#each gfx_projects as project}
 						{#if project.industry === industry}
-							<div class={styles.column}>
-								{#each project.items as item, n}
-									{#if (n + 1) % 3 === 1}
-										<img
-											use:lazyLoad={`/images/graphic-design/${item.src}`}
-											alt={item.alt}
-											loading="lazy"
-											id={`${index} ${project.industry}`}
-											class={styles.gfx_projects_section__body__item}
-										/>
-									{/if}
-								{/each}
-							</div>
-							<div class={styles.column}>
-								{#each project.items as item, n}
-									{#if (n + 1) % 3 === 2}
-										<img
-											use:lazyLoad={`/images/graphic-design/${item.src}`}
-											alt={item.alt}
-											loading="lazy"
-											id={`${index} ${project.industry}`}
-											class={styles.gfx_projects_section__body__item}
-										/>
-									{/if}
-								{/each}
-							</div>
-							<div class={styles.column}>
-								{#each project.items as item, n}
-									{#if (n + 1) % 3 === 0}
-										<img
-											use:lazyLoad={`/images/graphic-design/${item.src}`}
-											alt={item.alt}
-											loading="lazy"
-											id={`${index} ${project.industry}`}
-											class={styles.gfx_projects_section__body__item}
-										/>
-									{/if}
-								{/each}
-							</div>
+							{#each project.items as item, n}
+								<div class={styles.column}>
+									<img
+										id={`${index} ${project.industry}`}
+										class={styles.gfx_projects_section__body__item}
+										use:lazyLoad={`/images/graphic-design/${item.src}`}
+										alt={item.alt}
+										loading="lazy"
+										width="340"
+										height="340"
+									/>
+								</div>
+							{/each}
 						{/if}
 					{/each}
 				</div>
