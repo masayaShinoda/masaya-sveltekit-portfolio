@@ -283,7 +283,6 @@
 
 .webdev_projects_section__body__item .content_half__content {
 	color: var(--clr_grey_shade_a);
-	/* outline: 1px solid red; */
 }
 
 [data-theme='dark'] .webdev_projects_section__body__item .content_half__content {
@@ -295,7 +294,7 @@
 }
 
 .webdev_projects_section__body__item .content_half__content:last-of-type {
-	margin-bottom: 1.875rem;
+	margin-bottom: 2.5rem;
 }
 
 .webdev_projects_section__body__item .content_half__content h4 {
