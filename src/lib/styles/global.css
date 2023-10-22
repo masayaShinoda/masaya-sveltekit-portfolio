@@ -118,6 +118,19 @@ a:focus-visible {
     font-family: var(--font_khmer), var(--font_primary);
     font-weight: 400;
 }
+/* khmer headings */
+[lang="km"] h1, 
+[lang="km"] h2, 
+[lang="km"] h3, 
+[lang="km"] h4
+[lang="km"] h5, 
+[lang="km"] h6 
+{
+    line-height: 1.6;
+    font-family: var(--font_khmer_head), var(--font_primary);
+    font-weight: 400;
+    letter-spacing: 0.05ch;
+}
 
 
 /* Icons */

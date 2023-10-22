@@ -4,7 +4,7 @@
 	align-items: center;
 
 	margin: 0 auto;
-	padding: 2.5rem 0;
+	padding: 2.5rem 0 1rem 0;
 	/* width: 100%; */
 }
 
@@ -133,47 +133,28 @@
 }
 
 .row {
-	display: -ms-flexbox;
-	/* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap;
-	/* IE10 */
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: .75rem;
 }
 
-.column {
-	-ms-flex: 33.33%;
-	/* IE10 */
-	flex: 33.33%;
-	max-width: 33.33%;
-	padding: 0 0.325rem;
+@media screen and (max-width: 40em) {
+	.row {
+		grid-template-columns: 1fr;
+	}
 }
 
 .column img {
-	margin-top: 0.65rem;
+	margin-top: 0.75rem;
 	vertical-align: middle;
 	width: 100%;
+	max-width: 100%;
+	height: fit-content;
+	object-fit: contain;
 
 	box-shadow: 0 0.325rem 0.5rem rgba(0, 0, 0, 0.25);
 
 	/* lazy load */
 	opacity: 0;
 	transition: opacity 200ms ease;
-}
-
-@media screen and (max-width: 64em) {
-	.column {
-		-ms-flex: 50%;
-		flex: 50%;
-		max-width: 50%;
-	}
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 40em) {
-	.column {
-		-ms-flex: 100%;
-		flex: 100%;
-		max-width: 100%;
-	}
 }
