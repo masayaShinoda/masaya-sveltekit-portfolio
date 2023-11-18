@@ -25,6 +25,7 @@
     font-weight: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans Khmer';
     src: url(/fonts/NotoSansKhmer-Regular.ttf);
@@ -50,55 +51,66 @@ html {
     --clr_dark_shade_a: #212121;
     --clr_light: #f3f3f3;
 
-    --clr_primary: #003153;
-    --clr_primary_shade_a: #004F86;
-    --clr_secondary: #0077CC;
-    --clr_secondary_shade_a: #0095FF;
-    --clr_secondary_shade_b: #33AAFF;
+    --clr-primary: #003153;
+    --clr-primary-shade-a: #004F86;
+    --clr-secondary: #0077CC;
+    --clr-secondary-shade-a: #0095FF;
+    --clr-secondary-shade-b: #33AAFF;
 
-    --clr_grey_shade_a: #444;
-    --clr_grey_shade_b: #666;
-    --clr_grey_shade_c: #999;
-    --clr_grey_shade_d: #ccc;
-    --clr_grey_shade_e: #ececec;
-    --clr_grey_shade_f: #f7f7f7;
+    --clr-grey-6: #444;
+    --clr-grey-5: #666;
+    --clr-grey-3: #999;
+    --clr-grey-2: #ccc;
+    --clr-grey-1: #ececec;
+    --clr-grey-f: #f7f7f7;
 
     --content_max_width: min(100%, 72.5rem);
     --padding_horizontal: 2.5rem;
 
-    --filter_clr_primary: invert(13%) sepia(89%) saturate(1510%) hue-rotate(181deg) brightness(92%) contrast(104%);
-    --filter_clr_primary_shade_a: invert(11%) sepia(76%) saturate(5252%) hue-rotate(193deg) brightness(105%) contrast(100%);
-    --filter_clr_secondary: invert(34%) sepia(93%) saturate(1142%) hue-rotate(178deg) brightness(87%) contrast(112%);
-    --filter_clr_secondary_shade_a: invert(41%) sepia(51%) saturate(4565%) hue-rotate(187deg) brightness(106%) contrast(104%);
-    --filter_clr_secondary_shade_b: invert(60%) sepia(24%) saturate(7489%) hue-rotate(186deg) brightness(107%) contrast(105%);
+    --filter_clr-primary: invert(13%) sepia(89%) saturate(1510%) hue-rotate(181deg) brightness(92%) contrast(104%);
+    --filter_clr-primary-shade-a: invert(11%) sepia(76%) saturate(5252%) hue-rotate(193deg) brightness(105%) contrast(100%);
+    --filter_clr-secondary: invert(34%) sepia(93%) saturate(1142%) hue-rotate(178deg) brightness(87%) contrast(112%);
+    --filter_clr-secondary-shade-a: invert(41%) sepia(51%) saturate(4565%) hue-rotate(187deg) brightness(106%) contrast(104%);
+    --filter_clr-secondary-shade-b: invert(60%) sepia(24%) saturate(7489%) hue-rotate(186deg) brightness(107%) contrast(105%);
 
-    /* type scaling (1.125 - major second) */
-    --type_scale_6: 1.802rem;
-    --type_scale_5: 1.602rem;
-    --type_scale_4: 1.424rem;
-    --type_scale_3: 1.266rem;
-    --type_scale_2: 1.125rem;
-    --type_scale_1: 1rem;
+    --type-scale-7: 4.76875rem;
+    --type-scale-6: 3.8125rem;
+    --type-scale-5: 3.05rem;
+    --type-scale-4: 2.44375;
+    --type-scale-3: 1.95625rem;
+    --type-scale-2: 1.5625;
+    --type-scale-1: 1.25rem;
+    --type-scale-0: 1rem;
+    --type-scale--1: 0.8rem;
+    --type-scale--2: 0.6375rem;
 }
 
 main[lang="km"] {
     /* bigger types for khmer text */
-    --type_scale_6: calc(1.802rem * 1.25);
-    --type_scale_5: calc(1.602rem * 1.25);
-    --type_scale_4: calc(1.424rem * 1.25);
-    --type_scale_3: calc(1.266rem * 1.25);
-    --type_scale_2: calc(1.125rem * 1.25);
-    --type_scale_1: calc(1rem * 1.25);
+    --type-scale-7: calc(4.76875rem * 1.25);
+    --type-scale-6: calc(3.8125rem * 1.25);
+    --type-scale-5: calc(3.05rem * 1.25);
+    --type-scale-4: calc(2.44375 * 1.25);
+    --type-scale-3: calc(1.95625rem * 1.25);
+    --type-scale-2: calc(1.5625 * 1.25);
+    --type-scale-1: calc(1.25rem * 1.25);
+    --type-scale-0: calc(1rem * 1.25);
+    --type-scale--1: calc(0.8rem * 1.25);
+    --type-scale--2: calc(0.6375rem * 1.25);
 }
 
 @media screen and (max-width: 48em) {
     html {
-        --type_scale_6: calc(1.802rem * 0.95);
-        --type_scale_5: calc(1.602rem * 0.95);
-        --type_scale_4: calc(1.424rem * 0.95);
-        --type_scale_3: calc(1.266rem * 0.95);
-        --type_scale_2: calc(1.125rem * 0.95);
-        --type_scale_1: calc(1rem * 0.95);
+        --type-scale-7: calc(4.76875rem * 0.95);
+        --type-scale-6: calc(3.8125rem * 0.95);
+        --type-scale-5: calc(3.05rem * 0.95);
+        --type-scale-4: calc(2.44375 * 0.95);
+        --type-scale-3: calc(1.95625rem * 0.95);
+        --type-scale-2: calc(1.5625 * 0.95);
+        --type-scale-1: calc(1.25rem * 0.95);
+        --type-scale-0: calc(1rem * 0.95);
+        --type-scale--1: calc(0.8rem * 0.95);
+        --type-scale--2: calc(0.6375rem * 0.95);
 
         --content_max_width: 100%;
         --padding_horizontal: 1rem;
@@ -106,11 +118,15 @@ main[lang="km"] {
 
     main[lang="km"] {
         /* bigger types for khmer text */
-        --type_scale_6: calc(1.802rem * 1.125);
-        --type_scale_5: calc(1.602rem * 1.125);
-        --type_scale_4: calc(1.424rem * 1.125);
-        --type_scale_3: calc(1.266rem * 1.125);
-        --type_scale_2: calc(1.125rem * 1.125);
-        --type_scale_1: calc(1rem * 1.125);
+        --type-scale-7: calc(4.76875rem * 1.125);
+        --type-scale-6: calc(3.8125rem * 1.125);
+        --type-scale-5: calc(3.05rem * 1.125);
+        --type-scale-4: calc(2.44375 * 1.125);
+        --type-scale-3: calc(1.95625rem * 1.125);
+        --type-scale-2: calc(1.5625 * 1.125);
+        --type-scale-1: calc(1.25rem * 1.125);
+        --type-scale-0: calc(1rem * 1.125);
+        --type-scale--1: calc(0.8rem * 1.125);
+        --type-scale--2: calc(0.6375rem * 1.125);
     }
 }

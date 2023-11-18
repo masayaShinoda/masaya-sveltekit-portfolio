@@ -23,7 +23,7 @@
 
 .content_section_2_container .content h2 {
 	text-align: center;
-	color: var(--clr_primary);
+	color: var(--clr-primary);
 	margin-bottom: 0.75rem;
 }
 [data-theme='dark'] .content_section_2_container .content h2 {
@@ -31,7 +31,7 @@
 }
 
 .content_section_2_container .content p {
-	color: var(--clr_grey_shade_a);
+	color: var(--clr-grey-6);
 	margin-bottom: 1.5rem;
 	text-align: center;
 	max-width: min(65ch, 100%);
@@ -60,18 +60,18 @@
 	justify-content: center;
 	padding: 1rem 1rem;
 	margin: 0.5rem 0.5rem;
-	border: 1px solid var(--clr_secondary);
+	border: 1px solid var(--clr-secondary);
 	border-radius: 0.5rem;
 }
 [data-theme="dark"] .technology_icons_container .box {
-	border-color: var(--clr_primary_shade_a);
+	border-color: var(--clr-primary-shade-a);
 }
 .technology_icons_container .box h4 {
-	color: var(--clr_primary);
+	color: var(--clr-primary);
 	margin-bottom: 1rem;
 }
 [data-theme="dark"] .technology_icons_container .box h4 {
-	color: var(--clr_grey_shade_d);
+	color: var(--clr-grey-2);
 }
 .technology_icons_container .box div {
 	/* images container */

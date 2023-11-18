@@ -102,7 +102,7 @@
 		width: 100%;
 	}
 	.top_section h2 {
-		color: var(--clr_primary);
+		color: var(--clr-primary);
 	}
 	[data-theme='dark'] .top_section h2 {
 		color: #fff;
@@ -117,7 +117,7 @@
 		}
 	}
 	.top_section nav a {
-		font-size: calc(var(--type_scale_1) * 0.875);
+		font-size: calc(var(--type-scale-1) * 0.875);
 	}
 	.grid_section {
 		padding: 2rem 0;

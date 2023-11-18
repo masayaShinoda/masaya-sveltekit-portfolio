@@ -25,7 +25,7 @@
 
 .content_section_4_container .content > h2 {
 	text-align: center;
-	color: var(--clr_primary);
+	color: var(--clr-primary);
 	margin-bottom: 0.75rem;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .content_section_4_container .content > p {
-	color: var(--clr_grey_shade_a);
+	color: var(--clr-grey-6);
 	margin-bottom: 1.5rem;
 	max-width: min(65ch, 100%);
 }

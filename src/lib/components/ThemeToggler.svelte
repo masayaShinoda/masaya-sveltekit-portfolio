@@ -34,7 +34,7 @@
 		cursor: pointer;
 
 		background: none;
-		border: 1px solid var(--clr_grey_shade_a);
+		border: 1px solid var(--clr-grey-6);
 		border-radius: 100vmax;
 		transition: transform 50ms ease-out;
 	}

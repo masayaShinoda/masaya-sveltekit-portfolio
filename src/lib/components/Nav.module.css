@@ -6,11 +6,11 @@
 	width: 100%;
 	max-width: 100%;
 
-	border-bottom: 1px solid var(--clr_grey_shade_e);
+	border-bottom: 1px solid var(--clr-grey-1);
 }
 
 [data-theme='dark'] .nav_container {
-	border-bottom-color: var(--clr_primary_shade_a);
+	border-bottom-color: var(--clr-primary-shade-a);
 }
 
 .nav_content {
@@ -73,12 +73,12 @@
 	font-weight: 400;
 	text-decoration: none;
 	margin-right: 0.75rem;
-	color: var(--clr_primary);
+	color: var(--clr-primary);
 	transition: color 100ms ease-out;
 }
 
 .nav_content nav a:lang(km) {
-	font-size: var(--type_scale_2);
+	font-size: var(--type-scale-2);
 }
 
 [data-theme='dark'] .nav_content a {
@@ -93,12 +93,12 @@
 
 .nav_content nav a:hover,
 .nav_content nav a:focus-visible {
-	color: var(--clr_secondary);
+	color: var(--clr-secondary);
 }
 
 [data-theme='dark'] .nav_content nav a:hover,
 [data-theme='dark'] .nav_content nav a:focus-visible {
-	color: var(--clr_secondary_shade_b);
+	color: var(--clr-secondary-shade-b);
 }
 
 .nav_content nav a:last-of-type {
@@ -106,12 +106,12 @@
 }
 
 .nav_content nav a.link__active {
-	color: var(--clr_secondary);
-	/* border-bottom: 1px solid var(--clr_secondary); */
+	color: var(--clr-secondary);
+	/* border-bottom: 1px solid var(--clr-secondary); */
 }
 
 [data-theme='dark'] .nav_content nav a.link__active {
-	color: var(--clr_secondary_shade_b);
+	color: var(--clr-secondary-shade-b);
 }
 
 @media screen and (max-width: 48em) {
@@ -136,7 +136,7 @@
 		padding: 0.75rem;
 		border: none;
 		outline: none;
-		background-color: var(--clr_secondary);
+		background-color: var(--clr-secondary);
 		box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
 		z-index: 100;
 	}
@@ -228,7 +228,7 @@
 
 		z-index: 15;
 
-		background-color: var(--clr_primary);
+		background-color: var(--clr-primary);
 		padding: 5rem 0;
 		/* outline: 1px solid red; */
 	}
@@ -236,7 +236,7 @@
 	.mobile_nav_drawer a {
 		padding: 1.5rem calc(var(--padding_horizontal) * 1.25);
 		color: #fff;
-		font-size: var(--type_scale_3);
+		font-size: var(--type-scale-3);
 		text-decoration: none;
 		width: auto;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.375);
@@ -248,7 +248,7 @@
 
 	.mobile_nav_drawer a:hover,
 	.mobile_nav_drawer a:focus-visible {
-		border-color: var(--clr_grey_shade_e);
+		border-color: var(--clr-grey-1);
 	}
 
 	.remaining {

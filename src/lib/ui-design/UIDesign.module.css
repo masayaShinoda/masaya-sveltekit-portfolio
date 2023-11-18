@@ -52,9 +52,9 @@
 }
 
 .ui_page_container .top_section .heading_container h1 {
-    font-size: calc(var(--type_scale_6) * 1.125);
+    font-size: calc(var(--type-scale-6) * 1.125);
     font-weight: 600;
-    color: var(--clr_primary);
+    color: var(--clr-primary);
 }
 
 [data-theme="dark"] .ui_page_container .top_section .heading_container h1 {
@@ -73,7 +73,7 @@
 }
 
 .ui_page_container .top_section>span p {
-    color: var(--clr_grey_shade_a);
+    color: var(--clr-grey-6);
 }
 
 [data-theme="dark"] .ui_page_container .top_section>span p {
@@ -84,8 +84,8 @@
     /* min-width: 21rem; */
     height: auto;
     object-fit: contain;
-    /* filter: brightness(0) opacity(0.375) var(--filter_clr_secondary); */
-    filter: brightness(0) var(--filter_clr_secondary);
+    /* filter: brightness(0) opacity(0.375) var(--filter_clr-secondary); */
+    filter: brightness(0) var(--filter_clr-secondary);
 }
 
 @media screen and (max-width: 64em) {
@@ -101,9 +101,9 @@
 }
 
 .ui_portf_item_section_container {
-    /* background-color: var(--clr_secondary); */
-    background-color: var(--clr_primary);
-    background-image: linear-gradient(35deg, var(--clr_secondary), var(--clr_primary));
+    /* background-color: var(--clr-secondary); */
+    background-color: var(--clr-primary);
+    background-image: linear-gradient(35deg, var(--clr-secondary), var(--clr-primary));
 
     overflow: hidden;
 
@@ -131,7 +131,7 @@
 
 
 .ui_portf_item_section_container h2 {
-    font-size: var(--type_scale_3);
+    font-size: var(--type-scale-3);
     color: #fff;
     width: 100%;
     display: flex;
@@ -244,7 +244,7 @@
 
 .ui_page_container .name {
     /* color: #fff; */
-    color: var(--clr_primary);
+    color: var(--clr-primary);
     font-weight: 700;
     margin-bottom: 1.75rem;
 }
@@ -259,17 +259,17 @@
 }
 
 [data-theme="dark"] .ui_page_container .categ_head {
-    color: var(--clr_grey_shade_e);
+    color: var(--clr-grey-1);
 }
 
 .ui_page_container .body_text {
-    /* color: var(--clr_grey_shade_e); */
-    color: var(--clr_grey_shade_a);
+    /* color: var(--clr-grey-1); */
+    color: var(--clr-grey-6);
     margin-bottom: 1rem;
 }
 
 [data-theme="dark"] .ui_page_container .body_text {
-    color: var(--clr_grey_shade_d);
+    color: var(--clr-grey-2);
 }
 
 .ui_page_container .overview,
@@ -310,7 +310,7 @@
 }
 
 .ui_page_container .project_link {
-    font-size: var(--type_scale_3);
+    font-size: var(--type-scale-3);
     font-weight: 600;
     text-decoration: none;
 }

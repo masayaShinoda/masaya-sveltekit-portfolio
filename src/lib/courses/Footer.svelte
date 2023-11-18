@@ -33,15 +33,15 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		background-color: var(--clr_primary);
+		background-color: var(--clr-primary);
 	}
 	[data-theme='dark'] footer div {
 		background-color: hsl(205, 75%, 5%);
 	}
 	footer a {
-		color: var(--clr_grey_shade_e);
+		color: var(--clr-grey-1);
 		text-decoration: none;
-		font-size: calc(var(--type_scale_1) * 0.8);
+		font-size: calc(var(--type-scale-1) * 0.8);
 		font-weight: 400;
 		margin: 0;
 	}

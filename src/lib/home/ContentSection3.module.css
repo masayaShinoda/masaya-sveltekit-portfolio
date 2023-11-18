@@ -28,7 +28,7 @@
 
 .content_section_3_container .content > h2 {
 	text-align: center;
-	color: var(--clr_primary);
+	color: var(--clr-primary);
 	margin-bottom: 0.75rem;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .content_section_3_container .content > p {
-	color: var(--clr_grey_shade_a);
+	color: var(--clr-grey-6);
 	margin-bottom: 1.5rem;
 	max-width: min(65ch, 100%);
 }
@@ -95,14 +95,14 @@
 	text-align: center;
 	line-height: 1.24;
 
-	font-size: var(--type_scale_2);
+	font-size: var(--type-scale-2);
 	font-weight: 600;
 	padding: 2.5rem 0.875rem;
 	border-radius: 1rem;
 	cursor: pointer;
 
-	/* color: var(--clr_grey_shade_a); */
-	color: var(--clr_primary);
+	/* color: var(--clr-grey-6); */
+	color: var(--clr-primary);
 	/* margin: 0 .875rem; */
 	transition:
 		color 200ms ease-out,
@@ -111,20 +111,20 @@
 }
 
 [data-theme='dark'] .portfolio_nav a {
-	color: var(--clr_secondary_shade_b);
+	color: var(--clr-secondary-shade-b);
 }
 
 .portfolio_nav i {
 	width: 3.75rem;
 	height: 3.75rem;
-	filter: brightness(0) var(--filter_clr_primary);
-	/* filter: brightness(0) var(--filter_clr_secondary); */
+	filter: brightness(0) var(--filter_clr-primary);
+	/* filter: brightness(0) var(--filter_clr-secondary); */
 	margin-bottom: 1.5rem;
 	transition: all 200ms ease-out;
 }
 
 [data-theme='dark'] .portfolio_nav i {
-	filter: brightness(0) var(--filter_clr_secondary_shade_b);
+	filter: brightness(0) var(--filter_clr-secondary-shade-b);
 }
 
 @media screen and (max-width: 40em) {
@@ -137,11 +137,11 @@
 		max-width: 100%;
 
 		border-radius: 0;
-		border-bottom: 2px solid var(--clr_grey_shade_e);
+		border-bottom: 2px solid var(--clr-grey-1);
 	}
 
 	[data-theme='dark'] .portfolio_nav a {
-		border-bottom-color: var(--clr_primary);
+		border-bottom-color: var(--clr-primary);
 	}
 
 	.portfolio_nav i {
@@ -154,19 +154,19 @@
 
 .portfolio_nav a:hover,
 .portfolio_nav a:focus-visible {
-	color: var(--clr_secondary);
-	background-color: var(--clr_grey_shade_f);
+	color: var(--clr-secondary);
+	background-color: var(--clr-grey-f);
 }
 
 .portfolio_nav a:hover i,
 .portfolio_nav a:focus i {
 	transform: scale(1.05);
-	filter: brightness(0) var(--filter_clr_secondary);
+	filter: brightness(0) var(--filter_clr-secondary);
 }
 
 [data-theme='dark'] .portfolio_nav a:hover,
 [data-theme='dark'] .portfolio_nav a:focus-visible {
-	background-color: var(--clr_primary);
+	background-color: var(--clr-primary);
 	color: var(--clr_light);
 }
 
