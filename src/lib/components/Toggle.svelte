@@ -1,8 +1,12 @@
 <label class="switch">
 	<input type="checkbox" checked />
 	<span class="slider round"></span>
-	<slot name="false_icon" />
-	<slot name="true_icon" />
+	<div class="switch-icon switch-icon__false">
+		<slot name="false_icon" />
+	</div>
+	<div class="switch-icon switch-icon__true">
+		<slot name="true_icon" />
+	</div>
 </label>
 
 <style>
@@ -71,5 +75,18 @@
 
 	.slider.round:before {
 		border-radius: 100vmax;
+	}
+
+	
+	.switch-icon {
+		width: 1rem;
+		height: 1rem;
+		position: absolute;
+		left: 0.5625rem;
+		bottom: 0.5rem;
+	}
+	.switch-icon.switch-icon__true {
+		left: unset;
+		right: 0.5625rem;
 	}
 </style>

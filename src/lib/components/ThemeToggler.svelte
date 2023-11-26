@@ -18,6 +18,7 @@
 
 <Toggle>
 	<MoonLine slot="false_icon" />
+	<SunLine slot="true_icon" />
 </Toggle>
 
 <!-- <div class="theme_toggle">
