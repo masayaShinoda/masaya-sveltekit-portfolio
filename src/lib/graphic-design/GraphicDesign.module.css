@@ -11,23 +11,22 @@
 @media screen and (max-width: 48em) {
 	.gfxdes_top_section {
 		margin: 2.5rem auto;
-		padding: 2.5rem var(--padding_horizontal);
+		padding: 2.5rem var(--padding-horizontal);
 	}
 }
 
 .gfxdes_top_section > img {
 	object-fit: contain;
 	object-position: center;
-	filter: var(--filter_clr-secondary);
+	filter: var(--filter-clr-secondary);
 	margin-bottom: 1.75rem;
 }
 
 [data-theme='dark'] .gfxdes_top_section > img {
-	filter: var(--filter_clr-secondary-shade-a);
+	filter: var(--filter-clr-secondary-shade-a);
 }
 
 .gfxdes_top_section > h1 {
-	font-weight: 600;
 	font-size: calc(var(--type-scale-6) * 1.125);
 	color: var(--clr-primary);
 	text-align: center;
@@ -57,7 +56,7 @@
 }
 
 [data-theme='dark'] .gfxdes_top_section > p {
-	color: var(--clr_light);
+	color: var(--clr-grey-1);
 }
 
 .gfx_projects_section__nav {
@@ -109,7 +108,7 @@
 
 .gfxdes_grid_section {
 	margin: 2.5rem auto;
-	max-width: min(calc(var(--content_max_width) * 0.9), 100%);
+	max-width: min(calc(var(--content-max-width) * 0.9), 100%);
 }
 
 .gfxdes_grid_section > h5.industry {

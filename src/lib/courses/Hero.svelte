@@ -66,7 +66,7 @@
 		flex-direction: column;
 		align-items: center;
 		margin: auto;
-		max-width: var(--content_max_width);
+		max-width: var(--content-max-width);
 	}
 	@media screen and (max-width: 48em) {
 		.hero_content {
@@ -191,7 +191,7 @@
 		}
 	}
 	.hero_links a > img {
-		filter: var(--filter_clr-primary);
+		filter: var(--filter-clr-primary);
 		margin-bottom: 1.5rem;
 		object-fit: contain;
 		transition: transform 200ms ease-out;
@@ -199,7 +199,7 @@
 	.hero_links a:hover > img,
 	.hero_links a:focus-visible > img {
 		transform: scale(1.125);
-		filter: var(--filter_clr-secondary);
+		filter: var(--filter-clr-secondary);
 	}
 
 	[data-theme='dark'] .hero_links a > img {
@@ -207,7 +207,7 @@
 	}
 	[data-theme='dark'] .hero_links a:hover > img,
 	[data-theme='dark'] .hero_links a:focus-visible > img {
-		filter: var(--filter_clr-secondary-shade-b);
+		filter: var(--filter-clr-secondary-shade-b);
 	}
 
 	@media screen and (max-width: 48em) {

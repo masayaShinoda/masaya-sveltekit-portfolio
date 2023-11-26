@@ -40,8 +40,8 @@
 		flex-direction: column;
 		margin: auto;
 		width: 100%;
-		max-width: var(--content_max_width);
-		padding: 2.5rem var(--padding_horizontal);
+		max-width: var(--content-max-width);
+		padding: 2.5rem var(--padding-horizontal);
 	}
 	@media screen and (max-width: 48em) {
 		.course_content {

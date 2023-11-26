@@ -13,8 +13,8 @@
 	align-items: center;
 	margin: 0 auto;
 	width: 100%;
-	max-width: min(100%, calc(var(--content_max_width) * 0.875));
-	/* padding: 5rem var(--padding_horizontal); */
+	max-width: min(100%, calc(var(--content-max-width) * 0.875));
+	/* padding: 5rem var(--padding-horizontal); */
 	padding: 3.25rem 0;
 }
 
@@ -39,7 +39,7 @@
 @media screen and (max-width: 48em) {
 	.content_section_3_container .content > h2,
 	.content_section_3_container .content > p {
-		padding: 0 var(--padding_horizontal);
+		padding: 0 var(--padding-horizontal);
 	}
 
 	.content_section_3_container .content > h2 {
@@ -54,7 +54,7 @@
 }
 
 [data-theme='dark'] .content_section_3_container .content > p {
-	color: var(--clr_light);
+	color: var(--clr-grey-1);
 }
 
 .portfolio_nav {
@@ -71,7 +71,7 @@
 	.portfolio_nav {
 		width: 100%;
 		max-width: 100%;
-		padding: 0 var(--padding_horizontal);
+		padding: 0 var(--padding-horizontal);
 	}
 }
 
@@ -96,7 +96,6 @@
 	line-height: 1.24;
 
 	font-size: var(--type-scale-2);
-	font-weight: 600;
 	padding: 2.5rem 0.875rem;
 	border-radius: 1rem;
 	cursor: pointer;
@@ -117,21 +116,21 @@
 .portfolio_nav i {
 	width: 3.75rem;
 	height: 3.75rem;
-	filter: brightness(0) var(--filter_clr-primary);
-	/* filter: brightness(0) var(--filter_clr-secondary); */
+	filter: brightness(0) var(--filter-clr-primary);
+	/* filter: brightness(0) var(--filter-clr-secondary); */
 	margin-bottom: 1.5rem;
 	transition: all 200ms ease-out;
 }
 
 [data-theme='dark'] .portfolio_nav i {
-	filter: brightness(0) var(--filter_clr-secondary-shade-b);
+	filter: brightness(0) var(--filter-clr-secondary-shade-b);
 }
 
 @media screen and (max-width: 40em) {
 	.portfolio_nav a {
 		flex-direction: row;
 		justify-content: flex-start;
-		padding: 1.5rem var(--padding_horizontal);
+		padding: 1.5rem var(--padding-horizontal);
 		margin: 0 auto;
 		width: 100%;
 		max-width: 100%;
@@ -155,19 +154,19 @@
 .portfolio_nav a:hover,
 .portfolio_nav a:focus-visible {
 	color: var(--clr-secondary);
-	background-color: var(--clr-grey-f);
+	background-color: var(--clr-grey-1);
 }
 
 .portfolio_nav a:hover i,
 .portfolio_nav a:focus i {
 	transform: scale(1.05);
-	filter: brightness(0) var(--filter_clr-secondary);
+	filter: brightness(0) var(--filter-clr-secondary);
 }
 
 [data-theme='dark'] .portfolio_nav a:hover,
 [data-theme='dark'] .portfolio_nav a:focus-visible {
 	background-color: var(--clr-primary);
-	color: var(--clr_light);
+	color: var(--clr-grey-1);
 }
 
 [data-theme='dark'] .portfolio_nav a:hover i,

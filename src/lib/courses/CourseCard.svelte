@@ -77,8 +77,8 @@
 		border-radius: 1rem;
 	}
 	[data-theme='dark'] .card_wrapper .card {
-		background-color: var(--clr_dark);
-		border-color: var(--clr-grey-6);
+		background-color: var(--clr-grey-6);
+		border-color: var(--clr-grey-5);
 	}
 	@media screen and (max-width: 48em) {
 		.card_wrapper .card {

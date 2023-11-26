@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Toggle from '$lib/components/Toggle.svelte';
 	import MoonLine from '$lib/components/icons/moon-line.svelte';
 	import SunLine from '$lib/components/icons/sun-line.svelte';
 	import { themeStore } from '../../stores';
@@ -15,7 +16,11 @@
 	}
 </script>
 
-<div class="theme_toggle">
+<Toggle>
+	<MoonLine slot="inac" />
+</Toggle>
+
+<!-- <div class="theme_toggle">
 	<button on:click={toggleTheme} title="Toggle website theme." aria-label="Toggle website theme.">
 		{#if theme === 'dark'}
 			<SunLine />
@@ -23,25 +28,7 @@
 			<MoonLine />
 		{/if}
 	</button>
-</div>
+</div> -->
 
 <style>
-	.theme_toggle button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0.5rem;
-		cursor: pointer;
-
-		background: none;
-		border: 1px solid var(--clr-grey-6);
-		border-radius: 100vmax;
-		transition: transform 50ms ease-out;
-	}
-	[data-theme='dark'] .theme_toggle button {
-		filter: invert(1);
-	}
-	.theme_toggle button:active {
-		transform: translateY(0.125rem);
-	}
 </style>

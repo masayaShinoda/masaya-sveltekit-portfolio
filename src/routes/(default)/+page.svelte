@@ -11,10 +11,10 @@
 <svelte:head>
 	<title>Masaya Shida | Cambodia-Based Web Developer & Designer</title>
 </svelte:head>
-<Hero />
+<!-- <Hero />
 <ContentSection1 />
 <ContentSection2 />
 <ContentSection3 />
 <ContentSection4 />
 <CallToAction />
-<BackToTop />
+<BackToTop /> -->

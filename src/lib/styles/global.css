@@ -9,7 +9,7 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: var(--font_primary);
+    font-family: var(--font-primary);
 }
 
 body {
@@ -19,12 +19,11 @@ body {
 
 /* dark mode */
 body[data-theme="dark"] {
-    color: var(--clr_light);
+    color: var(--clr-grey-1);
     background-color: hsl(205, 75%, 5%);
 }
 
 h1 {
-    font-weight: 700;
     line-height: 1.15;
 }
 
@@ -32,7 +31,6 @@ h2,
 h3,
 h4,
 h5 {
-    font-weight: 600;
     line-height: 1.24;
 }
 
@@ -45,7 +43,7 @@ ol,
 small,
 q,
 blockquote {
-    font-family: var(--font_primary);
+    font-family: var(--font-primary);
 }
 
 h1 {
@@ -115,7 +113,7 @@ a:focus-visible {
 [lang="km"],
 [lang="km"] * {
     line-height: 1.6;
-    font-family: var(--font_khmer), var(--font_primary);
+    font-family: var(--font-khmer), var(--font-primary);
     font-weight: 400;
 }
 /* khmer headings */
@@ -127,7 +125,7 @@ a:focus-visible {
 [lang="km"] h6 
 {
     line-height: 1.6;
-    font-family: var(--font_khmer_head), var(--font_primary);
+    font-family: var(--font-khmer-head), var(--font-primary);
     font-weight: 400;
     letter-spacing: 0.05ch;
 }

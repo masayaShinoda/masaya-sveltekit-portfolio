@@ -2,15 +2,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	width: 100%;
 	max-width: 100%;
-
-	border-bottom: 1px solid var(--clr-grey-1);
+	border-bottom: 1px solid var(--clr-grey-2);
 }
 
 [data-theme='dark'] .nav_container {
-	border-bottom-color: var(--clr-primary-shade-a);
+	border-bottom-color: var(--clr-grey-5);
 }
 
 .nav_content {
@@ -18,9 +16,8 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	max-width: var(--content_max_width);
-
-	padding: 1rem var(--padding_horizontal);
+	max-width: var(--content-max-width);
+	padding: .5rem var(--padding-horizontal);
 	margin: 0 auto;
 }
 
@@ -41,7 +38,7 @@
 .nav_content nav {
 	display: inline-block;
 	text-align: end;
-	margin-right: 0.75rem;
+	margin-right: 0.5rem;
 	/* outline: 1px solid red; */
 }
 
@@ -70,11 +67,15 @@
 }
 
 .nav_content nav a {
+	display: inline-flex;
+	padding: 1rem;
 	font-weight: 400;
 	text-decoration: none;
-	margin-right: 0.75rem;
+	margin-right: 0;
 	color: var(--clr-primary);
-	transition: color 100ms ease-out;
+	border-radius: 100vmax;
+	transition: color 100ms ease-out, background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+	transform-origin: center left;
 }
 
 .nav_content nav a:lang(km) {
@@ -87,7 +88,7 @@
 
 @media screen and (max-width: 64em) {
 	.nav_content nav a {
-		margin-right: 0.75rem;
+		margin-right: 0;
 	}
 }
 
@@ -106,8 +107,8 @@
 }
 
 .nav_content nav a.link__active {
-	color: var(--clr-secondary);
-	/* border-bottom: 1px solid var(--clr-secondary); */
+	background-color: var(--clr-grey-1);
+	box-shadow: var(--shadow-convex);
 }
 
 [data-theme='dark'] .nav_content nav a.link__active {
@@ -117,7 +118,7 @@
 @media screen and (max-width: 48em) {
 	.nav_content {
 		justify-content: center;
-		padding: 0.5rem var(--padding_horizontal);
+		padding: 0.5rem var(--padding-horizontal);
 	}
 
 	.mobile_nav_btn {
@@ -127,7 +128,7 @@
 		align-items: center;
 		position: fixed;
 		top: 0.5rem;
-		left: var(--padding_horizontal);
+		left: var(--padding-horizontal);
 		width: 3.5rem;
 		max-width: 3.5rem;
 		height: 3.5rem;
@@ -234,7 +235,7 @@
 	}
 
 	.mobile_nav_drawer a {
-		padding: 1.5rem calc(var(--padding_horizontal) * 1.25);
+		padding: 1.5rem calc(var(--padding-horizontal) * 1.25);
 		color: #fff;
 		font-size: var(--type-scale-3);
 		text-decoration: none;

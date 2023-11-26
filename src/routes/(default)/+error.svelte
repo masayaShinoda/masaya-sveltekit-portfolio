@@ -30,8 +30,8 @@
 		align-items: center;
 		justify-content: center;
 		margin: 0 auto;
-		max-width: var(--content_max_width);
-		padding: 5rem var(--padding_horizontal);
+		max-width: var(--content-max-width);
+		padding: 5rem var(--padding-horizontal);
 		text-align: center;
 	}
 	.content h2 {

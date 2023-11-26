@@ -91,9 +91,9 @@
 	}
 	.courses_grid_section_container .courses_grid_section {
 		width: 100%;
-		max-width: var(--content_max_width);
+		max-width: var(--content-max-width);
 		margin: 0 auto;
-		padding: 0 var(--padding_horizontal);
+		padding: 0 var(--padding-horizontal);
 	}
 	.top_section {
 		display: flex;

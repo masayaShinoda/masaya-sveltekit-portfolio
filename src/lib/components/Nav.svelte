@@ -13,6 +13,8 @@
 			document.body.style.overflowY = 'scroll';
 		}
 	}
+
+	console.log($page.url.hash)
 </script>
 
 <section class={styles.nav_container}>
@@ -28,25 +30,40 @@
 			<span aria-hidden="true" />
 		</button>
 		<a href="/" class={styles.logo_link}>
-			<img src="/images/masaya-web-dev-logo.svg" alt="Logo" width="240" height="60" />
+			<img src="/images/masaya-web-dev-logo.svg" alt="Logo" width="160" height="40" />
 		</a>
 		<div class={styles.nav_links}>
 			<nav>
-				<a href="/courses" lang="km">វគ្គសិក្សា</a>
 				<a
+					href="/#"
+					class={`${$page.url.pathname === '/' && $page.url.hash === '' ? styles.link__active : ''}`}
+					>Home</a
+				>
+				<a
+					href="/#portfolio"
+					class={`${$page.url.hash === '#portfolio' ? styles.link__active : ''}`}
+					>Portfolio</a
+				>
+				<a
+					href="/#contact"
+					class={`${$page.url.hash === '#contact' ? styles.link__active : ''}`}
+					>Contact</a
+				>
+				<a href="/courses" lang="km">វគ្គសិក្សា</a>
+				<!-- <a
 					href="/web-development"
-					class={`${$page.url.pathname === '/web-development' ? 'link__active' : null}`}
+					class={`${$page.url.pathname === '/web-development' ? styles.link__active : ''}`}
 					>Web Development</a
 				>
 				<a
 					href="/graphic-design"
-					class={`${$page.url.pathname === '/graphic-design' ? 'link__active' : null}`}
+					class={`${$page.url.pathname === '/graphic-design' ? styles.link__active : ''}`}
 					>Graphic Design</a
 				>
 				<a
 					href="/ui-design"
-					class={`${$page.url.pathname === '/ui-design' ? 'link__active' : null}`}>UI Design</a
-				>
+					class={`${$page.url.pathname === '/ui-design' ? styles.link__active : ''}`}>UI Design</a
+				> -->
 			</nav>
 			<ThemeToggler />
 		</div>

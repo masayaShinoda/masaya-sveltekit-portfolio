@@ -3,8 +3,8 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	max-width: var(--content_max_width);
-	padding: 2.5rem var(--padding_horizontal);
+	max-width: var(--content-max-width);
+	padding: 2.5rem var(--padding-horizontal);
 	margin: 0 auto;
 	/* outline: 1px solid green; */
 }
@@ -12,7 +12,7 @@
 @media screen and (max-width: 48em) {
 	.webdev_top_section {
 		align-items: flex-start;
-		padding: 2.5rem var(--padding_horizontal);
+		padding: 2.5rem var(--padding-horizontal);
 	}
 }
 
@@ -72,16 +72,15 @@
 	/* max-width: 5rem; */
 	object-fit: contain;
 	object-position: center;
-	filter: var(--filter_clr-secondary);
+	filter: var(--filter-clr-secondary);
 	margin-bottom: 1rem;
 }
 
 [data-theme='dark'] .webdev_top_section__left>img {
-	filter: var(--filter_clr-secondary-shade-b);
+	filter: var(--filter-clr-secondary-shade-b);
 }
 
 .webdev_top_section__left>h1 {
-	font-weight: 600;
 	font-size: calc(var(--type-scale-6) * 1.125);
 	color: var(--clr-primary);
 	text-align: center;
@@ -98,7 +97,7 @@
 }
 
 [data-theme='dark'] .webdev_top_section__right p {
-	color: var(--clr_light);
+	color: var(--clr-grey-1);
 }
 
 .webdev_top_section__right p:not(:last-of-type) {
@@ -126,15 +125,15 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: var(--content_max_width);
-	padding: 0 var(--padding_horizontal);
+	max-width: var(--content-max-width);
+	padding: 0 var(--padding-horizontal);
 	margin: 3.25rem auto;
 	/* outline: 1px solid green; */
 }
 
 @media screen and (max-width: 48em) {
 	.webdev_projects_section {
-		padding: 0 var(--padding_horizontal);
+		padding: 0 var(--padding-horizontal);
 	}
 }
 
@@ -267,7 +266,6 @@
 
 .webdev_projects_section__body__item .name {
 	font-size: var(--type-scale-6);
-	font-weight: 600;
 	margin-bottom: 0.875rem;
 }
 
@@ -286,7 +284,7 @@
 }
 
 [data-theme='dark'] .webdev_projects_section__body__item .content_half__content {
-	color: var(--clr_light);
+	color: var(--clr-grey-1);
 }
 
 .webdev_projects_section__body__item .content_half__content:not(:last-of-type) {

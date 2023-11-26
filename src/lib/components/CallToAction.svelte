@@ -39,14 +39,14 @@
 		align-items: center;
 		margin: 0 auto;
 		width: 100%;
-		max-width: var(--content_max_width);
-		/* padding: 5rem var(--padding_horizontal); */
+		max-width: var(--content-max-width);
+		/* padding: 5rem var(--padding-horizontal); */
 		padding: 3.25rem 0;
 	}
 	@media screen and (max-width: 48em) {
 		.call_to_action_container .content {
 			padding: 4.25rem 0;
-			width: calc(100% - calc(var(--padding_horizontal) * 2));
+			width: calc(100% - calc(var(--padding-horizontal) * 2));
 		}
 	}
 
@@ -91,7 +91,6 @@
 
 	.action_btn {
 		font-size: var(--type-scale-3);
-		font-weight: 600;
 		padding: 0.125rem 0;
 		text-decoration: none;
 		text-align: center;

@@ -13,7 +13,7 @@
 			</p>
 			<p>
 				I make a conscious effort to create website navigations that are intuitive and accessible.
-				Accessibility is a <span class={styles.font__bold}>necessity</span>, not an afterthought.
+				Accessibility is a necessity, not an afterthought.
 			</p>
 		</div>
 		<div class={styles.section__right}>
