@@ -118,7 +118,7 @@
 @media screen and (max-width: 48em) {
 	.nav_content {
 		justify-content: center;
-		padding: 0.5rem var(--padding-horizontal);
+		padding: 1rem var(--padding-horizontal);
 	}
 
 	.mobile_nav_btn {
@@ -237,7 +237,7 @@
 	.mobile_nav_drawer a {
 		padding: 1.5rem calc(var(--padding-horizontal) * 1.25);
 		color: #fff;
-		font-size: var(--type-scale-3);
+		font-size: var(--type-scale-1);
 		text-decoration: none;
 		width: auto;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.375);

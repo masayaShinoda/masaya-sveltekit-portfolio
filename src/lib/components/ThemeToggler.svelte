@@ -17,7 +17,7 @@
 </script>
 
 <Toggle>
-	<MoonLine slot="inac" />
+	<MoonLine slot="false_icon" />
 </Toggle>
 
 <!-- <div class="theme_toggle">
