@@ -19,11 +19,11 @@
 					if (!intersecting) {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							?.classList.add('btn_main__inactive');
+							?.classList.add('btn-main__inactive');
 					} else {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							?.classList.remove('btn_main__inactive');
+							?.classList.remove('btn-main__inactive');
 					}
 				});
 			},
@@ -59,7 +59,7 @@
 				{#each Array.from(gfx_projects
 						.filter((project) => project.items.length > 0)
 						.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry}
-					<a href={`#${encodeURI(industry)}`} class="btn_main btn_main__smaller">
+					<a href={`#${encodeURI(industry)}`} class="btn-main btn-main__smaller">
 						{industry}
 					</a>
 				{/each}

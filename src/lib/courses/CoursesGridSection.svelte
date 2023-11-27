@@ -30,15 +30,15 @@
 				<nav>
 					<a
 						href="#categories"
-						class={`btn_main btn_main__smaller ${!activeCategory ? '' : 'btn_main__inactive'}`}
+						class={`btn-main btn-main__smaller ${!activeCategory ? '' : 'btn-main__inactive'}`}
 					>
 						ទាំងអស់
 					</a>
 					{#each categories as category}
 						<a
 							href={`#categories?category=${category.replace(' ', '-')}`}
-							class={`btn_main btn_main__smaller ${
-								category.replace(' ', '-') === activeCategory ? '' : 'btn_main__inactive'
+							class={`btn-main btn-main__smaller ${
+								category.replace(' ', '-') === activeCategory ? '' : 'btn-main__inactive'
 							}`}
 						>
 							{category === 'programming'

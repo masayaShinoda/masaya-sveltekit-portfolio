@@ -21,11 +21,11 @@
 					if (!intersecting) {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							?.classList.add('btn_main__inactive');
+							?.classList.add('btn-main__inactive');
 					} else {
 						document
 							.querySelector(`a[href='#${entry.target.id}']`)
-							?.classList.remove('btn_main__inactive');
+							?.classList.remove('btn-main__inactive');
 					}
 				});
 			},
@@ -67,7 +67,7 @@
 					{#each Array.from(web_projects.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}
 						<a
 							href={`#${encodeURI(industry)}`}
-							class={`${styles.section_top_btn} btn_main btn_main__smaller`}
+							class={`${styles.section_top_btn} btn-main btn-main__smaller`}
 						>
 							{industry}
 						</a>
@@ -116,7 +116,7 @@
 												<SvelteMarkdown source={project.responsibilities} />
 											{/if}
 										</div>
-										<a href={project.link} class="btn_main">See Demo →</a>
+										<a href={project.link} class="btn-main">See Demo →</a>
 									</div>
 									<img
 										alt={`Screenshot of project ${project.name}`}

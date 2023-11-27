@@ -16,7 +16,7 @@ body {
     color: var(--clr-grey-6);
     background-color: var(--clr-grey-1);
     overflow-y: scroll;
-    transition: color 200ms ease-out, background-color 200ms ease-out;
+    transition: color 200ms ease-out, background-color 200ms ease-out, box-shadow 250ms ease-out;
 }
 
 /* dark mode */

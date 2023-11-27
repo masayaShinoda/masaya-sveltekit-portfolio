@@ -11,8 +11,8 @@
 <svelte:head>
 	<title>Masaya Shida | Cambodia-Based Web Developer & Designer</title>
 </svelte:head>
-<!-- <Hero />
-<ContentSection1 />
+<Hero />
+<!-- <ContentSection1 />
 <ContentSection2 />
 <ContentSection3 />
 <ContentSection4 />
