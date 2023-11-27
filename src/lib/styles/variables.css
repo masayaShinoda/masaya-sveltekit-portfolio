@@ -46,8 +46,9 @@ html {
     --clr-grey-2: #E9ECEF;
     --clr-grey-1: #F8F9FA;
 
-    --clr-gradient-light: linear-gradient(109deg, #FFF 0%, #E9ECEF 100%), var(--clr-grey-1);
-    --clr-gradient-secondary: linear-gradient(96deg, #0095FF 0%, #07C 100%), var(--clr-secondary);
+    --clr-gradient-light: linear-gradient(109deg, #FFF 0%, var(--clr-grey-2) 100%), var(--clr-grey-1);
+    --clr-gradient-dark: linear-gradient(119deg, var(--clr-grey-5) 0%, var(--clr-grey-6) 100%);
+    --clr-gradient-secondary: linear-gradient(96deg, var(--clr-secondary-shade-a) 0%, var(--clr-secondary) 100%), var(--clr-secondary);
 
     --content-max-width: min(100%, 72.5rem);
     --padding-horizontal: 2.5rem;

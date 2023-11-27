@@ -1,12 +1,20 @@
-<label class="switch">
-	<input type="checkbox" checked />
+<script lang="ts">
+	export let active: boolean;
+	export let label: string
+</script>
+
+<label class="switch" aria-label={label} title={label}>
+	<input type="checkbox" checked={active} on:change />
 	<span class="slider round"></span>
-	<div class="switch-icon switch-icon__false">
-		<slot name="false_icon" />
-	</div>
-	<div class="switch-icon switch-icon__true">
-		<slot name="true_icon" />
-	</div>
+	{#if active}
+		<div class="switch-icon switch-icon__true">
+			<slot name="true_icon" />
+		</div>
+	{:else}
+		<div class="switch-icon switch-icon__false">
+			<slot name="false_icon" />
+		</div>
+	{/if}
 </label>
 
 <style>
@@ -15,6 +23,7 @@
 		display: inline-block;
 		width: 4rem;
 		height: 2rem;
+		cursor: pointer;
 	}
 
 	.switch input {
@@ -77,14 +86,27 @@
 		border-radius: 100vmax;
 	}
 
-	
 	.switch-icon {
 		width: 1rem;
 		height: 1rem;
 		position: absolute;
 		left: 0.5625rem;
 		bottom: 0.5rem;
+		animation-duration: 250ms;
+		animation-name: switch-icon-appear;
+		animation-delay: 50ms;
+		animation-fill-mode: backwards;
 	}
+
+	@keyframes switch-icon-appear {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1
+		}
+	}
+	
 	.switch-icon.switch-icon__true {
 		left: unset;
 		right: 0.5625rem;

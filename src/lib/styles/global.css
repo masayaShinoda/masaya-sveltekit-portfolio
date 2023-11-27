@@ -13,6 +13,8 @@ html {
 }
 
 body {
+    color: var(--clr-grey-6);
+    background-color: var(--clr-grey-1);
     overflow-y: scroll;
     transition: color 200ms ease-out, background-color 200ms ease-out;
 }
@@ -20,7 +22,7 @@ body {
 /* dark mode */
 body[data-theme="dark"] {
     color: var(--clr-grey-1);
-    background-color: hsl(205, 75%, 5%);
+    background-color: var(--clr-grey-6);
 }
 
 h1 {

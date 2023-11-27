@@ -16,7 +16,7 @@
 	}
 </script>
 
-<Toggle>
+<Toggle label="Toggle theme" active={theme === 'light'} on:change={toggleTheme}>
 	<MoonLine slot="false_icon" />
 	<SunLine slot="true_icon" />
 </Toggle>
