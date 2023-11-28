@@ -41,10 +41,10 @@
 			<a href="/" on:click={toggleMobileNav}>ទំព័រដើម</a>
 			<a href="/courses" on:click={toggleMobileNav}>វគ្គសិក្សា</a>
 			<a href="#" on:click={toggleMobileNav}>អំពីខ្ញុំ</a>
-		</nav>
+		</nav> -->
 		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 		<!-- this is the remaining space where users can tap to close nav -->
-		<div
+		<!-- <div
 			class={styles.remaining}
 			aria-label="Close navigation panel"
 			role="navigation"
