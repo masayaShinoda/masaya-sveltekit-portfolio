@@ -12,8 +12,7 @@
 			document.body.style.overflowY = 'scroll';
 		}
 	}
-
-	console.log($page.url.hash);
+	// console.log($page.url.hash);
 </script>
 
 <div class="nav-container-wrapper">

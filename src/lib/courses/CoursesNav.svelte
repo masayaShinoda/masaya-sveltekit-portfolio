@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ThemeToggler from '$lib/components/ThemeToggler.svelte';
-	import styles from '$lib/components/Nav.module.css';
+	// import styles from '$lib/components/Nav.module.css';
 
 	let mobileNavActive = false;
 

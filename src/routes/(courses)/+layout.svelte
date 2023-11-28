@@ -23,6 +23,6 @@
 	<meta property="twitter:image" content="/images/banner-masaya-courses-white-02.png" />
 </svelte:head>
 <ReusableLayout language="km" custom_nav>
-	<CoursesNav slot="custom_nav" />
+	<!-- <CoursesNav slot="custom_nav" /> -->
 	<slot />
 </ReusableLayout>
