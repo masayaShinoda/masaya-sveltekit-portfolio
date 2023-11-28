@@ -2,7 +2,7 @@
 	<div class="hero-content">
 		<span>
 			<h1>
-				<span class="subtitle"> Hi, I'm Masaya! </span>
+				<span class="subtitle">Hi, I'm Masaya,</span>
 				<span class="title"
 					>Cambodia-based developer & designer passionate about digital literacy.</span
 				>
@@ -12,7 +12,6 @@
 				<a href="#portfolio" class="btn-main btn-main__bg-mono">See my projects</a>
 			</div>
 		</span>
-		<!-- <img src="/images/shinjang.png" alt="Hero" width="200" height="400" style="object-fit: contain" /> -->
 		<img
 			src="/images/g14-shadow_result.png"
 			alt="ASUS G14 laptop, decorative."
@@ -73,7 +72,7 @@
 		.hero-content > span .hero-actions {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			gap: .5rem;
+			gap: 0.5rem;
 		}
 	}
 
@@ -85,7 +84,6 @@
 			margin-right: unset;
 		}
 	}
-	
 
 	.hero-content > img {
 		max-width: 45%;

@@ -92,19 +92,6 @@
 		position: absolute;
 		left: 0.5625rem;
 		bottom: 0.5rem;
-		animation-duration: 250ms;
-		animation-name: switch-icon-appear;
-		animation-delay: 50ms;
-		animation-fill-mode: backwards;
-	}
-
-	@keyframes switch-icon-appear {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1
-		}
 	}
 	
 	.switch-icon.switch-icon__true {
