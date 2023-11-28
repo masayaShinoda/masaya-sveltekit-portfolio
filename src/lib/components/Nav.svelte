@@ -172,9 +172,8 @@
 		border-radius: 100vmax;
 		transition:
 			color 200ms ease-out,
-			background-color 200ms ease-out,
-			box-shadow 200ms ease-out;
-		transform-origin: center left;
+			background-color 250ms ease-out,
+			box-shadow 250ms ease-out;
 	}
 
 	[data-theme='dark'] .nav-content a {
