@@ -25,7 +25,7 @@ a.btn-main:visited {
 
 .btn-main:hover,
 .btn-main:focus-visible {
-	filter: brightness(1.075);
+	filter: brightness(0.95);
 }
 
 .btn-main__bg-mono {
