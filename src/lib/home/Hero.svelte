@@ -15,8 +15,8 @@
 		<img
 			src="/images/g14-shadow_result.png"
 			alt="ASUS G14 laptop, decorative."
-			width="330"
-			height="220"
+			width="432"
+			height="240"
 		/>
 	</div>
 </section>
@@ -27,11 +27,9 @@
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 5rem 0;
-
 		width: 100%;
 		max-width: 100%;
 	}
-
 	.hero-content {
 		display: flex;
 		justify-content: space-between;
@@ -40,13 +38,11 @@
 		margin: 0 auto;
 		padding: 0 var(--padding-horizontal);
 	}
-
 	@media screen and (max-width: 48em) {
 		.hero-container {
 			padding: 3.25rem 0;
 			/* outline: 1px solid red; */
 		}
-
 		.hero-content {
 			flex-direction: column-reverse;
 			align-items: flex-start;

@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import ThemeToggler from '$lib/components/ThemeToggler.svelte';
 	// import styles from '$lib/components/Nav.module.css';
 
@@ -52,4 +52,4 @@
 			on:keydown={toggleMobileNav}
 		/>
 	</div>
-</section>
+</section> -->
