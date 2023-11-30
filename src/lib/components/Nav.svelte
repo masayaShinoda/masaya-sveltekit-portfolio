@@ -201,12 +201,11 @@
 	}
 
 	.nav-content nav a.link__active {
-		background-color: var(--clr-grey-1);
+		background-color: var(--clr-gradient-light);
 		box-shadow: var(--shadow-convex);
 	}
 
 	[data-theme='dark'] .nav-content nav a.link__active {
-		/* color: var(--clr-secondary-shade-b); */
 		background-color: var(--clr-gradient-dark);
 	}
 
