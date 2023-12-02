@@ -1,4 +1,7 @@
 .btn-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: var(--clr-grey-1);
 	background: var(--clr-gradient-secondary);
 	font-size: var(--type-scale-0);

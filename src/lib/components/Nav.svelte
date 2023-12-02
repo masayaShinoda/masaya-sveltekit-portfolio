@@ -24,9 +24,12 @@
 				aria-label={`${mobileNavActive ? 'Close' : 'Open'} menu`}
 				title={`${mobileNavActive ? 'Close' : 'Open'} menu`}
 			>
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
+				<div class="mobile-nav-btn__burger">
+					<span aria-hidden="true" />
+					<span aria-hidden="true" />
+					<span aria-hidden="true" />
+				</div>
+				<span>Menu</span>				
 			</button>
 			<a href="/" class="logo-link">
 				<img src="/images/masaya-web-dev-logo.svg" alt="Logo" width="160" height="40" />
@@ -35,13 +38,11 @@
 				<nav>
 					<a
 						href="/#"
-						class={`${
-							$page.url.pathname === '/' && $page.url.hash === '' ? 'link__active' : ''
-						}`}>Home</a
+						class={`${$page.url.pathname === '/' && $page.url.hash === '' ? 'link__active' : ''}`}
+						>Home</a
 					>
-					<a
-						href="/#portfolio"
-						class={`${$page.url.hash === '#portfolio' ? 'link__active' : ''}`}>Portfolio</a
+					<a href="/#portfolio" class={`${$page.url.hash === '#portfolio' ? 'link__active' : ''}`}
+						>Portfolio</a
 					>
 					<a href="/#contact" class={`${$page.url.hash === '#contact' ? 'link__active' : ''}`}
 						>Contact</a
@@ -193,7 +194,7 @@
 	}
 
 	.nav-content nav a:active {
-		transform: translateY(.125rem);
+		transform: translateY(0.125rem);
 	}
 
 	[data-theme='dark'] .nav-content nav a:hover,
@@ -214,58 +215,65 @@
 
 	[data-theme='dark'] .nav-content nav a:hover,
 	[data-theme='dark'] .nav-content nav a:focus-visible,
-	[data-theme='dark'] .nav-content nav a.link__active
-	 {
+	[data-theme='dark'] .nav-content nav a.link__active {
 		background-color: var(--clr-gradient-dark);
 	}
 
 	@media screen and (max-width: 48em) {
 		.nav-content {
-			justify-content: center;
+			/* justify-content: center; */
 			padding: 1rem var(--padding-horizontal);
 		}
-
 		.mobile-nav-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			bottom: 3.5dvh;
+			left: var(--padding-horizontal);
+			height: 3.5rem;
+			max-height: 3.5rem;
+			border-radius: 100vmax;
+			padding: 1rem;
+			border: none;
+			outline: none;
+			background: var(--clr-gradient-secondary);
+			box-shadow: var(--shadow-md);
+			z-index: 100;
+			cursor: pointer;
+		}
+		.mobile-nav-btn:hover,
+		.mobile-nav-btn:focus-visible {
+			filter: brightness(1.125);
+		}
+		.mobile-nav-btn:active {
+			transform: scale(0.95);
+		}
+		.mobile-nav-btn > span {
+			color: var(--clr-grey-1);
+			margin-left: .25rem;
+			font-family: var(--font-primary);
+			font-size: var(--type-scale-0);
+			cursor: pointer;
+		}
+		.mobile-nav-btn .mobile-nav-btn__burger {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
-			position: fixed;
-			top: 0.5rem;
-			left: var(--padding-horizontal);
-			width: 3.5rem;
-			max-width: 3.5rem;
-			height: 3.5rem;
-			max-height: 3.5rem;
-			border-radius: 100%;
-			padding: 0.75rem;
-			border: none;
-			outline: none;
-			background: var(--clr-gradient-secondary);
-			box-shadow: var(--shadow-flat);
-			z-index: 100;
+			width: 2rem; 
+			height: 2rem;
+			transform: scale(0.75);
 		}
 
-		.mobile-nav-btn:hover,
-		.mobile-nav-btn:focus-visible {
-			cursor: pointer;
-			filter: brightness(1.125);
-		}
-
-		.mobile-nav-btn:active {
-			transform: scale(0.95);
-		}
-
-		.mobile-nav-btn > span {
+		.mobile-nav-btn__burger > span {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-
 			background: var(--clr-grey-1);
 			width: 1.75rem;
 			height: 0.25rem;
 			border-radius: 0.125rem;
-
 			transition: transform 200ms ease-out;
 		}
 
@@ -274,19 +282,17 @@
 			box-shadow: none;
 		}
 
-		.mobile-nav-btn.close > span:first-of-type {
+		.mobile-nav-btn.close > .mobile-nav-btn__burger > span:first-of-type {
 			position: absolute;
 			transform: rotateZ(45deg);
-			top: 1.625rem;
 		}
 
-		.mobile-nav-btn.close > span:nth-of-type(2) {
+		.mobile-nav-btn.close > .mobile-nav-btn__burger > span:nth-of-type(2) {
 			position: absolute;
 			transform: rotateZ(-45deg);
-			bottom: 1.625rem;
 		}
 
-		.mobile-nav-btn.close > span:last-of-type {
+		.mobile-nav-btn.close > .mobile-nav-btn__burger > span:last-of-type {
 			display: none;
 		}
 
@@ -306,61 +312,60 @@
 		}
 
 		.mobile-nav-container {
-			margin-left: -100vw;
 			transition: all 200ms ease-in-out;
 		}
 
 		.mobile-nav-container.active {
-			margin-left: 0;
 			display: flex;
-
-			width: 100%;
+			flex-direction: column-reverse;
 			position: fixed;
-			top: 0;
+			bottom: 7dvh;
 			left: 0;
-
+			width: 100%;
 			z-index: 10;
 		}
 
-		.mobile-nav-drawer {
+		.mobile-nav-container .mobile-nav-drawer {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			width: 65%;
-			height: 100vh;
-
-			padding: 5rem 0;
-
+			justify-content: flex-start;
+			background-color: var(--clr-grey-2);
+			border-radius: 1rem;
+			padding: 1rem 0;
+			margin: 0 auto 2.5rem auto;
+			width: 100%;
+			max-width: calc(var(--content-max-width) - calc(var(--padding-horizontal) * 2));
 			z-index: 15;
-
-			background-color: var(--clr-primary);
-			padding: 5rem 0;
 			/* outline: 1px solid red; */
+		}
+		[data-theme="dark"] .mobile-nav-container .mobile-nav-drawer {
+			background-color: var(--clr-grey-5);
 		}
 
 		.mobile-nav-drawer a {
-			padding: 1.5rem calc(var(--padding-horizontal) * 1.25);
 			color: var(--clr-grey-1);
-			font-size: var(--type-scale-1);
+			display: inline-flex;
+			padding: 1rem calc(var(--padding-horizontal) * 1.25);
+			font-size: var(--type-scale-0);
 			text-decoration: none;
-			width: auto;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.375);
+			width: 100%;
+			/* outline: 1px solid red; */
 		}
-
 		.mobile-nav-drawer a:visited {
-			color: var(--clr-grey-1);
-		}
-
-		.mobile-nav-drawer a:hover,
-		.mobile-nav-drawer a:focus-visible {
-			border-color: var(--clr-grey-1);
+			color: unset;
 		}
 
 		.remaining {
-			/* width: 40%; */
+			background: rgba(0, 0, 0, 0.75);
+			backdrop-filter: blur(2px);
 			flex-grow: 1;
-			background: rgba(0, 0, 0, 0.375);
 			cursor: pointer;
+			display: flex;
+			height: 100dvh;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
 		}
 	}
 </style>

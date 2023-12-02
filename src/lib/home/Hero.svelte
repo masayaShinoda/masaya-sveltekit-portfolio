@@ -45,16 +45,21 @@
 		}
 		.hero-content {
 			flex-direction: column-reverse;
-			align-items: flex-start;
+			align-items: center;
 			width: 100%;
-			max-width: 100%;
+			max-width: min(32em, 100%);
 			padding: 0;
 			/* outline: 1px solid red; */
 		}
 	}
 
 	.hero-content > span {
-		max-width: min(32rem, 50%);
+		max-width: min(32em, 50%);
+	}
+	@media screen and (max-width: 48em) {
+		.hero-content > span {
+			max-width: 100%;
+		}
 	}
 
 	.hero-content > span h1 {
@@ -92,7 +97,7 @@
 		}
 	}
 
-	@media screen and (max-width: 48em) {
+	@media screen and (max-width: 40em) {
 		.hero-content > span {
 			max-width: 100%;
 			padding: 0 var(--padding-horizontal);
@@ -104,7 +109,7 @@
 
 	@media screen and (max-width: 48em) {
 		.hero-content > img {
-			margin: 0 auto 1rem auto;
+			margin: 0 unset 1rem 0;
 			max-height: 8.75rem;
 		}
 	}

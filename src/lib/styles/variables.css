@@ -70,6 +70,8 @@ html {
     --type-scale--1: 0.8rem;
     --type-scale--2: 0.6375rem;
 
+    --shadow-md: 0 0 8px rgba(0,0,0,.5);
+
     --shadow-pressed: 8px 8px 16px 0px var(--clr-grey-3) inset, -8px -8px 16px 0px #FFF inset;
     --shadow-pressed-secondary: 2px 2px 4px 0px var(--clr-secondary) inset, -2px -2px 4px 0px var(--clr-secondary-shade-b) inset;
     --shadow-pressed-dark: 2px 2px 4px 0px var(--clr-grey-6) inset, -2px -2px 4px 0px var(--clr-grey-5) inset;
