@@ -10,7 +10,7 @@
 	border: 1px solid var(--clr-secondary);
 	cursor: pointer;
 	box-shadow: var(--shadow-convex);
-	transition: filter 200ms ease-out, background-color 200ms ease-out;
+	transition: filter 200ms ease-out, background-color 200ms ease-out, transform 100ms ease-in-out;
 }
 
 a.btn-main {
@@ -25,7 +25,11 @@ a.btn-main:visited {
 
 .btn-main:hover,
 .btn-main:focus-visible {
-	filter: brightness(0.92);
+	filter: brightness(0.95);
+}
+
+.btn-main:active {
+	transform: translateY(0.125rem);
 }
 
 .btn-main__inactive,

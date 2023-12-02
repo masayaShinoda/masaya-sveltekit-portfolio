@@ -1,11 +1,11 @@
 <script lang="ts">
 	export let active: boolean;
-	export let label: string
+	export let label: string;
 </script>
 
 <label class="switch" aria-label={label} title={label}>
 	<input type="checkbox" checked={active} on:change />
-	<span class="slider round"></span>
+	<span class="slider round" />
 	{#if active}
 		<div class="switch-icon switch-icon__true">
 			<slot name="true_icon" />
@@ -21,9 +21,10 @@
 	.switch {
 		position: relative;
 		display: inline-block;
-		width: 4rem;
-		height: 2rem;
 		cursor: pointer;
+		/* toggle circle border will add extra 1px */
+		width: calc(4rem - 1px);
+		height: calc(2rem - 1px);
 	}
 
 	.switch input {
@@ -50,12 +51,12 @@
 		content: '';
 		height: 1.5rem;
 		width: 1.5rem;
-		left: 0.3125rem;
-		bottom: 0.25rem;
+		left: calc(0.3125rem - 1px);
+		bottom: calc(0.25rem - 1px);
 		background: var(--clr-gradient-light);
 		-webkit-transition: all ease-out 150ms;
 		transition: all ease-out 150ms;
-		outline: 1px solid var(--clr-grey-5);
+		border: 1px solid var(--clr-grey-5);
 		box-shadow: 0px 4px 8px 0px rgba(33, 36, 41, 0.25);
 	}
 
@@ -71,7 +72,7 @@
 	}
 
 	input:checked + .slider:before {
-		outline: 1px solid var(--clr-secondary);
+		border: 1px solid var(--clr-secondary);
 		-webkit-transform: translateX(1.875rem);
 		-ms-transform: translateX(1.875rem);
 		transform: translateX(1.875rem);
@@ -90,12 +91,12 @@
 		width: 1rem;
 		height: 1rem;
 		position: absolute;
-		left: 0.5625rem;
-		bottom: 0.5rem;
+		left: calc(0.5625rem - 1px);
+		bottom: calc(0.5rem - 1px);
 	}
-	
+
 	.switch-icon.switch-icon__true {
 		left: unset;
-		right: 0.5625rem;
+		right: calc(0.5625rem - 1px);
 	}
 </style>
