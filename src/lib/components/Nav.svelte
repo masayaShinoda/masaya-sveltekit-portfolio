@@ -12,7 +12,6 @@
 			document.body.style.overflowY = 'scroll';
 		}
 	}
-	// console.log($page.url.hash);
 </script>
 
 <div class="nav-container-wrapper">
@@ -344,7 +343,6 @@
 		}
 
 		.mobile-nav-drawer a {
-			color: var(--clr-grey-1);
 			display: inline-flex;
 			padding: 1rem calc(var(--padding-horizontal) * 1.25);
 			font-size: var(--type-scale-0);

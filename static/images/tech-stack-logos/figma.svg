@@ -1,0 +1,14 @@
+<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="figma" clip-path="url(#clip0_506_1008)">
+<path id="Vector" d="M4.00001 24C6.208 24 8 22.208 8 20V16H4.00001C1.79201 16 0 17.792 0 20C0 22.208 1.79201 24 4.00001 24Z" fill="#0ACF83"/>
+<path id="Vector_2" d="M0 12C0 9.792 1.79201 8 4.00001 8H8V16H4.00001C1.79201 16 0 14.208 0 12Z" fill="#A259FF"/>
+<path id="Vector_3" d="M0 4.00001C0 1.79201 1.79201 0 4.00001 0H8V8H4.00001C1.79201 8 0 6.208 0 4.00001Z" fill="#F24E1E"/>
+<path id="Vector_4" d="M8 0H12.0001C14.2081 0 16.0001 1.79201 16.0001 4.00001C16.0001 6.208 14.2081 8 12.0001 8H8V0Z" fill="#FF7262"/>
+<path id="Vector_5" d="M16.0001 12C16.0001 14.208 14.2081 16 12.0001 16C9.792 16 8 14.208 8 12C8 9.792 9.792 8 12.0001 8C14.2081 8 16.0001 9.792 16.0001 12Z" fill="#1ABCFE"/>
+</g>
+<defs>
+<clipPath id="clip0_506_1008">
+<rect width="16" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
