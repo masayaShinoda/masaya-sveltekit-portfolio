@@ -130,11 +130,11 @@
 	}
 	.section_chapters {
 		grid-area: c;
-		border-left: 1px solid var(--clr-grey-1);
+		border-left: 1px solid var(--clr_grey_shade_e);
 		padding-left: 1.5rem;
 	}
 	[data-theme='dark'] .coursebox .section_chapters {
-		border-left-color: var(--clr-primary-shade-a);
+		border-left-color: var(--clr_primary_shade_a);
 	}
 	@media screen and (max-width: 48em) {
 		.section_chapters {
@@ -151,16 +151,16 @@
 	}
 	.section_chapters ul li a {
 		text-decoration: none;
-		color: var(--clr-grey-5);
+		color: var(--clr_grey_shade_b);
 	}
 	[data-theme='dark'] .section_chapters ul li a {
-		color: var(--clr-grey-2);
+		color: var(--clr_grey_shade_d);
 	}
 	.section_chapters ul li a.active {
-		color: var(--clr-secondary);
+		color: var(--clr_secondary);
 	}
 	[data-theme='dark'] .section_chapters ul li a.active {
-		color: var(--clr-secondary-shade-b);
+		color: var(--clr_secondary_shade_b);
 	}
 	@media screen and (max-width: 48em) {
 		.section_chapters ul li {
@@ -172,16 +172,16 @@
 		}
 	}
 	.section_chapters ul li h2 {
-		font-size: var(--type-scale-1);
+		font-size: var(--type_scale_1);
 	}
 	.section_chapters h3 {
-		font-size: var(--type-scale-2);
+		font-size: var(--type_scale_2);
 		padding-bottom: 0.5rem;
 		margin-bottom: 1.5rem;
-		border-bottom: 1px solid var(--clr-grey-1);
+		border-bottom: 1px solid var(--clr_grey_shade_e);
 	}
 	[data-theme='dark'] .section_chapters h3 {
-		border-bottom-color: var(--clr-primary-shade-a);
+		border-bottom-color: var(--clr_primary_shade_a);
 	}
 
 	.section_details .course_info {
@@ -191,19 +191,19 @@
 		margin: 1rem 0;
 	}
 	.section_details .course_info p {
-		color: var(--clr-grey-5);
+		color: var(--clr_grey_shade_b);
 		margin: 0.25rem 0;
-		font-size: calc(var(--type-scale-1) * 0.95);
+		font-size: calc(var(--type_scale_1) * 0.95);
 	}
 	[data-theme='dark'] .section_details .course_info p {
-		color: var(--clr-grey-2);
+		color: var(--clr_grey_shade_d);
 	}
 	.section_details .course_info .course_description {
 		margin: 1rem 0;
-		color: var(--clr-grey-6);
+		color: var(--clr_grey_shade_a);
 	}
 	[data-theme='dark'] .section_details .course_info .course_description {
 		margin: 1rem 0;
-		color: var(--clr-grey-1);
+		color: var(--clr_grey_shade_e);
 	}
 </style>

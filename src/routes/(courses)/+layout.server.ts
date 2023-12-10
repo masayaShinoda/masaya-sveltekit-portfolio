@@ -34,7 +34,7 @@ export async function load() {
 			slug: 'intro-web-dev-with-html-css',
 			category: 'programming',
 			level: 'beginner',
-			technology: 'HTML & CSS',
+			technology: 'HTML',
 			active: true,
 			coming_soon: true
 		},
