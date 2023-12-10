@@ -7,6 +7,8 @@
 	import '$lib/styles/components.css';
 
 	import Nav from '$lib/components/Nav.svelte';
+	import Footer from '$lib/courses/Footer.svelte';
+
 	// vercel analytics
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
@@ -71,3 +73,4 @@
 <main lang={language}>
 	<slot><!-- optional fallback --></slot>
 </main>
+<Footer />
