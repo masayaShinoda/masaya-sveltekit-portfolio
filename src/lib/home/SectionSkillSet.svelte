@@ -136,7 +136,7 @@
 			'a b'
 			'a c';
 		gap: 2.5rem;
-		margin: 0 0 0 auto;
+		padding: 0 1.5rem;
 	}
 	@media screen and (max-width: 64em) {
 		.section-content__right {
