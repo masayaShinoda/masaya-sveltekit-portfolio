@@ -149,6 +149,7 @@
 			width: 100%;
 			max-width: min(32em, 100%);
 			margin: 0 auto;
+			padding: 0;
 		}
 	}
 	.section-content__right-category:nth-of-type(1) {
