@@ -3,6 +3,7 @@
 	import SectionCourses from '$lib/home/SectionCourses.svelte';
 	import SectionSkillSet from '$lib/home/SectionSkillSet.svelte';
 	import SectionCertifications from '$lib/home/SectionCertifications.svelte';
+	import SectionDesignPhilosophy from '$lib/home/SectionDesignPhilosophy.svelte';
 	// import CallToAction from '$lib/components/CallToAction.svelte';
 	// import BackToTop from '$lib/components/BackToTop.svelte';
 </script>
@@ -14,5 +15,6 @@
 <SectionCourses />
 <SectionSkillSet />
 <SectionCertifications />
+<SectionDesignPhilosophy />
 <!-- <CallToAction /> -->
 <!-- <BackToTop /> -->
