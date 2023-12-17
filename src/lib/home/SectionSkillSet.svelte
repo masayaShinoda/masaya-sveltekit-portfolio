@@ -108,6 +108,11 @@
 		align-items: flex-start;
 		max-width: min(23.75rem, 100%);
 	}
+	@media screen and (max-width: 64em) {
+		.section-content__left {
+			max-width: 40%;
+		}
+	}
 	@media screen and (max-width: 48em) {
 		.section-content__left {
 			margin: 0 auto 1rem auto;
@@ -141,7 +146,6 @@
 	@media screen and (max-width: 64em) {
 		.section-content__right {
 			gap: 1rem;
-			max-width: 40%;
 		}
 	}
 	@media screen and (max-width: 48em) {
