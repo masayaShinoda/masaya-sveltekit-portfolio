@@ -1,12 +1,12 @@
 <script lang="ts">
 	let certificates = [
 		{
-			title: "Certificate from CS50's Web Development with Python and JavaScript course.",
+			title: "CS50's Web Development with Python and JavaScript",
 			url: 'https://cs50.harvard.edu/certificates/2492c4fe-14ce-4c45-ba99-9406f584f1e4',
 			img: '/images/certif/exported/CS50W_result_result.jpg'
 		},
 		{
-			title: "Certificate from freeCodeCamp's Responsive Web Design course.",
+			title: "freeCodeCamp's Responsive Web Design",
 			url: 'https://www.freecodecamp.org/certification/masaya-shida/responsive-web-design',
 			img: '/images/certif/exported/fcc-certif-responsive-web-design-cropped_result_result.jpg'
 		},
@@ -23,16 +23,19 @@
 		<h2>Certifications</h2>
 		<div class="certifications">
 			{#each certificates as certificate}
-				<a href={certificate.url} class="certification-wrapper">
-					<img
-						src={certificate.img}
-						alt={certificate.title}
-						title={certificate.title}
-						width="423"
-						height="300"
-						loading="lazy"
-					/>
-				</a>
+				<div class="certification-wrapper">
+					<a href={certificate.url}>
+						<img
+							src={certificate.img}
+							alt={certificate.title}
+							title={certificate.title}
+							width="423"
+							height="300"
+							loading="lazy"
+						/>
+						<h3>{certificate.title}</h3>
+					</a>
+				</div>
 			{/each}
 		</div>
 	</div>
@@ -95,23 +98,44 @@
 			gap: 1.5rem;
 		}
 	}
-	
+
 	@media screen and (max-width: 32em) {
 		.certifications {
 			grid-template-columns: 1fr;
-
 		}
 	}
 	.certifications .certification-wrapper {
 		padding: 0.5rem;
-		border-radius: 0.5rem;
+		border-radius: 1rem;
 		background-color: var(--clr-grey-1);
 		box-shadow: var(--shadow-flat);
 	}
-	.certification-wrapper > img {
+	[data-theme='dark'] .certifications .certification-wrapper {
+		background-color: var(--clr-grey-6);
+		box-shadow: var(--shadow-flat);
+	}
+	.certification-wrapper img {
+		height: fit-content;
 		max-width: 100%;
-		height: 100%;
 		object-fit: contain;
 		object-position: center;
+		border-radius: .5rem;
 	}
+	.certifications .certification-wrapper a {
+		text-decoration: none;
+		color: unset;
+	}
+	.certifications .certification-wrapper h3 {
+		margin: 0.75rem 0.5rem;
+		font-size: var(--type-scale-2);
+		line-height: 1.4;
+		transition: color 200ms ease-out;
+	}
+	.certifications .certification-wrapper a:hover h3,
+	.certifications .certification-wrapper a:focus h3 {
+		color: var(--clr-secondary);
+	}
+	[data-theme='dark'] .certifications .certification-wrapper h3 {
+
+}
 </style>

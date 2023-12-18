@@ -70,7 +70,7 @@ html {
     --type-scale--1: 0.8rem;
     --type-scale--2: 0.6375rem;
 
-    --shadow-md: 0 0 8px rgba(0,0,0,.5);
+    --shadow-md: 0 0 8px rgba(0, 0, 0, .5);
 
     --shadow-pressed: 8px 8px 16px 0px var(--clr-grey-3) inset, -8px -8px 16px 0px #FFF inset;
     --shadow-pressed-secondary: 2px 2px 4px 0px var(--clr-secondary) inset, -2px -2px 4px 0px var(--clr-secondary-shade-b) inset;
@@ -128,6 +128,6 @@ main[lang="km"] {
 
 html [data-theme="dark"] {
     --shadow-pressed: 2px 2px 4px 0px var(--clr-grey-6) inset, -2px -2px 4px 0px var(--clr-grey-5) inset;
-    --shadow-flat: 8px 8px 16px 0px var(--clr-grey-6), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --shadow-flat: 8px 8px 16px 0px rgba(0,0,0,.25), -8px -8px 16px 0px var(--clr-grey-6);
     --shadow-convex: 4px 4px 8px 0px rgba(0, 0, 0, 0.50), -4px -4px 8px 0px var(--clr-grey-6);
 }
