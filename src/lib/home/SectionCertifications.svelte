@@ -135,7 +135,8 @@
 	.certifications .certification-wrapper a:focus h3 {
 		color: var(--clr-secondary);
 	}
-	[data-theme='dark'] .certifications .certification-wrapper h3 {
-
-}
+	[data-theme='dark'] .certifications .certification-wrapper a:hover h3,
+	[data-theme='dark'] .certifications .certification-wrapper a:focus h3 {
+		color: var(--clr-secondary-shade-b);
+	}
 </style>
