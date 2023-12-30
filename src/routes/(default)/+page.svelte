@@ -4,6 +4,7 @@
 	import SectionSkillSet from '$lib/home/SectionSkillSet.svelte';
 	import SectionCertifications from '$lib/home/SectionCertifications.svelte';
 	import SectionDesignPhilosophy from '$lib/home/SectionDesignPhilosophy.svelte';
+	import SectionGetInTouch from '$lib/home/SectionGetInTouch.svelte';
 	// import CallToAction from '$lib/components/CallToAction.svelte';
 	// import BackToTop from '$lib/components/BackToTop.svelte';
 </script>
@@ -16,5 +17,6 @@
 <SectionSkillSet />
 <SectionCertifications />
 <SectionDesignPhilosophy />
+<SectionGetInTouch />
 <!-- <CallToAction /> -->
 <!-- <BackToTop /> -->

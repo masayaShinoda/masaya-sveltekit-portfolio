@@ -69,6 +69,7 @@ a.btn-main__inactive:visited {
 	background: var(--clr-gradient-light);
 	border-color: var(--clr-grey-2);
 }
+
 a.btn-main.btn-main__bg-mono:hover,
 a.btn-main.btn-main__bg-mono:focus-visible,
 a.btn-main.btn-main__bg-mono:visited {
@@ -80,8 +81,14 @@ a.btn-main.btn-main__bg-mono:visited {
 	background: var(--clr-gradient-dark);
 	border-color: var(--clr-grey-5);
 }
+
 [data-theme='dark'] a.btn-main.btn-main__bg-mono:hover,
 [data-theme='dark'] a.btn-main.btn-main__bg-mono:focus-visible,
 [data-theme='dark'] a.btn-main.btn-main__bg-mono:visited {
 	color: var(--clr-grey-1);
+}
+
+.btn-main>img,
+.btn-main>svg {
+	margin-right: .5rem;
 }

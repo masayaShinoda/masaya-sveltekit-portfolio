@@ -1,19 +1,47 @@
+<script lang="ts">
+	let contact_links = [
+		{
+			title: 'Email',
+			url: 'mailto:masayashida@gmail.com',
+			iconName: 'gmail'
+		},
+		{
+			title: 'Github',
+			url: 'https://github.com/masayaShinoda',
+			iconName: 'github'
+		},
+		{
+			title: 'Telegram',
+			url: 'https://t.me/shinoda17',
+			iconName: 'telegram'
+		}
+	];
+</script>
+
 <section class="section-container">
 	<div class="content">
 		<div class="section__left">
-			<h2>Design Philosphy</h2>
+			<h2>Get in touch</h2>
 			<p>
-				In this busy world, we tend to overlook how important it is to keep things simple. My
-				approach in creating websites and infographics is to deliver essential information in an
-				easy-to-digest manner.
+				Thank you for visiting my page. Feel free to reach out to me if you wish to build something
+				together, or if you have any inquiries.
 			</p>
-			<p>
-				I make a conscious effort to create websites that are intuitive and accessible.
-				Accessibility is a necessity, not an afterthought.
-			</p>
+			<button class="btn-main">Get a quote</button>
 		</div>
 		<div class="section__right">
-			<img src="/images/golden-ratio.svg" alt="Golden Ratio" width="387" height="240" />
+			<ul>
+				{#each contact_links as item}
+					<li>
+						<a href={item.url} class="btn-main btn-main__bg-mono">
+							<img
+								src={`/images/social-icons/${item.iconName}.svg`}
+								alt={`${item.iconName} icon`}
+							/>
+							{item.title}
+						</a>
+					</li>
+				{/each}
+			</ul>
 		</div>
 	</div>
 </section>
@@ -42,7 +70,7 @@
 			padding: 1.75rem var(--padding-horizontal);
 		}
 		.section-container .content {
-			flex-direction: column-reverse;
+			flex-direction: column;
 			align-items: flex-start;
 			padding: 3.25rem var(--padding-horizontal);
 			max-width: min(32em, 100%);
@@ -79,14 +107,6 @@
 		}
 	}
 	.section__right {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: var(--clr-grey-1);
-		padding: 2rem;
-		border-radius: 2rem;
-		box-shadow: var(--shadow-flat);
 		max-width: 45%;
 	}
 	[data-theme='dark'] .content .section__right {
@@ -104,20 +124,31 @@
 			padding: 0;
 			background: none;
 			box-shadow: none;
-			max-width: 24em;
+			max-width: 100%;
 		}
 	}
 
-	.section__right img {
-		width: 100%;
-		max-width: 100%;
-		object-fit: contain;
-		object-position: center;
-		filter: brightness(0) var(--filter-clr-primary);
-		margin: auto;
-		/* border: 2px solid var(--clr-primary); */
+	.section__right ul {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	}
-	[data-theme='dark'] .section__right img {
-		filter: brightness(0) var(--filter-clr-secondary-shade-b);
+	.section__right ul li {
+		margin-left: 1rem;
+	}
+	@media screen and (max-width: 48em) {
+		.section__right ul {
+			/* justify-content: flex-start;
+			flex-wrap: wrap; */
+			justify-content: space-evenly;
+			max-width: 100%;
+			margin-top: 2.5rem;
+			gap: 1rem;
+		}
+		.section__right ul li {
+			margin-left: unset;
+			margin-bottom: 1rem;
+			flex-grow: 1;
+		}
 	}
 </style>
