@@ -44,7 +44,7 @@
 		.section-container .content {
 			flex-direction: column-reverse;
 			align-items: flex-start;
-			padding: 3.25rem var(--padding-horizontal);
+			padding: 0;
 			max-width: min(32em, 100%);
 		}
 	}

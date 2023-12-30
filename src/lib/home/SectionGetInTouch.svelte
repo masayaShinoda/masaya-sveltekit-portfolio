@@ -72,7 +72,7 @@
 		.section-container .content {
 			flex-direction: column;
 			align-items: flex-start;
-			padding: 3.25rem var(--padding-horizontal);
+			padding: 0;
 			max-width: min(32em, 100%);
 		}
 	}
@@ -138,16 +138,14 @@
 	}
 	@media screen and (max-width: 48em) {
 		.section__right ul {
-			/* justify-content: flex-start;
-			flex-wrap: wrap; */
 			justify-content: space-evenly;
+			flex-wrap: wrap;
 			max-width: 100%;
 			margin-top: 2.5rem;
 			gap: 1rem;
 		}
 		.section__right ul li {
 			margin-left: unset;
-			margin-bottom: 1rem;
 			flex-grow: 1;
 		}
 	}
