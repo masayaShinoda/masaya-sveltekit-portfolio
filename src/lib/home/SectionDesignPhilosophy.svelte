@@ -100,22 +100,23 @@
 			max-width: 100%;
 		}
 		.section__right {
-			margin-bottom: 3.25rem;
+			margin-top: 3.25rem;
+			margin-bottom: 2.5rem;
 			padding: 0;
 			background: none;
 			box-shadow: none;
 			max-width: 20em;
+			max-height: 12.5em;
 		}
 	}
 
 	.section__right img {
-		width: 100%;
 		max-width: 100%;
+		max-height: 100%;
 		object-fit: contain;
 		object-position: center;
 		filter: brightness(0) var(--filter-clr-primary);
 		margin: auto;
-		height: fit-content;
 		/* border: 2px solid var(--clr-primary); */
 	}
 	[data-theme='dark'] .section__right img {
