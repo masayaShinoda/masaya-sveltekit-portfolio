@@ -19,7 +19,7 @@
 		}
 	];
 
-	let showModal = false;
+	// let showModal = false;
 </script>
 
 <section class="section-container">
