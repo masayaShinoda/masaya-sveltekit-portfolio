@@ -69,8 +69,6 @@
 		align-items: center;
 		margin: 0 auto;
 		padding: 5rem var(--padding-horizontal);
-		/* padding: 5rem 0; */
-		/* outline: 1px solid red; */
 	}
 	@media screen and (max-width: 48em) {
 		.section-container {
