@@ -1,5 +1,5 @@
 <script lang="ts">
-	import GetInTouchDialog from '$lib/components/GetInTouchDialog.svelte';
+	// import GetInTouchDialog from '$lib/components/GetInTouchDialog.svelte';
 
 	let contact_links = [
 		{
@@ -50,7 +50,7 @@
 			</ul>
 		</div>
 	</div>
-	<GetInTouchDialog bind:showModal />
+	<!-- <GetInTouchDialog bind:showModal /> -->
 </section>
 
 <style>
