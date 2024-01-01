@@ -90,7 +90,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		/* background-color: var(--clr-primary); */
 	}
 	.section__left h2 {
 		color: var(--clr-primary);
