@@ -21,13 +21,16 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		background-color: var(--clr-primary);
+		/* background-color: var(--clr-primary); */
 	}
 	footer a {
-		color: var(--clr-grey-2);
+		color: var(--clr-grey-5);
 		text-decoration: none;
 		font-size: var(--type-scale-0);
 		font-weight: 400;
 		margin: 0;
+	}
+	[data-theme="dark"] footer a {
+		color: var(--clr-grey-3);
 	}
 </style>
