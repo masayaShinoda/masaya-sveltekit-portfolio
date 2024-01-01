@@ -36,6 +36,8 @@
 							<img
 								src={`/images/social-icons/${item.iconName}.svg`}
 								alt={`${item.iconName} icon`}
+								width={20}
+								height={20}
 							/>
 							{item.title}
 						</a>
@@ -67,7 +69,7 @@
 	}
 	@media screen and (max-width: 48em) {
 		.section-container {
-			padding: 1.75rem var(--padding-horizontal);
+			padding: 2.5rem var(--padding-horizontal);
 		}
 		.section-container .content {
 			flex-direction: column;

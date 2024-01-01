@@ -39,7 +39,7 @@
 	}
 	@media screen and (max-width: 48em) {
 		.section-container {
-			padding: 1.75rem var(--padding-horizontal);
+			padding: 2.5rem var(--padding-horizontal);
 		}
 		.section-container .content {
 			flex-direction: column-reverse;
@@ -104,7 +104,7 @@
 			padding: 0;
 			background: none;
 			box-shadow: none;
-			max-width: 24em;
+			max-width: 20em;
 		}
 	}
 
@@ -115,6 +115,7 @@
 		object-position: center;
 		filter: brightness(0) var(--filter-clr-primary);
 		margin: auto;
+		height: fit-content;
 		/* border: 2px solid var(--clr-primary); */
 	}
 	[data-theme='dark'] .section__right img {

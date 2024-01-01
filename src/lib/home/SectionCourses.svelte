@@ -47,7 +47,7 @@
 
 	@media screen and (max-width: 48em) {
 		.section-container {
-			padding: 1.75rem 0;
+			padding: 2.5rem 0;
 		}
 		.section-content {
 			background: unset;

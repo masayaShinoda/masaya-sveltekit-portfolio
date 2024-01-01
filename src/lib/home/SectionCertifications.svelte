@@ -63,7 +63,7 @@
 
 	@media screen and (max-width: 48em) {
 		.section-container {
-			padding: 1.75rem var(--padding-horizontal);
+			padding: 2.5rem var(--padding-horizontal);
 		}
 		.section-content {
 			flex-direction: column;
