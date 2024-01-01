@@ -1,4 +1,6 @@
 <script lang="ts">
+	import GetInTouchDialog from '$lib/components/GetInTouchDialog.svelte';
+
 	let contact_links = [
 		{
 			title: 'Email',
@@ -16,6 +18,8 @@
 			iconName: 'telegram'
 		}
 	];
+
+	let showModal = false;
 </script>
 
 <section class="section-container">
@@ -26,7 +30,7 @@
 				Thank you for visiting my page. Feel free to reach out to me if you wish to build something
 				together, or if you have any inquiries.
 			</p>
-			<button class="btn-main">Get a quote</button>
+			<button class="btn-main" on:click={() => (showModal = true)}>Get a quote</button>
 		</div>
 		<div class="section__right">
 			<ul>
@@ -46,6 +50,7 @@
 			</ul>
 		</div>
 	</div>
+	<GetInTouchDialog bind:showModal />
 </section>
 
 <style>
