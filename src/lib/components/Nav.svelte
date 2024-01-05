@@ -350,8 +350,8 @@
 			width: 100%;
 			/* outline: 1px solid red; */
 		}
-		.mobile-nav-drawer a:visited {
-			color: unset;
+		[data-theme="dark"] .mobile-nav-drawer a {
+			color: var(--clr-grey-1);
 		}
 
 		.remaining {

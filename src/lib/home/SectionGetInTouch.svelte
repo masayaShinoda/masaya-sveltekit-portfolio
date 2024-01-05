@@ -30,7 +30,7 @@
 				Thank you for visiting my page. Feel free to reach out to me if you wish to build something
 				together, or if you have any inquiries.
 			</p>
-			<button class="btn-main" on:click={() => (showModal = true)}>Get a quote</button>
+			<!-- <button class="btn-main" on:click={() => (showModal = true)}>Get a quote</button> -->
 		</div>
 		<div class="section__right">
 			<ul>
