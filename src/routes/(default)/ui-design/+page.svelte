@@ -85,6 +85,20 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 			duration: 'One month',
 			link: 'https://www.figma.com/file/2Tmf6ZRDoCCFSgKqq0fJjs/loyalty-program-system?type=design&node-id=0%3A1&mode=design&t=ArB6RtvUXXmdi2IP-1',
 			image: '/images/mockups/loyalty-program-mockup_result.png'
+		},
+		{
+			id: 'real-estate-listing-platform',
+			name: 'Real Estate Listing Platform',
+			overview: `
+Website design for a local real estate listing platform.
+`,
+			responsibilities: `
+I was responsible for turning wireframes into responsive web design screens and prototypes. I will also be responsible for developing the platform as well.
+`,
+			tools: ['Figma', 'Adobe Illustrator'],
+			duration: 'Two weeks',
+			link: 'https://www.figma.com/file/wmlrymmwZ2UaJGmxgmt92C/hunter-real-estate-ui?type=design&node-id=1403%3A3151&mode=design&t=OLCt27YVfvHHfQhP-1',
+			image: '/images/mockups/real-estate-listing-mockup_result.png'
 		}
 	];
 </script>
