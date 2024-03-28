@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import SvelteMarkdown from 'svelte-markdown';
 	import BackToTop from '$lib/components/BackToTop.svelte';
 	import data from './data';
 	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
@@ -106,14 +105,14 @@
 											{#if project.overview}
 												<!-- content here -->
 												<h4>Overview</h4>
-												<SvelteMarkdown source={project.overview} />
+												<p>{project.overview}</p>
 											{/if}
 										</div>
 										<div class={styles.content_half__content}>
 											{#if project.responsibilities}
 												<!-- content here -->
 												<h4>Responsibilities</h4>
-												<SvelteMarkdown source={project.responsibilities} />
+												<p>{project.responsibilities}</p>
 											{/if}
 										</div>
 										<a href={project.link} class="btn_main">See Demo →</a>

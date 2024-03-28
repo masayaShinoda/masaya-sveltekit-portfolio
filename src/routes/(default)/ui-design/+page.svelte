@@ -1,6 +1,5 @@
 <script lang="ts">
 	import styles from '$lib/ui-design/UIDesign.module.css';
-	import SvelteMarkdown from 'svelte-markdown';
 
 	const tool_logos = [
 		{
@@ -45,12 +44,8 @@
 		{
 			id: 'ut-market-website',
 			name: 'Digital Product Website Design',
-			overview: `
-[utmarket.io](https://utmarket.io) is the landing page and informational website for all products related to the UT Market digital platform. 
-`,
-			responsibilities: `
-After discussions with the marketing and business teams on what contents and features are needed on the website, I was responsible for designing the UI screens and some illustrations to best welcome new visitors to our site.  
-`,
+			overview: `Landing page and informational website for all products related to the UT Market digital platform.`,
+			responsibilities: `After discussions with the marketing and business teams on what contents and features are needed on the website, I was responsible for designing the UI screens and some illustrations to best welcome new visitors to our site.`,
 			tools: ['Figma', 'Adobe Illustrator'],
 			duration: 'Ten Days',
 			link: 'https://www.figma.com/file/Hj8RIRNzSXvbtfjGnfl8DH/masayashida.com-Portfolio-Showcase?node-id=0%3A1&t=XHPaiK4nqd1Y7Pdl-1',
@@ -59,14 +54,8 @@ After discussions with the marketing and business teams on what contents and fea
 		{
 			id: 'ut-market-app',
 			name: 'Mobile Trading App Design',
-			overview: `
-UT Market is an online trading platform that allows traders to buy and sell fractionalized Cambodian real estate assets in the form of Units of Trust (UTs). 
-`,
-			responsibilities: `
-I was tasked with creating the UI design for a mobile version of an existing progressive web app. 
-
-I came up with entirely new page layouts with a fresh design approach whilst preserving mostly the same user flow from the existing web app.
-`,
+			overview: `UT Market is an online trading platform that allows traders to buy and sell fractionalized Cambodian real estate assets in the form of Units of Trust (UTs).`,
+			responsibilities: `I was tasked with creating the UI design for a mobile version of an existing progressive web app. I came up with entirely new page layouts with a fresh design approach whilst preserving mostly the same user flow from the existing web app.`,
 			tools: ['Adobe XD', 'Adobe Illustrator'],
 			duration: 'Three months',
 			link: 'https://xd.adobe.com/view/a80afaa0-f4f0-4f8a-8573-e1c9adb1e7aa-fd59/flow',
@@ -75,12 +64,8 @@ I came up with entirely new page layouts with a fresh design approach whilst pre
 		{
 			id: 'loyalty-program-platform',
 			name: 'Loyalty Program Platform',
-			overview: `
-A draft user interface design for a customer loyalty platform. It is a platform to manage loyalty programs, promotions, and subscriptions, the web app design is for business owners, and the mobile app design is for customers.
-`,
-			responsibilities: `
-The project's goal is a minimum viable product. I designed the webapp with [Chakra UI](https://chakra-ui.com/) components in mind. 
-`,
+			overview: `A draft user interface design for a customer loyalty platform. It is a platform to manage loyalty programs, promotions, and subscriptions, the web app design is for business owners, and the mobile app design is for customers.`,
+			responsibilities: `The project's goal is a minimum viable product. I designed the webapp with Chakra UI components in mind.`,
 			tools: ['Figma', 'Adobe Illustrator'],
 			duration: 'One month',
 			link: 'https://www.figma.com/file/2Tmf6ZRDoCCFSgKqq0fJjs/loyalty-program-system?type=design&node-id=0%3A1&mode=design&t=ArB6RtvUXXmdi2IP-1',
@@ -89,12 +74,8 @@ The project's goal is a minimum viable product. I designed the webapp with [Chak
 		{
 			id: 'real-estate-listing-platform',
 			name: 'Real Estate Listing Platform',
-			overview: `
-Website design for a local real estate listing platform.
-`,
-			responsibilities: `
-I was responsible for turning wireframes into responsive web design screens and prototypes. I will also be responsible for developing the platform as well.
-`,
+			overview: `Website design for a local real estate listing platform.`,
+			responsibilities: `I was responsible for turning wireframes into responsive web design screens and prototypes. I will also be responsible for developing the platform as well.`,
 			tools: ['Figma', 'Adobe Illustrator'],
 			duration: 'Two weeks',
 			link: 'https://www.figma.com/file/wmlrymmwZ2UaJGmxgmt92C/hunter-real-estate-ui?type=design&node-id=1403%3A3151&mode=design&t=OLCt27YVfvHHfQhP-1',
@@ -144,15 +125,15 @@ I was responsible for turning wireframes into responsive web design screens and 
 						<div class={styles.upper_half}>
 							<span class={styles.overview}>
 								<h5 class={styles.categ_head}>Overview</h5>
-								<span class={styles.body_text}>
-									<SvelteMarkdown source={project.overview} />
-								</span>
+								<p class={styles.body_text}>
+									{project.overview}
+								</p>
 							</span>
 							<span class={styles.responsibilities}>
 								<h5 class={styles.categ_head}>Responsibilities</h5>
-								<span class={styles.body_text}>
-									<SvelteMarkdown source={project.responsibilities} />
-								</span>
+								<p class={styles.body_text}>
+									{project.responsibilities}
+								</p>
 							</span>
 						</div>
 						<div class={styles.bottom_half}>
