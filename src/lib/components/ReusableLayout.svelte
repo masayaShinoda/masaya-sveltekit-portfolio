@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { themeStore } from '../../stores';
-	import { onNavigate } from '$app/navigation';
 
 	import '$lib/styles/global.css';
 	import '$lib/styles/components.css';
@@ -50,17 +49,6 @@
 		});
 	});
 
-	// view transitions
-	onNavigate((navigation) => {
-		if (!document.startViewTransition) return;
-
-		return new Promise((resolve) => {
-			document.startViewTransition(async () => {
-				resolve();
-				await navigation.complete;
-			});
-		});
-	});
 </script>
 
 {#if custom_nav}
