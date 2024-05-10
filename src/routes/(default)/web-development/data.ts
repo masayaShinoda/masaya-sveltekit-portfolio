@@ -4,7 +4,7 @@ const web_projects = [
 		name: 'Mobile App Marketing Website',
 		industry: 'Finance',
 		overview: `Landing page and informational website for all products related to the UT Market digital platform.`,
-		responsibilities: `After presenting my UI screens to the team, I got to work coding the new website using NextJS, which was ideal for its SSG abilities, pleasant dev experience, SEO, and performance (it got a [100 performance score](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Futmarket.io%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext) on Google Lighthouse!). I also manage the domain, hosting, and CMS.`,		tools: ['HTML & CSS', 'NextJS'],
+		responsibilities: `After presenting my UI screens to the team, I got to work coding the new website using NextJS, which was ideal for its SSG abilities, pleasant dev experience, SEO, and performance (100 score on Lighthouse). I also manage the domain, hosting, and CMS.`,		tools: ['HTML & CSS', 'NextJS'],
 		duration: 'Three weeks for the first live version.',
 		link: 'https://utmarket.io',
 		image: '/images/mockups/utmarket-ui-showcase.png'
