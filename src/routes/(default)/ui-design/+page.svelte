@@ -39,6 +39,26 @@
 	];
 
 	const ui_design_projects = [
+        {
+            id: 'real-estate-listing-platform',
+            name: 'Real Estate Listing Website',
+            overview: `Website design for a local real estate listing company.`,
+            responsibilities: `I was responsible for turning wireframes into responsive web design screens and prototypes. I will also be responsible for developing the platform as well.`,
+            tools: ['Figma', 'Adobe Illustrator'],
+            duration: 'Two weeks',
+            link: 'https://www.figma.com/file/wmlrymmwZ2UaJGmxgmt92C/hunter-real-estate-ui?type=design&node-id=1403%3A3151&mode=design&t=OLCt27YVfvHHfQhP-1',
+            image: '/images/mockups/real-estate-listing-mockup_result.png'
+        },
+		{
+			id: 'loyalty-program-platform',
+			name: 'Loyalty Program Platform',
+			overview: `A draft user interface design for a customer loyalty platform. It is a platform to manage loyalty programs, promotions, and subscriptions, the web app design is for business owners, and the mobile app design is for customers.`,
+			responsibilities: `The project's goal is a minimum viable product. I designed the webapp with Chakra UI components in mind.`,
+			tools: ['Figma', 'Adobe Illustrator'],
+			duration: 'One month',
+			link: 'https://www.figma.com/file/2Tmf6ZRDoCCFSgKqq0fJjs/loyalty-program-system?type=design&node-id=0%3A1&mode=design&t=ArB6RtvUXXmdi2IP-1',
+			image: '/images/mockups/loyalty-program-mockup_result.png'
+		},
 		{
 			id: 'ut-market-website',
 			name: 'Digital Product Website Design',
@@ -59,26 +79,6 @@
 			link: 'https://xd.adobe.com/view/a80afaa0-f4f0-4f8a-8573-e1c9adb1e7aa-fd59/flow',
 			image: '/images/mockups/android-ios-mockups-result.png'
 		},
-		{
-			id: 'loyalty-program-platform',
-			name: 'Loyalty Program Platform',
-			overview: `A draft user interface design for a customer loyalty platform. It is a platform to manage loyalty programs, promotions, and subscriptions, the web app design is for business owners, and the mobile app design is for customers.`,
-			responsibilities: `The project's goal is a minimum viable product. I designed the webapp with Chakra UI components in mind.`,
-			tools: ['Figma', 'Adobe Illustrator'],
-			duration: 'One month',
-			link: 'https://www.figma.com/file/2Tmf6ZRDoCCFSgKqq0fJjs/loyalty-program-system?type=design&node-id=0%3A1&mode=design&t=ArB6RtvUXXmdi2IP-1',
-			image: '/images/mockups/loyalty-program-mockup_result.png'
-		},
-		{
-			id: 'real-estate-listing-platform',
-			name: 'Real Estate Listing Platform',
-			overview: `Website design for a local real estate listing platform.`,
-			responsibilities: `I was responsible for turning wireframes into responsive web design screens and prototypes. I will also be responsible for developing the platform as well.`,
-			tools: ['Figma', 'Adobe Illustrator'],
-			duration: 'Two weeks',
-			link: 'https://www.figma.com/file/wmlrymmwZ2UaJGmxgmt92C/hunter-real-estate-ui?type=design&node-id=1403%3A3151&mode=design&t=OLCt27YVfvHHfQhP-1',
-			image: '/images/mockups/real-estate-listing-mockup_result.png'
-		}
 	];
 </script>
 
