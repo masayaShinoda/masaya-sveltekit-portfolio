@@ -3,12 +3,23 @@ const web_projects = [
 		id: 'real-estate-listing-platform',
 		name: 'Real Estate Listing Website',
 		industry: 'Real estate',
-		overview: `A full-stack website for a local real estate listing company. I used Django for its batteries-included convenience, easy-to-understand ORM, intuitive templating, and helpful admin panel, which allows the client to conveniently update the website's content themselves. For styling, I implemented TailwindCSS.`,
+		overview: `A full-stack website for a local real estate listing company. I used Django for its batteries-included convenience, easy-to-understand ORM, intuitive templating, and helpful admin panel, which allows the client to conveniently update the website's content themselves. For styling, I went with TailwindCSS for quick and consistent styling. Some parts that involve user interaction make use of HTMX for its simplicity.`,
 		responsibilities: `After discussing with the client about requirements and obtaining a wireframe, I designed and coded the website.`,
 		tools: ['HTML & CSS', 'Django', 'Figma'],
 		duration: 'Three weeks',
 		link: 'https://www.hunter-estate.com/',
-		image: '/images/mockups/real-estate-listing-mockup_result.png'
+		image: '/images/mockups/real-estate-listing-website-mockup_result.png'
+	},
+	{
+		id: 'car-engine-lubricants-website',
+		name: 'Car Engine Lubricants Landing Page',
+		industry: 'Automotives',
+		overview: `An informational landing page for a car engine lubricants brand. Due to the simplicity of the website, no JavaScript framework was necessary.`,
+		responsibilities: `After discussing with the client about website content, I designed and coded the website.`,
+		tools: ['HTML & CSS', 'Figma'],
+		duration: 'One week',
+		link: 'https://musashilubes.com/',
+		image: '/images/mockups/car-engine-lubricant-website-mockup_result.png'
 	},
 	{
 		id: 'good-time-hospitality-group',

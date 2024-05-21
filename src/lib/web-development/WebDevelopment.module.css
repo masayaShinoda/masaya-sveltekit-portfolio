@@ -302,26 +302,26 @@
 	margin-bottom: 0.5rem;
 }
 
-.content_half__content__tools>div {
+.webdev_projects_section__body__item .content_half__content__tools>div {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	max-width: fit-content;
 }
 
-[data-theme='dark'] .content_half__content__tools>div {
+[data-theme='dark'] .webdev_projects_section__body__item .content_half__content__tools>div {
 	/* width: fit-content; */
 	background-color: #fff;
 	padding: 0.5rem 1rem;
 	border-radius: 0.5rem;
 }
 
-.content_half__content__tools img {
+.webdev_projects_section__body__item .content_half__content__tools img {
 	object-fit: contain;
 	max-height: 2.5rem;
 }
 
-.content_half__content__tools img:not(:last-of-type) {
+.webdev_projects_section__body__item .content_half__content__tools img:not(:last-of-type) {
 	margin-right: 1rem;
 }
 
