@@ -47,7 +47,7 @@
             tools: ['Figma', 'Adobe Illustrator'],
             duration: 'Two weeks',
             link: 'https://www.figma.com/file/wmlrymmwZ2UaJGmxgmt92C/hunter-real-estate-ui?type=design&node-id=1403%3A3151&mode=design&t=OLCt27YVfvHHfQhP-1',
-            image: '/images/mockups/real-estate-listing-mockup_result.png'
+            image: '/images/mockups/real-estate-listing-website-mockup_result.png'
         },
 		{
 			id: 'loyalty-program-platform',
