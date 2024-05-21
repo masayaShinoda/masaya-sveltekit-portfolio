@@ -1,5 +1,7 @@
 {
+    "public": "build",
     "rewrites": [
+        { "source": "/(.*)", "destination": "/" },
         {
             "source": "/:path*",
             "has": [

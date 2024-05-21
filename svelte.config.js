@@ -6,6 +6,9 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter(),
+		alias: {
+			'/images/': './static/images/'
+		},
 		prerender: {
 			handleMissingId: 'warn',
 			handleHttpError: 'warn',

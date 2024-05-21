@@ -28,6 +28,7 @@
 		"svelte-codemirror-editor": "^1.1.0",
 		"svelte-markdown": "^0.2.3",
 		"svelte-youtube-embed": "^0.2.1",
-		"thememirror": "^2.0.1"
+		"thememirror": "^2.0.1",
+		"vercel": "^34.2.0"
 	}
 }
