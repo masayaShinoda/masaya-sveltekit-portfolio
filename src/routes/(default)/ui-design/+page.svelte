@@ -43,11 +43,21 @@
             id: 'real-estate-listing-platform',
             name: 'Real Estate Listing Website',
             overview: `Website design for a local real estate listing company.`,
-            responsibilities: `I was responsible for turning wireframes into responsive web design screens and prototypes. I will also be responsible for developing the platform as well.`,
+            responsibilities: `I was responsible for turning wireframes into responsive web design screens and prototypes.`,
             tools: ['Figma', 'Adobe Illustrator'],
             duration: 'Two weeks',
             link: 'https://www.figma.com/file/wmlrymmwZ2UaJGmxgmt92C/hunter-real-estate-ui?type=design&node-id=1403%3A3151&mode=design&t=OLCt27YVfvHHfQhP-1',
             image: '/images/mockups/real-estate-listing-website-mockup_result.png'
+        },
+        {
+            id: 'car-engine-lubricants-website',
+            name: 'Car Engine Lubricants Landing Page',
+            overview: `Landing page design for a car engine lubricant business.`,
+            responsibilities: `I designed the landing page after discussing requirements and goals with the client.`,
+            tools: ['Figma', 'Adobe Photoshop'],
+            duration: 'FIve days',
+            link: 'https://www.figma.com/design/EPnevgG2UfnhisxLTweCDb/musashi-website?node-id=1403%3A3151&t=aBZ0LHQt0hd1jFCe-1',
+            image: '/images/mockups/car-engine-lubricant-website-mockup_result.png'
         },
 		{
 			id: 'loyalty-program-platform',
@@ -61,7 +71,7 @@
 		},
 		{
 			id: 'ut-market-website',
-			name: 'Digital Product Website Design',
+			name: 'App Marketing Website Design',
 			overview: `Landing page and informational website for all products related to the UT Market digital platform.`,
 			responsibilities: `After discussions with the marketing and business teams on what contents and features are needed on the website, I was responsible for designing the UI screens and some illustrations to best welcome new visitors to our site.`,
 			tools: ['Figma', 'Adobe Illustrator'],
