@@ -32,7 +32,7 @@
 		</a>
 		<div class={styles.nav_links}>
 			<nav>
-				<a href="/courses" lang="km">វគ្គសិក្សា</a>
+				<!-- <a href="/courses" lang="km">វគ្គសិក្សា</a> -->
 				<a
 					href="/web-development"
 					class={`${$page.url.pathname === '/web-development' ? 'link__active' : null}`}
@@ -54,7 +54,7 @@
 	<div class={`${styles.mobile_nav_container} ${mobileNavActive ? styles.active : null}`}>
 		<nav class={styles.mobile_nav_drawer}>
 			<a href="/" on:click={toggleMobileNav}>Home</a>
-			<a href="/courses" on:click={toggleMobileNav} lang="km">វគ្គសិក្សា</a>
+			<!-- <a href="/courses" on:click={toggleMobileNav} lang="km">វគ្គសិក្សា</a> -->
 			<a href="/web-development" on:click={toggleMobileNav}>Web Development</a>
 			<a href="/graphic-design" on:click={toggleMobileNav}>Graphic Design</a>
 			<a href="/ui-design" on:click={toggleMobileNav}>UI Design</a>
