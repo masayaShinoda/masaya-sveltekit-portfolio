@@ -7,7 +7,10 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/masaya-sveltekit-portfolio' : ''
+			base: process.env.NODE_ENV === 'production' ? '/masaya-sveltekit-portfolio' : '',
+			assets: process.env.NODE_ENV === 'production' 
+			  ? 'https://cdn.jsdelivr.net/gh/masayashinoda/masaya-sveltekit-portfolio@dev-built'
+			  : ''
 		},
 		prerender: {
 			handleMissingId: 'warn',
