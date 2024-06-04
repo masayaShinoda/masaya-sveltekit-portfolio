@@ -55,7 +55,7 @@
             overview: `Landing page design for a car engine lubricant business.`,
             responsibilities: `I designed the landing page after discussing requirements and goals with the client.`,
             tools: ['Figma', 'Adobe Photoshop'],
-            duration: 'FIve days',
+            duration: 'Five days',
             link: 'https://www.figma.com/design/EPnevgG2UfnhisxLTweCDb/musashi-website?node-id=1403%3A3151&t=aBZ0LHQt0hd1jFCe-1',
             image: '/images/mockups/car-engine-lubricant-website-mockup_result.png'
         },
