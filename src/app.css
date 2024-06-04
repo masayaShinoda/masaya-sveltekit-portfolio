@@ -1,3 +1,74 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Gradients */
+.gradient-light {
+    background-image: var(--clr-gradient-light);
+  }
+  
+  .gradient-dark {
+    background-image: var(--clr-gradient-dark);
+  }
+  
+  .gradient-secondary {
+    background-image: var(--clr-gradient-secondary);
+  }
+  
+  /* Shadows */
+  .shadow-md {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .shadow-pressed {
+    box-shadow: var(--shadow-pressed);
+  }
+  
+  .shadow-pressed-secondary {
+    box-shadow: var(--shadow-pressed-secondary);
+  }
+  
+  .shadow-pressed-dark {
+    box-shadow: var(--shadow-pressed-dark);
+  }
+  
+  .shadow-flat {
+    box-shadow: var(--shadow-flat);
+  }
+  
+  .shadow-convex {
+    box-shadow: var(--shadow-convex);
+  }
+  
+  /* Other custom styles (if needed) */
+  /* ... */
+  
+  /* Tailwind directives */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer utilities {
+    .gradient-light,
+    .gradient-dark,
+    .gradient-secondary,
+    .shadow-md,
+    .shadow-pressed,
+    .shadow-pressed-secondary,
+    .shadow-pressed-dark,
+    .shadow-flat,
+    .shadow-convex {
+      /* Your class definitions from above */
+    }
+  }
+  
+  /* Dark theme styles (optional) */
+  html[data-theme="dark"] {
+    /* Update colors and other styles for dark theme as needed */
+    .shadow-pressed {
+      box-shadow: var(--shadow-pressed-dark); /* Example usage of dark theme specific shadow */
+    }
+    .shadow-flat {
+      box-shadow: var(--shadow-flat); /* May need adjustments for dark theme */
+    }
+    .shadow-convex {
+      box-shadow: var(--shadow-convex); /* May need adjustments for dark theme */
+    }
+  }
+  
