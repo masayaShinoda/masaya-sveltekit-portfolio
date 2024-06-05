@@ -4,60 +4,60 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#003153',
-        'primary-shade-a': '#004F86',
-        secondary: '#0077CC',
-        'secondary-shade-a': '#0095FF',
-        'secondary-shade-b': '#33AAFF',
-        'grey-6': '#212429',
-        'grey-5': '#495057',
-        'grey-4': '#ADB5BD',
-        'grey-3': '#CED4DA',
-        'grey-2': '#E9ECEF',
-        'grey-1': '#F8F9FA',
+        primary: 'var(--clr-primary)',
+        'primary-shade-a': 'var(--clr-primary-shade-a)',
+        secondary: 'var(--clr-secondary)',
+        'secondary-shade-a': 'var(--clr-secondary-shade-a)',
+        'secondary-shade-b': 'var(--clr-secondary-shade-b)',
+        'grey-6': 'var(--clr-grey-6)',
+        'grey-5': 'var(--clr-grey-5)',
+        'grey-4': 'var(--clr-grey-4)',
+        'grey-3': 'var(--clr-grey-3)',
+        'grey-2': 'var(--clr-grey-2)',
+        'grey-1': 'var(--clr-grey-1)',
       },
       fontFamily: {
-        primary: ['"Open Sans"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"'],
-        'khmer-head': ['"Noto Sans Khmer"', '"Open Sans"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"'],
-        khmer: ['"Khmer"', '"Open Sans"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"'],
+        primary: ['var(--font-primary)'],
+        'khmer-head': ['var(--font-khmer-head)'],
+        khmer: ['var(--font-khmer)'],
       },
       boxShadow: {
-        md: '0 0 8px rgba(0, 0, 0, .5)',
-        pressed: '8px 8px 16px 0px var(--clr-grey-3) inset, -8px -8px 16px 0px #FFF inset',
-        'pressed-secondary': '2px 2px 4px 0px var(--clr-secondary) inset, -2px -2px 4px 0px var(--clr-secondary-shade-b) inset',
-        'pressed-dark': '2px 2px 4px 0px var(--clr-grey-6) inset, -2px -2px 4px 0px var(--clr-grey-5) inset',
-        flat: '8px 8px 16px 0px var(--clr-grey-3), -8px -8px 16px 0px #FFF',
-        convex: '4px 4px 8px 0px var(--clr-grey-3), -4px -4px 8px 0px #FFF',
-        'flat-dark': '8px 8px 16px 0px rgba(0,0,0,.25), -8px -8px 16px 0px var(--clr-grey-6)',
-        'convex-dark': '4px 4px 8px 0px rgba(0, 0, 0, 0.50), -4px -4px 8px 0px var(--clr-grey-6)',
+        md: 'var(--shadow-md)',
+        pressed: 'var(--shadow-pressed)',
+        'pressed-secondary': 'var(--shadow-pressed-secondary)',
+        'pressed-dark': 'var(--shadow-pressed-dark)',
+        flat: 'var(--shadow-flat)',
+        convex: 'var(--shadow-convex)',
+        'flat-dark': 'var(--shadow-flat-dark)',
+        'convex-dark': 'var(--shadow-convex-dark)',
       },
       maxWidth: {
-        'content-max': '72.5rem',
+        'content-max': 'var(--content-max-width)',
       },
       padding: {
-        'horizontal': '2.5rem',
+        horizontal: 'var(--padding-horizontal)',
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             fontSize: theme('fontSize.base'),
             h1: {
-              fontSize: theme('fontSize.7xl'),
+              fontSize: 'var(--type-scale-7)',
             },
             h2: {
-              fontSize: theme('fontSize.6xl'),
+              fontSize: 'var(--type-scale-6)',
             },
             h3: {
-              fontSize: theme('fontSize.5xl'),
+              fontSize: 'var(--type-scale-5)',
             },
             h4: {
-              fontSize: theme('fontSize.4xl'),
+              fontSize: 'var(--type-scale-4)',
             },
             h5: {
-              fontSize: theme('fontSize.3xl'),
+              fontSize: 'var(--type-scale-3)',
             },
             h6: {
-              fontSize: theme('fontSize.2xl'),
+              fontSize: 'var(--type-scale-2)',
             },
             p: {
               fontSize: theme('fontSize.base'),
@@ -83,7 +83,5 @@ export default {
   plugins: [
     require('@tailwindcss/typography'),
   ],
-  darkMode: 'selector',
-  // '[data-mode="dark"]'
+  darkMode: 'class', // Change to 'class', 'media', or a custom selector
 }
-
