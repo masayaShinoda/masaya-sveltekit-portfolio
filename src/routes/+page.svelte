@@ -1,3 +1,7 @@
+<script>
+	import Hero from "$lib/components/home/Hero.svelte";
+
+</script>
 <svelte:head>
 	<title>Masaya Shida | Cambodia-Based Web Developer & Designer</title>
 	<meta
@@ -20,13 +24,4 @@
 		content="Cambodia-based web developer and designer."
 	/><meta property="twitter:image" content="/images/banner-logo-margins.png" />
 </svelte:head>
-<main lang="km" class="font-khmer-head text-secondary p-horizontal">
-	<h1 class="text-7xl">ចំណងជើង</h1>
-	<p class="text-base p-4 inline-flex bg-gradient-light">Body text in Khmer</p>
-</main>
-
-<style lang="postcss">
-	/* :global(html) {
-		background-color: theme(colors.gray.100);
-	} */
-</style>
+<Hero />

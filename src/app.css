@@ -32,10 +32,10 @@ html {
   --clr-mono-2: #E9ECEF;
   --clr-mono-1: #F8F9FA;
 
-
-  --clr-gradient-light: linear-gradient(109deg, #FFF 0%, var(--clr-mono-2) 100%), var(--clr-mono-1);
+  --clr-gradient-neutral: linear-gradient(109deg, #FFF 0%, var(--clr-grey-2) 100%);
+  --clr-gradient-light: linear-gradient(109deg, #FFF 0%, var(--clr-mono-2) 100%);
   --clr-gradient-dark: linear-gradient(119deg, var(--clr-mono-5) 0%, var(--clr-mono-6) 100%);
-  --clr-gradient-secondary: linear-gradient(96deg, var(--clr-secondary-shade-a) 0%, var(--clr-secondary) 100%), var(--clr-secondary);
+  --clr-gradient-secondary: linear-gradient(96deg, var(--clr-secondary-shade-a) 0%, var(--clr-secondary) 100%);
 
   --content-max-width: min(100%, 72.5rem);
   --padding-horizontal: 2.5rem;
@@ -76,9 +76,12 @@ html.dark {
   --clr-grey-5: #E9ECEF;
   --clr-grey-6: #F8F9FA;
 
+  --clr-gradient-neutral: linear-gradient(119deg, var(--clr-mono-5) 0%, var(--clr-mono-6) 100%);
+
   --shadow-convex: 4px 4px 8px 0px rgba(0,0,0,.5), -4px -4px 8px 0px var(--clr-mono-6);
 }
 
 body {
+  color: var(--clr-grey-6);
   background-color: var(--clr-grey-1);
 }

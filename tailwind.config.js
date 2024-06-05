@@ -41,6 +41,7 @@ export default {
         convex: 'var(--shadow-convex)',
       },
       backgroundImage: {
+        'gradient-neutral': 'var(--clr-gradient-neutral)',
         'gradient-light': 'var(--clr-gradient-light)',
         'gradient-dark': 'var(--clr-gradient-dark)',
         'gradient-secondary': 'var(--clr-gradient-secondary)',
@@ -51,39 +52,6 @@ export default {
       padding: {
         horizontal: 'var(--padding-horizontal)',
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            fontSize: theme('fontSize.base'),
-            h1: {
-              fontSize: 'var(--type-scale-7)',
-            },
-            h2: {
-              fontSize: 'var(--type-scale-6)',
-            },
-            h3: {
-              fontSize: 'var(--type-scale-5)',
-            },
-            h4: {
-              fontSize: 'var(--type-scale-4)',
-            },
-            h5: {
-              fontSize: 'var(--type-scale-3)',
-            },
-            h6: {
-              fontSize: 'var(--type-scale-2)',
-            },
-            p: {
-              fontSize: theme('fontSize.base'),
-            },
-          },
-        },
-        km: {
-          css: {
-            fontSize: '125%',
-          },
-        },
-      }),
       screens: {
         sm: '48em',
       },
@@ -94,8 +62,5 @@ export default {
       boxShadow: ['dark'],
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
   darkMode: 'class', // Change to 'class', 'media', or a custom selector
 }

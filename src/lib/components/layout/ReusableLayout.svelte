@@ -13,7 +13,7 @@
 			} else {
 				document.documentElement.className = 'light';
 			}
-			console.log(`set_theme() ran, localStorage theme is: ${localStorage.getItem('theme')}`)
+			// console.log(`set_theme() ran, localStorage theme is: ${localStorage.getItem('theme')}`)
 		}
 
 		// check localStorage for theme pref
@@ -44,4 +44,6 @@
 </script>
 
 <Header />
-<slot />
+<main>
+	<slot />
+</main>
