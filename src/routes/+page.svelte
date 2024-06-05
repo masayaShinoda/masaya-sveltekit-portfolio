@@ -22,7 +22,7 @@
 </svelte:head>
 <main lang="km" class="font-khmer-head text-secondary p-horizontal">
 	<h1 class="text-7xl">ចំណងជើង</h1>
-	<p class="text-base">Body text in Khmer</p>
+	<p class="text-base p-4 inline-flex bg-gradient-light">Body text in Khmer</p>
 </main>
 
 <style lang="postcss">

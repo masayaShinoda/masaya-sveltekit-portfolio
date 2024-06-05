@@ -4,11 +4,9 @@
 	import SunLine from '$lib/components/icons/SunLine.svelte';
 	import { themeStore } from '$lib/stores';
 
-	let theme: string;
 	let active: boolean;
 
 	themeStore.subscribe((value) => {
-		console.log("themeStore value updated: ", value)
 		if (value === 'light') {
 			active = true;
 		} else {

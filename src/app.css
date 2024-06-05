@@ -25,8 +25,16 @@ html {
   --clr-grey-2: #E9ECEF;
   --clr-grey-1: #F8F9FA;
 
-  --clr-gradient-light: linear-gradient(109deg, #FFF 0%, var(--clr-grey-2) 100%), var(--clr-grey-1);
-  --clr-gradient-dark: linear-gradient(119deg, var(--clr-grey-5) 0%, var(--clr-grey-6) 100%);
+  --clr-mono-6: #212429;
+  --clr-mono-5: #495057;
+  --clr-mono-4: #ADB5BD;
+  --clr-mono-3: #CED4DA;
+  --clr-mono-2: #E9ECEF;
+  --clr-mono-1: #F8F9FA;
+
+
+  --clr-gradient-light: linear-gradient(109deg, #FFF 0%, var(--clr-mono-2) 100%), var(--clr-mono-1);
+  --clr-gradient-dark: linear-gradient(119deg, var(--clr-mono-5) 0%, var(--clr-mono-6) 100%);
   --clr-gradient-secondary: linear-gradient(96deg, var(--clr-secondary-shade-a) 0%, var(--clr-secondary) 100%), var(--clr-secondary);
 
   --content-max-width: min(100%, 72.5rem);
@@ -51,65 +59,26 @@ html {
 
   --shadow-md: 0 0 8px rgba(0, 0, 0, .5);
 
-  --shadow-pressed: 8px 8px 16px 0px var(--clr-grey-3) inset, -8px -8px 16px 0px #FFF inset;
+  --shadow-pressed: 8px 8px 16px 0px var(--clr-mono-3) inset, -8px -8px 16px 0px #FFF inset;
   --shadow-pressed-secondary: 2px 2px 4px 0px var(--clr-secondary) inset, -2px -2px 4px 0px var(--clr-secondary-shade-b) inset;
-  --shadow-pressed-dark: 2px 2px 4px 0px var(--clr-grey-6) inset, -2px -2px 4px 0px var(--clr-grey-5) inset;
+  --shadow-pressed: 2px 2px 4px 0px var(--clr-mono-6) inset, -2px -2px 4px 0px var(--clr-mono-5) inset;
 
-  --shadow-flat: 8px 8px 16px 0px var(--clr-grey-3), -8px -8px 16px 0px #FFF;
-  --shadow-convex: 4px 4px 8px 0px var(--clr-grey-3), -4px -4px 8px 0px #FFF;
-}
-
-@layer utilities {
-  /* Gradients */
-  .gradient-light {
-    background-image: var(--clr-gradient-light);
-  }
-
-  .gradient-dark {
-    background-image: var(--clr-gradient-dark);
-  }
-
-  .gradient-secondary {
-    background-image: var(--clr-gradient-secondary);
-  }
-
-  /* Shadows */
-  .shadow-md {
-    box-shadow: var(--shadow-md);
-  }
-
-  .shadow-pressed {
-    box-shadow: var(--shadow-pressed);
-  }
-
-  .shadow-pressed-secondary {
-    box-shadow: var(--shadow-pressed-secondary);
-  }
-
-  .shadow-pressed-dark {
-    box-shadow: var(--shadow-pressed-dark);
-  }
-
-  .shadow-flat {
-    box-shadow: var(--shadow-flat);
-  }
-
-  .shadow-convex {
-    box-shadow: var(--shadow-convex);
-  }
+  --shadow-flat: 8px 8px 16px 0px var(--clr-mono-3), -8px -8px 16px 0px #FFF;
+  --shadow-convex: 4px 4px 8px 0px var(--clr-mono-3), -4px -4px 8px 0px #FFF;
 }
 
 /* Dark theme styles (optional) */
 html.dark {
+  --clr-grey-1: #212429;
+  --clr-grey-2: #495057;
+  --clr-grey-3: #ADB5BD;
+  --clr-grey-4: #CED4DA;
+  --clr-grey-5: #E9ECEF;
+  --clr-grey-6: #F8F9FA;
 
-  /* Update colors and other styles for dark theme as needed */
-  .shadow-pressed {
-    box-shadow: var(--shadow-pressed-dark); /* Example usage of dark theme specific shadow */
-  }
-  .shadow-flat {
-    box-shadow: var(--shadow-flat); /* May need adjustments for dark theme */
-  }
-  .shadow-convex {
-    box-shadow: var(--shadow-convex); /* May need adjustments for dark theme */
-  }
+  --shadow-convex: 4px 4px 8px 0px rgba(0,0,0,.5), -4px -4px 8px 0px var(--clr-mono-6);
+}
+
+body {
+  background-color: var(--clr-grey-1);
 }

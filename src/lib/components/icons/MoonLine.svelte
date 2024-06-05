@@ -2,6 +2,6 @@
 
 <style>
     svg {
-        fill: var(--clr-grey-5);
+        fill: var(--clr-mono-5);
     }
 </style>

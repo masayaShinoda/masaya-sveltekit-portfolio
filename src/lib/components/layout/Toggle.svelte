@@ -16,7 +16,6 @@
 		</div>
 	{/if}
 </label>
-<p>{active}</p>
 
 <style>
 	.switch {
@@ -40,7 +39,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: var(--clr-grey-5);
+		background-color: var(--clr-mono-5);
 		box-shadow: var(--shadow-pressed-dark);
 		-webkit-transition: all ease-out 150ms;
 		transition: all ease-out 150ms;
@@ -56,7 +55,7 @@
 		background: var(--clr-gradient-light);
 		-webkit-transition: all ease-out 150ms;
 		transition: all ease-out 150ms;
-		border: 1px solid var(--clr-grey-5);
+		border: 1px solid var(--clr-mono-5);
 		box-shadow: 0px 4px 8px 0px rgba(33, 36, 41, 0.25);
 	}
 
