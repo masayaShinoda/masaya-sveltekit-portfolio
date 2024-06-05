@@ -1,5 +1,5 @@
 <section
-	class="mx-auto my-20 flex max-w-content-max items-center justify-between px-horizontal py-10"
+	class="mx-auto flex max-w-content-max items-center justify-between px-horizontal py-10"
 >
 	<div class="md:max-w-[512px]">
 		<p class="mb-2 text-scale-1 text-grey-5">Hi! I'm Masaya,</p>
