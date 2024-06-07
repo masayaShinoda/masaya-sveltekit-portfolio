@@ -46,36 +46,29 @@
 
 <div class="fixed left-0 top-0 flex w-full justify-center">
 	<header
-		class="mx-auto flex w-full max-w-content-max items-center justify-between border-b border-b-grey-2 bg-grey-1 px-horizontal py-4 md:static md:justify-evenly"
+		class="mx-auto flex w-full max-w-content-max items-center justify-between border-b border-b-grey-2 bg-grey-1 px-horizontal py-3 md:static md:justify-between md:py-3"
 	>
-		<a href="/" class="flex items-center justify-center">
+		<a href="/" class="flex grow items-center justify-start">
 			{#if theme === 'dark'}
 				<img
 					src="/images/masaya-web-dev-logo.svg"
 					alt="Masaya logo"
 					width="176"
 					height="44"
-					class="object-contain object-center"
 					style="filter: brightness(0) saturate(0) var(--filter-clr-secondary-shade-a);"
 				/>
 			{:else}
-				<img
-					src="/images/masaya-web-dev-logo.svg"
-					alt="Masaya logo"
-					width="176"
-					height="44"
-					class="object-contain object-center"
-				/>
+				<img src="/images/masaya-web-dev-logo.svg" alt="Masaya logo" width="176" height="44" />
 			{/if}
 		</a>
-		<div class="fixed bottom-0 left-0 flex w-dvw items-center justify-center md:sticky md:top-0">
+		<div class="fixed bottom-0 left-0 flex grow items-center justify-center md:sticky md:top-0">
 			<nav
-				class="flex w-dvw items-center justify-evenly border-t border-t-grey-2 bg-grey-1 px-4 pb-5 pt-2 md:w-auto md:justify-center md:border-t-0 md:bg-none md:p-0"
+				class="flex items-center justify-evenly border-t border-t-grey-2 bg-grey-1 px-4 pb-5 pt-2 md:w-auto md:justify-center md:border-t-0 md:bg-none md:p-0"
 			>
 				{#each nav_items as item}
 					<a
 						href={item.href}
-						class="header_link mr-2 inline-flex w-full items-center justify-center rounded-full p-4 text-scale-0 text-primary transition-all hover:bg-grey-1 hover:shadow-convex active:scale-95 dark:text-grey-6 dark:hover:bg-gradient-dark md:w-auto"
+						class="header_link mr-2 inline-flex w-full items-center justify-center rounded-full p-4 text-scale-0 text-primary transition-all hover:bg-grey-1 hover:shadow-convex active:scale-95 dark:text-grey-6 md:w-auto"
 						data-active={current_path_name === item.href ? true : false}
 					>
 						<div class="mr-2 h-4 w-4 md:hidden">
@@ -87,7 +80,7 @@
 				<!-- <p>{current_path_name}</p> -->
 			</nav>
 		</div>
-		<div>
+		<div class="flex grow items-center justify-end">
 			<ThemeSwitcher />
 		</div>
 	</header>
@@ -95,10 +88,8 @@
 
 <style>
 	:global(header nav a.header_link[data-active='true']) {
-		background-color: var(--clr-grey-1);
+		/* background-color: var(--clr-grey-1); */
+		background-image: var(--clr-gradient-neutral);
 		box-shadow: var(--shadow-convex);
-	}
-	:global(.dark header nav a.header_link[data-active='true']) {
-		background-color: var(--clr-gradient-dark);
 	}
 </style>

@@ -2,8 +2,8 @@
 	class="mx-auto flex max-w-content-max flex-col-reverse items-center justify-between px-horizontal md:flex-row"
 >
 	<div class="mt-8 max-w-full sm:max-w-[55%] md:mt-0 lg:max-w-[512px]">
-		<p class="mb-1 text-scale-0 text-grey-5 sm:mb-2 md:text-scale-1">Hi! I'm Masaya,</p>
-		<h1 class="mb-8 text-scale-2 text-primary dark:text-grey-6 sm:text-scale-3 md:text-scale-4">
+		<p class="mb-1 text-scale-0 text-grey-5 sm:mb-2 lg:text-scale-1">Hi! I'm Masaya,</p>
+		<h1 class="mb-8 text-scale-2 text-primary dark:text-grey-6 sm:text-scale-3 lg:text-scale-4">
 			Cambodia-based developer & designer passionate about digital literacy.
 		</h1>
 		<div class="flex items-center">
