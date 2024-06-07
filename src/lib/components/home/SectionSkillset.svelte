@@ -13,9 +13,9 @@
 </script>
 
 <section
-	class="mx-auto my-32 flex max-w-content-max flex-col justify-between px-horizontal md:flex-row"
+	class="mx-auto my-32 flex max-w-content-max flex-col gap-6 justify-between px-horizontal md:flex-row"
 >
-	<div class="flex max-w-[360px] flex-col items-start">
+	<div class="mb-4 flex max-w-[360px] flex-col items-start md:mb-0">
 		<h2 class="mb-4 text-scale-2 text-primary dark:text-secondary-shade-b md:text-scale-3">
 			Skill Set
 		</h2>
@@ -27,9 +27,9 @@
 			web app.
 		</p>
 	</div>
-	<div class="flex justify-end gap-10">
-		<div class="flex flex-col items-start">
-			<h3 class="mb-4 text-scale-1 text-grey-6">Web Development</h3>
+	<div class="flex gap-4 sm:justify-end sm:gap-12">
+		<div class="flex w-full flex-col items-start">
+			<h3 class="mb-4 text-scale-0 text-grey-6 sm:text-scale-1">Web Development</h3>
 			<ul>
 				{#each tech_stack.web_development as tool}
 					<li class="mb-4 flex items-center">
@@ -46,9 +46,9 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="flex flex-col items-start gap-8">
-			<div class="flex flex-col items-start">
-				<h3 class="mb-4 text-scale-1 text-grey-6">UI/UX Design</h3>
+		<div class="flex w-full flex-col items-start gap-8">
+			<div class="flex w-full flex-col items-start">
+				<h3 class="mb-4 text-scale-0 text-grey-6 sm:text-scale-1">UI/UX Design</h3>
 				<ul>
 					{#each tech_stack.ui_design as tool}
 						<li class="mb-4 flex items-center">
@@ -65,8 +65,8 @@
 					{/each}
 				</ul>
 			</div>
-			<div class="flex flex-col items-start">
-				<h3 class="mb-4 text-scale-1 text-grey-6">Graphic Design</h3>
+			<div class="flex w-full flex-col items-start">
+				<h3 class="mb-4 text-scale-0 text-grey-6 sm:text-scale-1">Graphic Design</h3>
 				<ul>
 					{#each tech_stack.graphic_design as tool}
 						<li class="mb-4 flex items-center">
