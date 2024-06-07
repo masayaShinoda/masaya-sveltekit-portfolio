@@ -61,9 +61,11 @@
 				<img src="/images/masaya-web-dev-logo.svg" alt="Masaya logo" width="176" height="44" />
 			{/if}
 		</a>
-		<div class="fixed bottom-0 left-0 flex grow items-center justify-center md:sticky md:top-0">
+		<div
+			class="fixed bottom-0 left-0 flex w-full grow items-center justify-center md:sticky md:top-0 md:w-auto"
+		>
 			<nav
-				class="flex items-center justify-evenly border-t border-t-grey-2 bg-grey-1 px-4 pb-5 pt-2 md:w-auto md:justify-center md:border-t-0 md:bg-none md:p-0"
+				class="flex w-full items-center justify-evenly border-t border-t-grey-2 bg-grey-1 px-4 pb-5 pt-2 md:w-auto md:justify-center md:border-t-0 md:bg-none md:p-0"
 			>
 				{#each nav_items as item}
 					<a
