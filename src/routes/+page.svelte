@@ -1,5 +1,6 @@
 <script>
 	import Hero from '$lib/components/home/Hero.svelte';
+	import SectionSkillset from '$lib/components/home/SectionSkillset.svelte';
 </script>
 
 <svelte:head>
@@ -23,4 +24,5 @@
 </svelte:head>
 <div>
 	<Hero />
+	<SectionSkillset />
 </div>

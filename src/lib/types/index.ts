@@ -1,9 +1,11 @@
 export type Technology =
-	| 'HTML & CSS'
+	| 'HTML'
+	| 'CSS'
 	| 'JavaScript'
 	| 'NextJS'
 	| 'React'
 	| 'Svelte'
+	| 'Python'
 	| 'Django'
 	| 'Figma'
 	| 'Adobe XD'

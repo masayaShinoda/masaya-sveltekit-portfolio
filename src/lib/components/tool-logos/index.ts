@@ -35,6 +35,13 @@ export const tool_logos = [
 		height: '24'
 	},
 	{
+		name: 'Python',
+		fileName: 'python.svg',
+		fileNameDark: 'python.svg',
+		width: '24',
+		height: '24'
+	},
+	{
 		name: 'Django',
 		fileName: 'django.svg',
 		fileNameDark: 'django.svg',

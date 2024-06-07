@@ -15,6 +15,12 @@ export default {
         'grey-3': 'var(--clr-grey-3)',
         'grey-2': 'var(--clr-grey-2)',
         'grey-1': 'var(--clr-grey-1)',
+        'mono-6': 'var(--clr-mono-6)',
+        'mono-5': 'var(--clr-mono-5)',
+        'mono-4': 'var(--clr-mono-4)',
+        'mono-3': 'var(--clr-mono-3)',
+        'mono-2': 'var(--clr-mono-2)',
+        'mono-1': 'var(--clr-mono-1)',
       },
       fontFamily: {
         primary: ['var(--font-primary)'],
