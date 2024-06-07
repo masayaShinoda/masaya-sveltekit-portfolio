@@ -70,7 +70,7 @@
 				{#each nav_items as item}
 					<a
 						href={item.href}
-						class="header_link mr-2 inline-flex w-full items-center justify-center rounded-full p-4 text-scale-0 text-primary transition-all hover:bg-grey-1 hover:shadow-convex active:scale-95 dark:text-grey-6 md:w-auto"
+						class="header_link mr-2 inline-flex w-full items-center justify-center rounded-full p-4 text-scale-0 text-primary transition-all hover:text-secondary active:scale-95 dark:text-grey-6 dark:hover:text-secondary-shade-b md:w-auto"
 						data-active={current_path_name === item.href ? true : false}
 					>
 						<div class="mr-2 h-4 w-4 md:hidden">
