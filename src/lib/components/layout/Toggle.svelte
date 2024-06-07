@@ -40,7 +40,7 @@
 		right: 0;
 		bottom: 0;
 		background-color: var(--clr-mono-5);
-		box-shadow: var(--shadow-pressed-dark);
+		box-shadow: var(--shadow-pressed);
 		-webkit-transition: all ease-out 150ms;
 		transition: all ease-out 150ms;
 	}

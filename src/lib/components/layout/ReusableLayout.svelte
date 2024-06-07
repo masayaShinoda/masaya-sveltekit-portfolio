@@ -43,7 +43,8 @@
 	});
 </script>
 
+
 <Header />
-<main>
+<main class="min-h-[1440px]">
 	<slot />
 </main>

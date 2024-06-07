@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Khmer&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -81,7 +78,14 @@ html.dark {
   --shadow-convex: 4px 4px 8px 0px rgba(0,0,0,.5), -4px -4px 8px 0px var(--clr-mono-6);
 }
 
+@media (max-width: 768px) {
+  html {
+    --padding-horizontal: 1rem;
+  }
+}
+
 body {
+  font-family: var(--font-primary);
   color: var(--clr-grey-6);
   background-color: var(--clr-grey-1);
 }
