@@ -21,8 +21,6 @@
 		content="Cambodia-based web developer and designer."
 	/><meta property="twitter:image" content="/images/banner-logo-margins.png" />
 </svelte:head>
-<div class="mx-auto flex w-full flex-col gap-y-32 py-10">
-	<div class="mt-20 py-10">
-		<Hero />
-	</div>
+<div class="mt-10 py-10 md:mt-20">
+	<Hero />
 </div>

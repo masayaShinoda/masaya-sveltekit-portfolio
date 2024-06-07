@@ -1,5 +1,5 @@
 <script>
-	import ReusableLayout from "$lib/components/layout/ReusableLayout.svelte";
+	import ReusableLayout from '$lib/components/layout/ReusableLayout.svelte';
 	import '../app.css';
 </script>
 

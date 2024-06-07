@@ -43,8 +43,9 @@
 	});
 </script>
 
-
 <Header />
 <main class="min-h-[1440px]">
-	<slot />
+	<div class="mx-auto flex w-full flex-col gap-y-32 py-6 md:py-10">
+		<slot />
+	</div>
 </main>
