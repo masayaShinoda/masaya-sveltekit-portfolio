@@ -46,7 +46,7 @@
 
 <div class="fixed left-0 top-0 flex w-full justify-center">
 	<header
-		class="mx-auto flex w-full max-w-content-max items-center justify-between border-b border-b-grey-2 bg-grey-1 px-horizontal py-3 md:static md:justify-between md:py-3"
+		class="mx-auto flex w-full max-w-content-max items-center justify-between border-b border-b-grey-2 bg-grey-1 px-horizontal py-3 md:static md:grid md:grid-cols-3 md:py-3"
 	>
 		<a href="/" class="flex grow items-center justify-start">
 			{#if theme === 'dark'}

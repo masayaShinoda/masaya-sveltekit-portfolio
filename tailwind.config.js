@@ -59,7 +59,8 @@ export default {
         horizontal: 'var(--padding-horizontal)',
       },
       screens: {
-        sm: '48em',
+        sm: '32em',
+        // sm: '48em',
       },
     },
   },

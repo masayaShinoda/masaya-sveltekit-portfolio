@@ -13,12 +13,10 @@
 </script>
 
 <section
-	class="mx-auto my-32 flex max-w-content-max flex-col gap-6 justify-between px-horizontal md:flex-row"
+	class="mx-auto my-32 flex max-w-content-max flex-col justify-between gap-6 px-horizontal md:flex-row"
 >
-	<div class="mb-4 flex max-w-[360px] flex-col items-start md:mb-0">
-		<h2 class="mb-4 text-scale-2 text-primary dark:text-secondary-shade-b md:text-scale-3">
-			Skill Set
-		</h2>
+	<div class="mb-4 flex md:max-w-[360px] flex-col items-start md:mb-0">
+		<h2 class="mb-4 text-scale-3 text-primary dark:text-secondary-shade-b">Skill Set</h2>
 		<p class="mb-4 text-scale-0 text-grey-5">
 			I'm always learning different technologies and software to complete projects efficiently.
 		</p>
