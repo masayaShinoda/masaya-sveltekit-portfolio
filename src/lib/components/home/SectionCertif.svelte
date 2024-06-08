@@ -22,17 +22,21 @@
 </script>
 
 <section class="mx-auto my-32 flex max-w-content-max flex-col gap-6 px-horizontal">
-	<h2 class="mb-4 text-scale-3 text-primary dark:text-secondary-shade-b">Skill Set</h2>
-	<div class="grid w-full sm:grid-cols-2 gap-8 md:gap-9 md:grid-cols-3">
+	<h2 class="mb-4 text-scale-3 text-primary dark:text-secondary-shade-b">Certifications</h2>
+	<div class="grid w-full gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-9">
 		{#each certifs as certif}
 			<a href={certif.url} class="group flex flex-col">
-				<img
-					src={`/images/certif/${certif.fileName}`}
-					alt={certif.name}
-					width="336"
-					height="242"
-					class="mb-5 w-full rounded-lg bg-grey-1 object-contain object-center p-2 shadow-flat transition-all group-hover:scale-[102%]"
-				/>
+				<div
+					class="mb-5 w-full rounded-lg bg-grey-1 p-2 shadow-flat transition-all group-hover:scale-[102%]"
+				>
+					<img
+						src={`/images/certif/${certif.fileName}`}
+						alt={certif.name}
+						width="336"
+						height="242"
+						class="overflow-clip rounded-lg object-contain object-center"
+					/>
+				</div>
 				<h3 class="mx-2 mb-1 text-scale-0 group-hover:text-secondary">{certif.name}</h3>
 				<p class="mx-2 text-grey-5">{certif.completed}</p>
 			</a>
