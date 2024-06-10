@@ -23,16 +23,16 @@
 
 <section class="mx-auto my-32 flex max-w-content-max flex-col px-horizontal">
 	<h2 class="mb-8 text-scale-3 text-primary dark:text-secondary-shade-b">Certifications</h2>
-	<div class="grid w-full gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-4 lg:gap-9">
+	<div class="grid w-full gap-8 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:gap-9">
 		{#each certifs as certif}
 			<a href={certif.url} class="group flex flex-col">
-				<div class="mb-4 w-full rounded-lg bg-grey-1 p-2 shadow-flat transition-all">
+				<div class="mb-4 flex w-full rounded-lg bg-grey-1 p-2 shadow-flat transition-all">
 					<img
 						src={`/images/certif/${certif.fileName}`}
 						alt={certif.name}
 						width="336"
 						height="242"
-						class="overflow-clip rounded-lg object-contain object-center"
+						class="w-full overflow-clip rounded-lg object-contain object-center"
 					/>
 				</div>
 				<h3

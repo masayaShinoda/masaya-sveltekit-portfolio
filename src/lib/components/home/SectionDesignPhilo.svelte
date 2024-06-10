@@ -1,5 +1,5 @@
 <section
-	class="mx-auto my-32 flex max-w-content-max flex-col-reverse items-center justify-between gap-6 px-horizontal md:flex-row"
+	class="mx-auto my-32 flex max-w-content-max flex-col-reverse items-start sm:items-center justify-between gap-6 px-horizontal md:flex-row"
 >
 	<div class="mb-4 flex flex-col items-start md:mb-0 md:max-w-[360px]">
 		<h2 class="mb-4 text-scale-3 text-primary dark:text-secondary-shade-b">Design Philosphy</h2>

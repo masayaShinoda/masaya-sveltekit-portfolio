@@ -1,5 +1,5 @@
 <section
-	class="rounded-xl md:rounded-4xl mx-auto my-32 flex max-w-content-max flex-col-reverse items-center justify-between gap-6 p-horizontal md:flex-row"
+	class="mx-auto my-32 flex max-w-content-max flex-col-reverse items-center justify-between gap-6 rounded-xl p-horizontal md:flex-row md:rounded-4xl"
 	style="background: linear-gradient(106.93deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 119, 204, 0.05) 100%);"
 >
 	<div class="mb-4 flex flex-col items-start md:mb-0 md:max-w-[360px]">
@@ -18,7 +18,7 @@
 		</a>
 	</div>
 	<div
-		class="flex items-center justify-center overflow-clip rounded-lg md:rounded-2xl sm:max-w-[40%] lg:bg-grey-1 lg:p-6 lg:shadow-flat"
+		class="flex items-center justify-center overflow-clip rounded-lg md:max-w-[40%] sm:rounded-2xl md:bg-grey-1 sm:p-6 sm:shadow-flat"
 	>
 		<a
 			title="Watch Figma course"
@@ -30,7 +30,7 @@
 				alt="Video thumbnail for Masaya's online course"
 				width="384"
 				height="216"
-				class="rounded-lg transition-all group-hover:scale-[102%]"
+				class="w-full rounded-lg md:w-auto"
 			/>
 			<div
 				class="absolute top-0 hidden h-full w-full items-center justify-center bg-[rgba(0,0,0,.75)] group-hover:flex"
