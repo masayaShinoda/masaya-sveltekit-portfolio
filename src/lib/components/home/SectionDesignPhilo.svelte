@@ -1,17 +1,3 @@
-<script lang="ts">
-	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
-
-	let tool_logos = tool_logos_arr;
-
-	let tech_stack = {
-		web_development: ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Svelte', 'Django'],
-		ui_design: ['Figma', 'Adobe XD'],
-		graphic_design: ['Adobe Illustrator', 'Adobe Photoshop']
-	};
-
-	// console.log(tool_logos.filter(logo => logo.name === "HTML")[0]['fileName'])
-</script>
-
 <section
 	class="mx-auto my-32 flex max-w-content-max flex-col-reverse items-center justify-between gap-6 px-horizontal md:flex-row"
 >
@@ -28,7 +14,7 @@
 		</p>
 	</div>
 	<div
-		class="flex items-center justify-center rounded-[32px] sm:max-w-[40%] lg:bg-grey-1 lg:p-8 lg:shadow-flat"
+		class="flex items-center justify-center rounded-4xl sm:max-w-[40%] lg:bg-grey-1 lg:p-8 lg:shadow-flat"
 	>
 		<img
 			src="/images/golden-ratio-secondary.svg"
