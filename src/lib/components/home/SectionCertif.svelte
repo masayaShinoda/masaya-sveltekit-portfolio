@@ -21,14 +21,12 @@
 	];
 </script>
 
-<section class="mx-auto my-32 flex max-w-content-max flex-col gap-6 px-horizontal">
-	<h2 class="mb-4 text-scale-3 text-primary dark:text-secondary-shade-b">Certifications</h2>
-	<div class="grid w-full gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-9">
+<section class="mx-auto my-32 flex max-w-content-max flex-col px-horizontal">
+	<h2 class="mb-8 text-scale-3 text-primary dark:text-secondary-shade-b">Certifications</h2>
+	<div class="grid w-full gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-4 lg:gap-9">
 		{#each certifs as certif}
 			<a href={certif.url} class="group flex flex-col">
-				<div
-					class="mb-5 w-full rounded-lg bg-grey-1 p-2 shadow-flat transition-all group-hover:scale-[102%]"
-				>
+				<div class="mb-4 w-full rounded-lg bg-grey-1 p-2 shadow-flat transition-all">
 					<img
 						src={`/images/certif/${certif.fileName}`}
 						alt={certif.name}
@@ -37,7 +35,11 @@
 						class="overflow-clip rounded-lg object-contain object-center"
 					/>
 				</div>
-				<h3 class="mx-2 mb-1 text-scale-0 group-hover:text-secondary">{certif.name}</h3>
+				<h3
+					class="mx-2 mb-1 text-scale-0 underline group-hover:text-secondary group-hover:underline dark:group-hover:text-secondary-shade-b"
+				>
+					{certif.name}
+				</h3>
 				<p class="mx-2 text-grey-5">{certif.completed}</p>
 			</a>
 		{/each}
