@@ -45,7 +45,7 @@
 
 <Header />
 <main class="min-h-[1440px]">
-	<div class="pt-28 mx-auto flex w-full flex-col md:py-40">
+	<div class="py-28 mx-auto flex w-full flex-col md:py-40">
 		<slot />
 	</div>
 </main>
