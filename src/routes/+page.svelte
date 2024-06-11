@@ -1,6 +1,7 @@
 <script>
 	import Hero from '$lib/components/home/Hero.svelte';
 	import SectionCertif from '$lib/components/home/SectionCertif.svelte';
+	import SectionContact from '$lib/components/home/SectionContact.svelte';
 	import SectionCourses from '$lib/components/home/SectionCourses.svelte';
 	import SectionDesignPhilo from '$lib/components/home/SectionDesignPhilo.svelte';
 	import SectionSkillset from '$lib/components/home/SectionSkillset.svelte';
@@ -31,4 +32,5 @@
 	<SectionCertif />
 	<SectionDesignPhilo />
 	<SectionCourses />
+	<SectionContact />
 </div>
