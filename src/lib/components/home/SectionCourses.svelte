@@ -18,7 +18,7 @@
 		</a>
 	</div>
 	<div
-		class="flex items-center justify-center overflow-clip rounded-lg md:max-w-[40%] sm:rounded-2xl md:bg-grey-1 sm:p-6 sm:shadow-flat"
+		class="flex items-center justify-center overflow-clip rounded-lg sm:rounded-2xl sm:p-6 sm:shadow-flat md:max-w-[40%] md:bg-grey-1"
 	>
 		<a
 			title="Watch Figma course"
@@ -33,7 +33,7 @@
 				class="w-full rounded-lg md:w-auto"
 			/>
 			<div
-				class="absolute top-0 hidden h-full w-full items-center justify-center bg-[rgba(0,0,0,.75)] group-hover:flex"
+				class="absolute top-0 flex h-full w-full items-center justify-center bg-[rgba(0,0,0,.75)] opacity-0 transition-opacity group-hover:opacity-100"
 			>
 				<p class="text-scale-1 text-mono-1">Watch on YouTube →</p>
 			</div>
