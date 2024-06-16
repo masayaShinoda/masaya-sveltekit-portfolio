@@ -23,7 +23,6 @@
 					internet connection can access.
 				</p>
 				<a
-				
 					href="/portfolio"
 					class="inline-block w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 sm:w-auto"
 				>
