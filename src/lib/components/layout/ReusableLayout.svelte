@@ -44,7 +44,7 @@
 </script>
 
 <Header />
-<main class="min-h-[1440px]">
+<main>
 	<div class="mx-auto flex w-full flex-col py-28 md:py-32">
 		<slot />
 	</div>
