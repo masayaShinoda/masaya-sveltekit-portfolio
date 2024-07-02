@@ -84,10 +84,12 @@
 					<h3 class="mb-1 text-scale-1 text-grey-6">Overview</h3>
 					<p class="text-scale-0 text-grey-5">{project.overview}</p>
 				</section>
-				<section>
-					<h3 class="mb-1 text-scale-1 text-grey-6">Responsibilities</h3>
-					<p class="text-scale-0 text-grey-5">{project.responsibilities}</p>
-				</section>
+				{#if project.responsibilities}
+					<section>
+						<h3 class="mb-1 text-scale-1 text-grey-6">Responsibilities</h3>
+						<p class="text-scale-0 text-grey-5">{project.responsibilities}</p>
+					</section>
+				{/if}
 				<a
 					href={project.link}
 					class="w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
