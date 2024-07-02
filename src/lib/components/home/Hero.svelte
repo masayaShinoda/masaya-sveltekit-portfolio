@@ -6,7 +6,7 @@
 		<h1 class="mb-8 text-scale-2 text-primary dark:text-grey-6 sm:text-scale-3 lg:text-scale-4">
 			Cambodia-based developer & designer passionate about digital literacy.
 		</h1>
-		<div class="w-full flex items-center gap-2">
+		<div class="flex w-full items-center gap-2">
 			<!-- <a
 				href="#"
 				class="w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
@@ -23,7 +23,7 @@
 				href="/portfolio"
 				class="w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
 			>
-				See my projects
+				See my portfolio →
 			</a>
 		</div>
 	</div>
