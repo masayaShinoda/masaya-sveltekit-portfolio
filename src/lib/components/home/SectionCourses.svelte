@@ -11,7 +11,7 @@
 			preparing the audience for the digital economy.
 		</p>
 		<a
-			href="#"
+			href="https://www.youtube.com/c/masayashida"
 			class="mr-2 w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
 		>
 			YouTube channel

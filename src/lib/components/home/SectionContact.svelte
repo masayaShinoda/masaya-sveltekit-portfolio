@@ -27,12 +27,12 @@
 			Thank you for visiting my page. Feel free to reach out to me if you wish to build something
 			together, or if you have any inquiries.
 		</p>
-		<a
+		<!-- <a
 			href="#"
 			class="mr-2 w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
 		>
 			Get a quote
-		</a>
+		</a> -->
 	</div>
 	<div class="flex w-full items-center justify-center gap-2 md:justify-end">
 		{#each contact_links as link}
