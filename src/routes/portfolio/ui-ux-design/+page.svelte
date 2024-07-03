@@ -10,7 +10,22 @@
 <svelte:head>
 	<title>UI/UX Design Portfolio | Masaya Shida</title>
 </svelte:head>
-<header class="mb-20 flex flex-col items-start px-4 md:mb-10 md:items-center">
+<nav
+	class="mx-auto mb-8 md:mb-6 flex w-full max-w-content-max items-center justify-start px-horizontal md:hidden"
+>
+	<a href="/portfolio" class="text-scale-0 text-grey-5 hover:underline">← Back</a>
+</nav>
+<nav
+	class="mx-auto mb-1 hidden w-full max-w-content-max items-center justify-between px-horizontal md:flex"
+>
+	<a href="/portfolio/web-development" class="text-scale-0 text-grey-5 hover:underline"
+		>← Web Development Portfolio</a
+	>
+	<a href="/portfolio/graphic-design" class="text-scale-0 text-grey-5 hover:underline"
+		>Graphic Design Portfolio →</a
+	>
+</nav>
+<header class="mb-16 flex flex-col items-start px-4 md:mb-10 md:items-center">
 	<img
 		src="/images/icon-explorer.svg"
 		width="40"

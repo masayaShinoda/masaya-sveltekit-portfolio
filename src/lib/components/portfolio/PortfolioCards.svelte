@@ -3,7 +3,9 @@
 	style="background: linear-gradient(106.93deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 119, 204, 0.05) 100%);"
 >
 	<div class="mb-4 flex flex-col items-start md:mb-0">
-		<h1 class="mb-6 text-scale-4 text-primary dark:text-secondary-shade-b dark:text-white">
+		<h1
+			class="mb-6 text-scale-3 text-primary dark:text-secondary-shade-b dark:text-white md:text-scale-4"
+		>
 			Portfolio
 		</h1>
 		<div class="flex grid-cols-2 flex-col gap-6 md:grid lg:grid-cols-3">

@@ -1,5 +1,5 @@
 <section
-	class="mx-auto flex max-w-content-max flex-col-reverse items-center justify-between px-horizontal pb-3 pt-0 sm:py-5 md:flex-row"
+	class="mx-auto flex max-w-content-max flex-col-reverse items-center justify-between px-horizontal pb-3 pt-4 sm:py-5 md:flex-row"
 >
 	<div class="mt-8 max-w-full md:mt-0 md:max-w-[55%] lg:max-w-[512px]">
 		<p class="mb-2 text-scale-0 text-grey-5 lg:text-scale-1">Hi! I'm Masaya,</p>

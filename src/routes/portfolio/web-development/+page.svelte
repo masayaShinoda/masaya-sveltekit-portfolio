@@ -10,14 +10,29 @@
 <svelte:head>
 	<title>Web Development Portfolio | Masaya Shida</title>
 </svelte:head>
-<header class="mb-20 flex flex-col items-start px-4 md:mb-10 md:items-center">
+<nav
+	class="mx-auto mb-8 md:mb-6 flex w-full max-w-content-max items-center justify-start px-horizontal md:hidden"
+>
+	<a href="/portfolio" class="text-scale-0 text-grey-5 hover:underline">← Back</a>
+</nav>
+<nav
+	class="mx-auto mb-1 hidden w-full max-w-content-max items-center justify-between px-horizontal md:flex"
+>
+	<a href="/portfolio/graphic-design" class="text-scale-0 text-grey-5 hover:underline"
+		>← Graphic Design Portfolio</a
+	>
+	<a href="/portfolio/ui-ux-design" class="text-scale-0 text-grey-5 hover:underline"
+		>UI/UX Design Portfolio →</a
+	>
+</nav>
+<header class="mb-16 flex flex-col items-start px-4 md:mb-10 md:items-center">
 	<img
 		src="/images/icon-code.svg"
 		width="40"
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-primary);"
 		alt="Web development icon"
-		class="mb-4 max-w-8 max-h-8 md:max-h-10 md:max-w-10 dark:hidden"
+		class="mb-4 max-h-8 max-w-8 dark:hidden md:max-h-10 md:max-w-10"
 	/>
 	<img
 		src="/images/icon-code.svg"
@@ -25,7 +40,7 @@
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-secondary-shade-b);"
 		alt="Web development icon"
-		class="mb-4 max-w-8 max-h-8 md:max-h-10 md:max-w-10 hidden dark:block"
+		class="mb-4 hidden max-h-8 max-w-8 dark:block md:max-h-10 md:max-w-10"
 	/>
 	<h1
 		class="mb-4 text-scale-2 text-primary dark:text-secondary-shade-b md:text-center md:text-scale-4"
@@ -57,7 +72,9 @@
 			<div class="col-span-4 flex flex-col items-start gap-6">
 				<header>
 					<p class="-text-scale-1 text-grey-5">Industry: {project.industry}</p>
-					<h2 class="text-scale-2 leading-snug text-primary dark:text-grey-6 md:text-scale-3">{project.name}</h2>
+					<h2 class="text-scale-2 leading-snug text-primary dark:text-grey-6 md:text-scale-3">
+						{project.name}
+					</h2>
 				</header>
 				<section>
 					<h3 class="mb-1 text-scale-1 text-grey-6">Tools</h3>
