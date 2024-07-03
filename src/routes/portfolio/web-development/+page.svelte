@@ -2,7 +2,6 @@
 	// import BackToTop from '$lib/components/BackToTop.svelte';
 	import data from './data';
 	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
-	// import styles from '$lib/web-development/WebDevelopment.module.css';
 
 	let tool_logos = tool_logos_arr;
 	let projects = data.projects;

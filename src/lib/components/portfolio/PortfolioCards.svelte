@@ -6,7 +6,7 @@
 		<h1 class="mb-6 text-scale-4 text-primary dark:text-secondary-shade-b dark:text-white">
 			Portfolio
 		</h1>
-		<div class="flex grid-cols-2 flex-col gap-6 sm:grid lg:grid-cols-3">
+		<div class="flex grid-cols-2 flex-col gap-6 md:grid lg:grid-cols-3">
 			<section class="rounded-3xl bg-grey-1 p-6">
 				<img
 					src="/images/icon-code.svg"

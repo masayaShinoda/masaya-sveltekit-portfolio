@@ -37,10 +37,10 @@
 
 	let current_path_name = '';
 	afterUpdate(() => {
-		current_path_name = window.location.pathname;
+		current_path_name = '/' + window.location.pathname.split('/')[1];
 	});
 	afterNavigate(() => {
-		current_path_name = window.location.pathname;
+		current_path_name = '/' + window.location.pathname.split('/')[1];
 	});
 </script>
 
@@ -56,9 +56,16 @@
 					width="176"
 					height="44"
 					style="filter: brightness(0) saturate(0) var(--filter-clr-secondary-shade-a);"
+					class="max-w-36 object-contain object-left lg:max-w-none"
 				/>
 			{:else}
-				<img src="/images/masaya-web-dev-logo.svg" alt="Masaya logo" width="176" height="44" />
+				<img
+					src="/images/masaya-web-dev-logo.svg"
+					alt="Masaya logo"
+					width="176"
+					height="44"
+					class="max-w-36 object-contain object-left lg:max-w-none"
+				/>
 			{/if}
 		</a>
 		<div

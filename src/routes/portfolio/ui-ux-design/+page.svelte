@@ -2,22 +2,21 @@
 	// import BackToTop from '$lib/components/BackToTop.svelte';
 	import data from './data';
 	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
-	// import styles from '$lib/web-development/WebDevelopment.module.css';
 
 	let tool_logos = tool_logos_arr;
 	let projects = data.projects;
 </script>
 
 <svelte:head>
-	<title>Web Development Portfolio | Masaya Shida</title>
+	<title>UI/UX Design Portfolio | Masaya Shida</title>
 </svelte:head>
 <header class="mb-20 flex flex-col items-start px-4 md:mb-10 md:items-center">
 	<img
-		src="/images/icon-code.svg"
+		src="/images/icon-explorer.svg"
 		width="40"
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-primary);"
-		alt="Web development icon"
+		alt="UI/UX design icon"
 		class="mb-4 max-h-8 max-w-8 dark:hidden md:max-h-10 md:max-w-10"
 	/>
 	<img
@@ -25,7 +24,7 @@
 		width="40"
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-secondary-shade-b);"
-		alt="Web development icon"
+		alt="UI/UX design icon"
 		class="mb-4 hidden max-h-8 max-w-8 dark:block md:max-h-10 md:max-w-10"
 	/>
 	<h1
