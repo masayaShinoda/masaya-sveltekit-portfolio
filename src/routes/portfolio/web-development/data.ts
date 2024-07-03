@@ -1,4 +1,4 @@
-const web_projects = [
+const projects = [
 	{
 		id: 'real-estate-listing-platform',
 		name: 'Real Estate Listing Website',
@@ -75,4 +75,4 @@ const web_projects = [
 	}
 ];
 
-export default { web_projects };
+export default { projects };

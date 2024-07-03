@@ -18,25 +18,25 @@
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-primary);"
 		alt="Web development icon"
-		class="mb-4 max-w-8 max-h-8 md:max-h-10 md:max-w-10 dark:hidden"
+		class="mb-4 max-h-8 max-w-8 dark:hidden md:max-h-10 md:max-w-10"
 	/>
 	<img
-		src="/images/icon-code.svg"
+		src="/images/icon-explorer.svg"
 		width="40"
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-secondary-shade-b);"
 		alt="Web development icon"
-		class="mb-4 max-w-8 max-h-8 md:max-h-10 md:max-w-10 hidden dark:block"
+		class="mb-4 hidden max-h-8 max-w-8 dark:block md:max-h-10 md:max-w-10"
 	/>
 	<h1
 		class="mb-4 text-scale-2 text-primary dark:text-secondary-shade-b md:text-center md:text-scale-4"
 	>
-		Web Development Portfolio
+		UI/UX Design Portfolio
 	</h1>
 	<p class="max-w-[720px] text-scale-0 text-grey-5 md:text-center">
-		I see the web as an important and democratizing platform for people around the world to share
-		their ideas and to show who they are and what they care about, where anyone with an internet
-		connection can access.
+		My approach to UI/UX design focuses on creating intuitive experiences that meet users' needs,
+		allowing them to achieve their goals quickly. Through research, prototyping, and user testing, I
+		strive to bridge the gap between users' goals and digital solutions.
 	</p>
 </header>
 <section class="mx-auto flex w-full max-w-content-max flex-col gap-y-20 p-4 md:gap-y-10 md:p-10">
@@ -57,8 +57,10 @@
 			</div>
 			<div class="col-span-4 flex flex-col items-start gap-6">
 				<header>
-					<p class="-text-scale-1 text-grey-5">Industry: {project.industry}</p>
-					<h2 class="text-scale-2 leading-snug text-primary dark:text-grey-6 md:text-scale-3">{project.name}</h2>
+					<p class="-text-scale-1 text-grey-5">Duration: {project.duration}</p>
+					<h2 class="text-scale-2 leading-snug text-primary dark:text-grey-6 md:text-scale-3">
+						{project.name}
+					</h2>
 				</header>
 				<section>
 					<h3 class="mb-1 text-scale-1 text-grey-6">Tools</h3>
@@ -95,7 +97,7 @@
 					href={project.link}
 					class="w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
 				>
-					See live demo
+					Go to design
 				</a>
 			</div>
 		</div>
