@@ -34,7 +34,7 @@
 			Get a quote
 		</a> -->
 	</div>
-	<div class="flex w-full items-center justify-center gap-2 md:justify-end">
+	<div class="grid w-full grid-cols-3 items-center justify-center gap-2 sm:flex md:justify-end">
 		{#each contact_links as link}
 			<a
 				href={link.href}
@@ -45,7 +45,7 @@
 					alt={`{link.name} icon`}
 					width={32}
 					height={32}
-					class="mr-2"
+					class="mr-2 max-h-5 max-w-5 sm:max-h-8 sm:max-w-8"
 				/>
 				{link.name}
 			</a>
