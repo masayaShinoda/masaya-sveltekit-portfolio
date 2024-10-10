@@ -10,6 +10,16 @@ const projects = [
 		image: '/images/mockups/real-estate-listing-website-mockup_result.png'
 	},
 	{
+		id: 'design-agency-website',
+		name: 'Design Agency Website',
+		overview: `Website design for a local design and media agency.`,
+		responsibilities: `I designed the website to showcase the agency's portfolio and contact information.`,
+		tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
+		duration: 'Two weeks',
+		link: 'https://www.figma.com/design/bv3wIBfwZiM5pCqr1xrUZA/bread-website-new?node-id=1403-3151&t=yB6YBZkR07axa4AT-1',
+		image: '/images/mockups/design-agency-mockup.png'
+	},
+	{
 		id: 'car-engine-lubricants-website',
 		name: 'Car Engine Lubricants Landing Page',
 		overview: `Landing page design for a car engine lubricant business.`,
