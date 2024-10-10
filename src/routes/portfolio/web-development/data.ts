@@ -11,6 +11,17 @@ const projects = [
 		image: '/images/mockups/real-estate-listing-website-mockup_result.png'
 	},
 	{
+		id: 'design-agency-website',
+		name: 'Design Agency Website',
+		industry: 'Media',
+		overview: `A full-stack website for a local design & media company. The client can update the website's content themselves via the Django admin panel. Interested visitors can contact the agency via the secure contact form.`,
+		responsibilities: `After the web design was complete, I coded and hosted the website.`,
+		tools: ['HTML', 'CSS', 'Django', 'Figma'],
+		duration: 'Two weeks',
+		link: 'https://www.breaddesignmedia.com/',
+		image: '/images/mockups/design-agency-mockup.png'
+	},
+	{
 		id: 'car-engine-lubricants-website',
 		name: 'Car Engine Lubricants Landing Page',
 		industry: 'Automotives',
