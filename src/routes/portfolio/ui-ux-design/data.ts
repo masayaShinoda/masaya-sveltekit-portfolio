@@ -17,7 +17,7 @@ const projects = [
 		tools: ['Figma', 'Adobe Illustrator'],
 		duration: 'Six months',
 		link: 'https://www.figma.com/design/ZbqzSX7dLV6UZ3KnShvgC4/masaya-tourism-app?node-id=0-1&t=kNPOWed6TRRJ9I7e-1',
-		image: '/images/mockups/tourism-app-website-mockup_result.png'
+		image: '/images/mockups/tourism-app-website-mockup.png'
 	},
 	{
 		id: 'design-agency-website',
