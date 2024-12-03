@@ -10,6 +10,16 @@ const projects = [
 		image: '/images/mockups/real-estate-listing-website-mockup_result.png'
 	},
 	{
+		id: 'tourism-booking-platform',
+		name: 'Tourism Booking Website & App',
+		overview: `UX research, wireframe, prototype, and final UI design for a local tourism marketplace platform.`,
+		responsibilities: `I was responsible for conducting UX research via surveys, categorizing user personas, mapped out project sitemap, listing down user journeys, designed wireframes, collaborated with business side as well as developers to design the final user interface.`,
+		tools: ['Figma', 'Adobe Illustrator'],
+		duration: 'Six months',
+		link: 'https://www.figma.com/design/ZbqzSX7dLV6UZ3KnShvgC4/masaya-tourism-app?node-id=0-1&t=kNPOWed6TRRJ9I7e-1',
+		image: '/images/mockups/tourism-app-website-mockup_result.png'
+	},
+	{
 		id: 'design-agency-website',
 		name: 'Design Agency Website',
 		overview: `Website design for a local design and media agency.`,
