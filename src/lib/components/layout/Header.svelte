@@ -30,7 +30,7 @@
 		// },
 		{
 			name: 'Resume',
-			href: '/masaya-resume-2024.pdf',
+			href: '/masaya-resume-2025.pdf',
 			icon: FileDownloadLine
 		}
 	];
