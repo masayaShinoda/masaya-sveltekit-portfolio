@@ -28,11 +28,11 @@
 		// 	name: 'Contact',
 		// 	href: '#contact',
 		// },
-		{
-			name: 'Resume',
-			href: '/masaya-resume-2025.pdf',
-			icon: FileDownloadLine
-		}
+		// {
+		//	name: 'Resume',
+		//	href: '/masaya-resume-2025.pdf',
+		//	icon: FileDownloadLine
+		// }
 	];
 
 	let current_path_name = '';
