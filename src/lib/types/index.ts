@@ -30,3 +30,17 @@ export interface Course {
 	coming_soon?: boolean;
 	sections?: Array<CourseSection>;
 }
+
+export interface Project {
+	id: string;
+	name: string;
+	industry?: string;
+	overview: string;
+	responsibilities?: string;
+	tools: Technology[];
+	duration: string;
+	/** Month the project was completed, formatted 'YYYY-MM'. */
+	completedDate: string;
+	link: string;
+	image: string;
+}

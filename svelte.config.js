@@ -21,7 +21,7 @@ const config = {
 			strict: true
 		}),
 		prerender: {
-			handleMissingId: 'warn',
+			handleMissingId: 'warn'
 		}
 	}
 };

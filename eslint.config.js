@@ -28,6 +28,14 @@ export default [
 		}
 	},
 	{
+		rules: {
+			// hrefs here are a mix of static internal routes and external URLs sourced
+			// from data files; resolve() only applies to internal routes, so this rule
+			// produces false positives on the external ones.
+			'svelte/no-navigation-without-resolve': 'off'
+		}
+	},
+	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
 	}
 ];

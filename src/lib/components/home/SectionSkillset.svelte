@@ -13,23 +13,23 @@
 </script>
 
 <section
-	class="mx-auto my-32 flex max-w-content-max flex-col justify-between gap-6 px-horizontal md:flex-row"
+	class="max-w-content-max px-horizontal mx-auto my-24 flex flex-col justify-between gap-6 md:my-32 md:flex-row"
 >
-	<div class="mb-4 flex md:max-w-[360px] flex-col items-start md:mb-0">
-		<h2 class="mb-4 text-scale-3 text-primary dark:text-secondary-shade-b">Skill Set</h2>
-		<p class="mb-4 text-scale-0 text-grey-5">
+	<div class="mb-4 flex flex-col items-start md:mb-0 md:max-w-[360px]">
+		<h2 class="text-scale-3 text-primary dark:text-secondary-shade-b mb-4">Skill Set</h2>
+		<p class="text-scale-0 text-grey-5 mb-4">
 			I'm always learning different technologies and software to complete projects efficiently.
 		</p>
-		<p class="mb-4 text-scale-0 text-grey-5">
+		<p class="text-scale-0 text-grey-5 mb-4">
 			I can help turn project ideas into reality, from wireframing and design to coding a functional
 			web app.
 		</p>
 	</div>
 	<div class="flex gap-4 sm:justify-end sm:gap-12">
 		<div class="flex w-full flex-col items-start">
-			<h3 class="mb-4 text-scale-0 text-grey-6 sm:text-scale-1">Web Development</h3>
+			<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">Web Development</h3>
 			<ul>
-				{#each tech_stack.web_development as tool}
+				{#each tech_stack.web_development as tool (tool)}
 					<li class="mb-4 flex items-center">
 						<img
 							src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
@@ -46,9 +46,9 @@
 		</div>
 		<div class="flex w-full flex-col items-start gap-8">
 			<div class="flex w-full flex-col items-start">
-				<h3 class="mb-4 text-scale-0 text-grey-6 sm:text-scale-1">UI/UX Design</h3>
+				<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">UI/UX Design</h3>
 				<ul>
-					{#each tech_stack.ui_design as tool}
+					{#each tech_stack.ui_design as tool (tool)}
 						<li class="mb-4 flex items-center">
 							<img
 								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
@@ -64,9 +64,9 @@
 				</ul>
 			</div>
 			<div class="flex w-full flex-col items-start">
-				<h3 class="mb-4 text-scale-0 text-grey-6 sm:text-scale-1">Graphic Design</h3>
+				<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">Graphic Design</h3>
 				<ul>
-					{#each tech_stack.graphic_design as tool}
+					{#each tech_stack.graphic_design as tool (tool)}
 						<li class="mb-4 flex items-center">
 							<img
 								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}

@@ -42,17 +42,17 @@
 	<title>Graphic Design Portfolio | Masaya Shida</title>
 </svelte:head>
 <nav
-	class="mx-auto mb-8 md:mb-6 flex w-full max-w-content-max items-center justify-start px-horizontal md:hidden"
+	class="max-w-content-max px-horizontal mx-auto mb-8 flex w-full items-center justify-start md:mb-6 md:hidden"
 >
 	<a href="/portfolio" class="text-scale-0 text-grey-5 hover:underline">← Back</a>
 </nav>
 <nav
-	class="mx-auto mb-1 hidden w-full max-w-content-max items-center justify-between px-horizontal md:flex"
+	class="max-w-content-max px-horizontal mx-auto mb-1 hidden w-full items-center justify-between md:flex"
 >
-	<a href="/portfolio/ui-ux-design" class="text-scale-0 text-grey-5 hover:underline text-left"
+	<a href="/portfolio/ui-ux-design" class="text-scale-0 text-grey-5 text-left hover:underline"
 		>← UI/UX Design Portfolio</a
 	>
-	<a href="/portfolio/web-development" class="text-scale-0 text-grey-5 hover:underline text-right"
+	<a href="/portfolio/web-development" class="text-scale-0 text-grey-5 text-right hover:underline"
 		>Web Development Portfolio →</a
 	>
 </nav>
@@ -63,7 +63,7 @@
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-primary);"
 		alt="Graphic design icon"
-		class="mb-4 max-h-8 max-w-8 dark:hidden md:max-h-10 md:max-w-10"
+		class="mb-4 max-h-8 max-w-8 md:max-h-10 md:max-w-10 dark:hidden"
 	/>
 	<img
 		src="/images/icon-pen.svg"
@@ -71,14 +71,14 @@
 		height="40"
 		style="filter: brightness(0) saturate(0) var(--filter-clr-secondary-shade-b);"
 		alt="Graphic design icon"
-		class="mb-4 hidden max-h-8 max-w-8 dark:block md:max-h-10 md:max-w-10"
+		class="mb-4 hidden max-h-8 max-w-8 md:max-h-10 md:max-w-10 dark:block"
 	/>
 	<h1
-		class="mb-4 text-scale-2 text-primary dark:text-secondary-shade-b md:text-center md:text-scale-4"
+		class="text-scale-2 text-primary dark:text-secondary-shade-b md:text-scale-4 mb-4 md:text-center"
 	>
 		Graphic Design Portfolio
 	</h1>
-	<p class="max-w-[720px] text-scale-0 text-grey-5 md:text-center">
+	<p class="text-scale-0 text-grey-5 max-w-[720px] md:text-center">
 		I use graphic design to communicate key ideas with clarity and impact. Prioritizing readability
 		and practicality, I create designs that are both visually compelling and easy to understand. My
 		goal is to transform concepts into visuals that engage and inform audiences effectively.
@@ -89,10 +89,10 @@
 		<nav id="gfx_projects_section__nav__btn_group" class="gfx_projects_section__nav__btn_group">
 			{#each Array.from(projects
 					.filter((project) => project.items.length > 0)
-					.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry}
+					.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry (industry)}
 				<a
 					href={`#${encodeURI(industry)}`}
-					class="inline-block w-full rounded-full border border-grey-2 bg-grey-1 p-3 text-center text-scale-0 text-grey-6 shadow-sm transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 sm:w-auto"
+					class="border-grey-2 bg-grey-1 text-scale-0 text-grey-6 shadow-convex inline-block w-full rounded-full border p-3 text-center transition-all hover:brightness-105 active:translate-y-px sm:w-auto"
 				>
 					{industry}
 				</a>
@@ -104,12 +104,12 @@
 	<!-- Photo Grid -->
 	{#each Array.from(projects
 			.filter((project) => project.items.length > 0)
-			.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index}
+			.map((project) => project.industry)).filter((x, i, a) => a.indexOf(x) == i) as industry, index (industry)}
 		<h5 class="industry">Industry: {industry}</h5>
 		<div id={encodeURI(industry)} class="row gfx_projects_section__body__industry">
-			{#each projects as project}
+			{#each projects as project (project.industry)}
 				{#if project.industry === industry}
-					{#each project.items as item, n}
+					{#each project.items as item (item.src)}
 						<div class="column">
 							<img
 								id={`${index} ${project.industry}`}
@@ -166,7 +166,7 @@
 
 	.gfxdes_grid_section {
 		margin: 2.5rem auto;
-		padding: 0 1rem;
+		padding: 0 var(--padding-horizontal);
 		width: 100%;
 		max-width: min(var(--content-max-width), 100%);
 	}
@@ -206,7 +206,7 @@
 		}
 	}
 
-	.gfxdes_page_container .column img {
+	.gfxdes_grid_section .column img {
 		margin-top: 0.75rem;
 		vertical-align: middle;
 		width: 100%;

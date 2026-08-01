@@ -1,4 +1,6 @@
-const projects = [
+import type { Project } from '$lib/types';
+
+const projects: Project[] = [
 	{
 		id: 'real-estate-listing-platform',
 		name: 'Real Estate Listing Website',
@@ -7,6 +9,7 @@ const projects = [
 		responsibilities: `After discussing with the client about requirements and obtaining a wireframe, I designed and coded the website.`,
 		tools: ['HTML', 'CSS', 'Django', 'Figma'],
 		duration: 'Three weeks',
+		completedDate: 'TODO',
 		link: 'https://www.hunter-estate.com/',
 		image: '/images/mockups/real-estate-listing-website-mockup_result.png'
 	},
@@ -18,6 +21,7 @@ const projects = [
 		responsibilities: `After the web design was complete, I coded and hosted the website.`,
 		tools: ['HTML', 'CSS', 'Django', 'Figma'],
 		duration: 'Two weeks',
+		completedDate: 'TODO',
 		link: 'https://www.breaddesignmedia.com/',
 		image: '/images/mockups/design-agency-mockup.png'
 	},
@@ -29,6 +33,7 @@ const projects = [
 		responsibilities: `After discussing with the client about website content, I designed and coded the website.`,
 		tools: ['HTML', 'CSS', 'Figma'],
 		duration: 'One week',
+		completedDate: 'TODO',
 		link: 'https://musashilubes.com/',
 		image: '/images/mockups/car-engine-lubricant-website-mockup_result.png'
 	},
@@ -40,6 +45,7 @@ const projects = [
 		responsibilities: `After receiving a document of content from the client, I designed and coded the website, in addition to configuring the CMS.`,
 		tools: ['HTML', 'CSS', 'NextJS', 'Adobe Photoshop'],
 		duration: 'Six weeks',
+		completedDate: 'TODO',
 		link: 'https://www.goodtimehospitality.com/',
 		image: '/images/mockups/gt-rr-mockup-laptop-phone_result.png'
 	},
@@ -51,6 +57,7 @@ const projects = [
 		responsibilities: `After presenting my UI screens to the team, I got to work coding the new website using NextJS, which was ideal for its SSG abilities, pleasant dev experience, SEO, and performance (100 score on Lighthouse). I also manage the domain, hosting, and CMS.`,
 		tools: ['HTML', 'CSS', 'NextJS'],
 		duration: 'Three weeks for the first live version.',
+		completedDate: 'TODO',
 		link: 'https://utmarket.io',
 		image: '/images/mockups/utmarket-ui-showcase.png'
 	},
@@ -61,6 +68,7 @@ const projects = [
 		overview: `This is a dictionary style website to document and explain common programming and other technical words that are almost impossible to translate into Khmer. Could be a useful resource for educators/students alike.`,
 		tools: ['Svelte'],
 		duration: 'Three days',
+		completedDate: 'TODO',
 		link: 'https://khmer-programming-words.vercel.app/',
 		image: '/images/mockups/khmer-programming-words.png'
 	},
@@ -71,6 +79,7 @@ const projects = [
 		overview: `I wanted to familiarize myself with Django and more specifically the Django REST Framework so I built this as a learning project, a note taking web app with user authentication.`,
 		tools: ['Django', 'React'],
 		duration: 'Three weeks',
+		completedDate: 'TODO',
 		link: 'https://khmarkdown.masayashida.com/',
 		image: '/images/mockups/khmarkdown-laptop-no-notch-mockup_result.png'
 	},
@@ -81,6 +90,7 @@ const projects = [
 		overview: `A mini web tool for generating a business model canvas based on user input. I made it to practice Typescript, and learn to more about Svelte and how it handles state.`,
 		tools: ['Svelte'],
 		duration: 'One week',
+		completedDate: 'TODO',
 		link: 'https://bmc.masayashida.com/',
 		image: '/images/mockups/kh-bmc-laptop-no-notch-mockup_result.png'
 	}

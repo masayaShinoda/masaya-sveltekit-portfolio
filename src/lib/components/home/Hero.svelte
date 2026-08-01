@@ -1,9 +1,9 @@
 <section
-	class="mx-auto flex max-w-content-max flex-col-reverse items-center justify-between px-horizontal pb-3 pt-4 sm:py-5 md:flex-row"
+	class="max-w-content-max px-horizontal mx-auto flex flex-col-reverse items-center justify-between pt-4 pb-3 sm:py-5 md:flex-row"
 >
 	<div class="mt-8 max-w-full md:mt-0 md:max-w-[55%] lg:max-w-[512px]">
-		<p class="mb-2 text-scale-0 text-grey-5 lg:text-scale-1">Hi! I'm Masaya,</p>
-		<h1 class="mb-8 text-scale-2 text-primary dark:text-grey-6 sm:text-scale-3 lg:text-scale-4">
+		<p class="text-scale-0 text-grey-5 lg:text-scale-1 mb-2">Hi! I'm Masaya,</p>
+		<h1 class="text-scale-2 text-primary dark:text-grey-6 sm:text-scale-3 lg:text-scale-4 mb-8">
 			Cambodia-based developer & designer passionate about digital literacy.
 		</h1>
 		<div class="flex w-full items-center gap-2">
@@ -21,7 +21,7 @@
 			</a> -->
 			<a
 				href="/portfolio"
-				class="w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
+				class="border-secondary bg-gradient-secondary text-scale-0 text-grey-1 shadow-convex dark:text-grey-6 w-full rounded-full border p-4 text-center transition-all hover:brightness-105 active:translate-y-px md:w-auto"
 			>
 				See my portfolio →
 			</a>
