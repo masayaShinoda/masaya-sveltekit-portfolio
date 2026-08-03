@@ -5,7 +5,7 @@
 >
 
 <style>
-    svg {
-        fill: var(--clr-grey-6);
-    }
+	svg {
+		fill: var(--clr-grey-6);
+	}
 </style>

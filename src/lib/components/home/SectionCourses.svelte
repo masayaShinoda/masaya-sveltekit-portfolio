@@ -1,24 +1,23 @@
 <section
-	class="mx-auto my-32 flex max-w-content-max flex-col-reverse items-center justify-between gap-6 rounded-xl p-horizontal md:flex-row md:rounded-4xl"
-	style="background: linear-gradient(106.93deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 119, 204, 0.05) 100%);"
+	class="max-w-content-max p-horizontal md:bg-gradient-card mx-auto my-24 flex flex-col-reverse items-center justify-between gap-6 rounded-xl md:my-32 md:flex-row md:rounded-4xl"
 >
 	<div class="mb-4 flex flex-col items-start md:mb-0 md:max-w-[360px]">
-		<h2 class="mb-4 text-scale-3 text-primary dark:text-secondary-shade-b">
+		<h2 class="text-scale-3 text-primary dark:text-secondary-shade-b mb-4">
 			Courses (Khmer language)
 		</h2>
-		<p class="mb-8 text-scale-0 text-grey-5">
+		<p class="text-scale-0 text-grey-5 mb-8">
 			I create online courses in Khmer to introduce essential design and development skills,
 			preparing the audience for the digital economy.
 		</p>
 		<a
 			href="https://www.youtube.com/c/masayashida"
-			class="mr-2 w-full rounded-full border border-secondary bg-gradient-secondary p-4 text-center text-scale-0 text-grey-1 shadow-convex transition-all hover:brightness-105 active:translate-y-px dark:text-grey-6 md:w-auto"
+			class="border-secondary bg-gradient-secondary text-scale-0 text-grey-1 shadow-convex dark:text-grey-6 mr-2 w-full rounded-full border p-4 text-center transition-all hover:brightness-105 active:translate-y-px md:w-auto"
 		>
 			YouTube channel
 		</a>
 	</div>
 	<div
-		class="flex items-center justify-center overflow-clip rounded-lg sm:rounded-2xl sm:p-6 sm:shadow-flat md:max-w-[40%] md:bg-grey-1"
+		class="sm:shadow-flat md:bg-grey-1 flex items-center justify-center overflow-clip rounded-lg sm:rounded-2xl sm:p-6 md:max-w-[40%]"
 	>
 		<a
 			title="Watch Figma course"

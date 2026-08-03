@@ -1,5 +1,5 @@
 <script>
-    import PortfolioCards from '$lib/components/portfolio/PortfolioCards.svelte'
+	import PortfolioCards from '$lib/components/portfolio/PortfolioCards.svelte';
 </script>
 
 <svelte:head>
@@ -22,5 +22,5 @@
 	/><meta property="twitter:image" content="/images/banner-logo-margins.png" />
 </svelte:head>
 <div>
-    <PortfolioCards />
+	<PortfolioCards />
 </div>

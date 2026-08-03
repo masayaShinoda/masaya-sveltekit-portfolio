@@ -1,11 +1,10 @@
 <script lang="ts">
 	import ThemeSwitcher from '$lib/components/layout/ThemeSwitcher.svelte';
 	import { themeStore } from '$lib/stores';
-	import { page } from '$app/stores';
 	import HomeLine from '$lib/components/icons/HomeLine.svelte';
 	import TerminalBoxLine from '$lib/components/icons/TerminalBoxLine.svelte';
-	import FileDownloadLine from '$lib/components/icons/FileDownloadLine.svelte';
-	import { afterUpdate, onMount } from 'svelte';
+	import SettingsLine from '$lib/components/icons/SettingsLine.svelte';
+	import { afterUpdate } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
 
 	let theme: string;
@@ -24,15 +23,11 @@
 			href: '/portfolio',
 			icon: TerminalBoxLine
 		},
-		// {
-		// 	name: 'Contact',
-		// 	href: '#contact',
-		// },
-		// {
-		//	name: 'Resume',
-		//	href: '/masaya-resume-2025.pdf',
-		//	icon: FileDownloadLine
-		// }
+		{
+			name: 'Setup',
+			href: '/setup',
+			icon: SettingsLine
+		}
 	];
 
 	let current_path_name = '';
@@ -44,9 +39,9 @@
 	});
 </script>
 
-<div class="fixed left-0 top-0 z-50 flex w-full justify-center">
+<div class="fixed top-0 left-0 z-50 flex w-full justify-center">
 	<header
-		class="mx-auto flex w-full max-w-content-max items-center justify-between border-b border-b-grey-2 bg-grey-1 px-horizontal py-3 md:static md:grid md:grid-cols-3 md:py-3"
+		class="max-w-content-max border-b-grey-2 bg-grey-1 px-horizontal mx-auto flex w-full items-center justify-between border-b py-3 md:static md:grid md:grid-cols-3 md:py-3"
 	>
 		<a href="/" class="flex grow items-center justify-start">
 			{#if theme === 'dark'}
@@ -72,16 +67,16 @@
 			class="fixed bottom-0 left-0 flex w-full grow items-center justify-center md:sticky md:top-0 md:w-auto"
 		>
 			<nav
-				class="flex w-full items-center justify-evenly border-t border-t-grey-2 bg-grey-1 px-4 pb-5 pt-2 md:w-auto md:justify-center md:border-t-0 md:bg-none md:p-0"
+				class="border-t-grey-2 bg-grey-1 flex w-full items-center justify-evenly border-t px-4 pt-2 pb-5 md:w-auto md:justify-center md:border-t-0 md:bg-none md:p-0"
 			>
-				{#each nav_items as item}
+				{#each nav_items as item (item.href)}
 					<a
 						href={item.href}
-						class="header_link mr-2 inline-flex w-full items-center justify-center rounded-full p-4 text-scale-0 text-primary transition-all hover:text-secondary active:scale-95 dark:text-grey-6 dark:hover:text-secondary-shade-b md:w-auto"
+						class="header_link text-scale-0 text-primary hover:text-secondary dark:text-grey-6 dark:hover:text-secondary-shade-b mr-2 inline-flex w-full items-center justify-center rounded-full p-4 transition-all active:scale-95 md:w-auto"
 						data-active={current_path_name === item.href ? true : false}
 					>
 						<div class="mr-2 h-4 w-4 md:hidden">
-							<svelte:component this={item.icon}></svelte:component>
+							<item.icon />
 						</div>
 						{item.name}
 					</a>
