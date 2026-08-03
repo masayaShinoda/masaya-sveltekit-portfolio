@@ -2,7 +2,7 @@
 	let contact_links = [
 		{
 			name: 'Email',
-			href: 'mailto:masayashida@gmail.com',
+			href: 'mailto:hello@masayashida.com',
 			icon: 'gmail.svg'
 		},
 		{
