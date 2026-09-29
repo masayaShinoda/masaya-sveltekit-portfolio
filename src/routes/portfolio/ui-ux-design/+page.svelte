@@ -70,7 +70,7 @@
 			<div class="col-span-4 flex flex-col items-start gap-6">
 				<header>
 					<p class="text-scale-0 text-grey-5">
-						Duration: {project.duration} · Completed {formatCompletedDate(project.completedDate)}
+						Completed {formatCompletedDate(project.completedDate)}
 					</p>
 					<h2 class="text-scale-2 text-primary dark:text-grey-6 md:text-scale-3 leading-snug">
 						{project.name}

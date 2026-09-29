@@ -74,7 +74,7 @@
 						{project.name}
 					</h2>
 					<p class="text-scale-0 text-grey-5">
-						{project.duration} · Completed {formatCompletedDate(project.completedDate)}
+						Completed {formatCompletedDate(project.completedDate)}
 					</p>
 				</header>
 				<section>
