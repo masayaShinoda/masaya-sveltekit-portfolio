@@ -38,7 +38,6 @@ export interface Project {
 	overview: string;
 	responsibilities?: string;
 	tools: Technology[];
-	duration: string;
 	/** When the project was completed, written as displayed (e.g. 'April 2024', or just '2024'). */
 	completedDate: string;
 	link: string;
