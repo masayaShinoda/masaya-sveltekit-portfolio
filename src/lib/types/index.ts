@@ -39,7 +39,7 @@ export interface Project {
 	responsibilities?: string;
 	tools: Technology[];
 	duration: string;
-	/** Month the project was completed, formatted 'YYYY-MM'. */
+	/** When the project was completed, written as displayed (e.g. 'April 2024', or just '2024'). */
 	completedDate: string;
 	link: string;
 	image: string;
