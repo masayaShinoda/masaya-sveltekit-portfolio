@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Personal portfolio/resume site for Masaya Shida, built with SvelteKit 2 (Svelte 5, runes-compatible but most components still use legacy syntax), TypeScript, and Tailwind CSS 4. Statically prerendered (`prerender = true` in `src/routes/+layout.js`) and deployed via `@sveltejs/adapter-static` (output in `build/`). Package manager is pnpm (`.npmrc` sets `engine-strict=true`).
+Personal portfolio/resume site for Masaya Shida, built with SvelteKit 2 (Svelte 5, runes-compatible but most components still use legacy syntax), TypeScript, and Tailwind CSS 4. Statically prerendered (`prerender = true` and `trailingSlash = 'always'` in `src/routes/+layout.js`) and built with `@sveltejs/adapter-static` (output in `build/`, `src/error.html` as the fallback page). Hosted on Vercel; `vercel.json` only sets security response headers. Package manager is pnpm (pinned via `packageManager` in `package.json`; `.npmrc` sets `engine-strict=true`). `pnpm-workspace.yaml` must keep its `packages: ['.']` field — Vercel's pnpm install fails without it.
 
 ## Commands
 
@@ -24,13 +24,13 @@ There is no test runner/framework configured in this project.
 
 Routes live under `src/routes` following SvelteKit's file-based routing (`+page.svelte`, `+layout.svelte`, `+error.svelte`). The site has a home page (`/`), a `/setup` page (desktop/terminal setup info, sanitized of hostnames/IPs/usernames), and a portfolio section with three subcategories, each a separate route with its own local `data.ts` holding a hardcoded array of project objects:
 
-- `/portfolio/web-development` — `data.ts` exports `{ projects }`, typed as `Project[]` (see `$lib/types`): each has `id`, `name`, `industry`, `overview`, `responsibilities`, `tools` (array of `Technology` strings), `duration`, `completedDate` ('YYYY-MM', formatted for display via `formatCompletedDate` in `$lib`), `link`, `image`.
+- `/portfolio/web-development` — `data.ts` default-exports `{ projects }`, typed as `Project[]` (see `$lib/types`): each has `id`, `name`, `industry`, `overview`, `responsibilities`, `tools` (array of `Technology` strings), `duration`, `completedDate`, `link`, `image`. `completedDate` is written exactly as it should be displayed (e.g. `'April 2024'`, or just `'2024'` when the month isn't known) — follow that convention for new entries. Pages pass it through `formatCompletedDate` (in `$lib`), which only rewrites `'YYYY-MM'` strings and leaves everything else unchanged.
 - `/portfolio/ui-ux-design` — same shape, but `industry` is omitted on every entry (the field is optional on `Project` for this reason).
 - `/portfolio/graphic-design` — grouped by `industry` with an `items` array of `{ src, alt }` image entries (not discrete named projects, so no `completedDate`); also has `lazy_load.ts`, a Svelte action (`lazyLoad`) that uses `IntersectionObserver` to defer loading of project images.
 
-To add/edit a portfolio project, edit the relevant `data.ts` file directly — there is no CMS or backend. New web-development/ui-ux-design entries currently ship with `completedDate: 'TODO'` as a placeholder pending real dates.
+To add/edit a portfolio project, edit the relevant `data.ts` file directly — there is no CMS or backend.
 
-The root layout (`src/routes/+layout.svelte`) wraps every page in `ReusableLayout.svelte`, imports global styles (`src/app.css`), and injects Vercel Analytics (disabled in dev via `$app/environment`'s `dev` flag).
+The root layout (`src/routes/+layout.svelte`) wraps every page in `ReusableLayout.svelte`, imports global styles (`src/app.css`), and injects Vercel Analytics (in `'development'` mode when `$app/environment`'s `dev` flag is set, `'production'` otherwise).
 
 ### Theming (dark/light mode)
 
@@ -50,7 +50,7 @@ Under `src/lib/components`:
 - `icons/` — small standalone SVG icon components (`MoonLine`, `SunLine`, `HomeLine`, `FileDownloadLine`, `TerminalBoxLine`, `SettingsLine`).
 - `tool-logos/index.ts` — exports `tool_logos`, an array mapping technology names to logo filenames under `static/images/tech-stack-logos/`; portfolio pages look up each project's `tools` entries against this array to render the matching logo.
 
-Shared types live in `src/lib/types/index.ts` (`Technology` union, `Course`/`CourseSection` interfaces used by `SectionCourses`, `Project` interface used by the portfolio `data.ts` files). `src/lib/index.ts` exports `formatCompletedDate`, used to render a project's `completedDate`.
+Shared types live in `src/lib/types/index.ts` (`Technology` union, `Course`/`CourseSection` interfaces used by `SectionCourses`, `Project` interface used by the portfolio `data.ts` files). `src/lib/index.ts` exports `formatCompletedDate`, applied to a project's `completedDate` at render time (a pass-through for the display strings the data uses).
 
 Dynamic component rendering uses Svelte 5's dotted-member-expression syntax (e.g. `<item.icon />` in `Header.svelte`) rather than the deprecated `<svelte:component>`.
 
