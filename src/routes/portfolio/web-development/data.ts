@@ -2,74 +2,139 @@ import type { Project } from '$lib/types';
 
 const projects: Project[] = [
 	{
-		id: 'real-estate-listing-platform',
-		name: 'Real Estate Listing Website',
-		industry: 'Real estate',
-		overview: `A full-stack website for a local real estate listing company. I used Django for its batteries-included convenience, easy-to-understand ORM, intuitive templating, and helpful admin panel, which allows the client to conveniently update the website's content themselves. For styling, I went with TailwindCSS for quick and consistent styling. Some parts that involve user interaction make use of HTMX for its simplicity.`,
-		responsibilities: `After discussing with the client about requirements and obtaining a wireframe, I designed and coded the website.`,
-		tools: ['HTML', 'CSS', 'Django', 'Figma'],
-		// Time taken: Three weeks
-		completedDate: 'April 2024',
-		link: 'https://www.hunter-estate.com/',
-		image: '/images/mockups/real-estate-listing-website-mockup_result.png'
+		id: 'texture-space',
+		name: 'Texture Space',
+		summary: 'Showroom website for a tile and surface materials store',
+		industry: 'Building materials',
+		overview: `Texture Space sells tiles, glass blocks and wall finishes from a showroom in Phnom Penh. Visitors browse products by series, finish and material, see the restaurants and homes that used them, and add products to a cart. Staff update products, projects and journal posts from the admin panel.`,
+		responsibilities: `I designed the site in Figma, then built it with Django. HTMX and Alpine.js handle the product filters and cart without full page reloads.`,
+		tools: ['Django', 'HTMX', 'Alpine.js', 'Figma'],
+		completedDate: '2026',
+		link: 'https://texturespacekh.com/',
+		image: '/images/screenshots/texture-space.jpg'
+	},
+	{
+		id: 'panel-hub',
+		name: 'Panel Hub',
+		summary: 'Product website for a wood panel supplier',
+		industry: 'Building materials',
+		overview: `Panel Hub supplies MDF, melamine and decorative wood panels to builders and furniture makers in Cambodia. Each product has its own specifications page, finishes are grouped into collections, and finished villas, condos and clinics appear in a project portfolio. Customers can download the catalogues.`,
+		responsibilities: `I designed and built the site, including the product carousel, collection pages and project gallery.`,
+		tools: ['Django', 'HTMX', 'Alpine.js', 'Figma'],
+		completedDate: '2026',
+		link: 'https://panelhub.asia/',
+		image: '/images/screenshots/panel-hub.jpg'
+	},
+	{
+		id: 'phnom-da-tourism',
+		name: 'Phnom Da Tourism Community',
+		summary: 'Bilingual website for a community tourism group in Takeo',
+		industry: 'Tourism',
+		overview: `The Phnom Da community runs tours of the pre-Angkorian temples and countryside around Phnom Da in Takeo province. The site is in Khmer and English, and lists each tour with what is included and separate prices for Cambodian and foreign visitors, so travellers can plan a visit before contacting the community.`,
+		responsibilities: `I designed and built the site with Django, and set it up so community members can update tours and prices themselves.`,
+		tools: ['Django', 'HTMX', 'Alpine.js', 'Figma'],
+		completedDate: '2026',
+		link: 'https://phnomdatourism.com/',
+		image: '/images/screenshots/phnom-da.jpg'
+	},
+	{
+		id: 'o-svay-tourism',
+		name: 'Tumnop O Svay Community',
+		summary: 'Bilingual website for a community tourism group in Preah Vihear',
+		industry: 'Tourism',
+		overview: `Tumnop O Svay is a community-based tourism site beside a reservoir in Preah Vihear province. The site introduces the community, lists one-day and two-day tour packages with what each includes, and links to short videos from the community's Facebook page.`,
+		responsibilities: `I built it on the same Django codebase as the Phnom Da site, with its own colours, photos and content.`,
+		tools: ['Django', 'HTMX', 'Alpine.js'],
+		completedDate: '2026',
+		link: 'https://osvaypreahvihear.com/km/',
+		image: '/images/screenshots/osvay.jpg'
 	},
 	{
 		id: 'design-agency-website',
-		name: 'Design Agency Website',
+		name: 'Bread Design Media',
+		summary: 'Website for a design and media agency',
 		industry: 'Media',
-		overview: `A full-stack website for a local design & media company. The client can update the website's content themselves via the Django admin panel. Interested visitors can contact the agency via the secure contact form.`,
-		responsibilities: `After the web design was complete, I coded and hosted the website.`,
+		overview: `A website for a Phnom Penh design and media agency. It presents the agency's services, clients and portfolio, and visitors can get in touch through a secure contact form. Staff update the content from the Django admin panel.`,
+		responsibilities: `I built and hosted the site from a finished web design.`,
 		tools: ['HTML', 'CSS', 'Django', 'Figma'],
 		// Time taken: Two weeks
 		completedDate: 'October 2025',
-		link: 'https://www.breaddesignmedia.com/',
-		image: '/images/mockups/design-agency-mockup.png'
+		link: 'https://breaddesignmedia.com/',
+		image: '/images/screenshots/bread-design.jpg'
+	},
+	{
+		id: 'moses-ngeth-blog',
+		name: 'Moses Ngeth',
+		summary: 'Khmer and English blog for a digital researcher',
+		industry: 'Media',
+		overview: `Moses Ngeth writes about Cambodia's online information space, from scam recruitment to Facebook account bans and Google Maps edits. Posts are written in WordPress, and the public site is built with Astro, which turns them into fast static pages that load well on slow mobile connections.`,
+		responsibilities: `I built the Astro front end and connected it to the existing WordPress site as a headless CMS.`,
+		tools: ['Astro', 'WordPress'],
+		completedDate: '2025',
+		link: 'https://www.mosesngeth.com/',
+		image: '/images/screenshots/moses-ngeth.jpg'
+	},
+	{
+		id: 'real-estate-listing-platform',
+		name: 'Hunter Estate',
+		summary: 'Listing website for a real estate company',
+		industry: 'Real estate',
+		overview: `A listing website for a local real estate company. Django lets the client add and edit listings from the admin panel, Tailwind CSS keeps the styling consistent, and HTMX handles the interactive parts.`,
+		responsibilities: `I designed and built the site from the client's requirements and wireframe.`,
+		tools: ['HTML', 'CSS', 'Django', 'Figma'],
+		// Time taken: Three weeks
+		completedDate: 'April 2024',
+		image: '/images/mockups/real-estate-listing-website-mockup_result.png'
 	},
 	{
 		id: 'car-engine-lubricants-website',
-		name: 'Car Engine Lubricants Landing Page',
-		industry: 'Automotives',
-		overview: `An informational landing page for a car engine lubricants brand. Due to the simplicity of the website, no JavaScript framework was necessary.`,
-		responsibilities: `After discussing with the client about website content, I designed and coded the website.`,
+		name: 'Musashi Lubricants',
+		summary: 'Landing page for a car engine lubricant brand',
+		industry: 'Automotive',
+		overview: `An information page for a Japanese engine lubricant brand sold in Cambodia, covering its product range and how to get in touch. It is plain HTML and CSS, since the page didn't need a JavaScript framework.`,
+		responsibilities: `I planned the content with the client, then designed and built the page.`,
 		tools: ['HTML', 'CSS', 'Figma'],
 		// Time taken: One week
 		completedDate: 'April 2024',
 		link: 'https://musashilubes.com/',
-		image: '/images/mockups/car-engine-lubricant-website-mockup_result.png'
-	},
-	{
-		id: 'good-time-hospitality-group',
-		name: 'Website for Hospitality Company',
-		industry: 'Hospitality',
-		overview: `Utilizing NextJS, I was able to create an SEO-friendly website. The client can easily manage content via a headless CMS.`,
-		responsibilities: `After receiving a document of content from the client, I designed and coded the website, in addition to configuring the CMS.`,
-		tools: ['HTML', 'CSS', 'NextJS', 'Adobe Photoshop'],
-		// Time taken: Six weeks
-		completedDate: 'April 2023',
-		link: 'https://www.goodtimehospitality.com/',
-		image: '/images/mockups/gt-rr-mockup-laptop-phone_result.png'
-	},
-	{
-		id: 'khmer-programming-words-dictionary',
-		name: 'Khmer Programming Words Dictionary',
-		industry: 'Personal',
-		overview: `This is a dictionary style website to document and explain common programming and other technical words that are almost impossible to translate into Khmer. Could be a useful resource for educators/students alike.`,
-		tools: ['Svelte'],
-		// Time taken: Three days
-		completedDate: 'August 2023',
-		link: 'https://khmer-programming-words.vercel.app/',
-		image: '/images/mockups/khmer-programming-words.png'
+		image: '/images/screenshots/musashi.jpg'
 	},
 	{
 		id: 'business-model-generator',
-		name: 'Business Model Generator (Khmer & English)',
+		name: 'Business Model Canvas Generator',
+		summary: 'Khmer and English tool for planning a business',
 		industry: 'Personal',
-		overview: `A mini web tool for generating a business model canvas based on user input. I made it to practice Typescript, and learn to more about Svelte and how it handles state.`,
+		overview: `A small tool that builds a business model canvas from your answers, in Khmer or English. I made it to practise TypeScript and learn how Svelte handles state.`,
+		responsibilities: `Personal project. I designed and built it.`,
 		tools: ['Svelte'],
 		// Time taken: One week
 		completedDate: 'September 2023',
 		link: 'https://bmc.masayashida.com/',
-		image: '/images/mockups/kh-bmc-laptop-no-notch-mockup_result.png'
+		image: '/images/screenshots/bmc.jpg'
+	},
+	{
+		id: 'khmer-programming-words-dictionary',
+		name: 'Khmer Programming Words',
+		summary: 'Dictionary of technical terms for Khmer speakers',
+		industry: 'Personal',
+		overview: `A dictionary of programming and technical words that are hard to translate into Khmer, each explained in Khmer. It is meant as a reference for teachers and students.`,
+		responsibilities: `Personal project. I designed and built it.`,
+		tools: ['Svelte'],
+		// Time taken: Three days
+		completedDate: 'August 2023',
+		image: '/images/mockups/khmer-programming-words.png'
+	},
+	{
+		id: 'good-time-hospitality-group',
+		name: 'Good Time Hospitality',
+		summary: 'Website for a restaurant and hospitality group',
+		industry: 'Hospitality',
+		overview: `A Next.js website for a hospitality group, built to be easy to find in search. The client manages the content through a headless CMS.`,
+		responsibilities: `I designed and built the site from the client's content document, and set up the CMS.`,
+		tools: ['HTML', 'CSS', 'NextJS', 'Adobe Photoshop'],
+		// Time taken: Six weeks
+		completedDate: 'April 2023',
+		image: '/images/mockups/gt-rr-mockup-laptop-phone_result.png'
 	}
 ];
 

@@ -4,7 +4,7 @@
 	let tool_logos = tool_logos_arr;
 
 	let tech_stack = {
-		web_development: ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Svelte', 'Django'],
+		web_development: ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Svelte', 'Django', 'Astro'],
 		ui_design: ['Figma', 'Adobe XD'],
 		graphic_design: ['Adobe Illustrator', 'Adobe Photoshop']
 	};
@@ -31,14 +31,18 @@
 			<ul>
 				{#each tech_stack.web_development as tool (tool)}
 					<li class="mb-4 flex items-center">
-						<img
-							src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
-							alt={tool}
-							width="24"
-							height="24"
-							title={tool}
-							class="mr-2 max-h-6 max-w-6 object-contain object-center"
-						/>
+						{#if tool_logos.find((logo) => logo.name === tool)}
+							<img
+								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
+								alt={tool}
+								width="24"
+								height="24"
+								title={tool}
+								class="mr-2 max-h-6 max-w-6 object-contain object-center"
+							/>
+						{:else}
+							<span class="mr-2 w-6" aria-hidden="true"></span>
+						{/if}
 						<span class="text-scale-0 text-grey-5">{tool}</span>
 					</li>
 				{/each}

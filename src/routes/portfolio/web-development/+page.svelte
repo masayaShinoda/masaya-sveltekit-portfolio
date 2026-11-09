@@ -1,11 +1,12 @@
 <script lang="ts">
 	// import BackToTop from '$lib/components/BackToTop.svelte';
 	import data from './data';
-	import { tool_logos as tool_logos_arr } from '$lib/components/tool-logos';
+	import SiteScreenshot from '$lib/components/portfolio/SiteScreenshot.svelte';
 	import { formatCompletedDate } from '$lib';
 
-	let tool_logos = tool_logos_arr;
 	let projects = data.projects;
+
+	const domainOf = (link: string) => new URL(link).hostname.replace(/^www\./, '');
 </script>
 
 <svelte:head>
@@ -54,67 +55,80 @@
 		connection can access.
 	</p>
 </header>
-<section class="max-w-content-max mx-auto flex w-full flex-col gap-y-20 p-4 md:gap-y-10 md:p-10">
+<section class="max-w-content-max mx-auto flex w-full flex-col p-4 md:p-10">
 	{#each projects as project (project.id)}
-		<div class="flex w-full flex-col gap-6 md:grid md:grid-cols-7 md:gap-x-12 md:p-8" itemscope>
-			<div class="bg-gradient-card col-span-3 flex items-center justify-center rounded-lg p-6">
-				<img
-					src={project.image}
-					width="312"
-					height="176"
-					class="object-contain object-center"
-					alt={`Screenshot of project: ${project.name}`}
-					loading="lazy"
-				/>
-			</div>
-			<div class="col-span-4 flex flex-col items-start gap-6">
-				<header>
-					<p class="text-scale-0 text-grey-5">Industry: {project.industry}</p>
+		<article
+			id={project.id}
+			class="border-grey-2 grid grid-cols-1 gap-8 border-t py-16 first:border-t-0 first:pt-0 md:grid-cols-[5fr_6fr] md:gap-x-12 md:py-20 md:first:pt-8"
+		>
+			<!-- On phones this wrapper dissolves so the screenshot can sit between header and details -->
+			<div
+				class="contents md:sticky md:top-12 md:flex md:min-w-0 md:flex-col md:items-start md:gap-6 md:self-start"
+			>
+				<header class="order-1 md:order-none">
+					<p class="text-scale-0 text-grey-5">
+						{[project.industry, formatCompletedDate(project.completedDate)]
+							.filter(Boolean)
+							.join(', ')}
+					</p>
 					<h2 class="text-scale-2 text-primary dark:text-grey-6 md:text-scale-3 leading-snug">
 						{project.name}
 					</h2>
-					<p class="text-scale-0 text-grey-5">
-						Completed {formatCompletedDate(project.completedDate)}
-					</p>
+					{#if project.summary}
+						<p class="text-scale-0 text-grey-5">{project.summary}</p>
+					{/if}
 				</header>
-				<section>
-					<h3 class="text-scale-1 text-grey-6 mb-1">Tools</h3>
-					{#if project.tools}
-						<ul class="flex items-center gap-4">
+				<div class="order-3 flex min-w-0 flex-col items-start gap-6 md:order-none">
+					<section>
+						<h3 class="text-scale-1 text-grey-6 mb-1">Tools</h3>
+						<ul class="flex flex-wrap items-center gap-x-4 gap-y-2">
 							{#each project.tools as tool (tool)}
-								<li class="flex items-center gap-x-2">
-									{#if tool_logos.find((logo) => logo.name === tool)}
-										<img
-											src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
-											width="24"
-											height="24"
-											class="object-scale-down object-center"
-											alt={`${tool} icon`}
-										/>
-									{/if}
-									<p class="text-scale-0 text-grey-5">{tool}</p>
-								</li>
+								<li class="text-scale-0 text-grey-5">{tool}</li>
 							{/each}
 						</ul>
-					{/if}
-				</section>
-				<section>
-					<h3 class="text-scale-1 text-grey-6 mb-1">Overview</h3>
-					<p class="text-scale-0 text-grey-5">{project.overview}</p>
-				</section>
-				{#if project.responsibilities}
-					<section>
-						<h3 class="text-scale-1 text-grey-6 mb-1">Responsibilities</h3>
-						<p class="text-scale-0 text-grey-5">{project.responsibilities}</p>
 					</section>
-				{/if}
-				<a
-					href={project.link}
-					class="border-secondary bg-gradient-secondary text-scale-0 text-grey-1 shadow-convex dark:text-grey-6 w-full rounded-full border p-4 text-center transition-all hover:brightness-105 active:translate-y-px md:w-auto"
-				>
-					See live demo
-				</a>
+					<section>
+						<h3 class="text-scale-1 text-grey-6 mb-1">Overview</h3>
+						<p class="text-scale-0 text-grey-5">{project.overview}</p>
+					</section>
+					{#if project.responsibilities}
+						<section>
+							<h3 class="text-scale-1 text-grey-6 mb-1">Responsibilities</h3>
+							<p class="text-scale-0 text-grey-5">{project.responsibilities}</p>
+						</section>
+					{/if}
+					{#if project.link}
+						<a
+							href={project.link}
+							target="_blank"
+							rel="noopener"
+							class="border-secondary bg-gradient-secondary text-scale-0 text-grey-1 shadow-convex dark:text-grey-6 w-full rounded-full border p-4 text-center transition-all hover:brightness-105 active:translate-y-px md:w-auto"
+						>
+							See live demo
+						</a>
+					{/if}
+				</div>
 			</div>
-		</div>
+			<div class="order-2 min-w-0 md:order-none">
+				{#if project.link}
+					<SiteScreenshot
+						src={project.image}
+						alt={`Full home page of ${project.name}`}
+						domain={domainOf(project.link)}
+					/>
+				{:else}
+					<div class="bg-gradient-card flex items-center justify-center rounded-lg p-6">
+						<img
+							src={project.image}
+							width="520"
+							height="293"
+							class="h-auto w-full max-w-[520px] object-contain object-center"
+							alt={`Screenshot of project: ${project.name}`}
+							loading="lazy"
+						/>
+					</div>
+				{/if}
+			</div>
+		</article>
 	{/each}
 </section>

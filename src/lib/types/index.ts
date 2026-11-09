@@ -7,6 +7,10 @@ export type Technology =
 	| 'Svelte'
 	| 'Python'
 	| 'Django'
+	| 'HTMX'
+	| 'Alpine.js'
+	| 'Astro'
+	| 'WordPress'
 	| 'Figma'
 	| 'Adobe XD'
 	| 'Adobe Illustrator'
@@ -34,12 +38,14 @@ export interface Course {
 export interface Project {
 	id: string;
 	name: string;
+	summary?: string;
 	industry?: string;
 	overview: string;
 	responsibilities?: string;
 	tools: Technology[];
 	/** When the project was completed, written as displayed (e.g. 'April 2024', or just '2024'). */
 	completedDate: string;
-	link: string;
+	/** Omit when the site is no longer online. */
+	link?: string;
 	image: string;
 }
