@@ -1,5 +1,5 @@
 <section
-	class="max-w-content-max p-horizontal md:bg-gradient-card mx-auto my-24 flex flex-col-reverse items-center justify-between gap-6 rounded-xl md:my-32 md:flex-row md:rounded-4xl"
+	class="max-w-content-max p-horizontal md:bg-gradient-card mx-auto my-24 flex flex-col items-center justify-between gap-6 rounded-xl md:my-32 md:flex-row md:rounded-4xl"
 >
 	<div class="mb-4 flex flex-col items-start md:mb-0 md:max-w-[360px]">
 		<h2 class="text-scale-3 text-primary dark:text-secondary-shade-b mb-4">

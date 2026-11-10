@@ -4,9 +4,11 @@
 	let tool_logos = tool_logos_arr;
 
 	let tech_stack = {
-		web_development: ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Svelte', 'Django', 'Astro'],
-		ui_design: ['Figma', 'Adobe XD'],
-		graphic_design: ['Adobe Illustrator', 'Adobe Photoshop']
+		web_development: ['JavaScript', 'Python', 'React', 'Svelte', 'Django', 'Astro'],
+		cloud_it: ['Linux', 'Google Cloud'],
+		ui_design: ['Figma'],
+		graphic_design: ['Adobe Illustrator', 'Adobe Photoshop', 'Affinity'],
+		video_editing: ['DaVinci Resolve']
 	};
 
 	// console.log(tool_logos.filter(logo => logo.name === "HTML")[0]['fileName'])
@@ -26,34 +28,70 @@
 		</p>
 	</div>
 	<div class="flex gap-4 sm:justify-end sm:gap-12">
-		<div class="flex w-full flex-col items-start">
-			<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">Web Development</h3>
-			<ul>
-				{#each tech_stack.web_development as tool (tool)}
-					<li class="mb-4 flex items-center">
-						{#if tool_logos.find((logo) => logo.name === tool)}
+		<div class="flex w-full flex-col items-start gap-8 xl:contents">
+			<div class="flex w-full flex-col items-start">
+				<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">Web Development</h3>
+				<ul>
+					{#each tech_stack.web_development as tool (tool)}
+						<li class="mb-4 flex items-start">
+							{#if tool_logos.find((logo) => logo.name === tool)}
+								<img
+									src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
+									alt={tool}
+									width="24"
+									height="24"
+									title={tool}
+									class="mr-2 max-h-6 max-w-6 object-contain object-center dark:hidden"
+								/>
+								<img
+									src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileNameDark}`}
+									alt={tool}
+									width="24"
+									height="24"
+									title={tool}
+									class="mr-2 hidden max-h-6 max-w-6 object-contain object-center dark:block"
+								/>
+							{:else}
+								<span class="mr-2 w-6" aria-hidden="true"></span>
+							{/if}
+							<span class="text-scale-0 text-grey-5">{tool}</span>
+						</li>
+					{/each}
+				</ul>
+			</div>
+			<div class="flex w-full flex-col items-start">
+				<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">Cloud & IT</h3>
+				<ul>
+					{#each tech_stack.cloud_it as tool (tool)}
+						<li class="mb-4 flex items-start">
 							<img
 								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
 								alt={tool}
 								width="24"
 								height="24"
 								title={tool}
-								class="mr-2 max-h-6 max-w-6 object-contain object-center"
+								class="mr-2 max-h-6 max-w-6 object-contain object-center dark:hidden"
 							/>
-						{:else}
-							<span class="mr-2 w-6" aria-hidden="true"></span>
-						{/if}
-						<span class="text-scale-0 text-grey-5">{tool}</span>
-					</li>
-				{/each}
-			</ul>
+							<img
+								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileNameDark}`}
+								alt={tool}
+								width="24"
+								height="24"
+								title={tool}
+								class="mr-2 hidden max-h-6 max-w-6 object-contain object-center dark:block"
+							/>
+							<span class="text-scale-0 text-grey-5">{tool}</span>
+						</li>
+					{/each}
+				</ul>
+			</div>
 		</div>
 		<div class="flex w-full flex-col items-start gap-8">
 			<div class="flex w-full flex-col items-start">
 				<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">UI/UX Design</h3>
 				<ul>
 					{#each tech_stack.ui_design as tool (tool)}
-						<li class="mb-4 flex items-center">
+						<li class="mb-4 flex items-start">
 							<img
 								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
 								alt={tool}
@@ -71,7 +109,25 @@
 				<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">Graphic Design</h3>
 				<ul>
 					{#each tech_stack.graphic_design as tool (tool)}
-						<li class="mb-4 flex items-center">
+						<li class="mb-4 flex items-start">
+							<img
+								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
+								alt={tool}
+								width="24"
+								height="24"
+								title={tool}
+								class="mr-2 max-h-6 max-w-6 object-contain object-center"
+							/>
+							<span class="text-scale-0 text-grey-5">{tool}</span>
+						</li>
+					{/each}
+				</ul>
+			</div>
+			<div class="flex w-full flex-col items-start">
+				<h3 class="text-scale-0 text-grey-6 sm:text-scale-1 mb-4">Video Editing</h3>
+				<ul>
+					{#each tech_stack.video_editing as tool (tool)}
+						<li class="mb-4 flex items-start">
 							<img
 								src={`/images/tech-stack-logos/${tool_logos.find((logo) => logo.name === tool)?.fileName}`}
 								alt={tool}

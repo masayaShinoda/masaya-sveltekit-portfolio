@@ -3,7 +3,7 @@
 		{
 			name: 'Email',
 			href: 'mailto:hello@masayashida.com',
-			icon: 'gmail.svg'
+			icon: 'mail.svg'
 		},
 		{
 			name: 'Github',

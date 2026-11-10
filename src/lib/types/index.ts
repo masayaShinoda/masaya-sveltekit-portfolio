@@ -11,10 +11,13 @@ export type Technology =
 	| 'Alpine.js'
 	| 'Astro'
 	| 'WordPress'
+	| 'Linux'
+	| 'Google Cloud'
 	| 'Figma'
-	| 'Adobe XD'
 	| 'Adobe Illustrator'
-	| 'Adobe Photoshop';
+	| 'Adobe Photoshop'
+	| 'Affinity'
+	| 'DaVinci Resolve';
 
 export interface CourseSection {
 	title: string;

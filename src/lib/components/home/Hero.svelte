@@ -1,7 +1,7 @@
 <section
 	class="max-w-content-max px-horizontal mx-auto flex flex-col-reverse items-center justify-between pt-4 pb-3 sm:py-5 md:flex-row"
 >
-	<div class="mt-8 max-w-full md:mt-0 md:max-w-[55%] lg:max-w-[512px]">
+	<div class="mx-0 mt-8 max-w-full md:mt-0 md:max-w-[55%] lg:max-w-[720px]">
 		<p class="text-scale-0 text-grey-5 lg:text-scale-1 mb-2">Hi! I'm Masaya,</p>
 		<h1 class="text-scale-2 text-primary dark:text-grey-6 sm:text-scale-3 lg:text-scale-4 mb-8">
 			Cambodia-based developer & designer passionate about digital literacy.
@@ -27,15 +27,15 @@
 			</a>
 		</div>
 	</div>
-	<div
-		class="flex h-[149px] w-[212px] items-center justify-center sm:h-[175px] sm:w-[249px] md:h-[201px] md:w-[286px]"
-	>
-		<img
-			src="/images/g14-shadow_result.png"
-			alt="My laptop"
-			class="h-full w-full object-contain object-center"
-			width="320"
-			height="240"
-		/>
-	</div>
+	<!-- <div -->
+	<!-- 	class="flex h-[149px] w-[212px] items-center justify-center sm:h-[175px] sm:w-[249px] md:h-[201px] md:w-[286px]" -->
+	<!-- > -->
+	<!-- 	<img -->
+	<!-- 		src="/images/g14-shadow_result.png" -->
+	<!-- 		alt="My laptop" -->
+	<!-- 		class="h-full w-full object-contain object-center" -->
+	<!-- 		width="320" -->
+	<!-- 		height="240" -->
+	<!-- 	/> -->
+	<!-- </div> -->
 </section>

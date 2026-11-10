@@ -50,19 +50,6 @@ const projects: Project[] = [
 		image: '/images/screenshots/osvay.jpg'
 	},
 	{
-		id: 'design-agency-website',
-		name: 'Bread Design Media',
-		summary: 'Website for a design and media agency',
-		industry: 'Media',
-		overview: `A website for a Phnom Penh design and media agency. It presents the agency's services, clients and portfolio, and visitors can get in touch through a secure contact form. Staff update the content from the Django admin panel.`,
-		responsibilities: `I built and hosted the site from a finished web design.`,
-		tools: ['HTML', 'CSS', 'Django', 'Figma'],
-		// Time taken: Two weeks
-		completedDate: 'October 2025',
-		link: 'https://breaddesignmedia.com/',
-		image: '/images/screenshots/bread-design.jpg'
-	},
-	{
 		id: 'moses-ngeth-blog',
 		name: 'Moses Ngeth',
 		summary: 'Khmer and English blog for a digital researcher',
