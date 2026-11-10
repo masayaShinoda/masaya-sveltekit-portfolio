@@ -23,7 +23,7 @@
 
 <section class="max-w-content-max px-horizontal mx-auto my-24 flex flex-col md:my-32">
 	<h2 class="text-scale-3 text-primary dark:text-secondary-shade-b mb-4">Certifications</h2>
-	<div class="grid w-full gap-8 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-4 lg:gap-9">
+	<div class="grid w-full gap-8 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-4 lg:gap-9">
 		{#each certifs as certif (certif.url)}
 			<a href={certif.url} class="group grid grid-cols-2 gap-2 sm:flex sm:flex-col">
 				<div

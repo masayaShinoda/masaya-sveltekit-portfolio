@@ -72,7 +72,7 @@ const projects: Project[] = [
 		name: 'Mobile Trading App Design',
 		overview: `UT Market is an online trading platform that allows traders to buy and sell fractionalized Cambodian real estate assets in the form of Units of Trust (UTs).`,
 		responsibilities: `I was tasked with creating the UI design for a mobile version of an existing progressive web app. I came up with entirely new page layouts with a fresh design approach whilst preserving mostly the same user flow from the existing web app.`,
-		tools: ['Adobe XD', 'Adobe Illustrator'],
+		tools: ['Adobe Illustrator'],
 		// Time taken: Three months
 		completedDate: 'December 2022',
 		link: 'https://xd.adobe.com/view/a80afaa0-f4f0-4f8a-8573-e1c9adb1e7aa-fd59/flow',
